@@ -1,0 +1,8 @@
+# only scripts/, forms/app/, translations/ and tests/forms/ are copied into the image
+.git
+.venv
+.snapshots
+backups
+out
+**/node_modules
+**/__pycache__

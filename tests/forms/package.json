@@ -1,0 +1,14 @@
+{
+  "name": "satoru-form-tests",
+  "private": true,
+  "description": "Scoring tests for the Satoru EMR scale forms, run in CHT 5.3's real form engine",
+  "scripts": {
+    "pretest": "node setup.js",
+    "test": "mocha '*.spec.js' --timeout 120000"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "cht-conf-test-harness": "5.0.4",
+    "mocha": "^10.7.3"
+  }
+}

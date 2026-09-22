@@ -1,0 +1,14 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "Longitudinal Review"
+    }
+  ],
+  "icon": "icon-followup-general",
+  "context": {
+    "person": true,
+    "place": false,
+    "expression": "summary.is_participant && (summary.has_stage1 || summary.has_stage2) && !summary.is_exited"
+  }
+}

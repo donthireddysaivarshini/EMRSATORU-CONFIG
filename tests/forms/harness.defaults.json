@@ -1,0 +1,12 @@
+{
+  "coreVersion": "4.11",
+  "user": "staff_contact",
+  "subject": "participant_1",
+  "content": { "source": "contact" },
+  "docs": [
+    { "_id": "camp_1", "type": "contact", "contact_type": "camp", "name": "Test camp" },
+    { "_id": "staff_contact", "type": "contact", "contact_type": "participant", "name": "Staff", "parent": { "_id": "camp_1" } },
+    { "_id": "participant_1", "type": "contact", "contact_type": "participant", "name": "Test Participant",
+      "patient_id": "TEST-1", "age": "70", "gender": "male", "education_level": "10th", "parent": { "_id": "camp_1" } }
+  ]
+}

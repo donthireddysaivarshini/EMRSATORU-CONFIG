@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Edit Participant</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="contact:participant:edit" version="2026-07-29 00-00" prefix="J1!contact:participant:edit!" delimiter="#">
+          <participant>
+            <name/>
+            <age/>
+            <gender/>
+            <phone/>
+            <education_level/>
+            <informant_name/>
+            <informant_phone/>
+            <consent_given/>
+            <consent_recorded_at/>
+            <consent_version/>
+            <notes/>
+          </participant>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="gender_list">
+        <root>
+          <item>
+            <name>male</name>
+            <label>Male</label>
+          </item>
+          <item>
+            <name>female</name>
+            <label>Female</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="education_list">
+        <root>
+          <item>
+            <name>illiterate</name>
+            <label>No formal schooling / cannot read</label>
+          </item>
+          <item>
+            <name>primary</name>
+            <label>1-7 years of schooling</label>
+          </item>
+          <item>
+            <name>secondary_plus</name>
+            <label>8 years or more</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/participant/name" type="string" required="true()"/>
+      <bind nodeset="/data/participant/age" type="int" required="true()" constraint=". &gt;= 0 and . &lt;= 130" jr:constraintMsg="Age must be between 0 and 130"/>
+      <bind nodeset="/data/participant/gender" type="string" required="true()"/>
+      <bind nodeset="/data/participant/phone" type="tel" constraint="true()" jr:constraintMsg="Please enter a valid phone number."/>
+      <bind nodeset="/data/participant/education_level" type="string" required="true()"/>
+      <bind nodeset="/data/participant/informant_name" type="string"/>
+      <bind nodeset="/data/participant/informant_phone" type="tel" constraint="true()" jr:constraintMsg="Please enter a valid phone number."/>
+      <bind nodeset="/data/participant/consent_given" type="string" required="true()"/>
+      <bind nodeset="/data/participant/consent_recorded_at" type="string" calculate="now()"/>
+      <bind nodeset="/data/participant/consent_version" type="string" calculate="'SATORU-CONSENT-v1.0-2026'"/>
+      <bind nodeset="/data/participant/notes" type="string"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/data/participant">
+      <label>NO_LABEL</label>
+      <input ref="/data/participant/name">
+        <label>Full Name</label>
+      </input>
+      <input ref="/data/participant/age">
+        <label>Age</label>
+      </input>
+      <select1 ref="/data/participant/gender">
+        <label>Gender</label>
+        <itemset nodeset="instance('gender_list')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/participant/phone">
+        <label>Phone Number</label>
+      </input>
+      <select1 ref="/data/participant/education_level">
+        <label>Education level</label>
+        <hint>Used to select the correct HMSE cut-off in Stage 2.</hint>
+        <itemset nodeset="instance('education_list')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/participant/informant_name">
+        <label>Family member / informant name</label>
+        <hint>The person who can answer the AD8 in Stage 2.</hint>
+      </input>
+      <input ref="/data/participant/informant_phone">
+        <label>Informant phone number</label>
+      </input>
+      <select1 ref="/data/participant/consent_given">
+        <label>Consent given for screening and data storage?</label>
+        <hint>Explain purpose, confidentiality and the right to stop at any time before recording this.</hint>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/participant/notes" appearance="multiline">
+        <label>Notes</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>
