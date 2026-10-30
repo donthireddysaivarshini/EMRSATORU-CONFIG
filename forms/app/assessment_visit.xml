@@ -4,7 +4,7 @@
     <h:title>Assessment Visit</h:title>
     <model odk:xforms-version="1.0.0">
       <instance>
-        <data id="assessment_visit" version="2026-09-17 02-00" prefix="J1!assessment_visit!" delimiter="#">
+        <data id="assessment_visit" version="2026-10-30 12-20" prefix="J1!assessment_visit!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -156,24 +156,24 @@
       <bind nodeset="/data/g_consent/consent_version" type="string" calculate="'SATORU-CONSENT-v1.0-2026'"/>
       <bind nodeset="/data/g_consent/consent_docs/consent_image" type="binary"/>
       <bind nodeset="/data/g_consent/consent_docs/consent_pdf" type="binary"/>
-      <bind nodeset="/data/g_informant/informant_name" type="string" required="true()"/>
-      <bind nodeset="/data/g_informant/informant_phone" type="tel" required="true()" constraint="true()" jr:constraintMsg="Please enter a valid phone number."/>
+      <bind nodeset="/data/g_informant/informant_name" type="string"/>
+      <bind nodeset="/data/g_informant/informant_phone" type="tel" constraint="true()" jr:constraintMsg="Please enter a valid phone number."/>
       <bind nodeset="/data/g_assessment/assessment_datetime" type="dateTime" required="true()" calculate="if(. = '', now(), .)"/>
       <bind nodeset="/data/g_assessment/administered_by" type="string" required="true()"/>
       <bind nodeset="/data/g_assessment/g_scale/scale_name" type="string" required="true()"/>
       <bind nodeset="/data/g_assessment/g_scale/score" type="string" required="true()"/>
       <bind nodeset="/data/g_assessment/g_scale/interpretation" type="string" required="true()"/>
       <bind nodeset="/data/g_clinical/clinical_impression" type="string" required="true()"/>
-      <bind nodeset="/data/g_followup/next_visit_date" type="date" required="true()"/>
+      <bind nodeset="/data/g_followup/next_visit_date" type="date"/>
       <bind nodeset="/data/g_followup/notes" type="string"/>
       <bind nodeset="/data/g_followup/notes_docs/notes_image" type="binary"/>
       <bind nodeset="/data/g_followup/notes_docs/notes_pdf" type="binary"/>
       <bind nodeset="/data/g_followup/assessed_by" type="string" required="true()"/>
-      <bind nodeset="/data/g_followup/reviewed_by" type="string" required="true()"/>
+      <bind nodeset="/data/g_followup/reviewed_by" type="string"/>
       <bind nodeset="/data/g_office/entered_in_cht" type="string" required="true()"/>
-      <bind nodeset="/data/g_office/qc_checked_by" type="string" required="true()"/>
-      <bind nodeset="/data/g_office/record_id" type="string" required="true()"/>
-      <bind nodeset="/data/g_office/qc_check_date" type="date" required="true()"/>
+      <bind nodeset="/data/g_office/qc_checked_by" type="string"/>
+      <bind nodeset="/data/g_office/record_id" type="string"/>
+      <bind nodeset="/data/g_office/qc_check_date" type="date"/>
       <bind nodeset="/data/g_assessment_sheets/assessment_sheets/assessment_image" type="binary"/>
       <bind nodeset="/data/g_assessment_sheets/assessment_sheets/assessment_pdf" type="binary"/>
       <bind nodeset="/data/g_supporting_docs/upload_scale_image" type="binary"/>

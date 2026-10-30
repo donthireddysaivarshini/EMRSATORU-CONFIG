@@ -4,7 +4,7 @@
     <h:title>Edit Participant</h:title>
     <model odk:xforms-version="1.0.0">
       <instance>
-        <data id="contact:participant:edit" version="2026-08-20 00-00" prefix="J1!contact:participant:edit!" delimiter="#">
+        <data id="contact:participant:edit" version="2026-10-30 12-40" prefix="J1!contact:participant:edit!" delimiter="#">
           <participant>
             <registration_date/>
             <ward_dept_no/>
@@ -46,11 +46,11 @@
       <bind nodeset="/data/participant/name" type="string" required="true()"/>
       <bind nodeset="/data/participant/cr_no" type="string" required="true()"/>
       <bind nodeset="/data/participant/aadhaar_last4" type="string" required="true()"/>
-      <bind nodeset="/data/participant/age" type="int" required="true()" calculate=". &gt;= 0 and . &lt;= 130" constraint="Age must be between 0 and 130"/>
+      <bind nodeset="/data/participant/age" type="int" required="true()" constraint=". &gt;= 0 and . &lt;= 130" jr:constraintMsg="Age must be between 0 and 130"/>
       <bind nodeset="/data/participant/gender" type="string" required="true()"/>
       <bind nodeset="/data/participant/education_level" type="string"/>
       <bind nodeset="/data/participant/occupation" type="string"/>
-      <bind nodeset="/data/participant/phone" type="tel" calculate="true()" constraint="Please enter a valid phone number."/>
+      <bind nodeset="/data/participant/phone" type="tel" constraint="true()" jr:constraintMsg="Please enter a valid phone number."/>
       <bind nodeset="/data/participant/address" type="string"/>
       <bind nodeset="/data/participant/referral_department" type="string"/>
       <bind nodeset="/data/participant/referred_by" type="string"/>
