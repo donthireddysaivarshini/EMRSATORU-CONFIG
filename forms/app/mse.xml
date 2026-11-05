@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Mental State Examination (MSE)</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="/data/grp_mse_scale/q21:label">
+            <value>21. Here is a drawing, you must copy this drawing exactly as shown in the space provided here.</value>
+            <value form="image">jr://images/drawing.png</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="mse" version="2026-11-05 17-00" prefix="J1!mse!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <patient_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <age/>
+              <phone/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <screened_by/>
+          <screened_by_name/>
+          <g_participant>
+            <consent_confirmed/>
+            <patient_name_display/>
+            <assessment_date/>
+            <dob/>
+          </g_participant>
+          <grp_mse_scale>
+            <q1/>
+            <q2/>
+            <q3/>
+            <q4/>
+            <q5/>
+            <q6/>
+            <q7/>
+            <q8/>
+            <q9/>
+            <q10/>
+            <q11/>
+            <q12_a_b/>
+            <q13/>
+            <q14_note/>
+            <q15/>
+            <q16/>
+            <q17/>
+            <q18/>
+            <q19/>
+            <q20/>
+            <q21/>
+            <total_score/>
+            <display_score_mse/>
+            <Survey_Status_mse/>
+            <Reason_for_Dropout_mse/>
+          </grp_mse_scale>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+          <item>
+            <name>_not_completed___unable_to_und</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="score_1">
+        <root>
+          <item>
+            <name>0</name>
+            <label>Wrong</label>
+          </item>
+          <item>
+            <name>1</name>
+            <label>Correct</label>
+          </item>
+          <item>
+            <name>99</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>98</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>97</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="score_3">
+        <root>
+          <item>
+            <name>0</name>
+            <label>0 Correct</label>
+          </item>
+          <item>
+            <name>1</name>
+            <label>1 Correct</label>
+          </item>
+          <item>
+            <name>2</name>
+            <label>2 Correct</label>
+          </item>
+          <item>
+            <name>3</name>
+            <label>3 Correct</label>
+          </item>
+          <item>
+            <name>99</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>98</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>97</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="score_5">
+        <root>
+          <item>
+            <name>0</name>
+            <label>0 Correct</label>
+          </item>
+          <item>
+            <name>1</name>
+            <label>1 Correct</label>
+          </item>
+          <item>
+            <name>2</name>
+            <label>2 Correct</label>
+          </item>
+          <item>
+            <name>3</name>
+            <label>3 Correct</label>
+          </item>
+          <item>
+            <name>4</name>
+            <label>4 Correct</label>
+          </item>
+          <item>
+            <name>5</name>
+            <label>5 Correct</label>
+          </item>
+          <item>
+            <name>99</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>98</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>97</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="mse_status">
+        <root>
+          <item>
+            <name>completed</name>
+            <label>Completed</label>
+          </item>
+          <item>
+            <name>dropout___discontinued</name>
+            <label>Dropout / Discontinued</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/age" type="string"/>
+      <bind nodeset="/data/inputs/contact/phone" type="string"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="coalesce(../inputs/contact/patient_id, ../inputs/contact/_id)"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/screened_by" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/screened_by_name" type="string" calculate="../inputs/user/name"/>
+      <bind nodeset="/data/g_participant/consent_confirmed" type="string" required="true()"/>
+      <bind nodeset="/data/g_participant/patient_name_display" type="string" required="true()" calculate="if(. = '',  /data/patient_name , .)"/>
+      <bind nodeset="/data/g_participant/assessment_date" type="date" required="true()" calculate="if(. = '', today(), .)" constraint=". &lt;= today()" jr:constraintMsg="Date of assessment cannot be in the future."/>
+      <bind nodeset="/data/g_participant/dob" type="date" required="true()" constraint=". &lt;= today()" jr:constraintMsg="Date of birth cannot be in the future."/>
+      <bind nodeset="/data/grp_mse_scale/q1" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q2" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q3" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q4" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q5" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q6" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q7" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q8" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q9" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q10" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q11" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q12_a_b" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q13" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q14_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_mse_scale/q15" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q16" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q17" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q18" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q19" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/q20" type="string" required="false()"/>
+      <bind nodeset="/data/grp_mse_scale/q21" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/total_score" type="string" calculate="if(number( /data/grp_mse_scale/q1 )&lt;90, number( /data/grp_mse_scale/q1 ), 0) + if(number( /data/grp_mse_scale/q2 )&lt;90, number( /data/grp_mse_scale/q2 ), 0) + if(number( /data/grp_mse_scale/q3 )&lt;90, number( /data/grp_mse_scale/q3 ), 0) + if(number( /data/grp_mse_scale/q4 )&lt;90, number( /data/grp_mse_scale/q4 ), 0) + if(number( /data/grp_mse_scale/q5 )&lt;90, number( /data/grp_mse_scale/q5 ), 0) + if(number( /data/grp_mse_scale/q6 )&lt;90, number( /data/grp_mse_scale/q6 ), 0) + if(number( /data/grp_mse_scale/q7 )&lt;90, number( /data/grp_mse_scale/q7 ), 0) + if(number( /data/grp_mse_scale/q8 )&lt;90, number( /data/grp_mse_scale/q8 ), 0) + if(number( /data/grp_mse_scale/q9 )&lt;90, number( /data/grp_mse_scale/q9 ), 0) + if(number( /data/grp_mse_scale/q10 )&lt;90, number( /data/grp_mse_scale/q10 ), 0) + if(number( /data/grp_mse_scale/q11 )&lt;90, number( /data/grp_mse_scale/q11 ), 0) + if(number( /data/grp_mse_scale/q12_a_b )&lt;90, number( /data/grp_mse_scale/q12_a_b ), 0) + if(number( /data/grp_mse_scale/q13 )&lt;90, number( /data/grp_mse_scale/q13 ), 0) + if(number( /data/grp_mse_scale/q15 )&lt;90, number( /data/grp_mse_scale/q15 ), 0) + if(number( /data/grp_mse_scale/q16 )&lt;90, number( /data/grp_mse_scale/q16 ), 0) + if(number( /data/grp_mse_scale/q17 )&lt;90, number( /data/grp_mse_scale/q17 ), 0) + if(number( /data/grp_mse_scale/q18 )&lt;90, number( /data/grp_mse_scale/q18 ), 0) + if(number( /data/grp_mse_scale/q19 )&lt;90, number( /data/grp_mse_scale/q19 ), 0) + if(number( /data/grp_mse_scale/q21 )&lt;90, number( /data/grp_mse_scale/q21 ), 0)"/>
+      <bind nodeset="/data/grp_mse_scale/display_score_mse" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_mse_scale/Survey_Status_mse" type="string" required="true()"/>
+      <bind nodeset="/data/grp_mse_scale/Reason_for_Dropout_mse" type="string" required="true()" relevant=" /data/grp_mse_scale/Survey_Status_mse  = 'dropout___discontinued'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/data/inputs">
+      <label>Participant</label>
+      <group appearance="field-list" ref="/data/inputs/user">
+        <label>User</label>
+      </group>
+      <group appearance="field-list" ref="/data/inputs/contact">
+        <label>Select participant</label>
+        <input ref="/data/inputs/contact/_id" appearance="select-contact type-participant">
+          <label>Select participant</label>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/g_participant">
+      <label>Participant details &amp; consent</label>
+      <select1 ref="/data/g_participant/consent_confirmed">
+        <label>Did the participant (or guardian) provide informed consent for this assessment?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_participant/patient_name_display">
+        <label>Participant Name</label>
+      </input>
+      <input ref="/data/g_participant/assessment_date">
+        <label>Date of assessment</label>
+      </input>
+      <input ref="/data/g_participant/dob">
+        <label>Date of birth</label>
+      </input>
+    </group>
+    <group ref="/data/grp_mse_scale">
+      <label>Mental State Examination (MSE)</label>
+      <select1 ref="/data/grp_mse_scale/q1">
+        <label>1. Is it morning or afternoon or evening?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q2">
+        <label>2. What day of the week is today?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q3">
+        <label>3. What date is it today?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q4">
+        <label>4. Which month is today?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q5">
+        <label>5. What season of the year is this?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q6">
+        <label>6. Under which post office does your village come?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q7">
+        <label>7. Which district does your village fall under?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q8">
+        <label>8. Which village are you from?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q9">
+        <label>9. Which block (if village has only blocks) OR Which number area is this?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q10">
+        <label>10. Which place is this?</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q11">
+        <label>11. (I went to Delhi and brought three things – Mango, Chair and Coin) Can you tell me what are the three things I brought from Delhi?</label>
+        <itemset nodeset="instance('score_3')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q12_a_b">
+        <label>12.a. Now can you tell me the names of the days of the week starting from Sunday? b.Now can you tell me the names of the days backwards</label>
+        <itemset nodeset="instance('score_5')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q13">
+        <label>13. What are the names of the three things, which I told you that I have brought from Delhi?</label>
+        <itemset nodeset="instance('score_3')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_mse_scale/q14_note">
+        <label>14. (Show the subject the Mobile Phone/Wristwatch and pen) Can you tell me the name of these objects? (If Yes, items 15 &amp; 16 apply.) (If No, item 15a applies.)</label>
+      </input>
+      <select1 ref="/data/grp_mse_scale/q15">
+        <label>15a. Show him/her the Mobile Phone/Wristwatch and say – "What is this?" OR b.If necessary, Identification of watch by touching and ask, "What is this?"</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q16">
+        <label>16. Show him/her the pen and say – "What is this?" OR If necessary, Identification of pen by touching and ask – "What is this?"</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q17">
+        <label>17. Now I am going to say something, listen carefully and repeat it exactly as I say after I finish. Phrase : "NEITHER THIS NOR THAT".</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q18">
+        <label>18. Now look at my face and do exactly what I do. Now close your eyes.</label>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q19">
+        <label>19. First take the paper in your right hand, then with your both hands, fold it into half once and then gives the paper back to me.</label>
+        <itemset nodeset="instance('score_3')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q20">
+        <label>20. Now say a line about your house? (something specifically about your houses)</label>
+        <hint>NOT INCLUDED IN MSE TOTAL if given -1, not given -0</hint>
+        <itemset nodeset="instance('score_1')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_mse_scale/q21">
+        <label ref="jr:itext('/data/grp_mse_scale/q21:label')"/>
+        <hint>Score: Must draw two four-sided figures =1 One figure should be manually inside the other = 2 Orientation of the figure should be obviously appropriate =3</hint>
+        <itemset nodeset="instance('score_3')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_mse_scale/display_score_mse">
+        <label>
+          **Mental State Examination Score:**
+          <output value=" /data/grp_mse_scale/total_score "/>
+          / 31
+
+**Interpretation:** Scores &lt;18 (illiterates) or &lt;27 (literates) indicate significant cognitive impairment and need detailed evaluation.
+        </label>
+      </input>
+      <select1 ref="/data/grp_mse_scale/Survey_Status_mse">
+        <label>Survey Status</label>
+        <hint>Mark if the survey was completed or dropped out midway.</hint>
+        <itemset nodeset="instance('mse_status')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_mse_scale/Reason_for_Dropout_mse">
+        <label>Reason for Dropout / Refusal:</label>
+        <hint>Please explain why the survey was stopped.</hint>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,1107 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>CoG5 - Memory Screening Battery</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="/data/grp_cog5_scale/grp_picture_based_memory_impairment/pmis_image:label">
+            <value>Here is a sheet with 4 pictures for you to learn and remember. Each picture belongs to a different category. Please say what you see in each picture out loud to me. To help you learn, I will tell you the category for each picture and ask you to name the picture that goes with each category cue. (For example: Which one is fruit?) Remember these pictures because later I will ask you to recall them.</value>
+            <value form="image">jr://images/cow.png</value>
+          </text>
+          <text id="/data/grp_cog5_scale/grp_picture_based_screening_test/triangle_thing:label">
+            <value>For this next part I will ask you to name which number goes with each symbol. Look up here at the top, each number has a symbol associated with it. Down here, we have the same symbols, but the numbers are missing. I want you to tell me which number goes with each symbol. For example: See this mark right here (point to first practice item), on the key the mark goes with 4, so you would say 4. What would you say for this mark? Now that you know how to do these, I want you to start right here and tell me the numbers that go with each of these shapes. Go in order (use finger to demonstrate). When you finish one row, keep going to the next row until I tell you to stop. Work as fast as you can without making mistakes. You can use your finger to keep track of where you are. Do you have any questions? (Answer questions). Ready? Go ahead. Time 90 Sec.</value>
+            <value form="image">jr://images/tri.png</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="cog5" version="2026-11-05 17-00" prefix="J1!cog5!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <patient_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <age/>
+              <phone/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <screened_by/>
+          <screened_by_name/>
+          <g_participant>
+            <consent_confirmed/>
+            <patient_name_display/>
+            <assessment_date/>
+            <dob/>
+            <education/>
+            <education_specify/>
+            <score_education/>
+          </g_participant>
+          <grp_cog5_scale>
+            <grp_picture_based_memory_impairment>
+              <pmis_image/>
+              <able_identify/>
+            </grp_picture_based_memory_impairment>
+            <grp_picture_based_screening_test>
+              <triangle_thing/>
+              <pbst_result/>
+              <score_pbst/>
+              <pbst_upload_status/>
+              <pbst_upload_file/>
+              <pbst_upload_reason/>
+            </grp_picture_based_screening_test>
+            <grp_mcr>
+              <memory_general/>
+              <thinking_problem/>
+              <thinking_problem_reason/>
+              <memory_problem/>
+              <memory_worse/>
+              <mcr_cog_flag/>
+            </grp_mcr>
+            <grp_timed_walk>
+              <walk_note/>
+              <walk_intro/>
+              <leg_pain/>
+              <health_restriction/>
+              <assistive_device/>
+              <walk_time_result/>
+              <mcr_motor_flag/>
+            </grp_timed_walk>
+            <grp_pmis_recall>
+              <recall_combination/>
+              <free_recall/>
+              <cued_recall/>
+            </grp_pmis_recall>
+            <grp_symptom_checklist>
+              <symptom_note/>
+              <sym_sad/>
+              <sym_anx/>
+              <sym_sleep/>
+              <sym_daytime/>
+              <sym_snore/>
+              <sym_voice/>
+              <sym_mem/>
+              <sym_speak/>
+              <sym_neuro/>
+              <score_q13_symptoms/>
+            </grp_symptom_checklist>
+            <grp_risk_factors>
+              <risk_note/>
+              <risk_htn/>
+              <risk_dm/>
+              <risk_ldl/>
+              <risk_head/>
+              <risk_urine/>
+              <risk_alc/>
+              <risk_phys/>
+              <risk_obes/>
+              <risk_hear/>
+              <risk_vis/>
+              <risk_soc/>
+              <risk_smoke/>
+              <risk_dep/>
+              <score_dementia_risk/>
+            </grp_risk_factors>
+            <calc_free_score/>
+            <calc_cued_score/>
+            <score_pmis_total/>
+            <pmis_flag/>
+            <PMIS_FINAL_RESULT/>
+            <PBST_FINAL_RESULT/>
+            <MCR_FINAL_RESULT/>
+            <FINAL_TRIAGE/>
+            <calc_pmis_meaning/>
+            <calc_pbst_meaning/>
+            <calc_mcr_meaning/>
+            <calc_risk_breakdown/>
+            <results_summary/>
+            <display_pmis/>
+            <display_pbst/>
+            <display_mcr/>
+            <display_risk/>
+            <display_triage/>
+            <calc_overall_conclusion/>
+            <display_overall/>
+            <Survey_Status_cog5/>
+            <Reason_for_Dropout_cog5/>
+          </grp_cog5_scale>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+          <item>
+            <name>_not_completed___unable_to_und</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="km1en86">
+        <root>
+          <item>
+            <name>not_studied</name>
+            <label>Not studied in school</label>
+          </item>
+          <item>
+            <name>elementary_middle</name>
+            <label>Elementary - middle school</label>
+          </item>
+          <item>
+            <name>high_school</name>
+            <label>Upto High School</label>
+          </item>
+          <item>
+            <name>completed</name>
+            <label>Completed High School</label>
+          </item>
+          <item>
+            <name>sslcpuc</name>
+            <label>S.S.L.C. /PUC (Intermediate)</label>
+          </item>
+          <item>
+            <name>vocational_technical</name>
+            <label>Vocational/ Technical</label>
+          </item>
+          <item>
+            <name>graduate_degree</name>
+            <label>Graduate - Degree</label>
+          </item>
+          <item>
+            <name>post_graduate</name>
+            <label>Post Graduate</label>
+          </item>
+          <item>
+            <name>phd</name>
+            <label>PhD</label>
+          </item>
+          <item>
+            <name>others</name>
+            <label>Others</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="identify_images">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes, in less than 5 attempts</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No, the client was provided the correct name and cue of each item.</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="pbst_options">
+        <root>
+          <item>
+            <name>more_25</name>
+            <label>MORE THAN 25: Normal</label>
+          </item>
+          <item>
+            <name>less_equal_25</name>
+            <label>LESS OR EQUAL TO 25: Possible cognitive impairment</label>
+          </item>
+          <item>
+            <name>unable</name>
+            <label>Unable to understand practice</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="pbst_upload_opts">
+        <root>
+          <item>
+            <name>upload_now</name>
+            <label>Upload now</label>
+          </item>
+          <item>
+            <name>upload_later</name>
+            <label>Upload later</label>
+          </item>
+          <item>
+            <name>not_applicable</name>
+            <label>Not applicable</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="memory_general">
+        <root>
+          <item>
+            <name>good</name>
+            <label>Good</label>
+          </item>
+          <item>
+            <name>fair</name>
+            <label>Fair</label>
+          </item>
+          <item>
+            <name>poor</name>
+            <label>Poor</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="thinking_problem">
+        <root>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="memory_problem">
+        <root>
+          <item>
+            <name>none</name>
+            <label>No problems</label>
+          </item>
+          <item>
+            <name>minor</name>
+            <label>Some minor problems</label>
+          </item>
+          <item>
+            <name>major</name>
+            <label>Major problems</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="memory_worse">
+        <root>
+          <item>
+            <name>no</name>
+            <label>No problems</label>
+          </item>
+          <item>
+            <name>yes_not_worried</name>
+            <label>Yes, but this does not worry me</label>
+          </item>
+          <item>
+            <name>yes_worried</name>
+            <label>Yes, and this does worry me</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="restriction_type">
+        <root>
+          <item>
+            <name>none</name>
+            <label>No apparent restriction (Continue)</label>
+          </item>
+          <item>
+            <name>surgery</name>
+            <label>Yes, recent surgery (Skip Walk)</label>
+          </item>
+          <item>
+            <name>injury</name>
+            <label>Yes, injury (Skip Walk)</label>
+          </item>
+          <item>
+            <name>other</name>
+            <label>Yes, other health condition (Skip Walk)</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="device_ability">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes, able to walk WITHOUT device</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No, cannot walk without device</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="walk_time_options">
+        <root>
+          <item>
+            <name>normal</name>
+            <label>LESS THAN or EQUAL TO 5.5 seconds</label>
+          </item>
+          <item>
+            <name>slow</name>
+            <label>MORE THAN 5.5 seconds</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="recall_combination">
+        <root>
+          <item>
+            <name>four_free</name>
+            <label>4 pictures Free recall</label>
+          </item>
+          <item>
+            <name>three_free_one_cued</name>
+            <label>3 pictures Free recall and 1 Cued recall</label>
+          </item>
+          <item>
+            <name>other_combo</name>
+            <label>Any other combination</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="free_recall">
+        <root>
+          <item>
+            <name>four</name>
+            <label>4 pictures Free recall</label>
+          </item>
+          <item>
+            <name>three</name>
+            <label>3 pictures Free recall</label>
+          </item>
+          <item>
+            <name>two</name>
+            <label>2 pictures Free recall</label>
+          </item>
+          <item>
+            <name>one</name>
+            <label>1 picture Free recall</label>
+          </item>
+          <item>
+            <name>zero</name>
+            <label>No pictures Free recall</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="cued_recall">
+        <root>
+          <item>
+            <name>four</name>
+            <label>4 pictures recalled via Cue</label>
+          </item>
+          <item>
+            <name>three</name>
+            <label>3 pictures recalled via Cue</label>
+          </item>
+          <item>
+            <name>two</name>
+            <label>2 pictures recalled via Cue</label>
+          </item>
+          <item>
+            <name>one</name>
+            <label>1 picture recalled via Cue</label>
+          </item>
+          <item>
+            <name>zero</name>
+            <label>No picture recalled via Cue</label>
+          </item>
+          <item>
+            <name>na</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="cog5_status">
+        <root>
+          <item>
+            <name>completed</name>
+            <label>Completed</label>
+          </item>
+          <item>
+            <name>dropout___discontinued</name>
+            <label>Dropout / Discontinued</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/age" type="string"/>
+      <bind nodeset="/data/inputs/contact/phone" type="string"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="coalesce(../inputs/contact/patient_id, ../inputs/contact/_id)"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/screened_by" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/screened_by_name" type="string" calculate="../inputs/user/name"/>
+      <bind nodeset="/data/g_participant/consent_confirmed" type="string" required="true()"/>
+      <bind nodeset="/data/g_participant/patient_name_display" type="string" required="true()" calculate="if(. = '',  /data/patient_name , .)"/>
+      <bind nodeset="/data/g_participant/assessment_date" type="date" required="true()" calculate="if(. = '', today(), .)" constraint=". &lt;= today()" jr:constraintMsg="Date of assessment cannot be in the future."/>
+      <bind nodeset="/data/g_participant/dob" type="date" required="true()" constraint=". &lt;= today()" jr:constraintMsg="Date of birth cannot be in the future."/>
+      <bind nodeset="/data/g_participant/education" type="string" required="true()"/>
+      <bind nodeset="/data/g_participant/education_specify" type="string" relevant=" /data/g_participant/education  = 'not_studied' or  /data/g_participant/education  = 'others'"/>
+      <bind nodeset="/data/g_participant/score_education" type="string" calculate="if( /data/g_participant/education ='not_studied' or  /data/g_participant/education ='elementary_middle', 1, 0)"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_memory_impairment/pmis_image" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_memory_impairment/able_identify" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_screening_test/triangle_thing" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst" type="string" calculate="if( /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result ='more_25', 2, if( /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result ='less_equal_25' or  /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result ='unable', 1, 999))"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_status" type="string" required="true()" relevant=" /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result  != 'na' and  /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result  != 'nc_instruct' and  /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result  != 'nc_dropout'"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_file" type="binary" required="true()" relevant=" /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_status  = 'upload_now' or  /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_status  = 'upload_later'"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_reason" type="string" required="true()" relevant=" /data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_status  = 'not_applicable'"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_mcr/memory_general" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_mcr/thinking_problem" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_mcr/thinking_problem_reason" type="string" required="true()" relevant=" /data/grp_cog5_scale/grp_mcr/thinking_problem  = 'yes'"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_mcr/memory_problem" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_mcr/memory_worse" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_mcr/mcr_cog_flag" type="string" calculate="if(selected( /data/grp_cog5_scale/grp_mcr/memory_general ,'fair') or selected( /data/grp_cog5_scale/grp_mcr/memory_general ,'poor') or selected( /data/grp_cog5_scale/grp_mcr/thinking_problem ,'yes') or selected( /data/grp_cog5_scale/grp_mcr/memory_problem ,'minor') or selected( /data/grp_cog5_scale/grp_mcr/memory_problem ,'major') or selected( /data/grp_cog5_scale/grp_mcr/memory_worse ,'yes_not_worried') or selected( /data/grp_cog5_scale/grp_mcr/memory_worse ,'yes_worried'),1,0)"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_timed_walk/walk_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_timed_walk/walk_intro" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_timed_walk/leg_pain" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_timed_walk/health_restriction" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_timed_walk/assistive_device" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_timed_walk/walk_time_result" type="string" required="true()" relevant=" /data/grp_cog5_scale/grp_timed_walk/health_restriction  = 'none' and  /data/grp_cog5_scale/grp_timed_walk/assistive_device  != 'no'"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag" type="string" calculate="if( /data/grp_cog5_scale/grp_timed_walk/health_restriction ='surgery' or  /data/grp_cog5_scale/grp_timed_walk/health_restriction ='injury' or  /data/grp_cog5_scale/grp_timed_walk/health_restriction ='other' or  /data/grp_cog5_scale/grp_timed_walk/health_restriction ='na' or  /data/grp_cog5_scale/grp_timed_walk/health_restriction ='nc_instruct' or  /data/grp_cog5_scale/grp_timed_walk/health_restriction ='nc_dropout' or  /data/grp_cog5_scale/grp_timed_walk/assistive_device ='no' or  /data/grp_cog5_scale/grp_timed_walk/assistive_device ='na' or  /data/grp_cog5_scale/grp_timed_walk/assistive_device ='nc_instruct' or  /data/grp_cog5_scale/grp_timed_walk/assistive_device ='nc_dropout' or  /data/grp_cog5_scale/grp_timed_walk/walk_time_result ='slow' or  /data/grp_cog5_scale/grp_timed_walk/walk_time_result ='na' or  /data/grp_cog5_scale/grp_timed_walk/walk_time_result ='nc_instruct' or  /data/grp_cog5_scale/grp_timed_walk/walk_time_result ='nc_dropout' or  /data/grp_cog5_scale/grp_timed_walk/walk_time_result ='', 1, 0)"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_pmis_recall/recall_combination" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_pmis_recall/free_recall" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_pmis_recall/cued_recall" type="string" required="true()" relevant=" /data/grp_cog5_scale/grp_pmis_recall/free_recall  != 'na' and  /data/grp_cog5_scale/grp_pmis_recall/free_recall  != 'nc_instruct' and  /data/grp_cog5_scale/grp_pmis_recall/free_recall  != 'nc_dropout'"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/symptom_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_sad" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_anx" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_sleep" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_daytime" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_snore" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_voice" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_mem" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_speak" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/sym_neuro" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_symptom_checklist/score_q13_symptoms" type="string" calculate="if( /data/grp_cog5_scale/grp_symptom_checklist/sym_sad ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_anx ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_sleep ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_daytime ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_snore ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_voice ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_mem ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_speak ='yes',1,0) + if( /data/grp_cog5_scale/grp_symptom_checklist/sym_neuro ='yes',1,0)"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_htn" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_dm" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_ldl" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_head" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_urine" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_alc" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_phys" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_obes" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_hear" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_vis" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_soc" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_smoke" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/risk_dep" type="string" required="false()"/>
+      <bind nodeset="/data/grp_cog5_scale/grp_risk_factors/score_dementia_risk" type="string" calculate="if( /data/grp_cog5_scale/grp_risk_factors/risk_htn ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_dm ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_ldl ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_head ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_urine ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_smoke ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_alc ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_phys ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_obes ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_hear ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_vis ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_dep ='yes',1,0) + if( /data/grp_cog5_scale/grp_risk_factors/risk_soc ='yes',1,0) +  /data/g_participant/score_education "/>
+      <bind nodeset="/data/grp_cog5_scale/calc_free_score" type="string" calculate="if( /data/grp_cog5_scale/grp_pmis_recall/free_recall ='four',8,if( /data/grp_cog5_scale/grp_pmis_recall/free_recall ='three',6,if( /data/grp_cog5_scale/grp_pmis_recall/free_recall ='two',4,if( /data/grp_cog5_scale/grp_pmis_recall/free_recall ='one',2,if( /data/grp_cog5_scale/grp_pmis_recall/free_recall ='zero',0,999)))))"/>
+      <bind nodeset="/data/grp_cog5_scale/calc_cued_score" type="string" calculate="if( /data/grp_cog5_scale/grp_pmis_recall/cued_recall ='four',4,if( /data/grp_cog5_scale/grp_pmis_recall/cued_recall ='three',3,if( /data/grp_cog5_scale/grp_pmis_recall/cued_recall ='two',2,if( /data/grp_cog5_scale/grp_pmis_recall/cued_recall ='one',1,if( /data/grp_cog5_scale/grp_pmis_recall/cued_recall ='zero',0,0)))))"/>
+      <bind nodeset="/data/grp_cog5_scale/score_pmis_total" type="string" calculate="if( /data/grp_cog5_scale/calc_free_score  = 999, 999,  /data/grp_cog5_scale/calc_free_score  +  /data/grp_cog5_scale/calc_cued_score )"/>
+      <bind nodeset="/data/grp_cog5_scale/pmis_flag" type="string" calculate="if( /data/grp_cog5_scale/grp_pmis_recall/recall_combination ='other_combo' or  /data/grp_cog5_scale/grp_picture_based_memory_impairment/able_identify ='no',1,0)"/>
+      <bind nodeset="/data/grp_cog5_scale/PMIS_FINAL_RESULT" type="string" calculate="if( /data/grp_cog5_scale/score_pmis_total =999, 'DROPOUT/UNABLE TO UNDERSTAND', if( /data/grp_cog5_scale/score_pmis_total =8 and  /data/grp_cog5_scale/pmis_flag =0,'NORMAL','POSSIBLE IMPAIRMENT'))"/>
+      <bind nodeset="/data/grp_cog5_scale/PBST_FINAL_RESULT" type="string" calculate="if( /data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst =2, 'NORMAL', if( /data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst =1, 'POSSIBLE COGNITIVE SLOWING', 'DROPOUT/UNABLE TO UNDERSTAND'))"/>
+      <bind nodeset="/data/grp_cog5_scale/MCR_FINAL_RESULT" type="string" calculate="if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =1 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =1,'POSITIVE: Cognitive Complaints &amp; Motor Issue present',if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =0 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =1,'NEGATIVE: Motor Issue present, No Cognitive Complaints',if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =1 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =0,'NEGATIVE: Cognitive Complaints present, Normal Motor',if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =0 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =0,'NEGATIVE: No Cognitive Complaints &amp; Normal Motor','DROPOUT/UNABLE TO UNDERSTAND'))))"/>
+      <bind nodeset="/data/grp_cog5_scale/FINAL_TRIAGE" type="string" calculate="if(string( /data/grp_cog5_scale/pmis_flag )='1' or (number( /data/grp_cog5_scale/score_pmis_total )&lt;8 and number( /data/grp_cog5_scale/score_pmis_total )!=999) or string( /data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst )='1' or (string( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag )='1' and string( /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag )='1'),'FLAG FOR CLINICAL EVALUATION','ROUTINE MONITORING')"/>
+      <bind nodeset="/data/grp_cog5_scale/calc_pmis_meaning" type="string" calculate="if( /data/grp_cog5_scale/score_pmis_total =999, 'The participant was unable to complete this test.', if( /data/grp_cog5_scale/score_pmis_total =8 and  /data/grp_cog5_scale/pmis_flag =0, 'The participant remembered the pictures well — memory appears normal.', 'The participant had difficulty remembering the pictures — this may suggest a memory concern.'))"/>
+      <bind nodeset="/data/grp_cog5_scale/calc_pbst_meaning" type="string" calculate="if( /data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst =2, 'The participant matched symbols quickly — thinking speed appears normal.', if( /data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst =1, 'The participant was a bit slow at matching symbols — this may suggest mild thinking slowness.', 'The participant was unable to complete this test.'))"/>
+      <bind nodeset="/data/grp_cog5_scale/calc_mcr_meaning" type="string" calculate="if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =1 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =1, 'The participant reported memory concerns AND walks slowly — both are risk signs for dementia.', if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =0 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =1, 'The participant walks slowly but does not report memory concerns — walking speed alone is a mild risk sign.', if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =1 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =0, 'The participant reports memory concerns but walks at a normal speed — memory alone is a mild risk sign.', if( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag =0 and  /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag =0, 'No memory concerns and normal walking speed — no risk signs detected.', 'The participant was unable to complete this test.'))))"/>
+      <bind nodeset="/data/grp_cog5_scale/calc_risk_breakdown" type="string" calculate="concat(if( /data/grp_cog5_scale/grp_risk_factors/risk_htn ='yes', 'Hypertension, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_dm ='yes', 'Diabetes, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_ldl ='yes', 'High LDL Cholesterol, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_head ='yes', 'Serious Head Injury, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_urine ='yes', 'Urinary Incontinence, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_alc ='yes', 'Alcohol Use, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_phys ='yes', 'Physical Inactivity, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_obes ='yes', 'Overweight / Obesity, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_hear ='yes', 'Hearing Impairment, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_vis ='yes', 'Visual Impairment, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_soc ='yes', 'Social Isolation, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_smoke ='yes', 'Smoking / Tobacco Use, ', ''), if( /data/grp_cog5_scale/grp_risk_factors/risk_dep ='yes', 'Low Mood (past 2 weeks), ', ''), if(number( /data/g_participant/score_education )&gt;0, 'Low Education Level', ''))"/>
+      <bind nodeset="/data/grp_cog5_scale/results_summary" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/display_pmis" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/display_pbst" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/display_mcr" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/display_risk" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/display_triage" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/calc_overall_conclusion" type="string" calculate="if(string( /data/grp_cog5_scale/pmis_flag )='1' or (number( /data/grp_cog5_scale/score_pmis_total )&lt;8 and number( /data/grp_cog5_scale/score_pmis_total )!=999) or string( /data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst )='1' or (string( /data/grp_cog5_scale/grp_mcr/mcr_cog_flag )='1' and string( /data/grp_cog5_scale/grp_timed_walk/mcr_motor_flag )='1'), 'SCREENED POSITIVE: Higher risk for dementia. Proceed to Stage-2.', 'SCREENED NEGATIVE: Lower risk for dementia.')"/>
+      <bind nodeset="/data/grp_cog5_scale/display_overall" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cog5_scale/Survey_Status_cog5" type="string" required="true()"/>
+      <bind nodeset="/data/grp_cog5_scale/Reason_for_Dropout_cog5" type="string" required="true()" relevant=" /data/grp_cog5_scale/Survey_Status_cog5  = 'dropout___discontinued'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/data/inputs">
+      <label>Participant</label>
+      <group appearance="field-list" ref="/data/inputs/user">
+        <label>User</label>
+      </group>
+      <group appearance="field-list" ref="/data/inputs/contact">
+        <label>Select participant</label>
+        <input ref="/data/inputs/contact/_id" appearance="select-contact type-participant">
+          <label>Select participant</label>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/g_participant">
+      <label>Participant details &amp; consent</label>
+      <select1 ref="/data/g_participant/consent_confirmed">
+        <label>Did the participant (or guardian) provide informed consent for this assessment?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_participant/patient_name_display">
+        <label>Participant Name</label>
+      </input>
+      <input ref="/data/g_participant/assessment_date">
+        <label>Date of assessment</label>
+      </input>
+      <input ref="/data/g_participant/dob">
+        <label>Date of birth</label>
+      </input>
+      <select1 ref="/data/g_participant/education">
+        <label>Education level</label>
+        <itemset nodeset="instance('km1en86')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_participant/education_specify">
+        <label>Please specify education:</label>
+      </input>
+    </group>
+    <group ref="/data/grp_cog5_scale">
+      <label>CoG5 - Memory Screening Battery</label>
+      <group appearance="field-list" ref="/data/grp_cog5_scale/grp_picture_based_memory_impairment">
+        <label>Component-1 (Picture-Based Memory Impairment Screen)</label>
+        <input ref="/data/grp_cog5_scale/grp_picture_based_memory_impairment/pmis_image">
+          <label ref="jr:itext('/data/grp_cog5_scale/grp_picture_based_memory_impairment/pmis_image:label')"/>
+        </input>
+        <select1 ref="/data/grp_cog5_scale/grp_picture_based_memory_impairment/able_identify">
+          <label>Q1. Able to say identify the images and cues.</label>
+          <itemset nodeset="instance('identify_images')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/data/grp_cog5_scale/grp_picture_based_screening_test">
+        <label>Component -2 (Pattern based screening test)</label>
+        <input ref="/data/grp_cog5_scale/grp_picture_based_screening_test/triangle_thing">
+          <label ref="jr:itext('/data/grp_cog5_scale/grp_picture_based_screening_test/triangle_thing:label')"/>
+        </input>
+        <select1 ref="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_result">
+          <label>Q2a. Number of Symbol Matched within 90 seconds</label>
+          <itemset nodeset="instance('pbst_options')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_status">
+          <label>Q2b. Upload Score Sheet</label>
+          <itemset nodeset="instance('pbst_upload_opts')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <upload ref="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_file" mediatype="image/*">
+          <label>Upload File</label>
+        </upload>
+        <input ref="/data/grp_cog5_scale/grp_picture_based_screening_test/pbst_upload_reason">
+          <label>Specify Reason for Not Applicable</label>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/data/grp_cog5_scale/grp_mcr">
+        <label>Component - 3.1(Motoric Cognitive Risk)</label>
+        <select1 ref="/data/grp_cog5_scale/grp_mcr/memory_general">
+          <label>Q3. In general, how is your memory for a person your age?</label>
+          <itemset nodeset="instance('memory_general')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_mcr/thinking_problem">
+          <label>Q4. Aside from memory, have you noticed other problems with your thinking skills?</label>
+          <itemset nodeset="instance('thinking_problem')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <input ref="/data/grp_cog5_scale/grp_mcr/thinking_problem_reason">
+          <label>Please specify reason:</label>
+        </input>
+        <select1 ref="/data/grp_cog5_scale/grp_mcr/memory_problem">
+          <label>Q5. Do you feel you have memory problems?</label>
+          <itemset nodeset="instance('memory_problem')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_mcr/memory_worse">
+          <label>Q6. Do you feel that your memory is becoming worse?</label>
+          <itemset nodeset="instance('memory_worse')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/data/grp_cog5_scale/grp_timed_walk">
+        <label>Component -3.2 (Timed Walk Protocol)</label>
+        <input ref="/data/grp_cog5_scale/grp_timed_walk/walk_note">
+          <label>**Timed Walk Protocol**</label>
+        </input>
+        <input ref="/data/grp_cog5_scale/grp_timed_walk/walk_intro">
+          <label>Next, I would like to test whether you can walk a very short distance comfortably. First, I want to make sure it is safe to carry out the test.</label>
+        </input>
+        <select1 ref="/data/grp_cog5_scale/grp_timed_walk/leg_pain">
+          <label>Q7. Do you have any pain in your legs today?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_timed_walk/health_restriction">
+          <label>Q8. Do you have any problems from recent surgery, injury, or other health conditions?</label>
+          <itemset nodeset="instance('restriction_type')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_timed_walk/assistive_device">
+          <label>Q9. If participant has cane, walker, or other device: Are you able to use it?</label>
+          <itemset nodeset="instance('device_ability')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_timed_walk/walk_time_result">
+          <label>Q10. Timed Walk (2.5m)</label>
+          <itemset nodeset="instance('walk_time_options')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/data/grp_cog5_scale/grp_pmis_recall">
+        <label>Component - 1(Picture Based Memory Impairement Recall)</label>
+        <select1 ref="/data/grp_cog5_scale/grp_pmis_recall/recall_combination">
+          <label>Q11. Earlier I showed you 4 pictures. Tell me as many of the 4 pictures as you can remember.</label>
+          <itemset nodeset="instance('recall_combination')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_pmis_recall/free_recall">
+          <label>Q12. How many pictures were identified FREE RECALL?</label>
+          <itemset nodeset="instance('free_recall')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_pmis_recall/cued_recall">
+          <label>Q13. How many pictures were identified with CUED RECALL? (Cued recall - use semantic cues)</label>
+          <itemset nodeset="instance('cued_recall')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group ref="/data/grp_cog5_scale/grp_symptom_checklist">
+        <label>Symptom Checklist (Optional)</label>
+        <input ref="/data/grp_cog5_scale/grp_symptom_checklist/symptom_note">
+          <label>**Q14. In the last year, are you suffering from any of the below-mentioned symptoms? Tick if yes**</label>
+        </input>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_sad">
+          <label>a) Feeling sad/irritable, feeling less energetic?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_anx">
+          <label>b) Feeling anxious, fearful or restless?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_sleep">
+          <label>c) Sleep disturbance?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_daytime">
+          <label>d) Excessive daytime sleepiness?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_snore">
+          <label>e) Snoring in sleep?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_voice">
+          <label>f) Hearing voices or seeing images when alone?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_mem">
+          <label>g) Problems with memory, way finding?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_speak">
+          <label>h) Difficulty in speaking, understanding?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_symptom_checklist/sym_neuro">
+          <label>i) Any neurological problems (slowness, tremor)?</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <group appearance="field-list" ref="/data/grp_cog5_scale/grp_risk_factors">
+        <label>Dementia Risk Checklist (Optional)</label>
+        <input ref="/data/grp_cog5_scale/grp_risk_factors/risk_note">
+          <label>**Q15. Dementia Risk &amp; Comorbidity Screening Checklist.**</label>
+        </input>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_htn">
+          <label>a. Hypertension</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_dm">
+          <label>b. Diabetes</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_ldl">
+          <label>c. High LDL Cholesterol (dyslipidemia)</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_head">
+          <label>d. Serious head injury (unconscious or hospitalized)</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_urine">
+          <label>e. Urinary Incontinence (loss of bladder control)</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_alc">
+          <label>f. Alcohol use</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_phys">
+          <label>g. Physical Inactivity (lack of regular exercise)</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_obes">
+          <label>h. Overweight/Obesity</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_hear">
+          <label>i. Hearing impairment</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_vis">
+          <label>j. Visual impairment</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_soc">
+          <label>k. Social isolation</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_smoke">
+          <label>l. Current or past smoking/tobacco use</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/grp_cog5_scale/grp_risk_factors/risk_dep">
+          <label>m. From past 2 weeks feeling sad, low mood</label>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="label"/>
+          </itemset>
+        </select1>
+      </group>
+      <input ref="/data/grp_cog5_scale/results_summary">
+        <label>*** TEST COMPLETE: RESULTS ***</label>
+      </input>
+      <input ref="/data/grp_cog5_scale/display_pmis">
+        <label>
+          1. Picture Based Memory Impairment (PMIS) Result:
+          <output value=" /data/grp_cog5_scale/PMIS_FINAL_RESULT "/>
+          (Score:
+          <output value=" /data/grp_cog5_scale/score_pmis_total "/>
+          / 8)
+ 👉
+          <output value=" /data/grp_cog5_scale/calc_pmis_meaning "/>
+        </label>
+      </input>
+      <input ref="/data/grp_cog5_scale/display_pbst">
+        <label>
+          2. Pattern Based Screening (PBST) Result:
+          <output value=" /data/grp_cog5_scale/PBST_FINAL_RESULT "/>
+          (Score:
+          <output value=" /data/grp_cog5_scale/grp_picture_based_screening_test/score_pbst "/>
+          / 2)
+ 👉
+          <output value=" /data/grp_cog5_scale/calc_pbst_meaning "/>
+        </label>
+      </input>
+      <input ref="/data/grp_cog5_scale/display_mcr">
+        <label>
+          3. Motoric Cognitive Risk (MCR) Result:
+          <output value=" /data/grp_cog5_scale/MCR_FINAL_RESULT "/>
+          👉
+          <output value=" /data/grp_cog5_scale/calc_mcr_meaning "/>
+        </label>
+      </input>
+      <input ref="/data/grp_cog5_scale/display_risk">
+        <label>
+          4. Dementia Risk Score:
+          <output value=" /data/grp_cog5_scale/grp_risk_factors/score_dementia_risk "/>
+          / 14
+ Risk Factors Identified:
+          <output value=" /data/grp_cog5_scale/calc_risk_breakdown "/>
+        </label>
+      </input>
+      <input ref="/data/grp_cog5_scale/display_triage">
+        <label> OVERALL TRIAGE: <output value=" /data/grp_cog5_scale/FINAL_TRIAGE "/></label>
+      </input>
+      <input ref="/data/grp_cog5_scale/display_overall">
+        <label> **Overall conclusion :** <output value=" /data/grp_cog5_scale/calc_overall_conclusion "/></label>
+      </input>
+      <select1 ref="/data/grp_cog5_scale/Survey_Status_cog5">
+        <label>Survey Status</label>
+        <hint>Mark if the survey was completed or dropped out midway.</hint>
+        <itemset nodeset="instance('cog5_status')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_cog5_scale/Reason_for_Dropout_cog5">
+        <label>Reason for Dropout / Refusal:</label>
+        <hint>Please explain why the survey was stopped.</hint>
+      </input>
+    </group>
+  </h:body>
+</h:html>

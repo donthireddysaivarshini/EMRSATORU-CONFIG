@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>PHQ-9 Depression Screening</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="phq9" version="2026-11-05 17-00" prefix="J1!phq9!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <patient_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <age/>
+              <phone/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <screened_by/>
+          <screened_by_name/>
+          <g_participant>
+            <consent_confirmed/>
+            <patient_name_display/>
+            <assessment_date/>
+            <dob/>
+          </g_participant>
+          <grp_phq9_scale>
+            <phq9_q1/>
+            <phq9_q2/>
+            <phq9_q3/>
+            <phq9_q4/>
+            <phq9_q5/>
+            <phq9_q6/>
+            <phq9_q7/>
+            <phq9_q8/>
+            <phq9_q9/>
+            <phq9_total/>
+            <phq9_difficulty/>
+            <display_score_phq9/>
+            <Survey_Status_phq9/>
+            <Reason_for_Dropout_phq9/>
+          </grp_phq9_scale>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+          <item>
+            <name>_not_completed___unable_to_und</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="phq_freq">
+        <root>
+          <item>
+            <name>0</name>
+            <label>Not at all</label>
+          </item>
+          <item>
+            <name>1</name>
+            <label>Several days</label>
+          </item>
+          <item>
+            <name>2</name>
+            <label>More than half the days</label>
+          </item>
+          <item>
+            <name>3</name>
+            <label>Nearly every day</label>
+          </item>
+          <item>
+            <name>99</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>98</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>97</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="phq_difficulty">
+        <root>
+          <item>
+            <name>0</name>
+            <label>Not difficult at all</label>
+          </item>
+          <item>
+            <name>1</name>
+            <label>Somewhat difficult</label>
+          </item>
+          <item>
+            <name>2</name>
+            <label>Very difficult</label>
+          </item>
+          <item>
+            <name>3</name>
+            <label>Extremely difficult</label>
+          </item>
+          <item>
+            <name>99</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>98</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>97</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="phq9_status">
+        <root>
+          <item>
+            <name>completed</name>
+            <label>Completed</label>
+          </item>
+          <item>
+            <name>dropout___discontinued</name>
+            <label>Dropout / Discontinued</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/age" type="string"/>
+      <bind nodeset="/data/inputs/contact/phone" type="string"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="coalesce(../inputs/contact/patient_id, ../inputs/contact/_id)"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/screened_by" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/screened_by_name" type="string" calculate="../inputs/user/name"/>
+      <bind nodeset="/data/g_participant/consent_confirmed" type="string" required="true()"/>
+      <bind nodeset="/data/g_participant/patient_name_display" type="string" required="true()" calculate="if(. = '',  /data/patient_name , .)"/>
+      <bind nodeset="/data/g_participant/assessment_date" type="date" required="true()" calculate="if(. = '', today(), .)" constraint=". &lt;= today()" jr:constraintMsg="Date of assessment cannot be in the future."/>
+      <bind nodeset="/data/g_participant/dob" type="date" required="true()" constraint=". &lt;= today()" jr:constraintMsg="Date of birth cannot be in the future."/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q1" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q2" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q3" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q4" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q5" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q6" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q7" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q8" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_q9" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_total" type="string" calculate="if(number( /data/grp_phq9_scale/phq9_q1 )&lt;90, number( /data/grp_phq9_scale/phq9_q1 ), 0) + if(number( /data/grp_phq9_scale/phq9_q2 )&lt;90, number( /data/grp_phq9_scale/phq9_q2 ), 0) + if(number( /data/grp_phq9_scale/phq9_q3 )&lt;90, number( /data/grp_phq9_scale/phq9_q3 ), 0) + if(number( /data/grp_phq9_scale/phq9_q4 )&lt;90, number( /data/grp_phq9_scale/phq9_q4 ), 0) + if(number( /data/grp_phq9_scale/phq9_q5 )&lt;90, number( /data/grp_phq9_scale/phq9_q5 ), 0) + if(number( /data/grp_phq9_scale/phq9_q6 )&lt;90, number( /data/grp_phq9_scale/phq9_q6 ), 0) + if(number( /data/grp_phq9_scale/phq9_q7 )&lt;90, number( /data/grp_phq9_scale/phq9_q7 ), 0) + if(number( /data/grp_phq9_scale/phq9_q8 )&lt;90, number( /data/grp_phq9_scale/phq9_q8 ), 0) + if(number( /data/grp_phq9_scale/phq9_q9 )&lt;90, number( /data/grp_phq9_scale/phq9_q9 ), 0)"/>
+      <bind nodeset="/data/grp_phq9_scale/phq9_difficulty" type="string" required="false()" relevant=" /data/grp_phq9_scale/phq9_total  &gt; 0"/>
+      <bind nodeset="/data/grp_phq9_scale/display_score_phq9" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_phq9_scale/Survey_Status_phq9" type="string" required="true()"/>
+      <bind nodeset="/data/grp_phq9_scale/Reason_for_Dropout_phq9" type="string" required="true()" relevant=" /data/grp_phq9_scale/Survey_Status_phq9  = 'dropout___discontinued'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/data/inputs">
+      <label>Participant</label>
+      <group appearance="field-list" ref="/data/inputs/user">
+        <label>User</label>
+      </group>
+      <group appearance="field-list" ref="/data/inputs/contact">
+        <label>Select participant</label>
+        <input ref="/data/inputs/contact/_id" appearance="select-contact type-participant">
+          <label>Select participant</label>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/g_participant">
+      <label>Participant details &amp; consent</label>
+      <select1 ref="/data/g_participant/consent_confirmed">
+        <label>Did the participant (or guardian) provide informed consent for this assessment?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_participant/patient_name_display">
+        <label>Participant Name</label>
+      </input>
+      <input ref="/data/g_participant/assessment_date">
+        <label>Date of assessment</label>
+      </input>
+      <input ref="/data/g_participant/dob">
+        <label>Date of birth</label>
+      </input>
+    </group>
+    <group ref="/data/grp_phq9_scale">
+      <label>PHQ-9 Depression Screening</label>
+      <select1 ref="/data/grp_phq9_scale/phq9_q1">
+        <label>1. Little interest or pleasure in doing things</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q2">
+        <label>2. Feeling down, depressed, or hopeless</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q3">
+        <label>3. Trouble falling or staying asleep, or sleeping too much</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q4">
+        <label>4. Feeling tired or having little energy</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q5">
+        <label>5. Poor appetite or overeating</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q6">
+        <label>6. Feeling bad about yourself — or that you are a failure or have let yourself or your family down</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q7">
+        <label>7. Trouble concentrating on things, such as reading the newspaper or watching television</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q8">
+        <label>8. Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_q9">
+        <label>9. Thoughts that you would be better off dead or of hurting yourself in some way</label>
+        <itemset nodeset="instance('phq_freq')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_phq9_scale/phq9_difficulty">
+        <label>If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</label>
+        <itemset nodeset="instance('phq_difficulty')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_phq9_scale/display_score_phq9">
+        <label>
+          **PHQ-9 (Depression) Score:**
+          <output value=" /data/grp_phq9_scale/phq9_total "/>
+          / 27
+
+**Interpretation:** Scores 5-9 mild depression, 10-14 moderate depression, 15-19 moderately severe depression, 20-27 severe depression.
+        </label>
+      </input>
+      <select1 ref="/data/grp_phq9_scale/Survey_Status_phq9">
+        <label>Survey Status</label>
+        <hint>Mark if the survey was completed or dropped out midway.</hint>
+        <itemset nodeset="instance('phq9_status')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_phq9_scale/Reason_for_Dropout_phq9">
+        <label>Reason for Dropout / Refusal:</label>
+        <hint>Please explain why the survey was stopped.</hint>
+      </input>
+    </group>
+  </h:body>
+</h:html>

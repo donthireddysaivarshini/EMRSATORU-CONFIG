@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Geriatric Depression Scale (GDS-15)</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="gds15" version="2026-11-05 17-00" prefix="J1!gds15!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <patient_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <age/>
+              <phone/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <screened_by/>
+          <screened_by_name/>
+          <g_participant>
+            <consent_confirmed/>
+            <patient_name_display/>
+            <assessment_date/>
+            <dob/>
+          </g_participant>
+          <grp_gds15_scale>
+            <gds15_instructions/>
+            <gds_q1/>
+            <gds_q2/>
+            <gds_q3/>
+            <gds_q4/>
+            <gds_q5/>
+            <gds_q6/>
+            <gds_q7/>
+            <gds_q8/>
+            <gds_q9/>
+            <gds_q10/>
+            <gds_q11/>
+            <gds_q12/>
+            <gds_q13/>
+            <gds_q14/>
+            <gds_q15/>
+            <score_gds_q1/>
+            <score_gds_q2/>
+            <score_gds_q3/>
+            <score_gds_q4/>
+            <score_gds_q5/>
+            <score_gds_q6/>
+            <score_gds_q7/>
+            <score_gds_q8/>
+            <score_gds_q9/>
+            <score_gds_q10/>
+            <score_gds_q11/>
+            <score_gds_q12/>
+            <score_gds_q13/>
+            <score_gds_q14/>
+            <score_gds_q15/>
+            <gds15_total/>
+            <display_score_gds15/>
+            <Survey_Status_gds15/>
+            <Reason_for_Dropout_gds15/>
+          </grp_gds15_scale>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+          <item>
+            <name>_not_completed___unable_to_und</name>
+            <label>Not completed - Unable to understand / answer (comprehension barrier)</label>
+          </item>
+          <item>
+            <name>nc_instruct</name>
+            <label>Not completed - Unable to follow instructions (could not complete tasks as instructed)</label>
+          </item>
+          <item>
+            <name>nc_dropout</name>
+            <label>Not completed - Dropout (left early / discontinued)</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="gds15_status">
+        <root>
+          <item>
+            <name>completed</name>
+            <label>Completed</label>
+          </item>
+          <item>
+            <name>dropout___discontinued</name>
+            <label>Dropout / Discontinued</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/age" type="string"/>
+      <bind nodeset="/data/inputs/contact/phone" type="string"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="coalesce(../inputs/contact/patient_id, ../inputs/contact/_id)"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/screened_by" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/screened_by_name" type="string" calculate="../inputs/user/name"/>
+      <bind nodeset="/data/g_participant/consent_confirmed" type="string" required="true()"/>
+      <bind nodeset="/data/g_participant/patient_name_display" type="string" required="true()" calculate="if(. = '',  /data/patient_name , .)"/>
+      <bind nodeset="/data/g_participant/assessment_date" type="date" required="true()" calculate="if(. = '', today(), .)" constraint=". &lt;= today()" jr:constraintMsg="Date of assessment cannot be in the future."/>
+      <bind nodeset="/data/g_participant/dob" type="date" required="true()" constraint=". &lt;= today()" jr:constraintMsg="Date of birth cannot be in the future."/>
+      <bind nodeset="/data/grp_gds15_scale/gds15_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q1" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q2" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q3" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q4" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q5" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q6" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q7" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q8" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q9" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q10" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q11" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q12" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q13" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q14" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/gds_q15" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q1" type="string" calculate="if( /data/grp_gds15_scale/gds_q1 ='no',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q2" type="string" calculate="if( /data/grp_gds15_scale/gds_q2 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q3" type="string" calculate="if( /data/grp_gds15_scale/gds_q3 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q4" type="string" calculate="if( /data/grp_gds15_scale/gds_q4 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q5" type="string" calculate="if( /data/grp_gds15_scale/gds_q5 ='no',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q6" type="string" calculate="if( /data/grp_gds15_scale/gds_q6 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q7" type="string" calculate="if( /data/grp_gds15_scale/gds_q7 ='no',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q8" type="string" calculate="if( /data/grp_gds15_scale/gds_q8 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q9" type="string" calculate="if( /data/grp_gds15_scale/gds_q9 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q10" type="string" calculate="if( /data/grp_gds15_scale/gds_q10 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q11" type="string" calculate="if( /data/grp_gds15_scale/gds_q11 ='no',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q12" type="string" calculate="if( /data/grp_gds15_scale/gds_q12 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q13" type="string" calculate="if( /data/grp_gds15_scale/gds_q13 ='no',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q14" type="string" calculate="if( /data/grp_gds15_scale/gds_q14 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/score_gds_q15" type="string" calculate="if( /data/grp_gds15_scale/gds_q15 ='yes',1,0)"/>
+      <bind nodeset="/data/grp_gds15_scale/gds15_total" type="string" calculate=" /data/grp_gds15_scale/score_gds_q1  +  /data/grp_gds15_scale/score_gds_q2  +  /data/grp_gds15_scale/score_gds_q3  +  /data/grp_gds15_scale/score_gds_q4  +  /data/grp_gds15_scale/score_gds_q5  +  /data/grp_gds15_scale/score_gds_q6  +  /data/grp_gds15_scale/score_gds_q7  +  /data/grp_gds15_scale/score_gds_q8  +  /data/grp_gds15_scale/score_gds_q9  +  /data/grp_gds15_scale/score_gds_q10  +  /data/grp_gds15_scale/score_gds_q11  +  /data/grp_gds15_scale/score_gds_q12  +  /data/grp_gds15_scale/score_gds_q13  +  /data/grp_gds15_scale/score_gds_q14  +  /data/grp_gds15_scale/score_gds_q15 "/>
+      <bind nodeset="/data/grp_gds15_scale/display_score_gds15" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_gds15_scale/Survey_Status_gds15" type="string" required="true()"/>
+      <bind nodeset="/data/grp_gds15_scale/Reason_for_Dropout_gds15" type="string" required="true()" relevant=" /data/grp_gds15_scale/Survey_Status_gds15  = 'dropout___discontinued'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/data/inputs">
+      <label>Participant</label>
+      <group appearance="field-list" ref="/data/inputs/user">
+        <label>User</label>
+      </group>
+      <group appearance="field-list" ref="/data/inputs/contact">
+        <label>Select participant</label>
+        <input ref="/data/inputs/contact/_id" appearance="select-contact type-participant">
+          <label>Select participant</label>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/g_participant">
+      <label>Participant details &amp; consent</label>
+      <select1 ref="/data/g_participant/consent_confirmed">
+        <label>Did the participant (or guardian) provide informed consent for this assessment?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_participant/patient_name_display">
+        <label>Participant Name</label>
+      </input>
+      <input ref="/data/g_participant/assessment_date">
+        <label>Date of assessment</label>
+      </input>
+      <input ref="/data/g_participant/dob">
+        <label>Date of birth</label>
+      </input>
+    </group>
+    <group ref="/data/grp_gds15_scale">
+      <label>Geriatric Depression Scale (GDS-15)</label>
+      <input ref="/data/grp_gds15_scale/gds15_instructions">
+        <label>**Instructions:** Circle/select the answer that best describes how the participant felt over the past week.</label>
+      </input>
+      <select1 ref="/data/grp_gds15_scale/gds_q1">
+        <label>1. Are you basically satisfied with your life?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q2">
+        <label>2. Have you dropped many of your activities and interests?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q3">
+        <label>3. Do you feel that your life is empty?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q4">
+        <label>4. Do you often get bored?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q5">
+        <label>5. Are you in good spirits most of the time?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q6">
+        <label>6. Are you afraid that something bad is going to happen to you?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q7">
+        <label>7. Do you feel happy most of the time?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q8">
+        <label>8. Do you often feel helpless?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q9">
+        <label>9. Do you prefer to stay at home, rather than going out and doing things?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q10">
+        <label>10. Do you feel that you have more problems with memory than most?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q11">
+        <label>11. Do you think it is wonderful to be alive now?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q12">
+        <label>12. Do you feel worthless the way you are now?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q13">
+        <label>13. Do you feel full of energy?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q14">
+        <label>14. Do you feel that your situation is hopeless?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/grp_gds15_scale/gds_q15">
+        <label>15. Do you think that most people are better off than you are?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_gds15_scale/display_score_gds15">
+        <label>
+          **Geriatric Depression Scale (GDS-15) Score:**
+          <output value=" /data/grp_gds15_scale/gds15_total "/>
+          / 15
+
+**Interpretation:** A score of 5 or more suggests depression (0-4 normal, 5-8 mild, 9-11 moderate, 12-15 severe).
+        </label>
+      </input>
+      <select1 ref="/data/grp_gds15_scale/Survey_Status_gds15">
+        <label>Survey Status</label>
+        <hint>Mark if the survey was completed or dropped out midway.</hint>
+        <itemset nodeset="instance('gds15_status')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_gds15_scale/Reason_for_Dropout_gds15">
+        <label>Reason for Dropout / Refusal:</label>
+        <hint>Please explain why the survey was stopped.</hint>
+      </input>
+    </group>
+  </h:body>
+</h:html>
