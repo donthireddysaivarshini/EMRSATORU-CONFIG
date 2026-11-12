@@ -235,6 +235,58 @@ function ddstDoc() {
   };
 }
 
+function mocaBDoc() {
+  return {
+    _id: 'report-moca-b-1',
+    form: 'moca_b',
+    type: 'data_record',
+    content_type: 'xml',
+    reported_date: Date.parse('2026-11-12T09:00:00Z'),
+    fields: {
+      patient_uuid: 'uuid-9999',
+      patient_id: 'CR-009',
+      patient_name: 'Lakshmi',
+      patient_sex: 'female',
+      patient_age: '68',
+      patient_phone: '+919900000000',
+      patient_education: 'primary',
+      g_consent: { consent_reconfirmed: 'yes', education_years: '3', is_illiterate: 'yes' },
+      g_executive: { trail_making: 'yes' },
+      g_memory: {
+        memory_words: '',
+        mem_trial1: { mem_t1_rose: 'yes', mem_t1_chair: 'no' },
+        mem_trial2: { mem_t2_rose: 'yes', mem_t2_chair: 'yes' },
+      },
+      g_fluency: { fluency_count: '13' },
+      g_orientation: {
+        orientation_time: 'yes', orientation_day: 'yes', orientation_month: 'yes',
+        orientation_year: 'yes', orientation_place: 'yes', orientation_city: 'yes',
+      },
+      g_calculation: { calculation_score_select: '3' },
+      g_abstraction: { abstraction_1: 'yes', abstraction_2: 'yes', abstraction_3: 'no' },
+      g_delayed_recall: {
+        delayed_rose: 'yes',
+        delayed_chair: 'no', delayed_chair_cat: 'yes',
+      },
+      g_visuoperception: { vp_scissors: 'yes', vp_tshirt: 'no' },
+      visuoperception_count: '9',
+      g_naming: { naming_zebra: 'yes', naming_peacock: 'dk', naming_tiger: 'yes', naming_butterfly: 'no' },
+      g_attention: { attention_white_errors: '0', attention_black_errors: '2' },
+      mocab_executive_total: '1', mocab_fluency_total: '2',
+      mocab_orientation_total: '6', mocab_calculation_total: '3',
+      mocab_abstraction_total: '2', mocab_memory_total: '1',
+      mocab_visuoperception_total: '3', mocab_naming_total: '2',
+      mocab_attention_white_score: '1', mocab_attention_black_score: '2',
+      mocab_attention_total: '3', mocab_raw_total: '23',
+      mocab_education_adj: '1', mocab_literacy_adj: '1',
+      mocab_total_score: '25', mocab_interpretation: 'impaired',
+      g_admin: { administered_by: 'Varshini', assessment_datetime: '2026-11-12', clinical_notes: 'Cooperative.' },
+    },
+    hidden_fields: ['inputs'],
+    contact: { _id: 'contact-abc', name: 'Varshini' },
+  };
+}
+
 function mocaDoc() {
   return {
     _id: 'report-moca-1',
@@ -438,6 +490,27 @@ async function main() {
     check('instruction fields hidden', !labels.includes('report.moca_assessment.g_visuospatial.trail_making_inst'));
     check('patient internal fields hidden', !labels.includes('report.moca_assessment.patient_uuid'));
     check('duplicate delayed total hidden', !labels.includes('report.moca_assessment.moca_delayed_total'));
+  }
+
+  console.log('\n== MoCA-B ==');
+  {
+    const out = await svc.format(mocaBDoc());
+    const rows = flattenRows(out.fields);
+    const labels = rows.map((r) => r.label);
+    const byLabel = Object.fromEntries(labels.map((l, i) => [l, rows[i]]));
+
+    check('section labels present', !!byLabel['report.moca_b.g_executive']);
+    checkAllTranslated('every label has an English translation', labels, 'moca_b');
+    check('yes resolved', byLabel['report.moca_b.g_executive.trail_making'] && byLabel['report.moca_b.g_executive.trail_making'].value === 'Yes');
+    check('dk resolved (naming_peacock)', byLabel['report.moca_b.g_naming.naming_peacock'] && byLabel['report.moca_b.g_naming.naming_peacock'].value === "Don't know / Not assessed", String(byLabel['report.moca_b.g_naming.naming_peacock'] && byLabel['report.moca_b.g_naming.naming_peacock'].value));
+    check('calculation choice resolved', byLabel['report.moca_b.g_calculation.calculation_score_select'] && byLabel['report.moca_b.g_calculation.calculation_score_select'].value === '3 or 4 correct combinations (3 pts)');
+    check('delayed cue resolved', byLabel['report.moca_b.g_delayed_recall.delayed_chair_cat'] && byLabel['report.moca_b.g_delayed_recall.delayed_chair_cat'].value === 'Recalled with cue');
+    check('total score visible', byLabel['report.moca_b.mocab_total_score'] && byLabel['report.moca_b.mocab_total_score'].value === '25');
+    check('interpretation visible', byLabel['report.moca_b.mocab_interpretation'] && byLabel['report.moca_b.mocab_interpretation'].value === 'impaired');
+    check('clinical_notes visible', byLabel['report.moca_b.g_admin.clinical_notes'] && byLabel['report.moca_b.g_admin.clinical_notes'].value === 'Cooperative.');
+    check('instruction fields hidden', !labels.includes('report.moca_b.g_executive.trail_making_inst') && !labels.includes('report.moca_b.g_memory.memory_inst_trial1'));
+    check('score_summary_note hidden', !labels.includes('report.moca_b.g_admin.score_summary_note'));
+    check('patient internal fields hidden', !labels.includes('report.moca_b.patient_uuid'));
   }
 
   console.log('\n== stock behavior preserved (non-configured form) ==');

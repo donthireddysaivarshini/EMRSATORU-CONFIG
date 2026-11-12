@@ -1,0 +1,1667 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>MoCA-B (Basic)</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yesno-0">
+            <value>Yes</value>
+          </text>
+          <text id="yesno-1">
+            <value>No</value>
+          </text>
+          <text id="naming_score-0">
+            <value>Correct</value>
+          </text>
+          <text id="naming_score-1">
+            <value>Incorrect</value>
+          </text>
+          <text id="naming_score-2">
+            <value>Don't know / Not assessed</value>
+          </text>
+          <text id="calc_score-0">
+            <value>0 correct combinations (0 pts)</value>
+          </text>
+          <text id="calc_score-1">
+            <value>1 correct combination (1 pt)</value>
+          </text>
+          <text id="calc_score-2">
+            <value>2 correct combinations (2 pts)</value>
+          </text>
+          <text id="calc_score-3">
+            <value>3 or 4 correct combinations (3 pts)</value>
+          </text>
+          <text id="delayed_cue-0">
+            <value>Recalled with cue</value>
+          </text>
+          <text id="delayed_cue-1">
+            <value>Not recalled even with cue</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>Participant</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>Participant</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Select participant</value>
+          </text>
+          <text id="/data/g_consent:label">
+            <value>Consent &amp; Participant Education</value>
+          </text>
+          <text id="/data/g_consent/consent_reconfirmed:label">
+            <value>Consent re-confirmed for the MoCA-B assessment?</value>
+          </text>
+          <text id="/data/g_consent/education_years:jr:constraintMsg">
+            <value>Enter years between 0 and 30.</value>
+          </text>
+          <text id="/data/g_consent/education_years:label">
+            <value>Years of formal education</value>
+          </text>
+          <text id="/data/g_consent/education_years:hint">
+            <value> Registration says: "<output value=" /data/patient_education "/>". Enter completed years of schooling (0-30). +1 point is added if &lt; 4 years (capped at 30).</value>
+          </text>
+          <text id="/data/g_consent/is_illiterate:label">
+            <value>Is the participant considered illiterate?</value>
+          </text>
+          <text id="/data/g_consent/is_illiterate:hint">
+            <value>Inability to read or write fluently in daily living. +1 point is added regardless of years of education (capped at 30).</value>
+          </text>
+          <text id="/data/g_consent/start_time:label">
+            <value>Start time (record before administering Executive Function)</value>
+          </text>
+          <text id="/data/g_consent/start_time:hint">
+            <value>Optional: record start time (hh:mm).</value>
+          </text>
+          <text id="/data/g_executive:label">
+            <value>Executive Function (Alternating Trail Making)</value>
+          </text>
+          <text id="/data/g_executive/trail_making_inst:label">
+            <value>Ask the subject to draw a line alternating between a square with a number and a square with dots in increasing order: 1 -&gt; (1 dot) -&gt; 2 -&gt; (2 dots) -&gt; 3 -&gt; (3 dots) -&gt; 4 -&gt; (4 dots) -&gt; 5 -&gt; (5 dots) -&gt; 6 -&gt; (6 dots). 1 point only if completed on first attempt without any errors or self-corrections.</value>
+            <value form="image">jr://images/trail_making.png</value>
+          </text>
+          <text id="/data/g_executive/trail_making:label">
+            <value>Trail Making (1 -&gt; 1 dot -&gt; ... -&gt; 6 -&gt; 6 dots, zero errors/self-corrections)</value>
+          </text>
+          <text id="/data/g_memory:label">
+            <value>Immediate Recall (No point)</value>
+          </text>
+          <text id="/data/g_memory/memory_inst_trial1:label">
+            <value>Read the 5 words at 1 word/second. Perform 2 trials even if the 1st trial is successful. No points are scored for Trials 1 and 2.</value>
+          </text>
+          <text id="/data/g_memory/memory_words:label">
+            <value>Words: ROSE, CHAIR, HAND, BLUE, SPOON</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1:label">
+            <value>Trial 1</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_rose:label">
+            <value>ROSE (Trial 1)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_chair:label">
+            <value>CHAIR (Trial 1)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_hand:label">
+            <value>HAND (Trial 1)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_blue:label">
+            <value>BLUE (Trial 1)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_spoon:label">
+            <value>SPOON (Trial 1)</value>
+          </text>
+          <text id="/data/g_memory/memory_inst_trial2:label">
+            <value>Read the same 5 words a second time. Inform the subject that they will be asked to recall these words again at the end of the test.</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2:label">
+            <value>Trial 2</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_rose:label">
+            <value>ROSE (Trial 2)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_chair:label">
+            <value>CHAIR (Trial 2)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_hand:label">
+            <value>HAND (Trial 2)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_blue:label">
+            <value>BLUE (Trial 2)</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_spoon:label">
+            <value>SPOON (Trial 2)</value>
+          </text>
+          <text id="/data/g_fluency:label">
+            <value>Fluency</value>
+          </text>
+          <text id="/data/g_fluency/fluency_inst:label">
+            <value>Ask the subject to name as many FRUITS as possible in 1 minute (60 seconds). Record all words to ensure repeated words are not counted. Scoring: &gt;=13 fruits = 2 pts; 8-12 fruits = 1 pt; &lt;=7 fruits = 0 pts.</value>
+          </text>
+          <text id="/data/g_fluency/fluency_words:label">
+            <value>Recorded fruit names (optional)</value>
+          </text>
+          <text id="/data/g_fluency/fluency_words:hint">
+            <value>List named fruits to track repeats.</value>
+          </text>
+          <text id="/data/g_fluency/fluency_count:jr:constraintMsg">
+            <value>Enter a count between 0 and 100.</value>
+          </text>
+          <text id="/data/g_fluency/fluency_count:label">
+            <value>Total unique FRUITS named in 1 minute (N)</value>
+          </text>
+          <text id="/data/g_fluency/fluency_count:hint">
+            <value>0-7 = 0 pts, 8-12 = 1 pt, &gt;=13 = 2 pts.</value>
+          </text>
+          <text id="/data/g_orientation:label">
+            <value>Orientation</value>
+          </text>
+          <text id="/data/g_orientation/orientation_inst:label">
+            <value>Without looking at a watch, ask approximate time (within +/- 2 hours accepted). Then ask day of the week, month, year, name of this place (hospital/clinic/office), and city.</value>
+          </text>
+          <text id="/data/g_orientation/orientation_time:label">
+            <value>Time (+/- 2 hr) correct?</value>
+          </text>
+          <text id="/data/g_orientation/orientation_day:label">
+            <value>Day of week correct?</value>
+          </text>
+          <text id="/data/g_orientation/orientation_month:label">
+            <value>Month correct?</value>
+          </text>
+          <text id="/data/g_orientation/orientation_year:label">
+            <value>Year correct?</value>
+          </text>
+          <text id="/data/g_orientation/orientation_place:label">
+            <value>Place (hospital/clinic/office) correct?</value>
+          </text>
+          <text id="/data/g_orientation/orientation_city:label">
+            <value>City correct?</value>
+          </text>
+          <text id="/data/g_calculation:label">
+            <value>Calculation</value>
+          </text>
+          <text id="/data/g_calculation/calculation_inst:label">
+            <value>Provide ways to pay using 1 dollar coins/bills, 5 dollar and 10 dollar bills for an object that costs exactly "13 Dollars" without asking for change. Scoring: 3 or 4 correct ways = 3 pts; 2 ways = 2 pts; 1 way = 1 pt; 0 ways = 0 pts.</value>
+          </text>
+          <text id="/data/g_calculation/calc_combinations:label">
+            <value>Recorded payment combinations (optional)</value>
+          </text>
+          <text id="/data/g_calculation/calc_combinations:hint">
+            <value>e.g. 10+1+1+1, 5+5+1+1+1, 5+8x1</value>
+          </text>
+          <text id="/data/g_calculation/calculation_score_select:label">
+            <value>Number of correct combinations for 13 Dollars</value>
+          </text>
+          <text id="/data/g_abstraction:label">
+            <value>Abstraction</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_inst_practice:label">
+            <value>Practice (not scored): "To which category do an orange and a banana belong?" (Fruit). Administer the 3 scored pairs below (one prompt permitted per item if first response is concrete).</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_1:label">
+            <value>train - boat (acceptable: means of transportation, travelling, vehicles; NOT iron/engines/fuel)</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_2:label">
+            <value>north - south (acceptable: cardinal directions, cardinal points, directions, hemispheres, regions)</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_3:label">
+            <value>drum - flute (acceptable: musical instruments; NOT wood/sound)</value>
+          </text>
+          <text id="/data/g_delayed_recall:label">
+            <value>Delayed Recall</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_inst:label">
+            <value>1 point is allocated ONLY for words recalled with No cue (free recall). Category cue and multiple-choice cue responses are recorded for clinical info (0 points).</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_rose:label">
+            <value>ROSE - Recall with No cue (1 pt if Yes)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_rose_cat:label">
+            <value>ROSE - Category cue (type of flower)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_rose_mc:label">
+            <value>ROSE - Multiple choice cue (rose / daisy / tulip)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_chair:label">
+            <value>CHAIR - Recall with No cue (1 pt if Yes)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_chair_cat:label">
+            <value>CHAIR - Category cue (type of furniture)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_chair_mc:label">
+            <value>CHAIR - Multiple choice cue (table / chair / bed)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_hand:label">
+            <value>HAND - Recall with No cue (1 pt if Yes)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_hand_cat:label">
+            <value>HAND - Category cue (body part)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_hand_mc:label">
+            <value>HAND - Multiple choice cue (foot / hand / knee)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_blue:label">
+            <value>BLUE - Recall with No cue (1 pt if Yes)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_blue_cat:label">
+            <value>BLUE - Category cue (colour)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_blue_mc:label">
+            <value>BLUE - Multiple choice cue (blue / brown / red)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_spoon:label">
+            <value>SPOON - Recall with No cue (1 pt if Yes)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_spoon_cat:label">
+            <value>SPOON - Category cue (kitchen instrument)</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_spoon_mc:label">
+            <value>SPOON - Multiple choice cue (fork / spoon / knife)</value>
+          </text>
+          <text id="/data/g_visuoperception:label">
+            <value>Visuoperception</value>
+          </text>
+          <text id="/data/g_visuoperception/visuoperception_inst:label">
+            <value>Identify as many superimposed drawings as possible within 60 seconds (do not rotate picture). Scoring: 9-10 objects = 3 pts; 6-8 = 2 pts; 4-5 = 1 pt; 0-3 = 0 pts.</value>
+            <value form="image">jr://images/visuoperception.png</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_scissors:label">
+            <value>1. scissors</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_tshirt:label">
+            <value>2. T-shirt</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_banana:label">
+            <value>3. banana</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_lamp:label">
+            <value>4. lamp</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_candle:label">
+            <value>5. candle</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_watch:label">
+            <value>6. watch</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_cup:label">
+            <value>7. cup</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_leaf:label">
+            <value>8. leaf</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_key:label">
+            <value>9. key</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_spoon:label">
+            <value>10. spoon</value>
+          </text>
+          <text id="/data/g_naming:label">
+            <value>Naming</value>
+          </text>
+          <text id="/data/g_naming/naming_inst:label">
+            <value>Point to each animal and say: "Tell me the name of this animal." 1 point awarded per exact animal.</value>
+            <value form="image">jr://images/naming.png</value>
+          </text>
+          <text id="/data/g_naming/naming_zebra:label">
+            <value>Animal 1: Zebra (Horse/donkey NOT accepted)</value>
+          </text>
+          <text id="/data/g_naming/naming_peacock:label">
+            <value>Animal 2: Peacock (Bird/chicken/other bird NOT accepted)</value>
+          </text>
+          <text id="/data/g_naming/naming_tiger:label">
+            <value>Animal 3: Tiger (Cheetah/leopard/black tiger NOT accepted)</value>
+          </text>
+          <text id="/data/g_naming/naming_butterfly:label">
+            <value>Animal 4: Butterfly (Insect/other insect NOT accepted)</value>
+          </text>
+          <text id="/data/g_attention:label">
+            <value>Attention</value>
+          </text>
+          <text id="/data/g_attention/attention_white_inst:label">
+            <value>White background: Ask subject to read out loud numbers in the CIRCLES only (do not read squares or triangles). Error = wrong shape, omission, or incorrect order. Scoring: &lt;=1 error = 1 pt; &gt;=2 errors = 0 pts.</value>
+            <value form="image">jr://images/attention_white.png</value>
+          </text>
+          <text id="/data/g_attention/attention_white_errors:jr:constraintMsg">
+            <value>Enter errors between 0 and 50.</value>
+          </text>
+          <text id="/data/g_attention/attention_white_errors:label">
+            <value>White background - Number of errors (&lt;=1 error = 1 pt; &gt;=2 = 0 pts)</value>
+          </text>
+          <text id="/data/g_attention/attention_black_inst:label">
+            <value>Black background: Ask subject to read out loud numbers in the CIRCLES and SQUARES across both rows (do not read triangles). Scoring: &lt;=2 errors = 2 pts; 3 errors = 1 pt; &gt;=4 errors = 0 pts.</value>
+            <value form="image">jr://images/attention_black.png</value>
+          </text>
+          <text id="/data/g_attention/attention_black_errors:jr:constraintMsg">
+            <value>Enter errors between 0 and 50.</value>
+          </text>
+          <text id="/data/g_attention/attention_black_errors:label">
+            <value>Black background - Number of errors (&lt;=2 = 2 pts; 3 = 1 pt; &gt;=4 = 0 pts)</value>
+          </text>
+          <text id="/data/g_attention/end_time:label">
+            <value>End time (after completing Attention)</value>
+          </text>
+          <text id="/data/g_attention/end_time:hint">
+            <value>Optional: record end time (hh:mm).</value>
+          </text>
+          <text id="/data/g_admin:label">
+            <value>Administration &amp; Timing</value>
+          </text>
+          <text id="/data/g_admin/total_time_min:jr:constraintMsg">
+            <value>Enter minutes between 0 and 180.</value>
+          </text>
+          <text id="/data/g_admin/total_time_min:label">
+            <value>Total administration time - minutes (optional)</value>
+          </text>
+          <text id="/data/g_admin/total_time_sec:jr:constraintMsg">
+            <value>Enter seconds between 0 and 59.</value>
+          </text>
+          <text id="/data/g_admin/total_time_sec:label">
+            <value>Total administration time - seconds (optional)</value>
+          </text>
+          <text id="/data/g_admin/administered_by:label">
+            <value>Administered by (staff name)</value>
+          </text>
+          <text id="/data/g_admin/assessment_datetime:label">
+            <value>Date &amp; Time of Assessment</value>
+          </text>
+          <text id="/data/g_admin/clinical_notes:label">
+            <value>Clinical notes (optional)</value>
+          </text>
+          <text id="/data/g_admin/score_summary_note:label">
+            <value> **MoCA-B Total Score:** <output value=" /data/mocab_total_score "/> / 30 (Raw: <output value=" /data/mocab_raw_total "/> + Education &lt;4y: +<output value=" /data/mocab_education_adj "/> + Illiterate: +<output value=" /data/mocab_literacy_adj "/>)</value>
+          </text>
+          <text id="/data/g_moca_b_sheets:label">
+            <value>MoCA-B sheet / supporting documents</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets:label">
+            <value>MoCA-B sheet upload</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets:hint">
+            <value>Upload the completed paper MoCA-B sheet (photo or PDF).</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image:label">
+            <value>Upload MoCA-B sheet photo</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf:label">
+            <value>Upload MoCA-B sheet PDF</value>
+          </text>
+        </translation>
+        <translation lang="te">
+          <text id="yesno-0">
+            <value>అవును</value>
+          </text>
+          <text id="yesno-1">
+            <value>కాదు</value>
+          </text>
+          <text id="naming_score-0">
+            <value>సరిగ్గా</value>
+          </text>
+          <text id="naming_score-1">
+            <value>తప్పు</value>
+          </text>
+          <text id="naming_score-2">
+            <value>తెలియదు</value>
+          </text>
+          <text id="calc_score-0">
+            <value>0 సరైనవి (0)</value>
+          </text>
+          <text id="calc_score-1">
+            <value>1 సరైనది (1)</value>
+          </text>
+          <text id="calc_score-2">
+            <value>2 సరైనవి (2)</value>
+          </text>
+          <text id="calc_score-3">
+            <value>3 లేదా 4 సరైనవి (3)</value>
+          </text>
+          <text id="delayed_cue-0">
+            <value>సూచనతో గుర్తుకొచ్చింది</value>
+          </text>
+          <text id="delayed_cue-1">
+            <value>సూచనతో కూడా గుర్తురాలేదు</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/consent_reconfirmed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/education_years:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/education_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/education_years:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/is_illiterate:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/is_illiterate:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/start_time:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_consent/start_time:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_executive:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_executive/trail_making_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_executive/trail_making:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/memory_inst_trial1:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/memory_words:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_rose:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_chair:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_hand:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_blue:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial1/mem_t1_spoon:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/memory_inst_trial2:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_rose:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_chair:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_hand:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_blue:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_memory/mem_trial2/mem_t2_spoon:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_fluency:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_fluency/fluency_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_fluency/fluency_words:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_fluency/fluency_words:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_fluency/fluency_count:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/g_fluency/fluency_count:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_fluency/fluency_count:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation/orientation_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation/orientation_time:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation/orientation_day:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation/orientation_month:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation/orientation_year:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation/orientation_place:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_orientation/orientation_city:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_calculation:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_calculation/calculation_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_calculation/calc_combinations:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_calculation/calc_combinations:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_calculation/calculation_score_select:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_abstraction:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_inst_practice:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_1:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_2:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_abstraction/abstraction_3:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_rose:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_rose_cat:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_rose_mc:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_chair:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_chair_cat:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_chair_mc:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_hand:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_hand_cat:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_hand_mc:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_blue:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_blue_cat:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_blue_mc:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_spoon:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_spoon_cat:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_delayed_recall/delayed_spoon_mc:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/visuoperception_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_scissors:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_tshirt:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_banana:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_lamp:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_candle:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_watch:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_cup:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_leaf:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_key:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_visuoperception/vp_spoon:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_naming:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_naming/naming_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_naming/naming_zebra:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_naming/naming_peacock:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_naming/naming_tiger:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_naming/naming_butterfly:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/attention_white_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/attention_white_errors:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/attention_white_errors:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/attention_black_inst:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/attention_black_errors:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/attention_black_errors:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/end_time:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_attention/end_time:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/total_time_min:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/total_time_min:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/total_time_sec:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/total_time_sec:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/administered_by:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/assessment_datetime:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/clinical_notes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/score_summary_note:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_moca_b_sheets:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="moca_b" version="2026-11-12 01-00" prefix="J1!moca_b!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+            </user>
+            <contact>
+              <_id/>
+              <patient_id/>
+              <name/>
+              <age/>
+              <gender/>
+              <phone/>
+              <education_level/>
+              <consent_given/>
+              <informant_name/>
+              <informant_phone/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_sex/>
+          <patient_age/>
+          <patient_phone/>
+          <patient_education/>
+          <screened_by/>
+          <screened_by_name/>
+          <g_consent>
+            <consent_reconfirmed/>
+            <education_years/>
+            <is_illiterate/>
+            <start_time/>
+          </g_consent>
+          <g_executive>
+            <trail_making_inst/>
+            <trail_making/>
+          </g_executive>
+          <g_memory>
+            <memory_inst_trial1/>
+            <memory_words/>
+            <mem_trial1>
+              <mem_t1_rose/>
+              <mem_t1_chair/>
+              <mem_t1_hand/>
+              <mem_t1_blue/>
+              <mem_t1_spoon/>
+            </mem_trial1>
+            <memory_inst_trial2/>
+            <mem_trial2>
+              <mem_t2_rose/>
+              <mem_t2_chair/>
+              <mem_t2_hand/>
+              <mem_t2_blue/>
+              <mem_t2_spoon/>
+            </mem_trial2>
+          </g_memory>
+          <g_fluency>
+            <fluency_inst/>
+            <fluency_words/>
+            <fluency_count/>
+          </g_fluency>
+          <g_orientation>
+            <orientation_inst/>
+            <orientation_time/>
+            <orientation_day/>
+            <orientation_month/>
+            <orientation_year/>
+            <orientation_place/>
+            <orientation_city/>
+          </g_orientation>
+          <g_calculation>
+            <calculation_inst/>
+            <calc_combinations/>
+            <calculation_score_select/>
+          </g_calculation>
+          <g_abstraction>
+            <abstraction_inst_practice/>
+            <abstraction_1/>
+            <abstraction_2/>
+            <abstraction_3/>
+          </g_abstraction>
+          <g_delayed_recall>
+            <delayed_inst/>
+            <delayed_rose/>
+            <delayed_rose_cat/>
+            <delayed_rose_mc/>
+            <delayed_chair/>
+            <delayed_chair_cat/>
+            <delayed_chair_mc/>
+            <delayed_hand/>
+            <delayed_hand_cat/>
+            <delayed_hand_mc/>
+            <delayed_blue/>
+            <delayed_blue_cat/>
+            <delayed_blue_mc/>
+            <delayed_spoon/>
+            <delayed_spoon_cat/>
+            <delayed_spoon_mc/>
+          </g_delayed_recall>
+          <g_visuoperception>
+            <visuoperception_inst/>
+            <vp_scissors/>
+            <vp_tshirt/>
+            <vp_banana/>
+            <vp_lamp/>
+            <vp_candle/>
+            <vp_watch/>
+            <vp_cup/>
+            <vp_leaf/>
+            <vp_key/>
+            <vp_spoon/>
+          </g_visuoperception>
+          <g_naming>
+            <naming_inst/>
+            <naming_zebra/>
+            <naming_peacock/>
+            <naming_tiger/>
+            <naming_butterfly/>
+          </g_naming>
+          <g_attention>
+            <attention_white_inst/>
+            <attention_white_errors/>
+            <attention_black_inst/>
+            <attention_black_errors/>
+            <end_time/>
+          </g_attention>
+          <mocab_executive_total/>
+          <mocab_fluency_total/>
+          <mocab_orientation_total/>
+          <mocab_calculation_total/>
+          <mocab_abstraction_total/>
+          <mocab_memory_total/>
+          <visuoperception_count/>
+          <mocab_visuoperception_total/>
+          <mocab_naming_total/>
+          <mocab_attention_white_score/>
+          <mocab_attention_black_score/>
+          <mocab_attention_total/>
+          <mocab_raw_total/>
+          <mocab_education_adj/>
+          <mocab_literacy_adj/>
+          <mocab_total_score/>
+          <mocab_interpretation/>
+          <g_admin>
+            <total_time_min/>
+            <total_time_sec/>
+            <administered_by/>
+            <assessment_datetime/>
+            <clinical_notes/>
+            <score_summary_note/>
+          </g_admin>
+          <g_moca_b_sheets>
+            <moca_b_sheets jr:template="">
+              <moca_b_image/>
+              <moca_b_pdf/>
+            </moca_b_sheets>
+          </g_moca_b_sheets>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yesno">
+        <root>
+          <item>
+            <itextId>yesno-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yesno-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="naming_score">
+        <root>
+          <item>
+            <itextId>naming_score-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>naming_score-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>naming_score-2</itextId>
+            <name>dk</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="calc_score">
+        <root>
+          <item>
+            <itextId>calc_score-0</itextId>
+            <name>0</name>
+          </item>
+          <item>
+            <itextId>calc_score-1</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>calc_score-2</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>calc_score-3</itextId>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="delayed_cue">
+        <root>
+          <item>
+            <itextId>delayed_cue-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>delayed_cue-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/age" type="string"/>
+      <bind nodeset="/data/inputs/contact/gender" type="string"/>
+      <bind nodeset="/data/inputs/contact/phone" type="string"/>
+      <bind nodeset="/data/inputs/contact/education_level" type="string"/>
+      <bind nodeset="/data/inputs/contact/consent_given" type="string"/>
+      <bind nodeset="/data/inputs/contact/informant_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/informant_phone" type="string"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="coalesce(../inputs/contact/patient_id, ../inputs/contact/_id)"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/gender"/>
+      <bind nodeset="/data/patient_age" type="string" calculate="../inputs/contact/age"/>
+      <bind nodeset="/data/patient_phone" type="string" calculate="../inputs/contact/phone"/>
+      <bind nodeset="/data/patient_education" type="string" calculate="../inputs/contact/education_level"/>
+      <bind nodeset="/data/screened_by" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/screened_by_name" type="string" calculate="../inputs/user/name"/>
+      <bind nodeset="/data/g_consent/consent_reconfirmed" type="string" required="true()"/>
+      <bind nodeset="/data/g_consent/education_years" type="int" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'" constraint=". &gt;= 0 and . &lt;= 30" jr:constraintMsg="jr:itext('/data/g_consent/education_years:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/g_consent/is_illiterate" type="string" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'" required="true()"/>
+      <bind nodeset="/data/g_consent/start_time" type="time" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'" required="false()"/>
+      <bind nodeset="/data/g_executive" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_executive/trail_making_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_executive/trail_making" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_memory/memory_inst_trial1" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_memory/memory_words" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_memory/mem_trial1/mem_t1_rose" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial1/mem_t1_chair" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial1/mem_t1_hand" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial1/mem_t1_blue" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial1/mem_t1_spoon" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/memory_inst_trial2" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_memory/mem_trial2/mem_t2_rose" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial2/mem_t2_chair" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial2/mem_t2_hand" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial2/mem_t2_blue" type="string" required="true()"/>
+      <bind nodeset="/data/g_memory/mem_trial2/mem_t2_spoon" type="string" required="true()"/>
+      <bind nodeset="/data/g_fluency" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_fluency/fluency_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_fluency/fluency_words" type="string" required="false()"/>
+      <bind nodeset="/data/g_fluency/fluency_count" type="int" constraint=". &gt;= 0 and . &lt;= 100" jr:constraintMsg="jr:itext('/data/g_fluency/fluency_count:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/g_orientation" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_orientation/orientation_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_orientation/orientation_time" type="string" required="true()"/>
+      <bind nodeset="/data/g_orientation/orientation_day" type="string" required="true()"/>
+      <bind nodeset="/data/g_orientation/orientation_month" type="string" required="true()"/>
+      <bind nodeset="/data/g_orientation/orientation_year" type="string" required="true()"/>
+      <bind nodeset="/data/g_orientation/orientation_place" type="string" required="true()"/>
+      <bind nodeset="/data/g_orientation/orientation_city" type="string" required="true()"/>
+      <bind nodeset="/data/g_calculation" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_calculation/calculation_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_calculation/calc_combinations" type="string" required="false()"/>
+      <bind nodeset="/data/g_calculation/calculation_score_select" type="string" required="true()"/>
+      <bind nodeset="/data/g_abstraction" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_abstraction/abstraction_inst_practice" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_abstraction/abstraction_1" type="string" required="true()"/>
+      <bind nodeset="/data/g_abstraction/abstraction_2" type="string" required="true()"/>
+      <bind nodeset="/data/g_abstraction/abstraction_3" type="string" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_rose" type="string" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_rose_cat" type="string" relevant=" /data/g_delayed_recall/delayed_rose  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_rose_mc" type="string" relevant=" /data/g_delayed_recall/delayed_rose  = 'no' and  /data/g_delayed_recall/delayed_rose_cat  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_chair" type="string" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_chair_cat" type="string" relevant=" /data/g_delayed_recall/delayed_chair  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_chair_mc" type="string" relevant=" /data/g_delayed_recall/delayed_chair  = 'no' and  /data/g_delayed_recall/delayed_chair_cat  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_hand" type="string" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_hand_cat" type="string" relevant=" /data/g_delayed_recall/delayed_hand  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_hand_mc" type="string" relevant=" /data/g_delayed_recall/delayed_hand  = 'no' and  /data/g_delayed_recall/delayed_hand_cat  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_blue" type="string" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_blue_cat" type="string" relevant=" /data/g_delayed_recall/delayed_blue  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_blue_mc" type="string" relevant=" /data/g_delayed_recall/delayed_blue  = 'no' and  /data/g_delayed_recall/delayed_blue_cat  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_spoon" type="string" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_spoon_cat" type="string" relevant=" /data/g_delayed_recall/delayed_spoon  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_delayed_recall/delayed_spoon_mc" type="string" relevant=" /data/g_delayed_recall/delayed_spoon  = 'no' and  /data/g_delayed_recall/delayed_spoon_cat  = 'no'" required="true()"/>
+      <bind nodeset="/data/g_visuoperception" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_visuoperception/visuoperception_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_visuoperception/vp_scissors" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_tshirt" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_banana" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_lamp" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_candle" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_watch" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_cup" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_leaf" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_key" type="string" required="true()"/>
+      <bind nodeset="/data/g_visuoperception/vp_spoon" type="string" required="true()"/>
+      <bind nodeset="/data/g_naming" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_naming/naming_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_naming/naming_zebra" type="string" required="true()"/>
+      <bind nodeset="/data/g_naming/naming_peacock" type="string" required="true()"/>
+      <bind nodeset="/data/g_naming/naming_tiger" type="string" required="true()"/>
+      <bind nodeset="/data/g_naming/naming_butterfly" type="string" required="true()"/>
+      <bind nodeset="/data/g_attention" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_attention/attention_white_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_attention/attention_white_errors" type="int" constraint=". &gt;= 0 and . &lt;= 50" jr:constraintMsg="jr:itext('/data/g_attention/attention_white_errors:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/g_attention/attention_black_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_attention/attention_black_errors" type="int" constraint=". &gt;= 0 and . &lt;= 50" jr:constraintMsg="jr:itext('/data/g_attention/attention_black_errors:jr:constraintMsg')" required="true()"/>
+      <bind nodeset="/data/g_attention/end_time" type="time" required="false()"/>
+      <bind nodeset="/data/mocab_executive_total" type="string" calculate="if( /data/g_executive/trail_making  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/mocab_fluency_total" type="string" calculate="if( /data/g_fluency/fluency_count  != &quot;&quot; and  /data/g_fluency/fluency_count  &gt;= 13, 2, if( /data/g_fluency/fluency_count  != &quot;&quot; and  /data/g_fluency/fluency_count  &gt;= 8, 1, 0))"/>
+      <bind nodeset="/data/mocab_orientation_total" type="string" calculate="if( /data/g_orientation/orientation_time  = &quot;yes&quot;, 1, 0) + if( /data/g_orientation/orientation_day  = &quot;yes&quot;, 1, 0) + if( /data/g_orientation/orientation_month  = &quot;yes&quot;, 1, 0) + if( /data/g_orientation/orientation_year  = &quot;yes&quot;, 1, 0) + if( /data/g_orientation/orientation_place  = &quot;yes&quot;, 1, 0) + if( /data/g_orientation/orientation_city  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/mocab_calculation_total" type="string" calculate="if( /data/g_calculation/calculation_score_select  != &quot;&quot;, number( /data/g_calculation/calculation_score_select ), 0)"/>
+      <bind nodeset="/data/mocab_abstraction_total" type="string" calculate="if( /data/g_abstraction/abstraction_1  = &quot;yes&quot;, 1, 0) + if( /data/g_abstraction/abstraction_2  = &quot;yes&quot;, 1, 0) + if( /data/g_abstraction/abstraction_3  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/mocab_memory_total" type="string" calculate="if( /data/g_delayed_recall/delayed_rose  = &quot;yes&quot;, 1, 0) + if( /data/g_delayed_recall/delayed_chair  = &quot;yes&quot;, 1, 0) + if( /data/g_delayed_recall/delayed_hand  = &quot;yes&quot;, 1, 0) + if( /data/g_delayed_recall/delayed_blue  = &quot;yes&quot;, 1, 0) + if( /data/g_delayed_recall/delayed_spoon  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/visuoperception_count" type="string" calculate="if( /data/g_visuoperception/vp_scissors  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_tshirt  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_banana  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_lamp  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_candle  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_watch  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_cup  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_leaf  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_key  = &quot;yes&quot;, 1, 0) + if( /data/g_visuoperception/vp_spoon  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/mocab_visuoperception_total" type="string" calculate="if( /data/visuoperception_count  &gt;= 9, 3, if( /data/visuoperception_count  &gt;= 6, 2, if( /data/visuoperception_count  &gt;= 4, 1, 0)))"/>
+      <bind nodeset="/data/mocab_naming_total" type="string" calculate="if( /data/g_naming/naming_zebra  = &quot;yes&quot;, 1, 0) + if( /data/g_naming/naming_peacock  = &quot;yes&quot;, 1, 0) + if( /data/g_naming/naming_tiger  = &quot;yes&quot;, 1, 0) + if( /data/g_naming/naming_butterfly  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/mocab_attention_white_score" type="string" calculate="if( /data/g_attention/attention_white_errors  != &quot;&quot; and  /data/g_attention/attention_white_errors  &lt;= 1, 1, 0)"/>
+      <bind nodeset="/data/mocab_attention_black_score" type="string" calculate="if( /data/g_attention/attention_black_errors  != &quot;&quot; and  /data/g_attention/attention_black_errors  &lt;= 2, 2, if( /data/g_attention/attention_black_errors  = 3, 1, 0))"/>
+      <bind nodeset="/data/mocab_attention_total" type="string" calculate=" /data/mocab_attention_white_score  +  /data/mocab_attention_black_score "/>
+      <bind nodeset="/data/mocab_raw_total" type="string" calculate=" /data/mocab_executive_total  +  /data/mocab_fluency_total  +  /data/mocab_orientation_total  +  /data/mocab_calculation_total  +  /data/mocab_abstraction_total  +  /data/mocab_memory_total  +  /data/mocab_visuoperception_total  +  /data/mocab_naming_total  +  /data/mocab_attention_total "/>
+      <bind nodeset="/data/mocab_education_adj" type="string" calculate="if( /data/g_consent/education_years  != &quot;&quot; and  /data/g_consent/education_years  &lt; 4, 1, 0)"/>
+      <bind nodeset="/data/mocab_literacy_adj" type="string" calculate="if( /data/g_consent/is_illiterate  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/mocab_total_score" type="string" calculate="if( /data/g_consent/consent_reconfirmed  = &quot;yes&quot;, min( /data/mocab_raw_total  +  /data/mocab_education_adj  +  /data/mocab_literacy_adj , 30), &quot;&quot;)"/>
+      <bind nodeset="/data/mocab_interpretation" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != &quot;yes&quot;, &quot;not assessed (no consent)&quot;, if( /data/mocab_total_score  &gt;= 26, &quot;normal&quot;, &quot;impaired&quot;))"/>
+      <bind nodeset="/data/g_admin/total_time_min" type="int" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'" constraint=". &gt;= 0 and . &lt;= 180" jr:constraintMsg="jr:itext('/data/g_admin/total_time_min:jr:constraintMsg')" required="false()"/>
+      <bind nodeset="/data/g_admin/total_time_sec" type="int" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'" constraint=". &gt;= 0 and . &lt;= 59" jr:constraintMsg="jr:itext('/data/g_admin/total_time_sec:jr:constraintMsg')" required="false()"/>
+      <bind nodeset="/data/g_admin/administered_by" type="string" required="true()"/>
+      <bind nodeset="/data/g_admin/assessment_datetime" type="dateTime" required="true()" calculate="if(. = '', now(), .)"/>
+      <bind nodeset="/data/g_admin/clinical_notes" type="string" required="false()"/>
+      <bind nodeset="/data/g_admin/score_summary_note" readonly="true()" type="string" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_moca_b_sheets" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image" type="binary" required="false()" orx:max-pixels="1024"/>
+      <bind nodeset="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf" type="binary" required="false()"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <group appearance="field-list" ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+      </group>
+      <group appearance="field-list" ref="/data/inputs/contact">
+        <label ref="jr:itext('/data/inputs/contact:label')"/>
+        <input ref="/data/inputs/contact/_id" appearance="select-contact type-participant">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/g_consent">
+      <label ref="jr:itext('/data/g_consent:label')"/>
+      <select1 ref="/data/g_consent/consent_reconfirmed">
+        <label ref="jr:itext('/data/g_consent/consent_reconfirmed:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_consent/education_years">
+        <label ref="jr:itext('/data/g_consent/education_years:label')"/>
+        <hint ref="jr:itext('/data/g_consent/education_years:hint')"/>
+      </input>
+      <select1 ref="/data/g_consent/is_illiterate">
+        <label ref="jr:itext('/data/g_consent/is_illiterate:label')"/>
+        <hint ref="jr:itext('/data/g_consent/is_illiterate:hint')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_consent/start_time">
+        <label ref="jr:itext('/data/g_consent/start_time:label')"/>
+        <hint ref="jr:itext('/data/g_consent/start_time:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/g_executive">
+      <label ref="jr:itext('/data/g_executive:label')"/>
+      <input ref="/data/g_executive/trail_making_inst">
+        <label ref="jr:itext('/data/g_executive/trail_making_inst:label')"/>
+      </input>
+      <select1 ref="/data/g_executive/trail_making">
+        <label ref="jr:itext('/data/g_executive/trail_making:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/g_memory">
+      <label ref="jr:itext('/data/g_memory:label')"/>
+      <input ref="/data/g_memory/memory_inst_trial1">
+        <label ref="jr:itext('/data/g_memory/memory_inst_trial1:label')"/>
+      </input>
+      <input ref="/data/g_memory/memory_words">
+        <label ref="jr:itext('/data/g_memory/memory_words:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/g_memory/mem_trial1">
+        <label ref="jr:itext('/data/g_memory/mem_trial1:label')"/>
+        <select1 ref="/data/g_memory/mem_trial1/mem_t1_rose" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial1/mem_t1_rose:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial1/mem_t1_chair" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial1/mem_t1_chair:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial1/mem_t1_hand" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial1/mem_t1_hand:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial1/mem_t1_blue" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial1/mem_t1_blue:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial1/mem_t1_spoon" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial1/mem_t1_spoon:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+      </group>
+      <input ref="/data/g_memory/memory_inst_trial2">
+        <label ref="jr:itext('/data/g_memory/memory_inst_trial2:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/g_memory/mem_trial2">
+        <label ref="jr:itext('/data/g_memory/mem_trial2:label')"/>
+        <select1 ref="/data/g_memory/mem_trial2/mem_t2_rose" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial2/mem_t2_rose:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial2/mem_t2_chair" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial2/mem_t2_chair:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial2/mem_t2_hand" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial2/mem_t2_hand:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial2/mem_t2_blue" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial2/mem_t2_blue:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <select1 ref="/data/g_memory/mem_trial2/mem_t2_spoon" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/g_memory/mem_trial2/mem_t2_spoon:label')"/>
+          <itemset nodeset="instance('yesno')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/g_fluency">
+      <label ref="jr:itext('/data/g_fluency:label')"/>
+      <input ref="/data/g_fluency/fluency_inst">
+        <label ref="jr:itext('/data/g_fluency/fluency_inst:label')"/>
+      </input>
+      <input ref="/data/g_fluency/fluency_words">
+        <label ref="jr:itext('/data/g_fluency/fluency_words:label')"/>
+        <hint ref="jr:itext('/data/g_fluency/fluency_words:hint')"/>
+      </input>
+      <input ref="/data/g_fluency/fluency_count">
+        <label ref="jr:itext('/data/g_fluency/fluency_count:label')"/>
+        <hint ref="jr:itext('/data/g_fluency/fluency_count:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/g_orientation">
+      <label ref="jr:itext('/data/g_orientation:label')"/>
+      <input ref="/data/g_orientation/orientation_inst">
+        <label ref="jr:itext('/data/g_orientation/orientation_inst:label')"/>
+      </input>
+      <select1 ref="/data/g_orientation/orientation_time" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_orientation/orientation_time:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_orientation/orientation_day" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_orientation/orientation_day:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_orientation/orientation_month" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_orientation/orientation_month:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_orientation/orientation_year" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_orientation/orientation_year:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_orientation/orientation_place" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_orientation/orientation_place:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_orientation/orientation_city" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_orientation/orientation_city:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/g_calculation">
+      <label ref="jr:itext('/data/g_calculation:label')"/>
+      <input ref="/data/g_calculation/calculation_inst">
+        <label ref="jr:itext('/data/g_calculation/calculation_inst:label')"/>
+      </input>
+      <input ref="/data/g_calculation/calc_combinations">
+        <label ref="jr:itext('/data/g_calculation/calc_combinations:label')"/>
+        <hint ref="jr:itext('/data/g_calculation/calc_combinations:hint')"/>
+      </input>
+      <select1 ref="/data/g_calculation/calculation_score_select">
+        <label ref="jr:itext('/data/g_calculation/calculation_score_select:label')"/>
+        <itemset nodeset="instance('calc_score')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/g_abstraction">
+      <label ref="jr:itext('/data/g_abstraction:label')"/>
+      <input ref="/data/g_abstraction/abstraction_inst_practice">
+        <label ref="jr:itext('/data/g_abstraction/abstraction_inst_practice:label')"/>
+      </input>
+      <select1 ref="/data/g_abstraction/abstraction_1">
+        <label ref="jr:itext('/data/g_abstraction/abstraction_1:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_abstraction/abstraction_2">
+        <label ref="jr:itext('/data/g_abstraction/abstraction_2:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_abstraction/abstraction_3">
+        <label ref="jr:itext('/data/g_abstraction/abstraction_3:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/g_delayed_recall">
+      <label ref="jr:itext('/data/g_delayed_recall:label')"/>
+      <input ref="/data/g_delayed_recall/delayed_inst">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_inst:label')"/>
+      </input>
+      <select1 ref="/data/g_delayed_recall/delayed_rose" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_rose:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_rose_cat">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_rose_cat:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_rose_mc">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_rose_mc:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_chair" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_chair:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_chair_cat">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_chair_cat:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_chair_mc">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_chair_mc:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_hand" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_hand:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_hand_cat">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_hand_cat:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_hand_mc">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_hand_mc:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_blue" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_blue:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_blue_cat">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_blue_cat:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_blue_mc">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_blue_mc:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_spoon" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_spoon:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_spoon_cat">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_spoon_cat:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_delayed_recall/delayed_spoon_mc">
+        <label ref="jr:itext('/data/g_delayed_recall/delayed_spoon_mc:label')"/>
+        <itemset nodeset="instance('delayed_cue')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/g_visuoperception">
+      <label ref="jr:itext('/data/g_visuoperception:label')"/>
+      <input ref="/data/g_visuoperception/visuoperception_inst">
+        <label ref="jr:itext('/data/g_visuoperception/visuoperception_inst:label')"/>
+      </input>
+      <select1 ref="/data/g_visuoperception/vp_scissors" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_scissors:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_tshirt" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_tshirt:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_banana" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_banana:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_lamp" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_lamp:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_candle" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_candle:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_watch" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_watch:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_cup" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_cup:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_leaf" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_leaf:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_key" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_key:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_visuoperception/vp_spoon" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_visuoperception/vp_spoon:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/g_naming">
+      <label ref="jr:itext('/data/g_naming:label')"/>
+      <input ref="/data/g_naming/naming_inst">
+        <label ref="jr:itext('/data/g_naming/naming_inst:label')"/>
+      </input>
+      <select1 ref="/data/g_naming/naming_zebra">
+        <label ref="jr:itext('/data/g_naming/naming_zebra:label')"/>
+        <itemset nodeset="instance('naming_score')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_naming/naming_peacock">
+        <label ref="jr:itext('/data/g_naming/naming_peacock:label')"/>
+        <itemset nodeset="instance('naming_score')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_naming/naming_tiger">
+        <label ref="jr:itext('/data/g_naming/naming_tiger:label')"/>
+        <itemset nodeset="instance('naming_score')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_naming/naming_butterfly">
+        <label ref="jr:itext('/data/g_naming/naming_butterfly:label')"/>
+        <itemset nodeset="instance('naming_score')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/g_attention">
+      <label ref="jr:itext('/data/g_attention:label')"/>
+      <input ref="/data/g_attention/attention_white_inst">
+        <label ref="jr:itext('/data/g_attention/attention_white_inst:label')"/>
+      </input>
+      <input ref="/data/g_attention/attention_white_errors">
+        <label ref="jr:itext('/data/g_attention/attention_white_errors:label')"/>
+      </input>
+      <input ref="/data/g_attention/attention_black_inst">
+        <label ref="jr:itext('/data/g_attention/attention_black_inst:label')"/>
+      </input>
+      <input ref="/data/g_attention/attention_black_errors">
+        <label ref="jr:itext('/data/g_attention/attention_black_errors:label')"/>
+      </input>
+      <input ref="/data/g_attention/end_time">
+        <label ref="jr:itext('/data/g_attention/end_time:label')"/>
+        <hint ref="jr:itext('/data/g_attention/end_time:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/g_admin">
+      <label ref="jr:itext('/data/g_admin:label')"/>
+      <input ref="/data/g_admin/total_time_min">
+        <label ref="jr:itext('/data/g_admin/total_time_min:label')"/>
+      </input>
+      <input ref="/data/g_admin/total_time_sec">
+        <label ref="jr:itext('/data/g_admin/total_time_sec:label')"/>
+      </input>
+      <input ref="/data/g_admin/administered_by">
+        <label ref="jr:itext('/data/g_admin/administered_by:label')"/>
+      </input>
+      <input ref="/data/g_admin/assessment_datetime">
+        <label ref="jr:itext('/data/g_admin/assessment_datetime:label')"/>
+      </input>
+      <input ref="/data/g_admin/clinical_notes">
+        <label ref="jr:itext('/data/g_admin/clinical_notes:label')"/>
+      </input>
+      <input ref="/data/g_admin/score_summary_note">
+        <label ref="jr:itext('/data/g_admin/score_summary_note:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/g_moca_b_sheets">
+      <label ref="jr:itext('/data/g_moca_b_sheets:label')"/>
+      <group ref="/data/g_moca_b_sheets/moca_b_sheets">
+        <label ref="jr:itext('/data/g_moca_b_sheets/moca_b_sheets:label')"/>
+        <repeat nodeset="/data/g_moca_b_sheets/moca_b_sheets" appearance="field-list">
+          <upload ref="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image" mediatype="image/*">
+            <label ref="jr:itext('/data/g_moca_b_sheets/moca_b_sheets/moca_b_image:label')"/>
+          </upload>
+          <upload ref="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf" mediatype="application/*">
+            <label ref="jr:itext('/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf:label')"/>
+          </upload>
+        </repeat>
+      </group>
+    </group>
+  </h:body>
+</h:html>

@@ -342,6 +342,16 @@ def test_scale_row_alignment():
         'moca_education_adj': 0, 'moca_total_score': 28,
         'moca_interpretation': 'Normal',
     }, PART_B, 'Varshini', [])
+    samples['moca_b'] = ({
+        'g_consent': {'consent_reconfirmed': 'yes', 'education_years': 3, 'is_illiterate': 'yes'},
+        'g_admin': {'assessment_datetime': '2026-11-12T09:00:00.000Z', 'clinical_notes': 'Good effort.'},
+        'g_executive': {'trail_making': 'yes'},
+        'g_calculation': {'calculation_score_select': '3'},
+        'g_naming': {'naming_zebra': 'yes', 'naming_peacock': 'dk'},
+        'mocab_executive_total': 1, 'mocab_raw_total': 25,
+        'mocab_education_adj': 1, 'mocab_literacy_adj': 1,
+        'mocab_total_score': 27, 'mocab_interpretation': 'normal',
+    }, PART_B, 'Varshini', [])
 
     for form, (fields, part, submitter, atts) in samples.items():
         headers = scale_export.scale_headers(form)

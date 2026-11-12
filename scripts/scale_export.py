@@ -27,6 +27,7 @@ META_FIELDS = {
     'dst': ['g_intro.dst_disclaimer', 'g_intro.acknowledged'],
     'vineland': ['g_intro.vineland_disclaimer', 'g_intro.acknowledged'],
     'moca_assessment': ['g_consent.consent_reconfirmed'],
+    'moca_b': ['g_consent.consent_reconfirmed'],
 }
 
 # Top-level groups that hold only assessment metadata (no scored questions).
@@ -35,6 +36,7 @@ META_GROUPS = {
     'dst': ('g_intro', 'g_child'),
     'vineland': ('g_intro', 'g_child'),
     'moca_assessment': ('g_admin', 'g_consent'),
+    'moca_b': ('g_admin', 'g_consent'),
 }
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,6 +53,7 @@ INFO_FIELD_PATHS = {
     'dst': ('g_child.child_dob', 'g_child.assessment_date'),
     'vineland': ('g_child.child_dob', 'g_child.assessment_date'),
     'moca_assessment': ('g_admin.assessment_datetime',),
+    'moca_b': ('g_admin.assessment_datetime',),
 }
 
 # Short sheet names for the camp workbook
@@ -58,6 +61,7 @@ SHEET_TITLES = {
     'ddst': 'DDST-II',
     'dst': 'DST',
     'moca_assessment': 'MoCA',
+    'moca_b': 'MoCA-B',
     'vineland': 'VSMS',
 }
 
@@ -116,7 +120,7 @@ def _format_date(value):
 
 
 def _ca_value(form, fields):
-    for j in JOIN_FIELDS[form]:
+    for j in JOIN_FIELDS.get(form, []):
         if j['format'] == 'years_months_parts':
             years = _lookup(fields, j['parts'][0])
             months = _lookup(fields, j['parts'][1])
@@ -162,7 +166,7 @@ def _dob_warning(form, fields):
         return None
     meta = get_scale_meta(form)
     text = meta['labels'].get(spec['field']) or 'Date of birth is missing or invalid.'
-    return (NOTE_LABELS[form].get(spec['field'], 'Date of birth warning'),
+    return (NOTE_LABELS.get(form, {}).get(spec['field'], 'Date of birth warning'),
             ' '.join(text.split()).replace('**', ''))
 
 
@@ -170,16 +174,16 @@ def _meta_field_rows(w, fields):
     """(label, value) rows for the extra metadata fields (disclaimer,
     consent, trained-worker confirmation) shown in the info block."""
     rows = []
-    for path in META_FIELDS[w.form]:
+    for path in META_FIELDS.get(w.form, []):
         item = next((it for it in w.flat if it['path'] == path), None)
         if item is None:
             continue
         raw = _lookup(fields, path)
-        if path in NOTE_VALUES[w.form]:
+        if path in NOTE_VALUES.get(w.form, {}):
             meta = get_scale_meta(w.form)
             text = ' '.join((meta['labels'].get(path) or '').split()).replace('**', '')
             if text:
-                rows.append((NOTE_LABELS[w.form].get(path, w.label(item)), text))
+                rows.append((NOTE_LABELS.get(w.form, {}).get(path, w.label(item)), text))
             continue
         if raw in (None, ''):
             continue
@@ -198,10 +202,10 @@ class _Walker:
         self.cfg = meta['report_display']
         self.flat = meta['flat']
         self.hidden = set(self.cfg['hide_fields'])
-        self.join_targets = {j['target'] for j in JOIN_FIELDS[form]}
+        self.join_targets = {j['target'] for j in JOIN_FIELDS.get(form, [])}
         # disclaimers / consent / warning fields - shown in the info block,
         # never as question columns
-        self.meta_only = set(META_FIELDS[form]) | set(NOTE_VALUES[form])
+        self.meta_only = set(META_FIELDS.get(form, [])) | set(NOTE_VALUES.get(form, {}))
 
     def is_displayable(self, path):
         if path == 'patient_uuid' or path in self.join_targets:
@@ -217,7 +221,7 @@ class _Walker:
         path = item['path']
         if item['type'] != 'field':
             return False
-        if path == 'patient_uuid' or path in INFO_FIELD_PATHS[self.form]:
+        if path == 'patient_uuid' or path in INFO_FIELD_PATHS.get(self.form, ()):
             return False
         if path in self.join_targets:  # CA is shown as its own joined row
             return False
@@ -237,7 +241,7 @@ class _Walker:
     def label(self, item):
         path = item['path']
         # note-value fields show a short label (their value is the full text)
-        if path in NOTE_LABELS[self.form]:
+        if path in NOTE_LABELS.get(self.form, {}):
             return NOTE_LABELS[self.form][path]
         label = label_for(self.form, path, item.get('label') or None)
         if label is None or label.startswith('report.'):
@@ -325,7 +329,7 @@ def scale_row(form, fields, participant, submitter, attachments,
     adate_path = {'ddst': 'g_meta.test_date'}.get(form,
                                                   'g_child.assessment_date')
     adate = _lookup(fields, adate_path)
-    if form == 'moca_assessment':
+    if form in ('moca_assessment', 'moca_b'):
         adate = _lookup(fields, 'g_admin.assessment_datetime') or adate
     if adate:
         row['Assessment date'] = _format_date(adate)
@@ -386,7 +390,7 @@ def scale_sections(form, fields, participant, submitter, attachments):
         info_rows.append(('Date of birth', dob, None))
     adate_path = {'ddst': 'g_meta.test_date'}.get(form,
                                                   'g_child.assessment_date')
-    if form == 'moca_assessment':
+    if form in ('moca_assessment', 'moca_b'):
         adate_path = 'g_admin.assessment_datetime'
     adate = _format_date(_lookup(fields, adate_path))
     if adate:

@@ -49,7 +49,7 @@ def desired_keys_for(form):
     """Ordered [(key, label)] for one scale, from the form definition."""
     meta = get_scale_meta(form)
     join_labels = {j['target']: clean_label(j['label'])
-                   for j in JOIN_FIELDS[form]}
+                   for j in JOIN_FIELDS.get(form, [])}
     prefix = f'report.{form}.'
     entries = [(f'{prefix}_title', meta['title'])]
     for item in meta['flat']:

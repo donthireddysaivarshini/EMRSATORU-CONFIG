@@ -1636,6 +1636,242 @@
         "moca_interpretation"
       ]
     },
+    "moca_b": {
+      "title_key": "report.moca_b._title",
+      "hide_fields": [
+        "g_abstraction.abstraction_inst_practice",
+        "g_admin.score_summary_note",
+        "g_attention.attention_black_inst",
+        "g_attention.attention_white_inst",
+        "g_calculation.calculation_inst",
+        "g_child.dob_warning",
+        "g_delayed_recall.delayed_inst",
+        "g_executive.trail_making_inst",
+        "g_fluency.fluency_inst",
+        "g_memory.memory_inst_trial1",
+        "g_memory.memory_inst_trial2",
+        "g_memory.memory_words",
+        "g_meta.dob_warning",
+        "g_naming.naming_inst",
+        "g_orientation.orientation_inst",
+        "g_visuoperception.visuoperception_inst",
+        "patient_age",
+        "patient_education",
+        "patient_phone",
+        "patient_sex",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_consent.is_illiterate": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_executive.trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_time": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_calculation.calculation_score_select": {
+          "0": "0 correct combinations (0 pts)",
+          "1": "1 correct combination (1 pt)",
+          "2": "2 correct combinations (2 pts)",
+          "3": "3 or 4 correct combinations (3 pts)"
+        },
+        "g_abstraction.abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_rose_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_rose_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_chair_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_chair_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_hand_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_hand_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_blue_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_blue_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_spoon_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_spoon_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_visuoperception.vp_scissors": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_tshirt": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_banana": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_lamp": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_candle": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_watch": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_cup": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_leaf": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_key": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_zebra": {
+          "yes": "Correct",
+          "no": "Incorrect",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_naming.naming_peacock": {
+          "yes": "Correct",
+          "no": "Incorrect",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_naming.naming_tiger": {
+          "yes": "Correct",
+          "no": "Incorrect",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_naming.naming_butterfly": {
+          "yes": "Correct",
+          "no": "Incorrect",
+          "dk": "Don't know / Not assessed"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [
+        "g_admin.assessment_datetime"
+      ],
+      "notes_fields": [
+        "g_admin.clinical_notes"
+      ],
+      "result_fields": [
+        "mocab_executive_total",
+        "mocab_fluency_total",
+        "mocab_orientation_total",
+        "mocab_calculation_total",
+        "mocab_abstraction_total",
+        "mocab_memory_total",
+        "mocab_visuoperception_total",
+        "mocab_naming_total",
+        "mocab_attention_white_score",
+        "mocab_attention_black_score",
+        "mocab_attention_total",
+        "mocab_raw_total",
+        "mocab_education_adj",
+        "mocab_literacy_adj",
+        "mocab_total_score",
+        "mocab_interpretation"
+      ]
+    },
     "vineland": {
       "title_key": "report.vineland._title",
       "hide_fields": [
@@ -2331,6 +2567,712 @@
         "social_quotient_rounded",
         "sq_interpretation"
       ]
+    },
+    "cog5": {
+      "title_key": "report.cog5._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_participant.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "g_participant.education": {
+          "not_studied": "Not studied in school",
+          "elementary_middle": "Elementary - middle school",
+          "high_school": "Upto High School",
+          "completed": "Completed High School",
+          "sslcpuc": "S.S.L.C. /PUC (Intermediate)",
+          "vocational_technical": "Vocational/ Technical",
+          "graduate_degree": "Graduate - Degree",
+          "post_graduate": "Post Graduate",
+          "phd": "PhD",
+          "others": "Others",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.Survey_Status_cog5": {
+          "completed": "Completed",
+          "dropout___discontinued": "Dropout / Discontinued"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "mse": {
+      "title_key": "report.mse._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_participant.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q1": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q2": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q3": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q4": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q5": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q6": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q7": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q8": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q9": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q10": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q11": {
+          "0": "0 Correct",
+          "1": "1 Correct",
+          "2": "2 Correct",
+          "3": "3 Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q12_a_b": {
+          "0": "0 Correct",
+          "1": "1 Correct",
+          "2": "2 Correct",
+          "3": "3 Correct",
+          "4": "4 Correct",
+          "5": "5 Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q13": {
+          "0": "0 Correct",
+          "1": "1 Correct",
+          "2": "2 Correct",
+          "3": "3 Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q15": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q16": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q17": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q18": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q19": {
+          "0": "0 Correct",
+          "1": "1 Correct",
+          "2": "2 Correct",
+          "3": "3 Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q20": {
+          "0": "Wrong",
+          "1": "Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.q21": {
+          "0": "0 Correct",
+          "1": "1 Correct",
+          "2": "2 Correct",
+          "3": "3 Correct",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_mse_scale.Survey_Status_mse": {
+          "completed": "Completed",
+          "dropout___discontinued": "Dropout / Discontinued"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "phq9": {
+      "title_key": "report.phq9._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_participant.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q1": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q2": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q3": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q4": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q5": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q6": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q7": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q8": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_q9": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.phq9_difficulty": {
+          "0": "Not difficult at all",
+          "1": "Somewhat difficult",
+          "2": "Very difficult",
+          "3": "Extremely difficult",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_phq9_scale.Survey_Status_phq9": {
+          "completed": "Completed",
+          "dropout___discontinued": "Dropout / Discontinued"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "ad8": {
+      "title_key": "report.ad8._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_participant.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q1": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q2": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q3": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q4": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q5": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q6": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q7": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.ad8_q8": {
+          "1": "Yes, a change",
+          "0": "No, no change",
+          "99": "Don't Know/ NA",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_ad8_scale.Survey_Status_ad8": {
+          "completed": "Completed",
+          "dropout___discontinued": "Dropout / Discontinued"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "easi": {
+      "title_key": "report.easi._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_participant.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw1": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw2": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw3": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw4": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw5": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw6": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw7": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw8": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw9": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw10": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw11": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.easi_raw12": {
+          "1": "Yes",
+          "0": "No",
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "97": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_easi_scale.Survey_Status_easi": {
+          "completed": "Completed",
+          "dropout___discontinued": "Dropout / Discontinued"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "gds15": {
+      "title_key": "report.gds15._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_participant.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q1": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q2": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q3": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q4": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q5": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q6": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q7": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q8": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q9": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q10": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q11": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q12": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q13": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q14": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.gds_q15": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_gds15_scale.Survey_Status_gds15": {
+          "completed": "Completed",
+          "dropout___discontinued": "Dropout / Discontinued"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
     }
   },
   "search_exact_match": true,

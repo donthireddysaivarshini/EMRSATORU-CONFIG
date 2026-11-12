@@ -38,9 +38,37 @@ SCALES = {
         'file': 'moca_assessment.xml',
         'title': 'Montreal Cognitive Assessment (MoCA)',
     },
+    'moca_b': {
+        'file': 'moca_b.xml',
+        'title': 'Montreal Cognitive Assessment - Basic (MoCA-B)',
+    },
     'vineland': {
         'file': 'vineland.xml',
         'title': 'Vineland-style Social Maturity Scale (VSMS)',
+    },
+    'cog5': {
+        'file': 'cog5.xml',
+        'title': 'CoG5 - Memory Screening Battery',
+    },
+    'mse': {
+        'file': 'mse.xml',
+        'title': 'Mental State Examination (MSE)',
+    },
+    'phq9': {
+        'file': 'phq9.xml',
+        'title': 'PHQ-9 Depression Screening',
+    },
+    'ad8': {
+        'file': 'ad8.xml',
+        'title': 'AD8 Dementia Screening Interview',
+    },
+    'easi': {
+        'file': 'easi.xml',
+        'title': 'Everyday Abilities Scale for India (EASI)',
+    },
+    'gds15': {
+        'file': 'gds15.xml',
+        'title': 'Geriatric Depression Scale (GDS-15)',
     },
 }
 
@@ -363,6 +391,18 @@ def _hidden_scale_fields(flat, form, parsed=None):
         for path in every:
             if path.endswith('_inst'):
                 hidden.add(path)
+    if form == 'moca_b':
+        hidden |= {
+            'patient_sex',
+            'patient_age',
+            'patient_phone',
+            'patient_education',
+            'g_memory.memory_words',
+            'g_admin.score_summary_note',
+        }
+        for path in every:
+            if path.endswith('_inst') or '_inst_' in path:
+                hidden.add(path)
     return sorted(hidden)
 
 
@@ -384,6 +424,7 @@ NOTE_VALUES = {
     },
     'ddst': {},
     'moca_assessment': {},
+    'moca_b': {},
 }
 
 # Path of the DOB-warning field per form, and the condition fields that make
@@ -396,6 +437,7 @@ DOB_WARNING = {
     'ddst': {'field': 'g_meta.dob_warning',
              'dob': 'g_meta.child_dob', 'age_valid': 'g_meta.age_valid'},
     'moca_assessment': None,
+    'moca_b': None,
 }
 
 # Short display labels for note-value fields (their VALUE is the full form
@@ -414,6 +456,7 @@ NOTE_LABELS = {
         'g_meta.dob_warning': 'Date of birth warning',
     },
     'moca_assessment': {},
+    'moca_b': {},
 }
 
 # Nothing is force-shown when empty any more (see DOB_WARNING note above).
@@ -422,6 +465,7 @@ KEEP_EMPTY = {
     'dst': [],
     'ddst': [],
     'moca_assessment': [],
+    'moca_b': [],
 }
 
 # Joined human-readable chronological-age rows.
@@ -446,6 +490,7 @@ JOIN_FIELDS = {
          'parts': ['g_meta.ca_days'], 'label': CA_LABEL_KEY},
     ],
     'moca_assessment': [],
+    'moca_b': [],
 }
 
 # Date fields to format as readable dates in the report.
@@ -454,6 +499,7 @@ DATE_FIELDS = {
     'dst': ['g_child.assessment_date', 'g_child.child_dob'],
     'ddst': ['g_meta.test_date', 'g_meta.child_dob'],
     'moca_assessment': ['g_admin.assessment_datetime'],
+    'moca_b': ['g_admin.assessment_datetime'],
 }
 
 # Calculated result fields shown in the results summary, in order.
@@ -480,6 +526,16 @@ RESULT_FIELDS = {
         'moca_abstraction_total', 'moca_orientation_total',
         'moca_raw_total', 'moca_education_adj', 'moca_total_score',
         'moca_interpretation',
+    ],
+    'moca_b': [
+        'mocab_executive_total', 'mocab_fluency_total',
+        'mocab_orientation_total', 'mocab_calculation_total',
+        'mocab_abstraction_total', 'mocab_memory_total',
+        'mocab_visuoperception_total', 'mocab_naming_total',
+        'mocab_attention_white_score', 'mocab_attention_black_score',
+        'mocab_attention_total', 'mocab_raw_total',
+        'mocab_education_adj', 'mocab_literacy_adj',
+        'mocab_total_score', 'mocab_interpretation',
     ],
 }
 
@@ -511,6 +567,7 @@ NOTES_FIELDS = {
     'dst': ['na_reason', 'clinical_notes'],
     'ddst': [],
     'moca_assessment': [],
+    'moca_b': ['g_admin.clinical_notes'],
 }
 
 # Supporting-document fields (attachment leaves; suppressed when empty).
@@ -521,7 +578,8 @@ def build_report_display(form, flat, choice_maps, parsed=None):
     """The report_display entry for one scale (consumed by cht-core patch)."""
     hidden = _hidden_scale_fields(flat, form, parsed)
     # join targets must stay visible
-    join_targets = {j['target'] for j in JOIN_FIELDS[form]}
+    join_fields = JOIN_FIELDS.get(form, [])
+    join_targets = {j['target'] for j in join_fields}
     hidden = [h for h in hidden if h not in join_targets]
 
     labels = {item['path']: item['label'] for item in flat}
@@ -545,16 +603,16 @@ def build_report_display(form, flat, choice_maps, parsed=None):
         'title_key': f'report.{form}._title',
         'hide_fields': hidden,
         'suppress_empty': True,
-        'keep_empty': KEEP_EMPTY[form],
+        'keep_empty': KEEP_EMPTY.get(form, []),
         'choice_map': {p: m for p, m in choice_maps.items()},
         'score_fields': score_fields,
-        'join_fields': JOIN_FIELDS[form],
+        'join_fields': join_fields,
         'note_values': {
-            p: _note_text(p) for p in NOTE_VALUES[form]
+            p: _note_text(p) for p in NOTE_VALUES.get(form, {})
         },
-        'date_fields': DATE_FIELDS[form],
-        'notes_fields': NOTES_FIELDS[form],
-        'result_fields': RESULT_FIELDS[form],
+        'date_fields': DATE_FIELDS.get(form, []),
+        'notes_fields': NOTES_FIELDS.get(form, []),
+        'result_fields': RESULT_FIELDS.get(form, []),
     }
 
 
@@ -600,8 +658,8 @@ def get_scale_meta(form):
         'choice_maps': choice_maps,
         'report_display': build_report_display(form, flat, choice_maps,
                                                parsed),
-        'result_fields': RESULT_FIELDS[form],
-        'notes_fields': NOTES_FIELDS[form],
+        'result_fields': RESULT_FIELDS.get(form, []),
+        'notes_fields': NOTES_FIELDS.get(form, []),
     }
     return meta
 
@@ -621,7 +679,7 @@ def build_message_keys(form):
         if label:
             out[prefix + path] = label
     # note-value fields get short display labels (value keeps the full text)
-    for path, short in NOTE_LABELS[form].items():
+    for path, short in NOTE_LABELS.get(form, {}).items():
         if prefix + path in out or short:
             out[prefix + path] = short
     return out
