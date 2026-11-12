@@ -344,13 +344,22 @@ def test_scale_row_alignment():
     }, PART_B, 'Varshini', [])
     samples['moca_b'] = ({
         'g_consent': {'consent_reconfirmed': 'yes', 'education_years': 3, 'is_illiterate': 'yes'},
-        'g_admin': {'assessment_datetime': '2026-11-12T09:00:00.000Z', 'clinical_notes': 'Good effort.'},
+        'g_admin': {'assessment_datetime': '2026-11-12T09:00:00.000Z'},
         'g_executive': {'trail_making': 'yes'},
         'g_calculation': {'calculation_score_select': '3'},
-        'g_naming': {'naming_zebra': 'yes', 'naming_peacock': 'dk'},
+        'g_naming': {'naming_zebra': 'yes', 'naming_peacock': 'no'},
         'mocab_executive_total': 1, 'mocab_raw_total': 25,
         'mocab_education_adj': 1, 'mocab_literacy_adj': 1,
-        'mocab_total_score': 27, 'mocab_interpretation': 'normal',
+        'mocab_total_score': 27,
+    }, PART_B, 'Varshini', [])
+    samples['moca_telugu'] = ({
+        'g_consent': {'consent_reconfirmed': 'yes', 'education_years': 10},
+        'g_admin': {'assessment_datetime': '2026-11-12T09:30:00.000Z'},
+        'g_visuospatial': {'trail_making': 'yes'},
+        'g_naming': {'naming_1': 'yes', 'naming_2': 'yes', 'naming_3': 'yes'},
+        'moca_te_visuospatial_total': 5, 'moca_te_raw_total': 26,
+        'moca_te_education_adj': 1, 'moca_te_total_score': 27,
+        'moca_te_interpretation': 'normal',
     }, PART_B, 'Varshini', [])
 
     for form, (fields, part, submitter, atts) in samples.items():

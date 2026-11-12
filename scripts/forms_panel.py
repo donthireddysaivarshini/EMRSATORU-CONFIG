@@ -49,6 +49,7 @@ SCALE_SPECS = {
     'dst': 'dst.spec.js',
     'moca_assessment': 'moca.spec.js',
     'moca_b': 'moca_b.spec.js',
+    'moca_telugu': 'moca_telugu.spec.js',
     'vineland': 'vineland.spec.js',
 }
 FORM_ID_RE = re.compile(r'^[a-z][a-z0-9_]{1,62}$')

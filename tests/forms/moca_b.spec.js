@@ -57,7 +57,6 @@ function buildAnswers(o = {}) {
     o.totalMin ?? '',                         // total_time_min (optional)
     o.totalSec ?? '',                         // total_time_sec (optional)
     'Dr. Tester',                             // administered_by
-    // assessment_datetime auto-defaults via calculate="if(. = '', now(), .)"
   ];
 }
 
@@ -72,7 +71,7 @@ describe('MoCA-B scoring', function () {
     return fields;
   };
 
-  it('perfect score: 30/30, normal', async () => {
+  it('perfect score: 30/30', async () => {
     const f = await run();
     expect(f.mocab_executive_total).to.equal('1');
     expect(f.mocab_fluency_total).to.equal('2');
@@ -89,7 +88,6 @@ describe('MoCA-B scoring', function () {
     expect(f.mocab_education_adj).to.equal('0');
     expect(f.mocab_literacy_adj).to.equal('0');
     expect(f.mocab_total_score).to.equal('30');
-    expect(f.mocab_interpretation).to.equal('normal');
   });
 
   it('fluency thresholds: 13->2, 12->1, 8->1, 7->0', async () => {
@@ -127,8 +125,8 @@ describe('MoCA-B scoring', function () {
     expect((await run({ vpCount: 3 })).mocab_visuoperception_total).to.equal('0');
   });
 
-  it('naming handles yes, no, and dk correctly', async () => {
-    const f = await run({ namingAnswers: ['yes', 'yes', 'dk', 'no'] });
+  it('naming scores yes/no correctly', async () => {
+    const f = await run({ namingAnswers: ['yes', 'yes', 'no', 'no'] });
     expect(f.mocab_naming_total).to.equal('2');
   });
 
@@ -148,38 +146,31 @@ describe('MoCA-B scoring', function () {
   });
 
   it('adjustments: <4 yrs (+1), illiterate (+1), both (+2), capped at 30', async () => {
-    // 25 raw + 1 (<4 yrs) = 26 -> normal
     let f = await run({ edu: 3, illiterate: 'no', namingCount: 2, abstractionCount: 0 });
     expect(f.mocab_raw_total).to.equal('25');
     expect(f.mocab_education_adj).to.equal('1');
     expect(f.mocab_literacy_adj).to.equal('0');
     expect(f.mocab_total_score).to.equal('26');
-    expect(f.mocab_interpretation).to.equal('normal');
 
-    // 25 raw + 1 (<4 yrs) + 1 (illiterate) = 27
     f = await run({ edu: 0, illiterate: 'yes', namingCount: 2, abstractionCount: 0 });
     expect(f.mocab_education_adj).to.equal('1');
     expect(f.mocab_literacy_adj).to.equal('1');
     expect(f.mocab_total_score).to.equal('27');
 
-    // edu=4 -> no edu bonus
     f = await run({ edu: 4, illiterate: 'no', namingCount: 2, abstractionCount: 0 });
     expect(f.mocab_education_adj).to.equal('0');
     expect(f.mocab_total_score).to.equal('25');
-    expect(f.mocab_interpretation).to.equal('impaired');
 
-    // Capped at 30
     f = await run({ edu: 0, illiterate: 'yes' });
     expect(f.mocab_raw_total).to.equal('30');
     expect(f.mocab_total_score).to.equal('30');
   });
 
-  it('no consent: empty total score, interpretation not assessed (no consent)', async () => {
+  it('no consent: empty total score', async () => {
     await harness.clear();
     const { errors, report } = await harness.fillForm('moca_b', ['no', 'Dr. Tester']);
     expect(errors, JSON.stringify(errors)).to.be.empty;
     expect(report.fields.mocab_total_score).to.equal('');
-    expect(report.fields.mocab_interpretation).to.equal('not assessed (no consent)');
   });
 
   it('fluency_count is stored and scored without being overwritten', async () => {
@@ -188,4 +179,3 @@ describe('MoCA-B scoring', function () {
     expect(f1.mocab_fluency_total).to.equal('1');
   });
 });
-

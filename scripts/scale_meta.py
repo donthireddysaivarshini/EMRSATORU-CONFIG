@@ -42,6 +42,10 @@ SCALES = {
         'file': 'moca_b.xml',
         'title': 'Montreal Cognitive Assessment - Basic (MoCA-B)',
     },
+    'moca_telugu': {
+        'file': 'moca_telugu.xml',
+        'title': 'Montreal Cognitive Assessment (MoCA) - Version 7.1 Telugu',
+    },
     'vineland': {
         'file': 'vineland.xml',
         'title': 'Vineland-style Social Maturity Scale (VSMS)',
@@ -391,7 +395,7 @@ def _hidden_scale_fields(flat, form, parsed=None):
         for path in every:
             if path.endswith('_inst'):
                 hidden.add(path)
-    if form == 'moca_b':
+    if form in ('moca_b', 'moca_telugu'):
         hidden |= {
             'patient_sex',
             'patient_age',
@@ -425,6 +429,7 @@ NOTE_VALUES = {
     'ddst': {},
     'moca_assessment': {},
     'moca_b': {},
+    'moca_telugu': {},
 }
 
 # Path of the DOB-warning field per form, and the condition fields that make
@@ -438,6 +443,7 @@ DOB_WARNING = {
              'dob': 'g_meta.child_dob', 'age_valid': 'g_meta.age_valid'},
     'moca_assessment': None,
     'moca_b': None,
+    'moca_telugu': None,
 }
 
 # Short display labels for note-value fields (their VALUE is the full form
@@ -457,6 +463,7 @@ NOTE_LABELS = {
     },
     'moca_assessment': {},
     'moca_b': {},
+    'moca_telugu': {},
 }
 
 # Nothing is force-shown when empty any more (see DOB_WARNING note above).
@@ -466,6 +473,7 @@ KEEP_EMPTY = {
     'ddst': [],
     'moca_assessment': [],
     'moca_b': [],
+    'moca_telugu': [],
 }
 
 # Joined human-readable chronological-age rows.
@@ -491,6 +499,7 @@ JOIN_FIELDS = {
     ],
     'moca_assessment': [],
     'moca_b': [],
+    'moca_telugu': [],
 }
 
 # Date fields to format as readable dates in the report.
@@ -500,6 +509,7 @@ DATE_FIELDS = {
     'ddst': ['g_meta.test_date', 'g_meta.child_dob'],
     'moca_assessment': ['g_admin.assessment_datetime'],
     'moca_b': ['g_admin.assessment_datetime'],
+    'moca_telugu': ['g_admin.assessment_datetime'],
 }
 
 # Calculated result fields shown in the results summary, in order.
@@ -535,7 +545,15 @@ RESULT_FIELDS = {
         'mocab_attention_white_score', 'mocab_attention_black_score',
         'mocab_attention_total', 'mocab_raw_total',
         'mocab_education_adj', 'mocab_literacy_adj',
-        'mocab_total_score', 'mocab_interpretation',
+        'mocab_total_score',
+    ],
+    'moca_telugu': [
+        'moca_te_visuospatial_total', 'moca_te_naming_total',
+        'moca_te_memory_total', 'moca_te_attention_total',
+        'moca_te_language_total', 'moca_te_abstraction_total',
+        'moca_te_orientation_total', 'moca_te_raw_total',
+        'moca_te_education_adj', 'moca_te_total_score',
+        'moca_te_interpretation',
     ],
 }
 
@@ -567,7 +585,8 @@ NOTES_FIELDS = {
     'dst': ['na_reason', 'clinical_notes'],
     'ddst': [],
     'moca_assessment': [],
-    'moca_b': ['g_admin.clinical_notes'],
+    'moca_b': [],
+    'moca_telugu': [],
 }
 
 # Supporting-document fields (attachment leaves; suppressed when empty).

@@ -28,6 +28,7 @@ META_FIELDS = {
     'vineland': ['g_intro.vineland_disclaimer', 'g_intro.acknowledged'],
     'moca_assessment': ['g_consent.consent_reconfirmed'],
     'moca_b': ['g_consent.consent_reconfirmed'],
+    'moca_telugu': ['g_consent.consent_reconfirmed'],
 }
 
 # Top-level groups that hold only assessment metadata (no scored questions).
@@ -37,6 +38,7 @@ META_GROUPS = {
     'vineland': ('g_intro', 'g_child'),
     'moca_assessment': ('g_admin', 'g_consent'),
     'moca_b': ('g_admin', 'g_consent'),
+    'moca_telugu': ('g_admin', 'g_consent'),
 }
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -54,6 +56,7 @@ INFO_FIELD_PATHS = {
     'vineland': ('g_child.child_dob', 'g_child.assessment_date'),
     'moca_assessment': ('g_admin.assessment_datetime',),
     'moca_b': ('g_admin.assessment_datetime',),
+    'moca_telugu': ('g_admin.assessment_datetime',),
 }
 
 # Short sheet names for the camp workbook
@@ -62,6 +65,7 @@ SHEET_TITLES = {
     'dst': 'DST',
     'moca_assessment': 'MoCA',
     'moca_b': 'MoCA-B',
+    'moca_telugu': 'MoCA-Te',
     'vineland': 'VSMS',
 }
 
@@ -329,7 +333,7 @@ def scale_row(form, fields, participant, submitter, attachments,
     adate_path = {'ddst': 'g_meta.test_date'}.get(form,
                                                   'g_child.assessment_date')
     adate = _lookup(fields, adate_path)
-    if form in ('moca_assessment', 'moca_b'):
+    if form in ('moca_assessment', 'moca_b', 'moca_telugu'):
         adate = _lookup(fields, 'g_admin.assessment_datetime') or adate
     if adate:
         row['Assessment date'] = _format_date(adate)
@@ -390,7 +394,7 @@ def scale_sections(form, fields, participant, submitter, attachments):
         info_rows.append(('Date of birth', dob, None))
     adate_path = {'ddst': 'g_meta.test_date'}.get(form,
                                                   'g_child.assessment_date')
-    if form in ('moca_assessment', 'moca_b'):
+    if form in ('moca_assessment', 'moca_b', 'moca_telugu'):
         adate_path = 'g_admin.assessment_datetime'
     adate = _format_date(_lookup(fields, adate_path))
     if adate:

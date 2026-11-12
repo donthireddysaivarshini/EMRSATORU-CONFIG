@@ -60,7 +60,7 @@ from emr_common import (EmrDb, attachment_names, classify_contacts, flatten,
                         timestamp_stamp)
 import scale_export
 
-SCALE_ORDER = ['ddst', 'dst', 'moca_assessment', 'moca_b', 'vineland']
+SCALE_ORDER = ['ddst', 'dst', 'moca_assessment', 'moca_b', 'moca_telugu', 'vineland']
 GENDER_LABELS = {'male': 'Male', 'female': 'Female'}
 
 

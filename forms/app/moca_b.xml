@@ -11,26 +11,17 @@
           <text id="yesno-1">
             <value>No</value>
           </text>
-          <text id="naming_score-0">
-            <value>Correct</value>
-          </text>
-          <text id="naming_score-1">
-            <value>Incorrect</value>
-          </text>
-          <text id="naming_score-2">
-            <value>Don't know / Not assessed</value>
-          </text>
           <text id="calc_score-0">
-            <value>0 correct combinations (0 pts)</value>
+            <value>0 point if no correct way</value>
           </text>
           <text id="calc_score-1">
-            <value>1 correct combination (1 pt)</value>
+            <value>1 point if 1 way</value>
           </text>
           <text id="calc_score-2">
-            <value>2 correct combinations (2 pts)</value>
+            <value>2 points if 2 ways</value>
           </text>
           <text id="calc_score-3">
-            <value>3 or 4 correct combinations (3 pts)</value>
+            <value>3 points if 3 ways</value>
           </text>
           <text id="delayed_cue-0">
             <value>Recalled with cue</value>
@@ -51,342 +42,309 @@
             <value>Select participant</value>
           </text>
           <text id="/data/g_consent:label">
-            <value>Consent &amp; Participant Education</value>
+            <value>Education &amp; Timing</value>
           </text>
           <text id="/data/g_consent/consent_reconfirmed:label">
-            <value>Consent re-confirmed for the MoCA-B assessment?</value>
+            <value>Consent re-confirmed?</value>
           </text>
           <text id="/data/g_consent/education_years:jr:constraintMsg">
             <value>Enter years between 0 and 30.</value>
           </text>
           <text id="/data/g_consent/education_years:label">
-            <value>Years of formal education</value>
+            <value>Education (years)</value>
           </text>
           <text id="/data/g_consent/education_years:hint">
-            <value> Registration says: "<output value=" /data/patient_education "/>". Enter completed years of schooling (0-30). +1 point is added if &lt; 4 years (capped at 30).</value>
+            <value>Add 1 point if education &lt; 4 year</value>
           </text>
           <text id="/data/g_consent/is_illiterate:label">
-            <value>Is the participant considered illiterate?</value>
+            <value>Illiterate</value>
           </text>
           <text id="/data/g_consent/is_illiterate:hint">
-            <value>Inability to read or write fluently in daily living. +1 point is added regardless of years of education (capped at 30).</value>
+            <value>AND add 1 point if illiterate (inability to read or write fluently in daily living)</value>
           </text>
           <text id="/data/g_consent/start_time:label">
-            <value>Start time (record before administering Executive Function)</value>
-          </text>
-          <text id="/data/g_consent/start_time:hint">
-            <value>Optional: record start time (hh:mm).</value>
+            <value>START TIME</value>
           </text>
           <text id="/data/g_executive:label">
-            <value>Executive Function (Alternating Trail Making)</value>
+            <value>EXECUTIVE FUNCTION</value>
           </text>
           <text id="/data/g_executive/trail_making_inst:label">
-            <value>Ask the subject to draw a line alternating between a square with a number and a square with dots in increasing order: 1 -&gt; (1 dot) -&gt; 2 -&gt; (2 dots) -&gt; 3 -&gt; (3 dots) -&gt; 4 -&gt; (4 dots) -&gt; 5 -&gt; (5 dots) -&gt; 6 -&gt; (6 dots). 1 point only if completed on first attempt without any errors or self-corrections.</value>
+            <value>Please draw a line alternating between a square with a number and a square with dots in increasing order. Begin here [1] and draw a line to [1 dot], then [2], then [2 dots], and so on. End here [6 dots]. 1 point if completed on first attempt without any errors or self-corrections.</value>
             <value form="image">jr://images/trail_making.png</value>
           </text>
           <text id="/data/g_executive/trail_making:label">
-            <value>Trail Making (1 -&gt; 1 dot -&gt; ... -&gt; 6 -&gt; 6 dots, zero errors/self-corrections)</value>
+            <value>Alternating Trail Making (SCORE /1)</value>
           </text>
           <text id="/data/g_memory:label">
-            <value>Immediate Recall (No point)</value>
+            <value>IMMEDIATE RECALL (No point)</value>
           </text>
           <text id="/data/g_memory/memory_inst_trial1:label">
-            <value>Read the 5 words at 1 word/second. Perform 2 trials even if the 1st trial is successful. No points are scored for Trials 1 and 2.</value>
+            <value>Perform 2 trials even if 1st trial is successful. No point.</value>
           </text>
           <text id="/data/g_memory/memory_words:label">
-            <value>Words: ROSE, CHAIR, HAND, BLUE, SPOON</value>
+            <value>ROSE | CHAIR | HAND | BLUE | SPOON</value>
           </text>
           <text id="/data/g_memory/mem_trial1:label">
-            <value>Trial 1</value>
+            <value>1st trial</value>
           </text>
           <text id="/data/g_memory/mem_trial1/mem_t1_rose:label">
-            <value>ROSE (Trial 1)</value>
+            <value>ROSE (1st trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial1/mem_t1_chair:label">
-            <value>CHAIR (Trial 1)</value>
+            <value>CHAIR (1st trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial1/mem_t1_hand:label">
-            <value>HAND (Trial 1)</value>
+            <value>HAND (1st trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial1/mem_t1_blue:label">
-            <value>BLUE (Trial 1)</value>
+            <value>BLUE (1st trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial1/mem_t1_spoon:label">
-            <value>SPOON (Trial 1)</value>
+            <value>SPOON (1st trial)</value>
           </text>
           <text id="/data/g_memory/memory_inst_trial2:label">
-            <value>Read the same 5 words a second time. Inform the subject that they will be asked to recall these words again at the end of the test.</value>
+            <value>2nd trial</value>
           </text>
           <text id="/data/g_memory/mem_trial2:label">
-            <value>Trial 2</value>
+            <value>2nd trial</value>
           </text>
           <text id="/data/g_memory/mem_trial2/mem_t2_rose:label">
-            <value>ROSE (Trial 2)</value>
+            <value>ROSE (2nd trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial2/mem_t2_chair:label">
-            <value>CHAIR (Trial 2)</value>
+            <value>CHAIR (2nd trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial2/mem_t2_hand:label">
-            <value>HAND (Trial 2)</value>
+            <value>HAND (2nd trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial2/mem_t2_blue:label">
-            <value>BLUE (Trial 2)</value>
+            <value>BLUE (2nd trial)</value>
           </text>
           <text id="/data/g_memory/mem_trial2/mem_t2_spoon:label">
-            <value>SPOON (Trial 2)</value>
+            <value>SPOON (2nd trial)</value>
           </text>
           <text id="/data/g_fluency:label">
-            <value>Fluency</value>
+            <value>FLUENCY</value>
           </text>
           <text id="/data/g_fluency/fluency_inst:label">
-            <value>Ask the subject to name as many FRUITS as possible in 1 minute (60 seconds). Record all words to ensure repeated words are not counted. Scoring: &gt;=13 fruits = 2 pts; 8-12 fruits = 1 pt; &lt;=7 fruits = 0 pts.</value>
+            <value>Name maximum numbers of FRUITS in 1 minute. 2 points if N = 13 or more; 1 point if N = 8-12; 0 point if N = 7 or less.</value>
           </text>
           <text id="/data/g_fluency/fluency_words:label">
-            <value>Recorded fruit names (optional)</value>
-          </text>
-          <text id="/data/g_fluency/fluency_words:hint">
-            <value>List named fruits to track repeats.</value>
+            <value>Fruits named (1-18)</value>
           </text>
           <text id="/data/g_fluency/fluency_count:jr:constraintMsg">
             <value>Enter a count between 0 and 100.</value>
           </text>
           <text id="/data/g_fluency/fluency_count:label">
-            <value>Total unique FRUITS named in 1 minute (N)</value>
-          </text>
-          <text id="/data/g_fluency/fluency_count:hint">
-            <value>0-7 = 0 pts, 8-12 = 1 pt, &gt;=13 = 2 pts.</value>
+            <value>N items</value>
           </text>
           <text id="/data/g_orientation:label">
-            <value>Orientation</value>
+            <value>ORIENTATION</value>
           </text>
           <text id="/data/g_orientation/orientation_inst:label">
-            <value>Without looking at a watch, ask approximate time (within +/- 2 hours accepted). Then ask day of the week, month, year, name of this place (hospital/clinic/office), and city.</value>
+            <value>1 point is allocated for each correct answer.</value>
           </text>
           <text id="/data/g_orientation/orientation_time:label">
-            <value>Time (+/- 2 hr) correct?</value>
+            <value>time (± 2 hr)</value>
           </text>
           <text id="/data/g_orientation/orientation_day:label">
-            <value>Day of week correct?</value>
+            <value>day</value>
           </text>
           <text id="/data/g_orientation/orientation_month:label">
-            <value>Month correct?</value>
+            <value>month</value>
           </text>
           <text id="/data/g_orientation/orientation_year:label">
-            <value>Year correct?</value>
+            <value>year</value>
           </text>
           <text id="/data/g_orientation/orientation_place:label">
-            <value>Place (hospital/clinic/office) correct?</value>
+            <value>place</value>
           </text>
           <text id="/data/g_orientation/orientation_city:label">
-            <value>City correct?</value>
+            <value>city</value>
           </text>
           <text id="/data/g_calculation:label">
-            <value>Calculation</value>
+            <value>CALCULATION</value>
           </text>
           <text id="/data/g_calculation/calculation_inst:label">
-            <value>Provide ways to pay using 1 dollar coins/bills, 5 dollar and 10 dollar bills for an object that costs exactly "13 Dollars" without asking for change. Scoring: 3 or 4 correct ways = 3 pts; 2 ways = 2 pts; 1 way = 1 pt; 0 ways = 0 pts.</value>
+            <value>Provide 3 ways to pay using 1 dollar coins, 5 dollar and 10 dollar bills for an object that costs exactly "13 Dollars". (3 points if 3 ways, 2 points if 2 ways, 1 point if 1 way, 0 point if no correct way)</value>
           </text>
           <text id="/data/g_calculation/calc_combinations:label">
-            <value>Recorded payment combinations (optional)</value>
-          </text>
-          <text id="/data/g_calculation/calc_combinations:hint">
-            <value>e.g. 10+1+1+1, 5+5+1+1+1, 5+8x1</value>
+            <value>1. / 2. / 3.</value>
           </text>
           <text id="/data/g_calculation/calculation_score_select:label">
-            <value>Number of correct combinations for 13 Dollars</value>
+            <value>SCORE ( /3)</value>
           </text>
           <text id="/data/g_abstraction:label">
-            <value>Abstraction</value>
+            <value>ABSTRACTION</value>
           </text>
           <text id="/data/g_abstraction/abstraction_inst_practice:label">
-            <value>Practice (not scored): "To which category do an orange and a banana belong?" (Fruit). Administer the 3 scored pairs below (one prompt permitted per item if first response is concrete).</value>
+            <value>To what category these objects belong to? (e.g. orange - banana = fruit)</value>
           </text>
           <text id="/data/g_abstraction/abstraction_1:label">
-            <value>train - boat (acceptable: means of transportation, travelling, vehicles; NOT iron/engines/fuel)</value>
+            <value>train - boat</value>
           </text>
           <text id="/data/g_abstraction/abstraction_2:label">
-            <value>north - south (acceptable: cardinal directions, cardinal points, directions, hemispheres, regions)</value>
+            <value>north - south</value>
           </text>
           <text id="/data/g_abstraction/abstraction_3:label">
-            <value>drum - flute (acceptable: musical instruments; NOT wood/sound)</value>
+            <value>drum - flute</value>
           </text>
           <text id="/data/g_delayed_recall:label">
-            <value>Delayed Recall</value>
+            <value>DELAYED RECALL</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_inst:label">
-            <value>1 point is allocated ONLY for words recalled with No cue (free recall). Category cue and multiple-choice cue responses are recorded for clinical info (0 points).</value>
+            <value>Points are awarded for recall with No cue (1 point for each item).</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_rose:label">
-            <value>ROSE - Recall with No cue (1 pt if Yes)</value>
+            <value>ROSE - Recall with No cue</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_rose_cat:label">
-            <value>ROSE - Category cue (type of flower)</value>
+            <value>ROSE - Recall with category cue (type of flower)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_rose_mc:label">
-            <value>ROSE - Multiple choice cue (rose / daisy / tulip)</value>
+            <value>ROSE - Recall with multiple choice cue (rose / daisy / tulip)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_chair:label">
-            <value>CHAIR - Recall with No cue (1 pt if Yes)</value>
+            <value>CHAIR - Recall with No cue</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_chair_cat:label">
-            <value>CHAIR - Category cue (type of furniture)</value>
+            <value>CHAIR - Recall with category cue (type of furniture)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_chair_mc:label">
-            <value>CHAIR - Multiple choice cue (table / chair / bed)</value>
+            <value>CHAIR - Recall with multiple choice cue (table / chair / bed)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_hand:label">
-            <value>HAND - Recall with No cue (1 pt if Yes)</value>
+            <value>HAND - Recall with No cue</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_hand_cat:label">
-            <value>HAND - Category cue (body part)</value>
+            <value>HAND - Recall with category cue (body part)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_hand_mc:label">
-            <value>HAND - Multiple choice cue (foot / hand / knee)</value>
+            <value>HAND - Recall with multiple choice cue (foot / hand / knee)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_blue:label">
-            <value>BLUE - Recall with No cue (1 pt if Yes)</value>
+            <value>BLUE - Recall with No cue</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_blue_cat:label">
-            <value>BLUE - Category cue (colour)</value>
+            <value>BLUE - Recall with category cue (colour)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_blue_mc:label">
-            <value>BLUE - Multiple choice cue (blue / brown / red)</value>
+            <value>BLUE - Recall with multiple choice cue (blue / brown / red)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_spoon:label">
-            <value>SPOON - Recall with No cue (1 pt if Yes)</value>
+            <value>SPOON - Recall with No cue</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_spoon_cat:label">
-            <value>SPOON - Category cue (kitchen instrument)</value>
+            <value>SPOON - Recall with category cue (kitchen instrument)</value>
           </text>
           <text id="/data/g_delayed_recall/delayed_spoon_mc:label">
-            <value>SPOON - Multiple choice cue (fork / spoon / knife)</value>
+            <value>SPOON - Recall with multiple choice cue (fork / spoon / knife)</value>
           </text>
           <text id="/data/g_visuoperception:label">
-            <value>Visuoperception</value>
+            <value>VISUOPERCEPTION</value>
           </text>
           <text id="/data/g_visuoperception/visuoperception_inst:label">
-            <value>Identify as many superimposed drawings as possible within 60 seconds (do not rotate picture). Scoring: 9-10 objects = 3 pts; 6-8 = 2 pts; 4-5 = 1 pt; 0-3 = 0 pts.</value>
+            <value>Identify drawings. No more than 60 seconds. See complementary sheet. 3 points if N = 9-10; 2 points if N = 6-8; 1 point if N = 4-5; 0 point if N = 0-3.</value>
             <value form="image">jr://images/visuoperception.png</value>
           </text>
           <text id="/data/g_visuoperception/vp_scissors:label">
-            <value>1. scissors</value>
+            <value>scissors</value>
           </text>
           <text id="/data/g_visuoperception/vp_tshirt:label">
-            <value>2. T-shirt</value>
+            <value>T-shirt</value>
           </text>
           <text id="/data/g_visuoperception/vp_banana:label">
-            <value>3. banana</value>
+            <value>banana</value>
           </text>
           <text id="/data/g_visuoperception/vp_lamp:label">
-            <value>4. lamp</value>
+            <value>lamp</value>
           </text>
           <text id="/data/g_visuoperception/vp_candle:label">
-            <value>5. candle</value>
+            <value>candle</value>
           </text>
           <text id="/data/g_visuoperception/vp_watch:label">
-            <value>6. watch</value>
+            <value>watch</value>
           </text>
           <text id="/data/g_visuoperception/vp_cup:label">
-            <value>7. cup</value>
+            <value>cup</value>
           </text>
           <text id="/data/g_visuoperception/vp_leaf:label">
-            <value>8. leaf</value>
+            <value>leaf</value>
           </text>
           <text id="/data/g_visuoperception/vp_key:label">
-            <value>9. key</value>
+            <value>key</value>
           </text>
           <text id="/data/g_visuoperception/vp_spoon:label">
-            <value>10. spoon</value>
+            <value>spoon</value>
           </text>
           <text id="/data/g_naming:label">
-            <value>Naming</value>
+            <value>NAMING</value>
           </text>
           <text id="/data/g_naming/naming_inst:label">
-            <value>Point to each animal and say: "Tell me the name of this animal." 1 point awarded per exact animal.</value>
+            <value>Identify animals. See complementary sheet.</value>
             <value form="image">jr://images/naming.png</value>
           </text>
           <text id="/data/g_naming/naming_zebra:label">
-            <value>Animal 1: Zebra (Horse/donkey NOT accepted)</value>
+            <value>zebra</value>
           </text>
           <text id="/data/g_naming/naming_peacock:label">
-            <value>Animal 2: Peacock (Bird/chicken/other bird NOT accepted)</value>
+            <value>peacock</value>
           </text>
           <text id="/data/g_naming/naming_tiger:label">
-            <value>Animal 3: Tiger (Cheetah/leopard/black tiger NOT accepted)</value>
+            <value>tiger</value>
           </text>
           <text id="/data/g_naming/naming_butterfly:label">
-            <value>Animal 4: Butterfly (Insect/other insect NOT accepted)</value>
+            <value>butterfly</value>
           </text>
           <text id="/data/g_attention:label">
-            <value>Attention</value>
+            <value>ATTENTION</value>
           </text>
           <text id="/data/g_attention/attention_white_inst:label">
-            <value>White background: Ask subject to read out loud numbers in the CIRCLES only (do not read squares or triangles). Error = wrong shape, omission, or incorrect order. Scoring: &lt;=1 error = 1 pt; &gt;=2 errors = 0 pts.</value>
+            <value>Name the numbers in circles. See complementary sheet. No point if 2 errors or more.</value>
             <value form="image">jr://images/attention_white.png</value>
           </text>
           <text id="/data/g_attention/attention_white_errors:jr:constraintMsg">
             <value>Enter errors between 0 and 50.</value>
           </text>
           <text id="/data/g_attention/attention_white_errors:label">
-            <value>White background - Number of errors (&lt;=1 error = 1 pt; &gt;=2 = 0 pts)</value>
+            <value>ERROR N (White background)</value>
           </text>
           <text id="/data/g_attention/attention_black_inst:label">
-            <value>Black background: Ask subject to read out loud numbers in the CIRCLES and SQUARES across both rows (do not read triangles). Scoring: &lt;=2 errors = 2 pts; 3 errors = 1 pt; &gt;=4 errors = 0 pts.</value>
+            <value>Name the numbers in circles &amp; squares. See complementary sheet. 2 points if 2 errors or less; 1 point if 3 errors; 0 point if 4 errors or more.</value>
             <value form="image">jr://images/attention_black.png</value>
           </text>
           <text id="/data/g_attention/attention_black_errors:jr:constraintMsg">
             <value>Enter errors between 0 and 50.</value>
           </text>
           <text id="/data/g_attention/attention_black_errors:label">
-            <value>Black background - Number of errors (&lt;=2 = 2 pts; 3 = 1 pt; &gt;=4 = 0 pts)</value>
+            <value>ERROR N (Black background)</value>
           </text>
           <text id="/data/g_attention/end_time:label">
-            <value>End time (after completing Attention)</value>
-          </text>
-          <text id="/data/g_attention/end_time:hint">
-            <value>Optional: record end time (hh:mm).</value>
+            <value>END TIME</value>
           </text>
           <text id="/data/g_admin:label">
-            <value>Administration &amp; Timing</value>
+            <value>TOTAL SCORE &amp; TIME</value>
           </text>
           <text id="/data/g_admin/total_time_min:jr:constraintMsg">
             <value>Enter minutes between 0 and 180.</value>
           </text>
           <text id="/data/g_admin/total_time_min:label">
-            <value>Total administration time - minutes (optional)</value>
+            <value>TOTAL TIME (min)</value>
           </text>
           <text id="/data/g_admin/total_time_sec:jr:constraintMsg">
             <value>Enter seconds between 0 and 59.</value>
           </text>
           <text id="/data/g_admin/total_time_sec:label">
-            <value>Total administration time - seconds (optional)</value>
+            <value>TOTAL TIME (sec)</value>
           </text>
           <text id="/data/g_admin/administered_by:label">
-            <value>Administered by (staff name)</value>
+            <value>Administered by</value>
           </text>
           <text id="/data/g_admin/assessment_datetime:label">
-            <value>Date &amp; Time of Assessment</value>
-          </text>
-          <text id="/data/g_admin/clinical_notes:label">
-            <value>Clinical notes (optional)</value>
+            <value>Date of exam</value>
           </text>
           <text id="/data/g_admin/score_summary_note:label">
-            <value> **MoCA-B Total Score:** <output value=" /data/mocab_total_score "/> / 30 (Raw: <output value=" /data/mocab_raw_total "/> + Education &lt;4y: +<output value=" /data/mocab_education_adj "/> + Illiterate: +<output value=" /data/mocab_literacy_adj "/>)</value>
-          </text>
-          <text id="/data/g_moca_b_sheets:label">
-            <value>MoCA-B sheet / supporting documents</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets:label">
-            <value>MoCA-B sheet upload</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets:hint">
-            <value>Upload the completed paper MoCA-B sheet (photo or PDF).</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image:label">
-            <value>Upload MoCA-B sheet photo</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf:label">
-            <value>Upload MoCA-B sheet PDF</value>
+            <value> TOTAL SCORE: <output value=" /data/mocab_total_score "/> / 30 (Add 1 point if education &lt; 4 year AND add 1 point if illiterate)</value>
           </text>
         </translation>
         <translation lang="te">
@@ -396,26 +354,17 @@
           <text id="yesno-1">
             <value>కాదు</value>
           </text>
-          <text id="naming_score-0">
-            <value>సరిగ్గా</value>
-          </text>
-          <text id="naming_score-1">
-            <value>తప్పు</value>
-          </text>
-          <text id="naming_score-2">
-            <value>తెలియదు</value>
-          </text>
           <text id="calc_score-0">
-            <value>0 సరైనవి (0)</value>
+            <value>0 పాయింట్లు</value>
           </text>
           <text id="calc_score-1">
-            <value>1 సరైనది (1)</value>
+            <value>1 పాయింట్</value>
           </text>
           <text id="calc_score-2">
-            <value>2 సరైనవి (2)</value>
+            <value>2 పాయింట్లు</value>
           </text>
           <text id="calc_score-3">
-            <value>3 లేదా 4 సరైనవి (3)</value>
+            <value>3 పాయింట్లు</value>
           </text>
           <text id="delayed_cue-0">
             <value>సూచనతో గుర్తుకొచ్చింది</value>
@@ -459,9 +408,6 @@
           <text id="/data/g_consent/start_time:label">
             <value>-</value>
           </text>
-          <text id="/data/g_consent/start_time:hint">
-            <value>-</value>
-          </text>
           <text id="/data/g_executive:label">
             <value>-</value>
           </text>
@@ -528,16 +474,10 @@
           <text id="/data/g_fluency/fluency_words:label">
             <value>-</value>
           </text>
-          <text id="/data/g_fluency/fluency_words:hint">
-            <value>-</value>
-          </text>
           <text id="/data/g_fluency/fluency_count:jr:constraintMsg">
             <value>-</value>
           </text>
           <text id="/data/g_fluency/fluency_count:label">
-            <value>-</value>
-          </text>
-          <text id="/data/g_fluency/fluency_count:hint">
             <value>-</value>
           </text>
           <text id="/data/g_orientation:label">
@@ -571,9 +511,6 @@
             <value>-</value>
           </text>
           <text id="/data/g_calculation/calc_combinations:label">
-            <value>-</value>
-          </text>
-          <text id="/data/g_calculation/calc_combinations:hint">
             <value>-</value>
           </text>
           <text id="/data/g_calculation/calculation_score_select:label">
@@ -723,9 +660,6 @@
           <text id="/data/g_attention/end_time:label">
             <value>-</value>
           </text>
-          <text id="/data/g_attention/end_time:hint">
-            <value>-</value>
-          </text>
           <text id="/data/g_admin:label">
             <value>-</value>
           </text>
@@ -747,31 +681,13 @@
           <text id="/data/g_admin/assessment_datetime:label">
             <value>-</value>
           </text>
-          <text id="/data/g_admin/clinical_notes:label">
-            <value>-</value>
-          </text>
           <text id="/data/g_admin/score_summary_note:label">
-            <value>-</value>
-          </text>
-          <text id="/data/g_moca_b_sheets:label">
-            <value>-</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets:label">
-            <value>-</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets:hint">
-            <value>-</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image:label">
-            <value>-</value>
-          </text>
-          <text id="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf:label">
             <value>-</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="moca_b" version="2026-11-12 01-00" prefix="J1!moca_b!" delimiter="#">
+        <data id="moca_b" version="2026-11-12 02-00" prefix="J1!moca_b!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -924,21 +840,13 @@
           <mocab_education_adj/>
           <mocab_literacy_adj/>
           <mocab_total_score/>
-          <mocab_interpretation/>
           <g_admin>
             <total_time_min/>
             <total_time_sec/>
             <administered_by/>
             <assessment_datetime/>
-            <clinical_notes/>
             <score_summary_note/>
           </g_admin>
-          <g_moca_b_sheets>
-            <moca_b_sheets jr:template="">
-              <moca_b_image/>
-              <moca_b_pdf/>
-            </moca_b_sheets>
-          </g_moca_b_sheets>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -955,22 +863,6 @@
           <item>
             <itextId>yesno-1</itextId>
             <name>no</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="naming_score">
-        <root>
-          <item>
-            <itextId>naming_score-0</itextId>
-            <name>yes</name>
-          </item>
-          <item>
-            <itextId>naming_score-1</itextId>
-            <name>no</name>
-          </item>
-          <item>
-            <itextId>naming_score-2</itextId>
-            <name>dk</name>
           </item>
         </root>
       </instance>
@@ -1129,16 +1021,11 @@
       <bind nodeset="/data/mocab_education_adj" type="string" calculate="if( /data/g_consent/education_years  != &quot;&quot; and  /data/g_consent/education_years  &lt; 4, 1, 0)"/>
       <bind nodeset="/data/mocab_literacy_adj" type="string" calculate="if( /data/g_consent/is_illiterate  = &quot;yes&quot;, 1, 0)"/>
       <bind nodeset="/data/mocab_total_score" type="string" calculate="if( /data/g_consent/consent_reconfirmed  = &quot;yes&quot;, min( /data/mocab_raw_total  +  /data/mocab_education_adj  +  /data/mocab_literacy_adj , 30), &quot;&quot;)"/>
-      <bind nodeset="/data/mocab_interpretation" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != &quot;yes&quot;, &quot;not assessed (no consent)&quot;, if( /data/mocab_total_score  &gt;= 26, &quot;normal&quot;, &quot;impaired&quot;))"/>
       <bind nodeset="/data/g_admin/total_time_min" type="int" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'" constraint=". &gt;= 0 and . &lt;= 180" jr:constraintMsg="jr:itext('/data/g_admin/total_time_min:jr:constraintMsg')" required="false()"/>
       <bind nodeset="/data/g_admin/total_time_sec" type="int" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'" constraint=". &gt;= 0 and . &lt;= 59" jr:constraintMsg="jr:itext('/data/g_admin/total_time_sec:jr:constraintMsg')" required="false()"/>
       <bind nodeset="/data/g_admin/administered_by" type="string" required="true()"/>
       <bind nodeset="/data/g_admin/assessment_datetime" type="dateTime" required="true()" calculate="if(. = '', now(), .)"/>
-      <bind nodeset="/data/g_admin/clinical_notes" type="string" required="false()"/>
       <bind nodeset="/data/g_admin/score_summary_note" readonly="true()" type="string" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
-      <bind nodeset="/data/g_moca_b_sheets" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
-      <bind nodeset="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image" type="binary" required="false()" orx:max-pixels="1024"/>
-      <bind nodeset="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf" type="binary" required="false()"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1178,7 +1065,6 @@
       </select1>
       <input ref="/data/g_consent/start_time">
         <label ref="jr:itext('/data/g_consent/start_time:label')"/>
-        <hint ref="jr:itext('/data/g_consent/start_time:hint')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/g_executive">
@@ -1289,11 +1175,9 @@
       </input>
       <input ref="/data/g_fluency/fluency_words">
         <label ref="jr:itext('/data/g_fluency/fluency_words:label')"/>
-        <hint ref="jr:itext('/data/g_fluency/fluency_words:hint')"/>
       </input>
       <input ref="/data/g_fluency/fluency_count">
         <label ref="jr:itext('/data/g_fluency/fluency_count:label')"/>
-        <hint ref="jr:itext('/data/g_fluency/fluency_count:hint')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/g_orientation">
@@ -1351,7 +1235,6 @@
       </input>
       <input ref="/data/g_calculation/calc_combinations">
         <label ref="jr:itext('/data/g_calculation/calc_combinations:label')"/>
-        <hint ref="jr:itext('/data/g_calculation/calc_combinations:hint')"/>
       </input>
       <select1 ref="/data/g_calculation/calculation_score_select">
         <label ref="jr:itext('/data/g_calculation/calculation_score_select:label')"/>
@@ -1366,21 +1249,21 @@
       <input ref="/data/g_abstraction/abstraction_inst_practice">
         <label ref="jr:itext('/data/g_abstraction/abstraction_inst_practice:label')"/>
       </input>
-      <select1 ref="/data/g_abstraction/abstraction_1">
+      <select1 ref="/data/g_abstraction/abstraction_1" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_abstraction/abstraction_1:label')"/>
         <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/g_abstraction/abstraction_2">
+      <select1 ref="/data/g_abstraction/abstraction_2" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_abstraction/abstraction_2:label')"/>
         <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/g_abstraction/abstraction_3">
+      <select1 ref="/data/g_abstraction/abstraction_3" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_abstraction/abstraction_3:label')"/>
         <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
@@ -1580,30 +1463,30 @@
       <input ref="/data/g_naming/naming_inst">
         <label ref="jr:itext('/data/g_naming/naming_inst:label')"/>
       </input>
-      <select1 ref="/data/g_naming/naming_zebra">
+      <select1 ref="/data/g_naming/naming_zebra" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_naming/naming_zebra:label')"/>
-        <itemset nodeset="instance('naming_score')/root/item">
+        <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/g_naming/naming_peacock">
+      <select1 ref="/data/g_naming/naming_peacock" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_naming/naming_peacock:label')"/>
-        <itemset nodeset="instance('naming_score')/root/item">
+        <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/g_naming/naming_tiger">
+      <select1 ref="/data/g_naming/naming_tiger" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_naming/naming_tiger:label')"/>
-        <itemset nodeset="instance('naming_score')/root/item">
+        <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/g_naming/naming_butterfly">
+      <select1 ref="/data/g_naming/naming_butterfly" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_naming/naming_butterfly:label')"/>
-        <itemset nodeset="instance('naming_score')/root/item">
+        <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
@@ -1625,7 +1508,6 @@
       </input>
       <input ref="/data/g_attention/end_time">
         <label ref="jr:itext('/data/g_attention/end_time:label')"/>
-        <hint ref="jr:itext('/data/g_attention/end_time:hint')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/g_admin">
@@ -1642,26 +1524,9 @@
       <input ref="/data/g_admin/assessment_datetime">
         <label ref="jr:itext('/data/g_admin/assessment_datetime:label')"/>
       </input>
-      <input ref="/data/g_admin/clinical_notes">
-        <label ref="jr:itext('/data/g_admin/clinical_notes:label')"/>
-      </input>
       <input ref="/data/g_admin/score_summary_note">
         <label ref="jr:itext('/data/g_admin/score_summary_note:label')"/>
       </input>
-    </group>
-    <group appearance="field-list" ref="/data/g_moca_b_sheets">
-      <label ref="jr:itext('/data/g_moca_b_sheets:label')"/>
-      <group ref="/data/g_moca_b_sheets/moca_b_sheets">
-        <label ref="jr:itext('/data/g_moca_b_sheets/moca_b_sheets:label')"/>
-        <repeat nodeset="/data/g_moca_b_sheets/moca_b_sheets" appearance="field-list">
-          <upload ref="/data/g_moca_b_sheets/moca_b_sheets/moca_b_image" mediatype="image/*">
-            <label ref="jr:itext('/data/g_moca_b_sheets/moca_b_sheets/moca_b_image:label')"/>
-          </upload>
-          <upload ref="/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf" mediatype="application/*">
-            <label ref="jr:itext('/data/g_moca_b_sheets/moca_b_sheets/moca_b_pdf:label')"/>
-          </upload>
-        </repeat>
-      </group>
     </group>
   </h:body>
 </h:html>

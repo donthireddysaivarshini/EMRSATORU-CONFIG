@@ -1706,10 +1706,10 @@
           "no": "No"
         },
         "g_calculation.calculation_score_select": {
-          "0": "0 correct combinations (0 pts)",
-          "1": "1 correct combination (1 pt)",
-          "2": "2 correct combinations (2 pts)",
-          "3": "3 or 4 correct combinations (3 pts)"
+          "0": "0 point if no correct way",
+          "1": "1 point if 1 way",
+          "2": "2 points if 2 ways",
+          "3": "3 points if 3 ways"
         },
         "g_abstraction.abstraction_1": {
           "yes": "Yes",
@@ -1824,24 +1824,20 @@
           "no": "No"
         },
         "g_naming.naming_zebra": {
-          "yes": "Correct",
-          "no": "Incorrect",
-          "dk": "Don't know / Not assessed"
+          "yes": "Yes",
+          "no": "No"
         },
         "g_naming.naming_peacock": {
-          "yes": "Correct",
-          "no": "Incorrect",
-          "dk": "Don't know / Not assessed"
+          "yes": "Yes",
+          "no": "No"
         },
         "g_naming.naming_tiger": {
-          "yes": "Correct",
-          "no": "Incorrect",
-          "dk": "Don't know / Not assessed"
+          "yes": "Yes",
+          "no": "No"
         },
         "g_naming.naming_butterfly": {
-          "yes": "Correct",
-          "no": "Incorrect",
-          "dk": "Don't know / Not assessed"
+          "yes": "Yes",
+          "no": "No"
         }
       },
       "score_fields": {},
@@ -1850,9 +1846,7 @@
       "date_fields": [
         "g_admin.assessment_datetime"
       ],
-      "notes_fields": [
-        "g_admin.clinical_notes"
-      ],
+      "notes_fields": [],
       "result_fields": [
         "mocab_executive_total",
         "mocab_fluency_total",
@@ -1868,8 +1862,215 @@
         "mocab_raw_total",
         "mocab_education_adj",
         "mocab_literacy_adj",
-        "mocab_total_score",
-        "mocab_interpretation"
+        "mocab_total_score"
+      ]
+    },
+    "moca_telugu": {
+      "title_key": "report.moca_telugu._title",
+      "hide_fields": [
+        "g_abstraction.abstraction_inst_practice",
+        "g_admin.score_summary_note",
+        "g_attention.digits_inst",
+        "g_attention.serial7_inst",
+        "g_attention.vigilance_inst",
+        "g_child.dob_warning",
+        "g_delayed_recall.delayed_inst",
+        "g_memory.memory_inst_trial1",
+        "g_memory.memory_inst_trial2",
+        "g_memory.memory_words",
+        "g_meta.dob_warning",
+        "g_naming.naming_inst",
+        "g_visuospatial.clock_inst",
+        "g_visuospatial.cube_inst",
+        "g_visuospatial.trail_making_inst",
+        "patient_age",
+        "patient_education",
+        "patient_phone",
+        "patient_sex",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.cube_copy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_contour": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_numbers": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_hands": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.digit_span_fwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.digit_span_bwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.vigilance": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.serial_7s": {
+          "0": "0 correct (0 pt)",
+          "1": "1 correct (1 pt)",
+          "2": "2 or 3 correct (2 pts)",
+          "3": "4 or 5 correct subtractions (3 pts)"
+        },
+        "g_language.sentence_rep_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_language.sentence_rep_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_kannu_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_kannu_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_cheera_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_cheera_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_gudi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gudi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_gulabi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gulabi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_neelam_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_neelam_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_orientation.orientation_date": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [
+        "g_admin.assessment_datetime"
+      ],
+      "notes_fields": [],
+      "result_fields": [
+        "moca_te_visuospatial_total",
+        "moca_te_naming_total",
+        "moca_te_memory_total",
+        "moca_te_attention_total",
+        "moca_te_language_total",
+        "moca_te_abstraction_total",
+        "moca_te_orientation_total",
+        "moca_te_raw_total",
+        "moca_te_education_adj",
+        "moca_te_total_score",
+        "moca_te_interpretation"
       ]
     },
     "vineland": {
