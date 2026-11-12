@@ -26,9 +26,8 @@ META_FIELDS = {
     'ddst': [],
     'dst': ['g_intro.dst_disclaimer', 'g_intro.acknowledged'],
     'vineland': ['g_intro.vineland_disclaimer', 'g_intro.acknowledged'],
+    'moca': ['g_consent.consent_reconfirmed'],
     'moca_assessment': ['g_consent.consent_reconfirmed'],
-    'moca_b': ['g_consent.consent_reconfirmed'],
-    'moca_telugu': ['g_consent.consent_reconfirmed'],
 }
 
 # Top-level groups that hold only assessment metadata (no scored questions).
@@ -36,9 +35,8 @@ META_GROUPS = {
     'ddst': ('g_meta',),
     'dst': ('g_intro', 'g_child'),
     'vineland': ('g_intro', 'g_child'),
+    'moca': ('g_admin', 'g_consent', 'g_instrument_banner'),
     'moca_assessment': ('g_admin', 'g_consent'),
-    'moca_b': ('g_admin', 'g_consent'),
-    'moca_telugu': ('g_admin', 'g_consent'),
 }
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -54,18 +52,16 @@ INFO_FIELD_PATHS = {
     'ddst': ('g_meta.child_dob', 'g_meta.test_date'),
     'dst': ('g_child.child_dob', 'g_child.assessment_date'),
     'vineland': ('g_child.child_dob', 'g_child.assessment_date'),
+    'moca': ('g_admin.assessment_datetime',),
     'moca_assessment': ('g_admin.assessment_datetime',),
-    'moca_b': ('g_admin.assessment_datetime',),
-    'moca_telugu': ('g_admin.assessment_datetime',),
 }
 
 # Short sheet names for the camp workbook
 SHEET_TITLES = {
     'ddst': 'DDST-II',
     'dst': 'DST',
+    'moca': 'MoCA-Int',
     'moca_assessment': 'MoCA',
-    'moca_b': 'MoCA-B',
-    'moca_telugu': 'MoCA-Te',
     'vineland': 'VSMS',
 }
 
@@ -333,7 +329,7 @@ def scale_row(form, fields, participant, submitter, attachments,
     adate_path = {'ddst': 'g_meta.test_date'}.get(form,
                                                   'g_child.assessment_date')
     adate = _lookup(fields, adate_path)
-    if form in ('moca_assessment', 'moca_b', 'moca_telugu'):
+    if form in ('moca', 'moca_assessment'):
         adate = _lookup(fields, 'g_admin.assessment_datetime') or adate
     if adate:
         row['Assessment date'] = _format_date(adate)
@@ -394,7 +390,7 @@ def scale_sections(form, fields, participant, submitter, attachments):
         info_rows.append(('Date of birth', dob, None))
     adate_path = {'ddst': 'g_meta.test_date'}.get(form,
                                                   'g_child.assessment_date')
-    if form in ('moca_assessment', 'moca_b', 'moca_telugu'):
+    if form in ('moca', 'moca_assessment'):
         adate_path = 'g_admin.assessment_datetime'
     adate = _format_date(_lookup(fields, adate_path))
     if adate:

@@ -342,24 +342,17 @@ def test_scale_row_alignment():
         'moca_education_adj': 0, 'moca_total_score': 28,
         'moca_interpretation': 'Normal',
     }, PART_B, 'Varshini', [])
-    samples['moca_b'] = ({
-        'g_consent': {'consent_reconfirmed': 'yes', 'education_years': 3, 'is_illiterate': 'yes'},
-        'g_admin': {'assessment_datetime': '2026-11-12T09:00:00.000Z'},
-        'g_executive': {'trail_making': 'yes'},
-        'g_calculation': {'calculation_score_select': '3'},
-        'g_naming': {'naming_zebra': 'yes', 'naming_peacock': 'no'},
-        'mocab_executive_total': 1, 'mocab_raw_total': 25,
-        'mocab_education_adj': 1, 'mocab_literacy_adj': 1,
-        'mocab_total_score': 27,
-    }, PART_B, 'Varshini', [])
-    samples['moca_telugu'] = ({
-        'g_consent': {'consent_reconfirmed': 'yes', 'education_years': 10},
+    samples['moca'] = ({
+        'g_consent': {'consent_reconfirmed': 'yes'},
+        'g_edu_lang_informant': {'years_schooling': 12, 'can_read_write': 'yes', 'test_language': 'english', 'informant_present': 'yes'},
         'g_admin': {'assessment_datetime': '2026-11-12T09:30:00.000Z'},
-        'g_visuospatial': {'trail_making': 'yes'},
-        'g_naming': {'naming_1': 'yes', 'naming_2': 'yes', 'naming_3': 'yes'},
-        'moca_te_visuospatial_total': 5, 'moca_te_raw_total': 26,
-        'moca_te_education_adj': 1, 'moca_te_total_score': 27,
-        'moca_te_interpretation': 'normal',
+        'm8_g_visuospatial': {'m8_trail_making': 'yes'},
+        'm8_g_naming': {'m8_naming_1': 'yes', 'm8_naming_2': 'yes', 'm8_naming_3': 'yes'},
+        'selected_instrument': 'moca_8_1', 'education_band': 'C',
+        'education_confounded': 'no',
+        'm8_visuospatial_total': 5, 'm8_education_adj': 1,
+        'moca_total_score': 27, 'moca_mis_score': 15,
+        'moca_interpretation': 'normal',
     }, PART_B, 'Varshini', [])
 
     for form, (fields, part, submitter, atts) in samples.items():

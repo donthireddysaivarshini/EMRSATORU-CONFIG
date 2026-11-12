@@ -47,9 +47,8 @@ HISTORY_DB = 'satoru-forms-history'
 SCALE_SPECS = {
     'ddst': 'ddst.spec.js',
     'dst': 'dst.spec.js',
+    'moca': 'moca_integrated.spec.js',
     'moca_assessment': 'moca.spec.js',
-    'moca_b': 'moca_b.spec.js',
-    'moca_telugu': 'moca_telugu.spec.js',
     'vineland': 'vineland.spec.js',
 }
 FORM_ID_RE = re.compile(r'^[a-z][a-z0-9_]{1,62}$')

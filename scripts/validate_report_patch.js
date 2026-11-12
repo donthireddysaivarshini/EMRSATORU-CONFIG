@@ -235,62 +235,10 @@ function ddstDoc() {
   };
 }
 
-function mocaBDoc() {
+function mocaIntegratedDoc() {
   return {
-    _id: 'report-moca-b-1',
-    form: 'moca_b',
-    type: 'data_record',
-    content_type: 'xml',
-    reported_date: Date.parse('2026-11-12T09:00:00Z'),
-    fields: {
-      patient_uuid: 'uuid-9999',
-      patient_id: 'CR-009',
-      patient_name: 'Lakshmi',
-      patient_sex: 'female',
-      patient_age: '68',
-      patient_phone: '+919900000000',
-      patient_education: 'primary',
-      g_consent: { consent_reconfirmed: 'yes', education_years: '3', is_illiterate: 'yes' },
-      g_executive: { trail_making: 'yes' },
-      g_memory: {
-        memory_words: '',
-        mem_trial1: { mem_t1_rose: 'yes', mem_t1_chair: 'no' },
-        mem_trial2: { mem_t2_rose: 'yes', mem_t2_chair: 'yes' },
-      },
-      g_fluency: { fluency_count: '13' },
-      g_orientation: {
-        orientation_time: 'yes', orientation_day: 'yes', orientation_month: 'yes',
-        orientation_year: 'yes', orientation_place: 'yes', orientation_city: 'yes',
-      },
-      g_calculation: { calculation_score_select: '3' },
-      g_abstraction: { abstraction_1: 'yes', abstraction_2: 'yes', abstraction_3: 'no' },
-      g_delayed_recall: {
-        delayed_rose: 'yes',
-        delayed_chair: 'no', delayed_chair_cat: 'yes',
-      },
-      g_visuoperception: { vp_scissors: 'yes', vp_tshirt: 'no' },
-      visuoperception_count: '9',
-      g_naming: { naming_zebra: 'yes', naming_peacock: 'no', naming_tiger: 'yes', naming_butterfly: 'no' },
-      g_attention: { attention_white_errors: '0', attention_black_errors: '2' },
-      mocab_executive_total: '1', mocab_fluency_total: '2',
-      mocab_orientation_total: '6', mocab_calculation_total: '3',
-      mocab_abstraction_total: '2', mocab_memory_total: '1',
-      mocab_visuoperception_total: '3', mocab_naming_total: '2',
-      mocab_attention_white_score: '1', mocab_attention_black_score: '2',
-      mocab_attention_total: '3', mocab_raw_total: '23',
-      mocab_education_adj: '1', mocab_literacy_adj: '1',
-      mocab_total_score: '25',
-      g_admin: { administered_by: 'Varshini', assessment_datetime: '2026-11-12' },
-    },
-    hidden_fields: ['inputs'],
-    contact: { _id: 'contact-abc', name: 'Varshini' },
-  };
-}
-
-function mocaTeluguDoc() {
-  return {
-    _id: 'report-moca-telugu-1',
-    form: 'moca_telugu',
+    _id: 'report-moca-integrated-1',
+    form: 'moca',
     type: 'data_record',
     content_type: 'xml',
     reported_date: Date.parse('2026-11-12T09:30:00Z'),
@@ -298,21 +246,38 @@ function mocaTeluguDoc() {
       patient_uuid: 'uuid-9999',
       patient_id: 'CR-009',
       patient_name: 'Lakshmi',
-      g_consent: { consent_reconfirmed: 'yes', education_years: '10' },
-      g_visuospatial: { trail_making: 'yes', cube_copy: 'yes', clock_contour: 'yes', clock_numbers: 'yes', clock_hands: 'yes' },
-      g_naming: { naming_1: 'yes', naming_2: 'yes', naming_3: 'no' },
-      g_attention: { digit_span_fwd: 'yes', digit_span_bwd: 'yes', vigilance: 'yes', serial_7s: '3' },
-      g_language: { sentence_rep_1: 'yes', sentence_rep_2: 'yes', fluency_count: '12' },
-      g_abstraction: { abstraction_1: 'yes', abstraction_2: 'yes' },
-      g_delayed_recall: { delayed_kannu: 'yes', delayed_cheera: 'no', delayed_cheera_cat: 'yes' },
-      g_orientation: { orientation_date: 'yes', orientation_month: 'yes', orientation_year: 'yes', orientation_day: 'yes', orientation_place: 'yes', orientation_city: 'yes' },
-      moca_te_visuospatial_total: '5', moca_te_naming_total: '2',
-      moca_te_attention_total: '6', moca_te_language_total: '3',
-      moca_te_abstraction_total: '2', moca_te_memory_total: '1',
-      moca_te_orientation_total: '6', moca_te_raw_total: '25',
-      moca_te_education_adj: '1', moca_te_total_score: '26',
-      moca_te_interpretation: 'normal',
-      g_admin: { administered_by: 'Varshini', assessment_datetime: '2026-11-12' },
+      patient_sex: 'female',
+      patient_age: '68',
+      patient_phone: '+919900000000',
+      patient_education: 'graduate',
+      g_consent: { consent_reconfirmed: 'yes' },
+      g_edu_lang_informant: {
+        years_schooling: '12',
+        can_read_write: 'yes',
+        luq_proficiency: 'english',
+        is_strongest_language: 'yes',
+        test_language: 'english',
+        informant_present: 'yes',
+      },
+      education_band: 'C',
+      selected_instrument: 'moca_8_1',
+      education_confounded: 'no',
+      m8_g_visuospatial: { m8_trail_making: 'yes', m8_cube_copy: 'yes', m8_clock_contour: 'yes', m8_clock_numbers: 'yes', m8_clock_hands: 'yes' },
+      m8_g_naming: { m8_naming_1: 'yes', m8_naming_2: 'no', m8_naming_3: 'yes' },
+      m8_g_attention: { m8_digit_span_fwd: 'yes', m8_digit_span_bwd: 'yes', m8_vigilance: 'yes', m8_serial_7s: '3' },
+      m8_g_language: { m8_sentence_rep_1: 'yes', m8_sentence_rep_2: 'yes', m8_fluency_count: '12' },
+      m8_g_abstraction: { m8_abstraction_1: 'yes', m8_abstraction_2: 'yes' },
+      m8_g_delayed_recall: { m8_delayed_face: 'uncued', m8_delayed_velvet: 'category' },
+      m8_g_orientation: { m8_orientation_date: 'yes', m8_orientation_month: 'yes', m8_orientation_year: 'yes', m8_orientation_day: 'yes', m8_orientation_place: 'yes', m8_orientation_city: 'yes' },
+      g_mandatory_history: { mh_q1: 'no', mh_q2: 'no', mh_q10: 'no' },
+      m8_visuospatial_total: '5', m8_naming_total: '2',
+      m8_attention_total: '6', m8_language_total: '3',
+      m8_abstraction_total: '2', m8_memory_total: '1',
+      m8_mis_score: '5',
+      m8_orientation_total: '6', m8_education_adj: '1',
+      moca_total_score: '26', moca_mis_score: '5',
+      moca_interpretation: 'normal',
+      g_admin: { administered_by: 'Varshini', assessment_datetime: '2026-11-12', score_summary_note: '' },
     },
     hidden_fields: ['inputs'],
     contact: { _id: 'contact-abc', name: 'Varshini' },
@@ -524,39 +489,24 @@ async function main() {
     check('duplicate delayed total hidden', !labels.includes('report.moca_assessment.moca_delayed_total'));
   }
 
-  console.log('\n== MoCA-B ==');
+  console.log('\n== MOCA (Integrated) ==');
   {
-    const out = await svc.format(mocaBDoc());
+    const out = await svc.format(mocaIntegratedDoc());
     const rows = flattenRows(out.fields);
     const labels = rows.map((r) => r.label);
     const byLabel = Object.fromEntries(labels.map((l, i) => [l, rows[i]]));
 
-    check('section labels present', !!byLabel['report.moca_b.g_executive']);
-    checkAllTranslated('every label has an English translation', labels, 'moca_b');
-    check('yes resolved', byLabel['report.moca_b.g_executive.trail_making'] && byLabel['report.moca_b.g_executive.trail_making'].value === 'Yes');
-    check('no resolved (naming_peacock)', byLabel['report.moca_b.g_naming.naming_peacock'] && byLabel['report.moca_b.g_naming.naming_peacock'].value === 'No', String(byLabel['report.moca_b.g_naming.naming_peacock'] && byLabel['report.moca_b.g_naming.naming_peacock'].value));
-    check('calculation choice resolved', byLabel['report.moca_b.g_calculation.calculation_score_select'] && byLabel['report.moca_b.g_calculation.calculation_score_select'].value === '3 points if 3 ways');
-    check('delayed cue resolved', byLabel['report.moca_b.g_delayed_recall.delayed_chair_cat'] && byLabel['report.moca_b.g_delayed_recall.delayed_chair_cat'].value === 'Recalled with cue');
-    check('total score visible', byLabel['report.moca_b.mocab_total_score'] && byLabel['report.moca_b.mocab_total_score'].value === '25');
-    check('instruction fields hidden', !labels.includes('report.moca_b.g_executive.trail_making_inst') && !labels.includes('report.moca_b.g_memory.memory_inst_trial1'));
-    check('score_summary_note hidden', !labels.includes('report.moca_b.g_admin.score_summary_note'));
-    check('patient internal fields hidden', !labels.includes('report.moca_b.patient_uuid'));
-  }
-
-  console.log('\n== MoCA Telugu 7.1 ==');
-  {
-    const out = await svc.format(mocaTeluguDoc());
-    const rows = flattenRows(out.fields);
-    const labels = rows.map((r) => r.label);
-    const byLabel = Object.fromEntries(labels.map((l, i) => [l, rows[i]]));
-
-    check('section labels present', !!byLabel['report.moca_telugu.g_visuospatial']);
-    checkAllTranslated('every label has an English translation', labels, 'moca_telugu');
-    check('serial 7s resolved', byLabel['report.moca_telugu.g_attention.serial_7s'] && byLabel['report.moca_telugu.g_attention.serial_7s'].value === '4 or 5 correct subtractions (3 pts)');
-    check('total score visible', byLabel['report.moca_telugu.moca_te_total_score'] && byLabel['report.moca_telugu.moca_te_total_score'].value === '26');
-    check('interpretation visible', byLabel['report.moca_telugu.moca_te_interpretation'] && byLabel['report.moca_telugu.moca_te_interpretation'].value === 'normal');
-    check('instruction fields hidden', !labels.includes('report.moca_telugu.g_visuospatial.trail_making_inst'));
-    check('patient internal fields hidden', !labels.includes('report.moca_telugu.patient_uuid'));
+    check('section labels present', !!byLabel['report.moca.g_edu_lang_informant']);
+    checkAllTranslated('every label has an English translation', labels, 'moca');
+    check('yes resolved', byLabel['report.moca.m8_g_visuospatial.m8_trail_making'] && byLabel['report.moca.m8_g_visuospatial.m8_trail_making'].value === 'Yes');
+    check('no resolved (m8_naming_2)', byLabel['report.moca.m8_g_naming.m8_naming_2'] && byLabel['report.moca.m8_g_naming.m8_naming_2'].value === 'No');
+    check('serial 7s resolved', byLabel['report.moca.m8_g_attention.m8_serial_7s'] && byLabel['report.moca.m8_g_attention.m8_serial_7s'].value === '4 or 5 correct subtractions (3 pts)');
+    check('total score visible', byLabel['report.moca.moca_total_score'] && byLabel['report.moca.moca_total_score'].value === '26');
+    check('MIS visible', byLabel['report.moca.moca_mis_score'] && byLabel['report.moca.moca_mis_score'].value === '5');
+    check('interpretation visible', byLabel['report.moca.moca_interpretation'] && byLabel['report.moca.moca_interpretation'].value === 'normal');
+    check('instruction fields hidden', !labels.includes('report.moca.m8_g_visuospatial.m8_trail_inst'));
+    check('score_summary_note hidden', !labels.includes('report.moca.g_admin.score_summary_note'));
+    check('patient internal fields hidden', !labels.includes('report.moca.patient_uuid'));
   }
 
   console.log('\n== stock behavior preserved (non-configured form) ==');

@@ -1423,6 +1423,654 @@
         "developmental_quotient_rounded"
       ]
     },
+    "moca": {
+      "title_key": "report.moca._title",
+      "hide_fields": [
+        "g_admin.score_summary_note",
+        "g_child.dob_warning",
+        "g_edu_lang_informant.band_a_rebook_note",
+        "g_edu_lang_informant.education_band_note",
+        "g_instrument_banner.banner_moca_8_1",
+        "g_instrument_banner.banner_moca_b",
+        "g_instrument_banner.banner_none",
+        "g_instrument_banner.banner_telugu_a",
+        "g_instrument_banner.banner_telugu_b",
+        "g_instrument_banner.banner_telugu_c",
+        "g_mandatory_history.mh_inst",
+        "g_meta.dob_warning",
+        "m8_g_abstraction.m8_abstraction_inst",
+        "m8_g_attention.m8_digits_inst",
+        "m8_g_attention.m8_serial7_inst",
+        "m8_g_attention.m8_vigilance_inst",
+        "m8_g_delayed_recall.m8_delayed_inst",
+        "m8_g_memory.m8_memory_inst",
+        "m8_g_memory.m8_memory_words",
+        "m8_g_naming.m8_naming_inst",
+        "m8_g_visuospatial.m8_clock_inst",
+        "m8_g_visuospatial.m8_cube_inst",
+        "m8_g_visuospatial.m8_trail_inst",
+        "mb_g_abstraction.mb_abstraction_inst_practice",
+        "mb_g_attention.mb_attention_black_inst",
+        "mb_g_attention.mb_attention_white_inst",
+        "mb_g_calculation.mb_calculation_inst",
+        "mb_g_delayed_recall.mb_delayed_inst",
+        "mb_g_executive.mb_trail_making_inst",
+        "mb_g_fluency.mb_fluency_inst",
+        "mb_g_memory.mb_memory_inst_trial1",
+        "mb_g_memory.mb_memory_words",
+        "mb_g_naming.mb_naming_inst",
+        "mb_g_orientation.mb_orientation_inst",
+        "mb_g_visuoperception.mb_visuoperception_inst",
+        "patient_age",
+        "patient_education",
+        "patient_phone",
+        "patient_sex",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by",
+        "te_g_abstraction.te_abstraction_inst_practice",
+        "te_g_attention.te_digits_inst",
+        "te_g_attention.te_serial7_inst",
+        "te_g_attention.te_vigilance_inst",
+        "te_g_delayed_recall.te_delayed_inst",
+        "te_g_memory.te_memory_inst_trial1",
+        "te_g_memory.te_memory_words",
+        "te_g_naming.te_naming_inst",
+        "te_g_visuospatial.te_clock_inst",
+        "te_g_visuospatial.te_cube_inst",
+        "te_g_visuospatial.te_trail_making_inst"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_edu_lang_informant.can_read_write": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_edu_lang_informant.luq_proficiency": {
+          "telugu": "Telugu",
+          "english": "English",
+          "neither": "Neither"
+        },
+        "g_edu_lang_informant.is_strongest_language": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_edu_lang_informant.test_language": {
+          "telugu": "Telugu",
+          "english": "English",
+          "neither": "Neither / Other"
+        },
+        "g_edu_lang_informant.informant_present": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_edu_lang_informant.informant_relationship_contact": {
+          "daily": "Daily",
+          "weekly": "Weekly",
+          "less_often": "Less often"
+        },
+        "g_sensory_conditions.glasses_needed_worn": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.hearing_aid_working": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.whisper_test_passed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.near_vision_passed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.room_conditions_ok": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.other_factors_today": {
+          "poor_sleep": "Poor sleep",
+          "fasting": "Fasting",
+          "long_travel": "Long travel",
+          "recent_bereavement": "Recent bereavement",
+          "sedating_medication": "Sedating medication",
+          "none": "None"
+        },
+        "te_g_visuospatial.te_trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_visuospatial.te_cube_copy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_visuospatial.te_clock_contour": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_visuospatial.te_clock_numbers": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_visuospatial.te_clock_hands": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_naming.te_naming_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_naming.te_naming_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_naming.te_naming_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_attention.te_digit_span_fwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_attention.te_digit_span_bwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_attention.te_vigilance": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_attention.te_serial_7s": {
+          "0": "0 correct (0 pt)",
+          "1": "1 correct (1 pt)",
+          "2": "2 or 3 correct (2 pts)",
+          "3": "4 or 5 correct subtractions (3 pts)"
+        },
+        "te_g_language.te_sentence_rep_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_language.te_sentence_rep_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_abstraction.te_abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_abstraction.te_abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_delayed_recall.te_delayed_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_delayed_recall.te_delayed_kannu_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_kannu_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_delayed_recall.te_delayed_cheera_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_cheera_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_delayed_recall.te_delayed_gudi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_gudi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_delayed_recall.te_delayed_gulabi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_gulabi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_delayed_recall.te_delayed_neelam_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_delayed_recall.te_delayed_neelam_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "te_g_orientation.te_orientation_date": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_orientation.te_orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_orientation.te_orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_orientation.te_orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_orientation.te_orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_orientation.te_orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_executive.mb_trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_orientation.mb_orientation_time": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_orientation.mb_orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_orientation.mb_orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_orientation.mb_orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_orientation.mb_orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_orientation.mb_orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_calculation.mb_calculation_score_select": {
+          "0": "0 point if no correct way",
+          "1": "1 point if 1 way",
+          "2": "2 points if 2 ways",
+          "3": "3 points if 3 ways"
+        },
+        "mb_g_abstraction.mb_abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_abstraction.mb_abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_abstraction.mb_abstraction_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_delayed_recall.mb_delayed_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_delayed_recall.mb_delayed_rose_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_rose_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_delayed_recall.mb_delayed_chair_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_chair_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_delayed_recall.mb_delayed_hand_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_hand_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_delayed_recall.mb_delayed_blue_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_blue_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_delayed_recall.mb_delayed_spoon_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_delayed_recall.mb_delayed_spoon_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "mb_g_visuoperception.mb_vp_scissors": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_tshirt": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_banana": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_lamp": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_candle": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_watch": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_cup": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_leaf": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_key": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_visuoperception.mb_vp_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_naming.mb_naming_zebra": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_naming.mb_naming_peacock": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_naming.mb_naming_tiger": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_naming.mb_naming_butterfly": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_visuospatial.m8_trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_visuospatial.m8_cube_copy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_visuospatial.m8_clock_contour": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_visuospatial.m8_clock_numbers": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_visuospatial.m8_clock_hands": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_naming.m8_naming_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_naming.m8_naming_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_naming.m8_naming_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_attention.m8_digit_span_fwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_attention.m8_digit_span_bwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_attention.m8_vigilance": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_attention.m8_serial_7s": {
+          "0": "0 correct (0 pt)",
+          "1": "1 correct (1 pt)",
+          "2": "2 or 3 correct (2 pts)",
+          "3": "4 or 5 correct subtractions (3 pts)"
+        },
+        "m8_g_language.m8_sentence_rep_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_language.m8_sentence_rep_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_abstraction.m8_abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_abstraction.m8_abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_delayed_recall.m8_delayed_face": {
+          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
+          "category": "Recalled with Category cue (0 pt, MIS x2)",
+          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
+          "not_recalled": "Not recalled (0 pt, MIS 0)"
+        },
+        "m8_g_delayed_recall.m8_delayed_velvet": {
+          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
+          "category": "Recalled with Category cue (0 pt, MIS x2)",
+          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
+          "not_recalled": "Not recalled (0 pt, MIS 0)"
+        },
+        "m8_g_delayed_recall.m8_delayed_church": {
+          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
+          "category": "Recalled with Category cue (0 pt, MIS x2)",
+          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
+          "not_recalled": "Not recalled (0 pt, MIS 0)"
+        },
+        "m8_g_delayed_recall.m8_delayed_daisy": {
+          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
+          "category": "Recalled with Category cue (0 pt, MIS x2)",
+          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
+          "not_recalled": "Not recalled (0 pt, MIS 0)"
+        },
+        "m8_g_delayed_recall.m8_delayed_red": {
+          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
+          "category": "Recalled with Category cue (0 pt, MIS x2)",
+          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
+          "not_recalled": "Not recalled (0 pt, MIS 0)"
+        },
+        "m8_g_orientation.m8_orientation_date": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_orientation.m8_orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_orientation.m8_orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_orientation.m8_orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_orientation.m8_orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_orientation.m8_orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_mandatory_history.mh_q1": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q2": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q3": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q4": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q5": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q6": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q7": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q8": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q9": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_q10": {
+          "yes": "Yes",
+          "no": "No",
+          "unsure": "Unsure"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [
+        "g_admin.assessment_datetime"
+      ],
+      "notes_fields": [],
+      "result_fields": [
+        "selected_instrument",
+        "education_band",
+        "education_confounded",
+        "moca_total_score",
+        "moca_mis_score",
+        "moca_interpretation",
+        "te_visuospatial_total",
+        "te_naming_total",
+        "te_memory_total",
+        "te_attention_total",
+        "te_language_total",
+        "te_abstraction_total",
+        "te_orientation_total",
+        "te_education_adj",
+        "mb_executive_total",
+        "mb_fluency_total",
+        "mb_orientation_total",
+        "mb_calculation_total",
+        "mb_abstraction_total",
+        "mb_memory_total",
+        "mb_visuoperception_total",
+        "mb_naming_total",
+        "mb_attention_total",
+        "mb_education_adj",
+        "mb_literacy_adj",
+        "m8_visuospatial_total",
+        "m8_naming_total",
+        "m8_memory_total",
+        "m8_attention_total",
+        "m8_language_total",
+        "m8_abstraction_total",
+        "m8_orientation_total",
+        "m8_education_adj"
+      ]
+    },
     "moca_assessment": {
       "title_key": "report.moca_assessment._title",
       "hide_fields": [
@@ -1634,443 +2282,6 @@
         "moca_education_adj",
         "moca_total_score",
         "moca_interpretation"
-      ]
-    },
-    "moca_b": {
-      "title_key": "report.moca_b._title",
-      "hide_fields": [
-        "g_abstraction.abstraction_inst_practice",
-        "g_admin.score_summary_note",
-        "g_attention.attention_black_inst",
-        "g_attention.attention_white_inst",
-        "g_calculation.calculation_inst",
-        "g_child.dob_warning",
-        "g_delayed_recall.delayed_inst",
-        "g_executive.trail_making_inst",
-        "g_fluency.fluency_inst",
-        "g_memory.memory_inst_trial1",
-        "g_memory.memory_inst_trial2",
-        "g_memory.memory_words",
-        "g_meta.dob_warning",
-        "g_naming.naming_inst",
-        "g_orientation.orientation_inst",
-        "g_visuoperception.visuoperception_inst",
-        "patient_age",
-        "patient_education",
-        "patient_phone",
-        "patient_sex",
-        "patient_uuid",
-        "result_complete",
-        "result_incomplete",
-        "result_invalid",
-        "scoring_version",
-        "screened_by"
-      ],
-      "suppress_empty": true,
-      "keep_empty": [],
-      "choice_map": {
-        "g_consent.consent_reconfirmed": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_consent.is_illiterate": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_executive.trail_making": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_time": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_day": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_month": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_year": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_place": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_city": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_calculation.calculation_score_select": {
-          "0": "0 point if no correct way",
-          "1": "1 point if 1 way",
-          "2": "2 points if 2 ways",
-          "3": "3 points if 3 ways"
-        },
-        "g_abstraction.abstraction_1": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_abstraction.abstraction_2": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_abstraction.abstraction_3": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_rose": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_rose_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_rose_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_chair": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_chair_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_chair_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_hand": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_hand_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_hand_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_blue": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_blue_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_blue_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_spoon": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_spoon_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_spoon_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_visuoperception.vp_scissors": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_tshirt": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_banana": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_lamp": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_candle": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_watch": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_cup": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_leaf": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_key": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuoperception.vp_spoon": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_naming.naming_zebra": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_naming.naming_peacock": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_naming.naming_tiger": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_naming.naming_butterfly": {
-          "yes": "Yes",
-          "no": "No"
-        }
-      },
-      "score_fields": {},
-      "join_fields": [],
-      "note_values": {},
-      "date_fields": [
-        "g_admin.assessment_datetime"
-      ],
-      "notes_fields": [],
-      "result_fields": [
-        "mocab_executive_total",
-        "mocab_fluency_total",
-        "mocab_orientation_total",
-        "mocab_calculation_total",
-        "mocab_abstraction_total",
-        "mocab_memory_total",
-        "mocab_visuoperception_total",
-        "mocab_naming_total",
-        "mocab_attention_white_score",
-        "mocab_attention_black_score",
-        "mocab_attention_total",
-        "mocab_raw_total",
-        "mocab_education_adj",
-        "mocab_literacy_adj",
-        "mocab_total_score"
-      ]
-    },
-    "moca_telugu": {
-      "title_key": "report.moca_telugu._title",
-      "hide_fields": [
-        "g_abstraction.abstraction_inst_practice",
-        "g_admin.score_summary_note",
-        "g_attention.digits_inst",
-        "g_attention.serial7_inst",
-        "g_attention.vigilance_inst",
-        "g_child.dob_warning",
-        "g_delayed_recall.delayed_inst",
-        "g_memory.memory_inst_trial1",
-        "g_memory.memory_inst_trial2",
-        "g_memory.memory_words",
-        "g_meta.dob_warning",
-        "g_naming.naming_inst",
-        "g_visuospatial.clock_inst",
-        "g_visuospatial.cube_inst",
-        "g_visuospatial.trail_making_inst",
-        "patient_age",
-        "patient_education",
-        "patient_phone",
-        "patient_sex",
-        "patient_uuid",
-        "result_complete",
-        "result_incomplete",
-        "result_invalid",
-        "scoring_version",
-        "screened_by"
-      ],
-      "suppress_empty": true,
-      "keep_empty": [],
-      "choice_map": {
-        "g_consent.consent_reconfirmed": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuospatial.trail_making": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuospatial.cube_copy": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuospatial.clock_contour": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuospatial.clock_numbers": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_visuospatial.clock_hands": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_naming.naming_1": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_naming.naming_2": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_naming.naming_3": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_attention.digit_span_fwd": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_attention.digit_span_bwd": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_attention.vigilance": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_attention.serial_7s": {
-          "0": "0 correct (0 pt)",
-          "1": "1 correct (1 pt)",
-          "2": "2 or 3 correct (2 pts)",
-          "3": "4 or 5 correct subtractions (3 pts)"
-        },
-        "g_language.sentence_rep_1": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_language.sentence_rep_2": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_abstraction.abstraction_1": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_abstraction.abstraction_2": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_kannu": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_kannu_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_kannu_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_cheera": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_cheera_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_cheera_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_gudi": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_gudi_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_gudi_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_gulabi": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_gulabi_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_gulabi_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_neelam": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_delayed_recall.delayed_neelam_cat": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_delayed_recall.delayed_neelam_mc": {
-          "yes": "Recalled with cue",
-          "no": "Not recalled even with cue"
-        },
-        "g_orientation.orientation_date": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_month": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_year": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_day": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_place": {
-          "yes": "Yes",
-          "no": "No"
-        },
-        "g_orientation.orientation_city": {
-          "yes": "Yes",
-          "no": "No"
-        }
-      },
-      "score_fields": {},
-      "join_fields": [],
-      "note_values": {},
-      "date_fields": [
-        "g_admin.assessment_datetime"
-      ],
-      "notes_fields": [],
-      "result_fields": [
-        "moca_te_visuospatial_total",
-        "moca_te_naming_total",
-        "moca_te_memory_total",
-        "moca_te_attention_total",
-        "moca_te_language_total",
-        "moca_te_abstraction_total",
-        "moca_te_orientation_total",
-        "moca_te_raw_total",
-        "moca_te_education_adj",
-        "moca_te_total_score",
-        "moca_te_interpretation"
       ]
     },
     "vineland": {
