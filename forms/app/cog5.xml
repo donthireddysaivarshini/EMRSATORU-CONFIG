@@ -144,6 +144,10 @@
             <Survey_Status_cog5/>
             <Reason_for_Dropout_cog5/>
           </grp_cog5_scale>
+          <g_supporting_docs>
+            <upload_scale_image/>
+            <upload_scale_pdf/>
+          </g_supporting_docs>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -695,6 +699,8 @@
       <bind nodeset="/data/grp_cog5_scale/display_overall" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_cog5_scale/Survey_Status_cog5" type="string" required="true()"/>
       <bind nodeset="/data/grp_cog5_scale/Reason_for_Dropout_cog5" type="string" required="true()" relevant=" /data/grp_cog5_scale/Survey_Status_cog5  = 'dropout___discontinued'"/>
+      <bind nodeset="/data/g_supporting_docs/upload_scale_image" type="binary" required="false()"/>
+      <bind nodeset="/data/g_supporting_docs/upload_scale_pdf" type="binary" required="false()"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1102,6 +1108,17 @@
         <label>Reason for Dropout / Refusal:</label>
         <hint>Please explain why the survey was stopped.</hint>
       </input>
+    </group>
+    <group appearance="field-list" ref="/data/g_supporting_docs">
+      <label>Supporting Documents / Scale Upload</label>
+      <upload ref="/data/g_supporting_docs/upload_scale_image" mediatype="image/*">
+        <label>Upload completed scale / assessment sheet (image)</label>
+        <hint>Upload clear photos of the completed paper scale, consent form, or supporting assessment document. Accepts JPG, JPEG, PNG. For PDF use next field.</hint>
+      </upload>
+      <upload ref="/data/g_supporting_docs/upload_scale_pdf" mediatype="application/*">
+        <label>Upload completed scale / assessment sheet (PDF)</label>
+        <hint>Upload a PDF of the completed paper scale if not already uploaded as image. Accepts PDF.</hint>
+      </upload>
     </group>
   </h:body>
 </h:html>

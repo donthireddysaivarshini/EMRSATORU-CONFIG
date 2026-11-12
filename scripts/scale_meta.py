@@ -583,6 +583,23 @@ NOTES_FIELDS = {
 SUPPORTING_PREFIX = 'g_supporting_docs.'
 
 
+# Human-readable value mappings for calculated fields (not select_one/select)
+EXTRA_CHOICE_MAPS = {
+    'moca': {
+        'selected_instrument': {
+            'moca_telugu': 'ICMR-NCTB Telugu MoCA (v7.1)',
+            'moca_b': 'MoCA-Basic (MoCA-B)',
+            'moca_8_1': 'MoCA Full, English, Version 8.1',
+            'none': 'None',
+        },
+        'education_confounded': {
+            'yes': 'Yes (Band A Telugu)',
+            'no': 'No',
+        },
+    },
+}
+
+
 def build_report_display(form, flat, choice_maps, parsed=None):
     """The report_display entry for one scale (consumed by cht-core patch)."""
     hidden = _hidden_scale_fields(flat, form, parsed)
@@ -613,7 +630,7 @@ def build_report_display(form, flat, choice_maps, parsed=None):
         'hide_fields': hidden,
         'suppress_empty': True,
         'keep_empty': KEEP_EMPTY.get(form, []),
-        'choice_map': {p: m for p, m in choice_maps.items()},
+        'choice_map': {**{p: m for p, m in choice_maps.items()}, **EXTRA_CHOICE_MAPS.get(form, {})},
         'score_fields': score_fields,
         'join_fields': join_fields,
         'note_values': {

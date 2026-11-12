@@ -1924,34 +1924,34 @@
           "no": "No"
         },
         "m8_g_delayed_recall.m8_delayed_face": {
-          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
-          "category": "Recalled with Category cue (0 pt, MIS x2)",
-          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
-          "not_recalled": "Not recalled (0 pt, MIS 0)"
+          "uncued": "Has to recall words WITH NO CUE (MIS X3)",
+          "category": "Category cue (MIS X2)",
+          "multiple_choice": "Multiple choice cue (MIS X1)",
+          "not_recalled": "Not recalled"
         },
         "m8_g_delayed_recall.m8_delayed_velvet": {
-          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
-          "category": "Recalled with Category cue (0 pt, MIS x2)",
-          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
-          "not_recalled": "Not recalled (0 pt, MIS 0)"
+          "uncued": "Has to recall words WITH NO CUE (MIS X3)",
+          "category": "Category cue (MIS X2)",
+          "multiple_choice": "Multiple choice cue (MIS X1)",
+          "not_recalled": "Not recalled"
         },
         "m8_g_delayed_recall.m8_delayed_church": {
-          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
-          "category": "Recalled with Category cue (0 pt, MIS x2)",
-          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
-          "not_recalled": "Not recalled (0 pt, MIS 0)"
+          "uncued": "Has to recall words WITH NO CUE (MIS X3)",
+          "category": "Category cue (MIS X2)",
+          "multiple_choice": "Multiple choice cue (MIS X1)",
+          "not_recalled": "Not recalled"
         },
         "m8_g_delayed_recall.m8_delayed_daisy": {
-          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
-          "category": "Recalled with Category cue (0 pt, MIS x2)",
-          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
-          "not_recalled": "Not recalled (0 pt, MIS 0)"
+          "uncued": "Has to recall words WITH NO CUE (MIS X3)",
+          "category": "Category cue (MIS X2)",
+          "multiple_choice": "Multiple choice cue (MIS X1)",
+          "not_recalled": "Not recalled"
         },
         "m8_g_delayed_recall.m8_delayed_red": {
-          "uncued": "Recalled with NO CUE (1 pt, MIS x3)",
-          "category": "Recalled with Category cue (0 pt, MIS x2)",
-          "multiple_choice": "Recalled with Multiple choice cue (0 pt, MIS x1)",
-          "not_recalled": "Not recalled (0 pt, MIS 0)"
+          "uncued": "Has to recall words WITH NO CUE (MIS X3)",
+          "category": "Category cue (MIS X2)",
+          "multiple_choice": "Multiple choice cue (MIS X1)",
+          "not_recalled": "Not recalled"
         },
         "m8_g_orientation.m8_orientation_date": {
           "yes": "Yes",
@@ -1976,6 +1976,10 @@
         "m8_g_orientation.m8_orientation_city": {
           "yes": "Yes",
           "no": "No"
+        },
+        "g_mandatory_history.mh_asked_to": {
+          "patient": "Patient",
+          "informant": "Informant"
         },
         "g_mandatory_history.mh_q1": {
           "yes": "Yes",
@@ -2026,6 +2030,20 @@
           "yes": "Yes",
           "no": "No",
           "unsure": "Unsure"
+        },
+        "g_mandatory_history.mh_answered_by": {
+          "patient": "Patient",
+          "informant": "Informant"
+        },
+        "selected_instrument": {
+          "moca_telugu": "ICMR-NCTB Telugu MoCA (v7.1)",
+          "moca_b": "MoCA-Basic (MoCA-B)",
+          "moca_8_1": "MoCA Full, English, Version 8.1",
+          "none": "None"
+        },
+        "education_confounded": {
+          "yes": "Yes (Band A Telugu)",
+          "no": "No"
         }
       },
       "score_fields": {},

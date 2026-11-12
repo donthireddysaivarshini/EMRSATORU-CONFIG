@@ -257,8 +257,12 @@ class _Walker:
         if raw in (None, ''):
             return None
         cmap = cfg['choice_map'].get(path)
-        if cmap and isinstance(raw, str) and raw in cmap:
-            return cmap[raw]
+        if cmap and isinstance(raw, str):
+            if raw in cmap:
+                return cmap[raw]
+            parts = raw.split()
+            if len(parts) > 1 and any(p in cmap for p in parts):
+                return ', '.join(cmap.get(p, p) for p in parts)
         if path in cfg.get('date_fields', []):
             return _format_date(raw)
         return raw

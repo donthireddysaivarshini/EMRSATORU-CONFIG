@@ -20,6 +20,12 @@
           <text id="yes_no_unsure-2">
             <value>Unsure</value>
           </text>
+          <text id="patient_informant-0">
+            <value>Patient</value>
+          </text>
+          <text id="patient_informant-1">
+            <value>Informant</value>
+          </text>
           <text id="luq_lang-0">
             <value>Telugu</value>
           </text>
@@ -96,16 +102,16 @@
             <value>Not recalled even with cue</value>
           </text>
           <text id="m8_recall_type-0">
-            <value>Recalled with NO CUE (1 pt, MIS x3)</value>
+            <value>Has to recall words WITH NO CUE (MIS X3)</value>
           </text>
           <text id="m8_recall_type-1">
-            <value>Recalled with Category cue (0 pt, MIS x2)</value>
+            <value>Category cue (MIS X2)</value>
           </text>
           <text id="m8_recall_type-2">
-            <value>Recalled with Multiple choice cue (0 pt, MIS x1)</value>
+            <value>Multiple choice cue (MIS X1)</value>
           </text>
           <text id="m8_recall_type-3">
-            <value>Not recalled (0 pt, MIS 0)</value>
+            <value>Not recalled</value>
           </text>
           <text id="/data/inputs:label">
             <value>Participant</value>
@@ -704,115 +710,115 @@
             <value>MoCA 8.1 — VISUOSPATIAL / EXECUTIVE</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_trail_inst:label">
-            <value>Please draw a line going from a number to a letter in ascending order (1-A-2-B-3-C-4-D-5-E). 1 point if completed without any lines crossing and without connecting E to 1.</value>
+            <value>Alternating Trail Making (Begin -&gt; End)</value>
             <value form="image">jr://images/trail_making_8_1.png</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_trail_making:label">
-            <value>Alternating Trail Making (1-A-2-B-3-C-4-D-5-E)</value>
+            <value>Alternating Trail Making</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_cube_inst:label">
-            <value>Copy cube: 3D, all lines drawn, meet with little/no space, no line added, parallel/similar length, orientation preserved.</value>
+            <value>Copy cube</value>
             <value form="image">jr://images/cube_8_1.png</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_cube_copy:label">
             <value>Copy cube</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_clock_inst:label">
-            <value>Draw CLOCK (Ten past eleven) (3 points).</value>
+            <value>Draw CLOCK ( Ten past eleven ) ( 3 points )</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_clock_contour:label">
-            <value>Contour (1 pt)</value>
+            <value>Contour</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_clock_numbers:label">
-            <value>Numbers (1 pt)</value>
+            <value>Numbers</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_clock_hands:label">
-            <value>Hands (1 pt)</value>
+            <value>Hands</value>
           </text>
           <text id="/data/m8_g_naming:label">
             <value>MoCA 8.1 — NAMING</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_inst:label">
-            <value>Beginning on the left, point to each figure and say: "Tell me the name of this animal."</value>
+            <value>NAMING</value>
             <value form="image">jr://images/naming_8_1.png</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_1:label">
             <value>1. Lion</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_2:label">
-            <value>2. Rhinoceros or rhino</value>
+            <value>2. Rhinoceros / Rhino</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_3:label">
-            <value>3. Camel or dromedary</value>
+            <value>3. Camel / Dromedary</value>
           </text>
           <text id="/data/m8_g_memory:label">
-            <value>MoCA 8.1 — MEMORY (No points)</value>
+            <value>MoCA 8.1 — MEMORY (NO POINTS)</value>
           </text>
           <text id="/data/m8_g_memory/m8_memory_inst:label">
-            <value>Read list of words (1/sec), subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall after 5 minutes.</value>
+            <value>Read list of words, subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall after 5 minutes.</value>
           </text>
           <text id="/data/m8_g_memory/m8_memory_words:label">
             <value>FACE | VELVET | CHURCH | DAISY | RED</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial1:label">
-            <value>1st TRIAL</value>
+            <value>1ST TRIAL</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_face:label">
-            <value>FACE (1st trial)</value>
+            <value>FACE (1ST TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_velvet:label">
-            <value>VELVET (1st trial)</value>
+            <value>VELVET (1ST TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_church:label">
-            <value>CHURCH (1st trial)</value>
+            <value>CHURCH (1ST TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_daisy:label">
-            <value>DAISY (1st trial)</value>
+            <value>DAISY (1ST TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_red:label">
-            <value>RED (1st trial)</value>
+            <value>RED (1ST TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2:label">
-            <value>2nd TRIAL</value>
+            <value>2ND TRIAL</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_face:label">
-            <value>FACE (2nd trial)</value>
+            <value>FACE (2ND TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_velvet:label">
-            <value>VELVET (2nd trial)</value>
+            <value>VELVET (2ND TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_church:label">
-            <value>CHURCH (2nd trial)</value>
+            <value>CHURCH (2ND TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_daisy:label">
-            <value>DAISY (2nd trial)</value>
+            <value>DAISY (2ND TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_red:label">
-            <value>RED (2nd trial)</value>
+            <value>RED (2ND TRIAL)</value>
           </text>
           <text id="/data/m8_g_attention:label">
             <value>MoCA 8.1 — ATTENTION</value>
           </text>
           <text id="/data/m8_g_attention/m8_digits_inst:label">
-            <value>Read list of digits (1 digit/sec.).</value>
+            <value>Read list of digits ( 1 digit/ sec. ).</value>
           </text>
           <text id="/data/m8_g_attention/m8_digit_span_fwd:label">
-            <value>Forward order: 2 1 8 5 4</value>
+            <value>Subject has to repeat them in the forward order. 2 1 8 5 4</value>
           </text>
           <text id="/data/m8_g_attention/m8_digit_span_bwd:label">
-            <value>Backward order: 7 4 2</value>
+            <value>Subject has to repeat them in the backward order. 7 4 2</value>
           </text>
           <text id="/data/m8_g_attention/m8_vigilance_inst:label">
-            <value>Read list of letters: F B A C M N A A J K L B A F A K D E A A A J A M O F A A B. Tap hand at each letter A. No points if &gt;= 2 errors.</value>
+            <value>Read list of letters. The subject must tap with his hand at each letter A. No points if &gt;= 2 errors: F B A C M N A A J K L B A F A K D E A A A J A M O F A A B</value>
           </text>
           <text id="/data/m8_g_attention/m8_vigilance:label">
-            <value>Vigilance (0-1 error = 1 pt; &gt;= 2 errors = 0 pt)</value>
+            <value>Vigilance (No points if &gt;= 2 errors)</value>
           </text>
           <text id="/data/m8_g_attention/m8_serial7_inst:label">
-            <value>Serial 7 subtraction starting at 100: [ ] 93 [ ] 86 [ ] 79 [ ] 72 [ ] 65</value>
+            <value>Serial 7 subtraction starting at 100. [ ] 93 [ ] 86 [ ] 79 [ ] 72 [ ] 65</value>
           </text>
           <text id="/data/m8_g_attention/m8_serial_7s:label">
-            <value>Serial 7s (100 - 7)</value>
+            <value>Serial 7 subtraction starting at 100.</value>
           </text>
           <text id="/data/m8_g_language:label">
             <value>MoCA 8.1 — LANGUAGE</value>
@@ -821,13 +827,13 @@
             <value>Repeat: I only know that John is the one to help today.</value>
           </text>
           <text id="/data/m8_g_language/m8_sentence_rep_2:label">
-            <value>Repeat: The cat always hid under the couch when dogs were in the room.</value>
+            <value>The cat always hid under the couch when dogs were in the room.</value>
           </text>
           <text id="/data/m8_g_language/m8_fluency_count:jr:constraintMsg">
             <value>Enter a count between 0 and 100.</value>
           </text>
           <text id="/data/m8_g_language/m8_fluency_count:label">
-            <value>Fluency: Number of words in one minute beginning with letter F (N &gt;= 11 words)</value>
+            <value>Fluency: Name maximum number of words in one minute that begin with the letter F. (N&gt;=11 words)</value>
           </text>
           <text id="/data/m8_g_abstraction:label">
             <value>MoCA 8.1 — ABSTRACTION</value>
@@ -842,10 +848,10 @@
             <value>watch - ruler</value>
           </text>
           <text id="/data/m8_g_delayed_recall:label">
-            <value>MoCA 8.1 — DELAYED RECALL &amp; MEMORY INDEX SCORE (MIS)</value>
+            <value>MoCA 8.1 — DELAYED RECALL</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_inst:label">
-            <value>Points for UNCUED recall only (5 pts max). MIS = 3x uncued + 2x category cue + 1x multiple-choice cue (/15).</value>
+            <value>Has to recall words WITH NO CUE. Points for UNCUED recall only.</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_face:label">
             <value>FACE</value>
@@ -889,6 +895,9 @@
           <text id="/data/g_mandatory_history/mh_inst:label">
             <value>Ask the patient and the informant separately. Do not prompt or suggest answers.</value>
           </text>
+          <text id="/data/g_mandatory_history/mh_asked_to:label">
+            <value>Questions are asked to</value>
+          </text>
           <text id="/data/g_mandatory_history/mh_q1:label">
             <value>1. Is there any complaint of memory or thinking difficulty?</value>
           </text>
@@ -925,6 +934,9 @@
           <text id="/data/g_mandatory_history/mh_q10_details:label">
             <value>If Q10 is Yes — where and when</value>
           </text>
+          <text id="/data/g_mandatory_history/mh_answered_by:label">
+            <value>Answered by</value>
+          </text>
           <text id="/data/g_admin:label">
             <value>TOTAL &amp; SIGN-OFF</value>
           </text>
@@ -936,6 +948,21 @@
           </text>
           <text id="/data/g_admin/score_summary_note:label">
             <value> Instrument: <output value=" /data/selected_instrument "/> | TOTAL SCORE: <output value=" /data/moca_total_score "/> / 30</value>
+          </text>
+          <text id="/data/g_supporting_docs:label">
+            <value>Supporting Documents / Scale Upload</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_image:label">
+            <value>Upload completed scale / assessment sheet (image)</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_image:hint">
+            <value>Upload clear photos of the completed paper scale, consent form, or supporting assessment document. Accepts JPG, JPEG, PNG. For PDF use next field.</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_pdf:label">
+            <value>Upload completed scale / assessment sheet (PDF)</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_pdf:hint">
+            <value>Upload a PDF of the completed paper scale if not already uploaded as image. Accepts PDF.</value>
           </text>
         </translation>
         <translation lang="te">
@@ -953,6 +980,12 @@
           </text>
           <text id="yes_no_unsure-2">
             <value>తెలియదు</value>
+          </text>
+          <text id="patient_informant-0">
+            <value>రోగి</value>
+          </text>
+          <text id="patient_informant-1">
+            <value>సమాచారకర్త</value>
           </text>
           <text id="luq_lang-0">
             <value>తెలుగు</value>
@@ -1333,25 +1366,31 @@
             <value>నగరం</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_face:label">
-            <value>Category cue: body part | MC: nose, face, hand (shoulder, leg)</value>
+            <value>Category cue: body part | Multiple choice: nose, face, hand (shoulder, leg)</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_velvet:label">
-            <value>Category cue: type of fabric | MC: denim, velvet, cotton (nylon, silk)</value>
+            <value>Category cue: type of fabric | Multiple choice: denim, velvet, cotton (nylon, silk)</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_church:label">
-            <value>Category cue: type of building | MC: church, school, hospital (library, store)</value>
+            <value>Category cue: type of building | Multiple choice: church, school, hospital (library, store)</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_daisy:label">
-            <value>Category cue: type of flower | MC: rose, daisy, tulip (lily, daffodil)</value>
+            <value>Category cue: type of flower | Multiple choice: rose, daisy, tulip (lily, daffodil)</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_red:label">
-            <value>Category cue: color | MC: red, blue, green (yellow, purple)</value>
+            <value>Category cue: color | Multiple choice: red, blue, green (yellow, purple)</value>
           </text>
           <text id="/data/g_mandatory_history:label">
             <value>5. తప్పనిసరి చరిత్ర ప్రశ్నలు</value>
           </text>
           <text id="/data/g_mandatory_history/mh_inst:label">
             <value>రోగిని మరియు సమాచారకర్తను విడివిడిగా అడగండి. సమాధానాలను సూచించవద్దు.</value>
+          </text>
+          <text id="/data/g_mandatory_history/mh_asked_to:label">
+            <value>ప్రశ్నలు ఎవరిని అడిగారు</value>
+          </text>
+          <text id="/data/g_mandatory_history/mh_answered_by:label">
+            <value>సమాధానం ఇచ్చినవారు</value>
           </text>
           <text id="/data/g_admin:label">
             <value>మొత్తం స్కోరు</value>
@@ -1860,6 +1899,21 @@
           <text id="/data/g_admin/score_summary_note:label">
             <value>-</value>
           </text>
+          <text id="/data/g_supporting_docs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_image:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_image:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_pdf:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_supporting_docs/upload_scale_pdf:hint">
+            <value>-</value>
+          </text>
         </translation>
       </itext>
       <instance>
@@ -2185,6 +2239,7 @@
           </m8_g_orientation>
           <g_mandatory_history>
             <mh_inst/>
+            <mh_asked_to/>
             <mh_q1/>
             <mh_q1_duration/>
             <mh_q2/>
@@ -2197,6 +2252,7 @@
             <mh_q9/>
             <mh_q10/>
             <mh_q10_details/>
+            <mh_answered_by/>
           </g_mandatory_history>
           <te_visuospatial_total/>
           <te_naming_total/>
@@ -2243,6 +2299,10 @@
             <assessment_datetime/>
             <score_summary_note/>
           </g_admin>
+          <g_supporting_docs>
+            <upload_scale_image/>
+            <upload_scale_pdf/>
+          </g_supporting_docs>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -2275,6 +2335,18 @@
           <item>
             <itextId>yes_no_unsure-2</itextId>
             <name>unsure</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="patient_informant">
+        <root>
+          <item>
+            <itextId>patient_informant-0</itextId>
+            <name>patient</name>
+          </item>
+          <item>
+            <itextId>patient_informant-1</itextId>
+            <name>informant</name>
           </item>
         </root>
       </instance>
@@ -2690,6 +2762,7 @@
       <bind nodeset="/data/m8_g_orientation/m8_orientation_city" type="string" required="true()"/>
       <bind nodeset="/data/g_mandatory_history" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
       <bind nodeset="/data/g_mandatory_history/mh_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_mandatory_history/mh_asked_to" type="string" required="true()"/>
       <bind nodeset="/data/g_mandatory_history/mh_q1" type="string" required="true()"/>
       <bind nodeset="/data/g_mandatory_history/mh_q1_duration" type="string" relevant=" /data/g_mandatory_history/mh_q1  = 'yes'" required="true()"/>
       <bind nodeset="/data/g_mandatory_history/mh_q2" type="string" required="true()"/>
@@ -2702,6 +2775,7 @@
       <bind nodeset="/data/g_mandatory_history/mh_q9" type="string" required="true()"/>
       <bind nodeset="/data/g_mandatory_history/mh_q10" type="string" required="true()"/>
       <bind nodeset="/data/g_mandatory_history/mh_q10_details" type="string" relevant=" /data/g_mandatory_history/mh_q10  = 'yes'" required="true()"/>
+      <bind nodeset="/data/g_mandatory_history/mh_answered_by" type="string" required="true()"/>
       <bind nodeset="/data/te_visuospatial_total" type="string" calculate="if( /data/te_g_visuospatial/te_trail_making  = &quot;yes&quot;, 1, 0) + if( /data/te_g_visuospatial/te_cube_copy  = &quot;yes&quot;, 1, 0) + if( /data/te_g_visuospatial/te_clock_contour  = &quot;yes&quot;, 1, 0) + if( /data/te_g_visuospatial/te_clock_numbers  = &quot;yes&quot;, 1, 0) + if( /data/te_g_visuospatial/te_clock_hands  = &quot;yes&quot;, 1, 0)"/>
       <bind nodeset="/data/te_naming_total" type="string" calculate="if( /data/te_g_naming/te_naming_1  = &quot;yes&quot;, 1, 0) + if( /data/te_g_naming/te_naming_2  = &quot;yes&quot;, 1, 0) + if( /data/te_g_naming/te_naming_3  = &quot;yes&quot;, 1, 0)"/>
       <bind nodeset="/data/te_attention_total" type="string" calculate="if( /data/te_g_attention/te_digit_span_fwd  = &quot;yes&quot;, 1, 0) + if( /data/te_g_attention/te_digit_span_bwd  = &quot;yes&quot;, 1, 0) + if( /data/te_g_attention/te_vigilance  = &quot;yes&quot;, 1, 0) + if( /data/te_g_attention/te_serial_7s  != &quot;&quot;, number( /data/te_g_attention/te_serial_7s ), 0)"/>
@@ -2741,10 +2815,13 @@
       <bind nodeset="/data/m8_total_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_1&quot;, min( /data/m8_raw_total  +  /data/m8_education_adj , 30), &quot;&quot;)"/>
       <bind nodeset="/data/moca_total_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_telugu&quot;,  /data/te_total_score , if( /data/selected_instrument  = &quot;moca_b&quot;,  /data/mb_total_score , if( /data/selected_instrument  = &quot;moca_8_1&quot;,  /data/m8_total_score , &quot;&quot;)))"/>
       <bind nodeset="/data/moca_mis_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_1&quot;,  /data/m8_mis_score , &quot;&quot;)"/>
-      <bind nodeset="/data/moca_interpretation" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != &quot;yes&quot;, &quot;not assessed (no consent)&quot;, if( /data/selected_instrument  = &quot;moca_telugu&quot; or  /data/selected_instrument  = &quot;moca_8_1&quot;, if( /data/moca_total_score  &gt;= 26, &quot;normal&quot;, &quot;impaired&quot;), &quot;&quot;))"/>
+      <bind nodeset="/data/moca_interpretation" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != &quot;yes&quot;, &quot;Not assessed (no consent)&quot;, if( /data/selected_instrument  = &quot;moca_telugu&quot; or  /data/selected_instrument  = &quot;moca_8_1&quot;, if( /data/moca_total_score  &gt;= 26, &quot;Normal (&gt;= 26/30)&quot;, &quot;Below normal (&lt; 26/30)&quot;), &quot;&quot;))"/>
       <bind nodeset="/data/g_admin/administered_by" type="string" required="true()"/>
       <bind nodeset="/data/g_admin/assessment_datetime" type="dateTime" required="true()" calculate="if(. = '', now(), .)"/>
       <bind nodeset="/data/g_admin/score_summary_note" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' or  /data/selected_instrument  = 'moca_b' or  /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/g_supporting_docs" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
+      <bind nodeset="/data/g_supporting_docs/upload_scale_image" type="binary" required="false()"/>
+      <bind nodeset="/data/g_supporting_docs/upload_scale_pdf" type="binary" required="false()"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -4080,6 +4157,13 @@
       <input ref="/data/g_mandatory_history/mh_inst">
         <label ref="jr:itext('/data/g_mandatory_history/mh_inst:label')"/>
       </input>
+      <select1 ref="/data/g_mandatory_history/mh_asked_to" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_mandatory_history/mh_asked_to:label')"/>
+        <itemset nodeset="instance('patient_informant')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
       <select1 ref="/data/g_mandatory_history/mh_q1" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_mandatory_history/mh_q1:label')"/>
         <itemset nodeset="instance('yes_no_unsure')/root/item">
@@ -4156,6 +4240,13 @@
       <input ref="/data/g_mandatory_history/mh_q10_details">
         <label ref="jr:itext('/data/g_mandatory_history/mh_q10_details:label')"/>
       </input>
+      <select1 ref="/data/g_mandatory_history/mh_answered_by" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_mandatory_history/mh_answered_by:label')"/>
+        <itemset nodeset="instance('patient_informant')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
     </group>
     <group appearance="field-list" ref="/data/g_admin">
       <label ref="jr:itext('/data/g_admin:label')"/>
@@ -4168,6 +4259,17 @@
       <input ref="/data/g_admin/score_summary_note">
         <label ref="jr:itext('/data/g_admin/score_summary_note:label')"/>
       </input>
+    </group>
+    <group appearance="field-list" ref="/data/g_supporting_docs">
+      <label ref="jr:itext('/data/g_supporting_docs:label')"/>
+      <upload ref="/data/g_supporting_docs/upload_scale_image" mediatype="image/*">
+        <label ref="jr:itext('/data/g_supporting_docs/upload_scale_image:label')"/>
+        <hint ref="jr:itext('/data/g_supporting_docs/upload_scale_image:hint')"/>
+      </upload>
+      <upload ref="/data/g_supporting_docs/upload_scale_pdf" mediatype="application/*">
+        <label ref="jr:itext('/data/g_supporting_docs/upload_scale_pdf:label')"/>
+        <hint ref="jr:itext('/data/g_supporting_docs/upload_scale_pdf:hint')"/>
+      </upload>
     </group>
   </h:body>
 </h:html>

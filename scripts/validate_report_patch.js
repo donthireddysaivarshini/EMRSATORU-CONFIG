@@ -276,7 +276,7 @@ function mocaIntegratedDoc() {
       m8_mis_score: '5',
       m8_orientation_total: '6', m8_education_adj: '1',
       moca_total_score: '26', moca_mis_score: '5',
-      moca_interpretation: 'normal',
+      moca_interpretation: 'Normal (>= 26/30)',
       g_admin: { administered_by: 'Varshini', assessment_datetime: '2026-11-12', score_summary_note: '' },
     },
     hidden_fields: ['inputs'],
@@ -501,9 +501,11 @@ async function main() {
     check('yes resolved', byLabel['report.moca.m8_g_visuospatial.m8_trail_making'] && byLabel['report.moca.m8_g_visuospatial.m8_trail_making'].value === 'Yes');
     check('no resolved (m8_naming_2)', byLabel['report.moca.m8_g_naming.m8_naming_2'] && byLabel['report.moca.m8_g_naming.m8_naming_2'].value === 'No');
     check('serial 7s resolved', byLabel['report.moca.m8_g_attention.m8_serial_7s'] && byLabel['report.moca.m8_g_attention.m8_serial_7s'].value === '4 or 5 correct subtractions (3 pts)');
+    check('selected_instrument resolved', byLabel['report.moca.selected_instrument'] && byLabel['report.moca.selected_instrument'].value === 'MoCA Full, English, Version 8.1');
+    check('education_confounded resolved', byLabel['report.moca.education_confounded'] && byLabel['report.moca.education_confounded'].value === 'No');
     check('total score visible', byLabel['report.moca.moca_total_score'] && byLabel['report.moca.moca_total_score'].value === '26');
     check('MIS visible', byLabel['report.moca.moca_mis_score'] && byLabel['report.moca.moca_mis_score'].value === '5');
-    check('interpretation visible', byLabel['report.moca.moca_interpretation'] && byLabel['report.moca.moca_interpretation'].value === 'normal');
+    check('interpretation visible', byLabel['report.moca.moca_interpretation'] && byLabel['report.moca.moca_interpretation'].value === 'Normal (>= 26/30)');
     check('instruction fields hidden', !labels.includes('report.moca.m8_g_visuospatial.m8_trail_inst'));
     check('score_summary_note hidden', !labels.includes('report.moca.g_admin.score_summary_note'));
     check('patient internal fields hidden', !labels.includes('report.moca.patient_uuid'));

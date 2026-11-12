@@ -32,7 +32,7 @@ const preAssessment = ({
   ['yes', 'yes', 'yes', 'yes', 'yes', '2', 'none'], // sensory + testing conditions
 );
 
-const mandatoryHistoryAllNo = () => repeat('no', 10);
+const mandatoryHistoryAllNo = () => ['patient'].concat(repeat('no', 10), ['patient']);
 
 const moca81Answers = ({
   pre = {},
@@ -126,7 +126,7 @@ describe('MOCA (Integrated) form & scoring', () => {
     expect(res.fields.education_confounded).to.equal('no');
     expect(res.fields.moca_total_score).to.equal('30');
     expect(res.fields.moca_mis_score).to.equal('15');
-    expect(res.fields.moca_interpretation).to.equal('normal');
+    expect(res.fields.moca_interpretation).to.equal('Normal (>= 26/30)');
   });
 
   it('MoCA 8.1: MIS weights uncued (x3), category (x2), MC (x1), while Delayed Recall counts uncued only; <=12 yrs adds +1', async () => {
@@ -141,7 +141,7 @@ describe('MOCA (Integrated) form & scoring', () => {
     expect(res.fields.moca_mis_score).to.equal('9'); // 3 + 2 + 1 + 0 + 3
     expect(res.fields.m8_education_adj).to.equal('1');
     expect(res.fields.moca_total_score).to.equal('28'); // 27 + 1
-    expect(res.fields.moca_interpretation).to.equal('normal');
+    expect(res.fields.moca_interpretation).to.equal('Normal (>= 26/30)');
   });
 
   it('English + unable to read/write simple sentence -> Band A -> opens MoCA-B', async () => {
@@ -164,18 +164,20 @@ describe('MOCA (Integrated) form & scoring', () => {
     expect(res.fields.selected_instrument).to.equal('moca_telugu');
     expect(res.fields.education_confounded).to.equal('yes');
     expect(res.fields.moca_total_score).to.equal('30');
-    expect(res.fields.moca_interpretation).to.equal('normal');
+    expect(res.fields.moca_interpretation).to.equal('Normal (>= 26/30)');
   });
 
   it('Mandatory history conditional follow-ups (Q1 and Q10) work on MoCA 8.1', async () => {
-    const history = ['yes', '18 months ago', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'NIMS 2025'];
+    const history = ['informant', 'yes', '18 months ago', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'NIMS 2025', 'informant'];
     const res = await fill(harness, 'moca', moca81Answers({
       orientation: repeat('no', 6), // 24 -> impaired
       history,
     }));
     expect(res.errors).to.deep.equal([]);
     expect(res.fields.moca_total_score).to.equal('24');
-    expect(res.fields.moca_interpretation).to.equal('impaired');
+    expect(res.fields.moca_interpretation).to.equal('Below normal (< 26/30)');
+    expect(res.fields.g_mandatory_history.mh_asked_to).to.equal('informant');
+    expect(res.fields.g_mandatory_history.mh_answered_by).to.equal('informant');
     expect(res.fields.g_mandatory_history.mh_q1_duration).to.equal('18 months ago');
     expect(res.fields.g_mandatory_history.mh_q10_details).to.equal('NIMS 2025');
   });
@@ -184,7 +186,7 @@ describe('MOCA (Integrated) form & scoring', () => {
     const res = await fill(harness, 'moca', ['no', 'Tester']);
     expect(res.errors).to.deep.equal([]);
     expect(res.fields.moca_total_score || '').to.equal('');
-    expect(res.fields.moca_interpretation).to.equal('not assessed (no consent)');
+    expect(res.fields.moca_interpretation).to.equal('Not assessed (no consent)');
   });
 });
 
