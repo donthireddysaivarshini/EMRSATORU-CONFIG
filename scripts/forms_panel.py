@@ -20,7 +20,9 @@ import base64
 import hashlib
 import hmac
 import html
+import io
 import json
+import mimetypes
 import os
 import re
 import secrets
@@ -29,6 +31,7 @@ import subprocess
 import threading
 import time
 import urllib.parse
+import zipfile
 from datetime import datetime, timezone
 from email.parser import BytesParser
 from email.policy import default as email_policy
@@ -214,6 +217,7 @@ def parse_multipart(content_type, body):
     if not message.is_multipart():
         raise PanelError('The upload was not sent as a file form.')
     values, files = {}, {}
+    media_list = []
     for part in message.iter_parts():
         name = part.get_param('name', header='content-disposition')
         if not name:
@@ -221,9 +225,14 @@ def parse_multipart(content_type, body):
         filename = part.get_filename()
         payload = part.get_payload(decode=True) or b''
         if filename is not None:
-            files[name] = (os.path.basename(filename), payload)
+            clean_name = os.path.basename(filename)
+            if clean_name:
+                files[name] = (clean_name, payload)
+                if name != 'xlsx':
+                    media_list.append((clean_name, payload))
         else:
             values[name] = payload.decode('utf-8', 'replace')
+    files['_media'] = media_list
     return values, files
 
 
@@ -286,7 +295,46 @@ def stage_live_media(couch, live_doc, media_dir):
             f.write(couch.get_attachment(live_doc['_id'], name))
 
 
-def check_form(couch, path, form_id, user, source, xlsx=None, xml=None, new_properties=None):
+def stage_uploaded_media(media_files, media_dir):
+    """Save uploaded images (or extract from .zip) into the form's media directory."""
+    if not media_files:
+        return []
+    os.makedirs(media_dir, exist_ok=True)
+    images_sub = os.path.join(media_dir, 'images')
+    os.makedirs(images_sub, exist_ok=True)
+    saved = []
+    for filename, data in media_files:
+        if not data:
+            continue
+        if filename.lower().endswith('.zip') or data[:4] == b'PK\x03\x04':
+            try:
+                with zipfile.ZipFile(io.BytesIO(data)) as zf:
+                    for member in zf.infolist():
+                        if member.is_dir():
+                            continue
+                        base = os.path.basename(member.filename)
+                        if not base or base.startswith('.') or base.startswith('__MACOSX'):
+                            continue
+                        raw = zf.read(member)
+                        with open(os.path.join(media_dir, base), 'wb') as f:
+                            f.write(raw)
+                        with open(os.path.join(images_sub, base), 'wb') as f:
+                            f.write(raw)
+                        saved.append(base)
+            except Exception as exc:
+                raise PanelError(f'Failed to extract media zip "{filename}": {exc}')
+        else:
+            base = os.path.basename(filename)
+            if base:
+                with open(os.path.join(media_dir, base), 'wb') as f:
+                    f.write(data)
+                with open(os.path.join(images_sub, base), 'wb') as f:
+                    f.write(data)
+                saved.append(base)
+    return saved
+
+
+def check_form(couch, path, form_id, user, source, xlsx=None, xml=None, new_properties=None, media_files=None):
     """Run every check on a staged form. Writes and returns result.json."""
     app_dir = os.path.join(path, 'forms', 'app')
     checks = []
@@ -324,14 +372,20 @@ def check_form(couch, path, form_id, user, source, xlsx=None, xml=None, new_prop
     properties.update(new_properties or {})
     with open(os.path.join(app_dir, f'{form_id}.properties.json'), 'w', encoding='utf-8') as f:
         json.dump(properties, f)
+    media_dir = os.path.join(app_dir, f'{form_id}-media')
     if live_doc:
-        stage_live_media(couch, live_doc, os.path.join(app_dir, f'{form_id}-media'))
+        stage_live_media(couch, live_doc, media_dir)
+    uploaded_media = stage_uploaded_media(media_files, media_dir)
 
     if new_xml:
-        missing = missing_media(new_xml, os.path.join(app_dir, f'{form_id}-media'))
-        add('Every picture / file the form uses is on the server', not missing,
-            'Not found: ' + ', '.join(missing) + '. Uploading pictures from this page is not supported yet: '
-            'use pictures the live form already has, or ask the admin to upload them.')
+        missing = missing_media(new_xml, media_dir)
+        detail = ''
+        if missing:
+            detail = ('Not found: ' + ', '.join(missing) + '. Select the missing pictures in the '
+                      '"Pictures / Media files" field and upload again.')
+        elif uploaded_media:
+            detail = f'Attached {len(uploaded_media)} image(s): {", ".join(sorted(set(uploaded_media)))}'
+        add('Every picture / file the form uses is on the server', not missing, detail)
 
     blocked_early = not all(c['ok'] for c in checks if c['blocking'])
     test_output = ''
@@ -543,8 +597,9 @@ def publish(couch, token, user):
                 rel = os.path.relpath(full, media_dir).replace(os.sep, '/')
                 with open(full, 'rb') as f:
                     content = f.read()
-                content_type = live_doc['_attachments'][rel]['content_type'] if live_doc and rel in live_doc.get(
-                    '_attachments', {}) else 'application/octet-stream'
+                content_type = (live_doc['_attachments'][rel]['content_type']
+                                if live_doc and rel in live_doc.get('_attachments', {})
+                                else mimetypes.guess_type(rel)[0] or 'application/octet-stream')
                 doc['_attachments'][rel] = {'content_type': content_type, 'data': base64.b64encode(content).decode()}
         doc['_attachments']['xml'] = {'content_type': 'application/xml', 'data': base64.b64encode(new_xml).decode()}
         try:
@@ -709,6 +764,9 @@ def forms_page(couch, csrf, message=''):
  <select name="form_id"><option value="">A new form (id from the file name)</option>{options}</select>
  <label>Spreadsheet (.xlsx)</label>
  <input type="file" name="xlsx" accept=".xlsx" required>
+ <label>Pictures / Media files (optional: select multiple images or a .zip)</label>
+ <input type="file" name="media" accept="image/*,.zip,.png,.jpg,.jpeg" multiple>
+ <div class="sub">Hold Ctrl / Cmd to choose multiple images (e.g. cow.png, tri.png), or upload a .zip containing them.</div>
  <label>New form only: title</label>
  <input type="text" name="title" maxlength="120" placeholder="e.g. Hearing screening">
  <label>New form only: filled in for</label>
@@ -902,7 +960,8 @@ class Panel:
                 raise PanelError('Another form is being checked. Try again in a minute.')
             try:
                 token, staged = new_staging()
-                check_form(self.couch, staged, form_id, user, 'upload', xlsx=data, new_properties=new_properties)
+                media_files = files.get('_media', [])
+                check_form(self.couch, staged, form_id, user, 'upload', xlsx=data, new_properties=new_properties, media_files=media_files)
             finally:
                 PIPELINE_LOCK.release()
             return 303, f'review?token={token}'

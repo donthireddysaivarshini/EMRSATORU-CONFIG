@@ -86,12 +86,34 @@ def main():
     print('multipart')
     body = (b'--B\r\nContent-Disposition: form-data; name="csrf"\r\n\r\nabc\r\n'
             b'--B\r\nContent-Disposition: form-data; name="xlsx"; filename="../../moca.xlsx"\r\n'
-            b'Content-Type: application/octet-stream\r\n\r\nPK\x03\x04data\r\n--B--\r\n')
+            b'Content-Type: application/octet-stream\r\n\r\nPK\x03\x04data\r\n'
+            b'--B\r\nContent-Disposition: form-data; name="media"; filename="cow.png"\r\n'
+            b'Content-Type: image/png\r\n\r\nPNG_DATA\r\n'
+            b'--B\r\nContent-Disposition: form-data; name="media"; filename="tri.png"\r\n'
+            b'Content-Type: image/png\r\n\r\nTRI_DATA\r\n--B--\r\n')
     values, files = fp.parse_multipart('multipart/form-data; boundary=B', body)
     check('field value', values.get('csrf') == 'abc')
     check('file name stripped of folders', files['xlsx'][0] == 'moca.xlsx')
     check('file bytes kept', files['xlsx'][1] == b'PK\x03\x04data')
+    check('multiple media captured', len(files.get('_media', [])) == 2)
+    check('media names clean', [m[0] for m in files.get('_media', [])] == ['cow.png', 'tri.png'])
     check('non-multipart rejected', raises(lambda: fp.parse_multipart('text/plain', b'x')))
+
+    print('media staging')
+    with tempfile.TemporaryDirectory() as tmp_media:
+        saved = fp.stage_uploaded_media([('cow.png', b'cow_bytes'), ('images/sub/tri.png', b'tri_bytes')], tmp_media)
+        check('uploaded images saved', os.path.isfile(os.path.join(tmp_media, 'cow.png')) and os.path.isfile(os.path.join(tmp_media, 'images', 'cow.png')))
+        check('subfolder path stripped', os.path.isfile(os.path.join(tmp_media, 'tri.png')))
+        check('saved list non-empty', len(saved) == 2)
+
+        import zipfile
+        import io
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, 'w') as z:
+            z.writestr('drawing.png', b'drawing_bytes')
+        saved_zip = fp.stage_uploaded_media([('pictures.zip', buf.getvalue())], tmp_media)
+        check('zip media extracted', os.path.isfile(os.path.join(tmp_media, 'drawing.png')) and os.path.isfile(os.path.join(tmp_media, 'images', 'drawing.png')))
+        check('zip member in saved list', 'drawing.png' in saved_zip)
 
     print('output summaries')
     out = 'INFO a\nWARN careful\nERROR broken\n  at x (y)\n'
