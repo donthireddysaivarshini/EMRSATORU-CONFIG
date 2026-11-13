@@ -590,6 +590,7 @@ EXTRA_CHOICE_MAPS = {
             'moca_telugu': 'ICMR-NCTB Telugu MoCA (v7.1)',
             'moca_b': 'MoCA-Basic (MoCA-B)',
             'moca_8_1': 'MoCA Full, English, Version 8.1',
+            'moca_8_2': 'MoCA Full, English, Version 8.2',
             'none': 'None',
         },
         'education_confounded': {

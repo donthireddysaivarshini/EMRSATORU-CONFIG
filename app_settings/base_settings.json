@@ -1430,7 +1430,7 @@
         "g_child.dob_warning",
         "g_edu_lang_informant.band_a_rebook_note",
         "g_edu_lang_informant.education_band_note",
-        "g_instrument_banner.banner_moca_8_1",
+        "g_instrument_banner.banner_moca_8_2",
         "g_instrument_banner.banner_moca_b",
         "g_instrument_banner.banner_none",
         "g_instrument_banner.banner_telugu_a",
@@ -1446,8 +1446,8 @@
         "m8_g_memory.m8_memory_inst",
         "m8_g_memory.m8_memory_words",
         "m8_g_naming.m8_naming_inst",
+        "m8_g_visuospatial.m8_chair_inst",
         "m8_g_visuospatial.m8_clock_inst",
-        "m8_g_visuospatial.m8_cube_inst",
         "m8_g_visuospatial.m8_trail_inst",
         "mb_g_abstraction.mb_abstraction_inst_practice",
         "mb_g_attention.mb_attention_black_inst",
@@ -1861,7 +1861,7 @@
           "yes": "Yes",
           "no": "No"
         },
-        "m8_g_visuospatial.m8_cube_copy": {
+        "m8_g_visuospatial.m8_chair_copy": {
           "yes": "Yes",
           "no": "No"
         },
@@ -1923,31 +1923,31 @@
           "yes": "Yes",
           "no": "No"
         },
-        "m8_g_delayed_recall.m8_delayed_face": {
+        "m8_g_delayed_recall.m8_delayed_hand": {
           "uncued": "Has to recall words WITH NO CUE (MIS X3)",
           "category": "Category cue (MIS X2)",
           "multiple_choice": "Multiple choice cue (MIS X1)",
           "not_recalled": "Not recalled"
         },
-        "m8_g_delayed_recall.m8_delayed_velvet": {
+        "m8_g_delayed_recall.m8_delayed_nylon": {
           "uncued": "Has to recall words WITH NO CUE (MIS X3)",
           "category": "Category cue (MIS X2)",
           "multiple_choice": "Multiple choice cue (MIS X1)",
           "not_recalled": "Not recalled"
         },
-        "m8_g_delayed_recall.m8_delayed_church": {
+        "m8_g_delayed_recall.m8_delayed_park": {
           "uncued": "Has to recall words WITH NO CUE (MIS X3)",
           "category": "Category cue (MIS X2)",
           "multiple_choice": "Multiple choice cue (MIS X1)",
           "not_recalled": "Not recalled"
         },
-        "m8_g_delayed_recall.m8_delayed_daisy": {
+        "m8_g_delayed_recall.m8_delayed_carrot": {
           "uncued": "Has to recall words WITH NO CUE (MIS X3)",
           "category": "Category cue (MIS X2)",
           "multiple_choice": "Multiple choice cue (MIS X1)",
           "not_recalled": "Not recalled"
         },
-        "m8_g_delayed_recall.m8_delayed_red": {
+        "m8_g_delayed_recall.m8_delayed_yellow": {
           "uncued": "Has to recall words WITH NO CUE (MIS X3)",
           "category": "Category cue (MIS X2)",
           "multiple_choice": "Multiple choice cue (MIS X1)",
@@ -2039,6 +2039,7 @@
           "moca_telugu": "ICMR-NCTB Telugu MoCA (v7.1)",
           "moca_b": "MoCA-Basic (MoCA-B)",
           "moca_8_1": "MoCA Full, English, Version 8.1",
+          "moca_8_2": "MoCA Full, English, Version 8.2",
           "none": "None"
         },
         "education_confounded": {

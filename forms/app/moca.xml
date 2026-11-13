@@ -215,8 +215,8 @@
           <text id="/data/g_instrument_banner/banner_moca_b:label">
             <value>Primary instrument: MoCA-Basic (English Band A: illiterate or &lt;=4 yrs). Informant: EASI Mandatory.</value>
           </text>
-          <text id="/data/g_instrument_banner/banner_moca_8_1:label">
-            <value>Primary instrument: MoCA Full, English, Version 8.1 (English Band B or C). Informant: EASI if an informant is present.</value>
+          <text id="/data/g_instrument_banner/banner_moca_8_2:label">
+            <value>Primary instrument: MoCA Full, English, Version 8.2 (English Band B or C). Informant: EASI if an informant is present.</value>
           </text>
           <text id="/data/g_instrument_banner/banner_none:label">
             <value>Neither Telugu nor English selected — no MoCA instrument is opened. Continue to Mandatory History Questions.</value>
@@ -707,24 +707,24 @@
             <value>TOTAL TIME (sec)</value>
           </text>
           <text id="/data/m8_g_visuospatial:label">
-            <value>MoCA 8.1 — VISUOSPATIAL / EXECUTIVE</value>
+            <value>MoCA 8.2 — VISUOSPATIAL / EXECUTIVE</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_trail_inst:label">
             <value>Alternating Trail Making (Begin -&gt; End)</value>
-            <value form="image">jr://images/trail_making_8_1.png</value>
+            <value form="image">jr://images/trail_making_8_2.png</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_trail_making:label">
             <value>Alternating Trail Making</value>
           </text>
-          <text id="/data/m8_g_visuospatial/m8_cube_inst:label">
-            <value>Copy cube</value>
-            <value form="image">jr://images/cube_8_1.png</value>
+          <text id="/data/m8_g_visuospatial/m8_chair_inst:label">
+            <value>Copy chair</value>
+            <value form="image">jr://images/chair_8_2.png</value>
           </text>
-          <text id="/data/m8_g_visuospatial/m8_cube_copy:label">
-            <value>Copy cube</value>
+          <text id="/data/m8_g_visuospatial/m8_chair_copy:label">
+            <value>Copy chair</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_clock_inst:label">
-            <value>Draw CLOCK ( Ten past eleven ) ( 3 points )</value>
+            <value>Draw CLOCK ( Ten past nine ) ( 3 points )</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_clock_contour:label">
             <value>Contour</value>
@@ -736,77 +736,77 @@
             <value>Hands</value>
           </text>
           <text id="/data/m8_g_naming:label">
-            <value>MoCA 8.1 — NAMING</value>
+            <value>MoCA 8.2 — NAMING</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_inst:label">
             <value>NAMING</value>
-            <value form="image">jr://images/naming_8_1.png</value>
+            <value form="image">jr://images/naming_8_2.png</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_1:label">
-            <value>1. Lion</value>
+            <value>1. Snake (or a type of snake like Boa or Cobra)</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_2:label">
-            <value>2. Rhinoceros / Rhino</value>
+            <value>2. Elephant</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_3:label">
-            <value>3. Camel / Dromedary</value>
+            <value>3. Crocodile or Alligator</value>
           </text>
           <text id="/data/m8_g_memory:label">
-            <value>MoCA 8.1 — MEMORY (NO POINTS)</value>
+            <value>MoCA 8.2 — MEMORY (NO POINTS)</value>
           </text>
           <text id="/data/m8_g_memory/m8_memory_inst:label">
             <value>Read list of words, subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall after 5 minutes.</value>
           </text>
           <text id="/data/m8_g_memory/m8_memory_words:label">
-            <value>FACE | VELVET | CHURCH | DAISY | RED</value>
+            <value>HAND | NYLON | PARK | CARROT | YELLOW</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial1:label">
             <value>1ST TRIAL</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_face:label">
-            <value>FACE (1ST TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_hand:label">
+            <value>HAND (1ST TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_velvet:label">
-            <value>VELVET (1ST TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_nylon:label">
+            <value>NYLON (1ST TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_church:label">
-            <value>CHURCH (1ST TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_park:label">
+            <value>PARK (1ST TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_daisy:label">
-            <value>DAISY (1ST TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_carrot:label">
+            <value>CARROT (1ST TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_red:label">
-            <value>RED (1ST TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_yellow:label">
+            <value>YELLOW (1ST TRIAL)</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2:label">
             <value>2ND TRIAL</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_face:label">
-            <value>FACE (2ND TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_hand:label">
+            <value>HAND (2ND TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_velvet:label">
-            <value>VELVET (2ND TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_nylon:label">
+            <value>NYLON (2ND TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_church:label">
-            <value>CHURCH (2ND TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_park:label">
+            <value>PARK (2ND TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_daisy:label">
-            <value>DAISY (2ND TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_carrot:label">
+            <value>CARROT (2ND TRIAL)</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_red:label">
-            <value>RED (2ND TRIAL)</value>
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_yellow:label">
+            <value>YELLOW (2ND TRIAL)</value>
           </text>
           <text id="/data/m8_g_attention:label">
-            <value>MoCA 8.1 — ATTENTION</value>
+            <value>MoCA 8.2 — ATTENTION</value>
           </text>
           <text id="/data/m8_g_attention/m8_digits_inst:label">
             <value>Read list of digits ( 1 digit/ sec. ).</value>
           </text>
           <text id="/data/m8_g_attention/m8_digit_span_fwd:label">
-            <value>Subject has to repeat them in the forward order. 2 1 8 5 4</value>
+            <value>Subject has to repeat them in the forward order. 8 1 5 2 4</value>
           </text>
           <text id="/data/m8_g_attention/m8_digit_span_bwd:label">
-            <value>Subject has to repeat them in the backward order. 7 4 2</value>
+            <value>Subject has to repeat them in the backward order. 2 4 7</value>
           </text>
           <text id="/data/m8_g_attention/m8_vigilance_inst:label">
             <value>Read list of letters. The subject must tap with his hand at each letter A. No points if &gt;= 2 errors: F B A C M N A A J K L B A F A K D E A A A J A M O F A A B</value>
@@ -815,61 +815,61 @@
             <value>Vigilance (No points if &gt;= 2 errors)</value>
           </text>
           <text id="/data/m8_g_attention/m8_serial7_inst:label">
-            <value>Serial 7 subtraction starting at 100. [ ] 93 [ ] 86 [ ] 79 [ ] 72 [ ] 65</value>
+            <value>Serial 7 subtraction starting at 70. [ ] 63 [ ] 56 [ ] 49 [ ] 42 [ ] 35</value>
           </text>
           <text id="/data/m8_g_attention/m8_serial_7s:label">
-            <value>Serial 7 subtraction starting at 100.</value>
+            <value>Serial 7 subtraction starting at 70.</value>
           </text>
           <text id="/data/m8_g_language:label">
-            <value>MoCA 8.1 — LANGUAGE</value>
+            <value>MoCA 8.2 — LANGUAGE</value>
           </text>
           <text id="/data/m8_g_language/m8_sentence_rep_1:label">
-            <value>Repeat: I only know that John is the one to help today.</value>
+            <value>Repeat: The robber of the gray car was stopped by the police.</value>
           </text>
           <text id="/data/m8_g_language/m8_sentence_rep_2:label">
-            <value>The cat always hid under the couch when dogs were in the room.</value>
+            <value>The student went back to school without his books and pencils.</value>
           </text>
           <text id="/data/m8_g_language/m8_fluency_count:jr:constraintMsg">
             <value>Enter a count between 0 and 100.</value>
           </text>
           <text id="/data/m8_g_language/m8_fluency_count:label">
-            <value>Fluency: Name maximum number of words in one minute that begin with the letter F. (N&gt;=11 words)</value>
+            <value>Language Fluency. Name maximum number of words in one minute that begin with the letter S. (N&gt;=11 words)</value>
           </text>
           <text id="/data/m8_g_abstraction:label">
-            <value>MoCA 8.1 — ABSTRACTION</value>
+            <value>MoCA 8.2 — ABSTRACTION</value>
           </text>
           <text id="/data/m8_g_abstraction/m8_abstraction_inst:label">
             <value>Similarity between e.g. banana - orange = fruit</value>
           </text>
           <text id="/data/m8_g_abstraction/m8_abstraction_1:label">
-            <value>train - bicycle</value>
+            <value>bed - table</value>
           </text>
           <text id="/data/m8_g_abstraction/m8_abstraction_2:label">
-            <value>watch - ruler</value>
+            <value>letter - telephone</value>
           </text>
           <text id="/data/m8_g_delayed_recall:label">
-            <value>MoCA 8.1 — DELAYED RECALL</value>
+            <value>MoCA 8.2 — DELAYED RECALL</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_inst:label">
             <value>Has to recall words WITH NO CUE. Points for UNCUED recall only.</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_face:label">
-            <value>FACE</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_hand:label">
+            <value>HAND</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_velvet:label">
-            <value>VELVET</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_nylon:label">
+            <value>NYLON</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_church:label">
-            <value>CHURCH</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_park:label">
+            <value>PARK</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_daisy:label">
-            <value>DAISY</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_carrot:label">
+            <value>CARROT</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_red:label">
-            <value>RED</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_yellow:label">
+            <value>YELLOW</value>
           </text>
           <text id="/data/m8_g_orientation:label">
-            <value>MoCA 8.1 — ORIENTATION</value>
+            <value>MoCA 8.2 — ORIENTATION</value>
           </text>
           <text id="/data/m8_g_orientation/m8_orientation_date:label">
             <value>Date</value>
@@ -1365,20 +1365,20 @@
           <text id="/data/te_g_orientation/te_orientation_city:label">
             <value>నగరం</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_face:label">
-            <value>Category cue: body part | Multiple choice: nose, face, hand (shoulder, leg)</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_hand:label">
+            <value>Category cue: body part | Multiple choice: hand, shoulder, face (nose, leg)</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_velvet:label">
-            <value>Category cue: type of fabric | Multiple choice: denim, velvet, cotton (nylon, silk)</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_nylon:label">
+            <value>Category cue: type of fabric | Multiple choice: cotton, nylon, silk (velvet, denim)</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_church:label">
-            <value>Category cue: type of building | Multiple choice: church, school, hospital (library, store)</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_park:label">
+            <value>Category cue: public place | Multiple choice: park, library, school (church, hospital)</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_daisy:label">
-            <value>Category cue: type of flower | Multiple choice: rose, daisy, tulip (lily, daffodil)</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_carrot:label">
+            <value>Category cue: type of food | Multiple choice: tomato, carrot, lettuce (cucumber, celery)</value>
           </text>
-          <text id="/data/m8_g_delayed_recall/m8_delayed_red:label">
-            <value>Category cue: color | Multiple choice: red, blue, green (yellow, purple)</value>
+          <text id="/data/m8_g_delayed_recall/m8_delayed_yellow:label">
+            <value>Category cue: color | Multiple choice: yellow, purple, green (red, blue)</value>
           </text>
           <text id="/data/g_mandatory_history:label">
             <value>5. తప్పనిసరి చరిత్ర ప్రశ్నలు</value>
@@ -1419,7 +1419,7 @@
           <text id="/data/g_instrument_banner/banner_moca_b:label">
             <value>-</value>
           </text>
-          <text id="/data/g_instrument_banner/banner_moca_8_1:label">
+          <text id="/data/g_instrument_banner/banner_moca_8_2:label">
             <value>-</value>
           </text>
           <text id="/data/g_instrument_banner/banner_none:label">
@@ -1704,10 +1704,10 @@
           <text id="/data/m8_g_visuospatial/m8_trail_making:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_visuospatial/m8_cube_inst:label">
+          <text id="/data/m8_g_visuospatial/m8_chair_inst:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_visuospatial/m8_cube_copy:label">
+          <text id="/data/m8_g_visuospatial/m8_chair_copy:label">
             <value>-</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_clock_inst:label">
@@ -1749,37 +1749,37 @@
           <text id="/data/m8_g_memory/m8_mem_trial1:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_face:label">
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_hand:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_velvet:label">
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_nylon:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_church:label">
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_park:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_daisy:label">
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_carrot:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_red:label">
+          <text id="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_yellow:label">
             <value>-</value>
           </text>
           <text id="/data/m8_g_memory/m8_mem_trial2:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_face:label">
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_hand:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_velvet:label">
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_nylon:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_church:label">
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_park:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_daisy:label">
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_carrot:label">
             <value>-</value>
           </text>
-          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_red:label">
+          <text id="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_yellow:label">
             <value>-</value>
           </text>
           <text id="/data/m8_g_attention:label">
@@ -1989,7 +1989,7 @@
             <banner_telugu_b/>
             <banner_telugu_c/>
             <banner_moca_b/>
-            <banner_moca_8_1/>
+            <banner_moca_8_2/>
             <banner_none/>
           </g_instrument_banner>
           <te_g_visuospatial>
@@ -2171,8 +2171,8 @@
           <m8_g_visuospatial>
             <m8_trail_inst/>
             <m8_trail_making/>
-            <m8_cube_inst/>
-            <m8_cube_copy/>
+            <m8_chair_inst/>
+            <m8_chair_copy/>
             <m8_clock_inst/>
             <m8_clock_contour/>
             <m8_clock_numbers/>
@@ -2188,18 +2188,18 @@
             <m8_memory_inst/>
             <m8_memory_words/>
             <m8_mem_trial1>
-              <m8_mem_t1_face/>
-              <m8_mem_t1_velvet/>
-              <m8_mem_t1_church/>
-              <m8_mem_t1_daisy/>
-              <m8_mem_t1_red/>
+              <m8_mem_t1_hand/>
+              <m8_mem_t1_nylon/>
+              <m8_mem_t1_park/>
+              <m8_mem_t1_carrot/>
+              <m8_mem_t1_yellow/>
             </m8_mem_trial1>
             <m8_mem_trial2>
-              <m8_mem_t2_face/>
-              <m8_mem_t2_velvet/>
-              <m8_mem_t2_church/>
-              <m8_mem_t2_daisy/>
-              <m8_mem_t2_red/>
+              <m8_mem_t2_hand/>
+              <m8_mem_t2_nylon/>
+              <m8_mem_t2_park/>
+              <m8_mem_t2_carrot/>
+              <m8_mem_t2_yellow/>
             </m8_mem_trial2>
           </m8_g_memory>
           <m8_g_attention>
@@ -2223,11 +2223,11 @@
           </m8_g_abstraction>
           <m8_g_delayed_recall>
             <m8_delayed_inst/>
-            <m8_delayed_face/>
-            <m8_delayed_velvet/>
-            <m8_delayed_church/>
-            <m8_delayed_daisy/>
-            <m8_delayed_red/>
+            <m8_delayed_hand/>
+            <m8_delayed_nylon/>
+            <m8_delayed_park/>
+            <m8_delayed_carrot/>
+            <m8_delayed_yellow/>
           </m8_g_delayed_recall>
           <m8_g_orientation>
             <m8_orientation_date/>
@@ -2545,14 +2545,14 @@
       <bind nodeset="/data/g_sensory_conditions/room_conditions_ok" type="string" required="true()"/>
       <bind nodeset="/data/g_sensory_conditions/mood_screen_score" type="int" constraint=". &gt;= 0 and . &lt;= 100" jr:constraintMsg="jr:itext('/data/g_sensory_conditions/mood_screen_score:jr:constraintMsg')" required="false()"/>
       <bind nodeset="/data/g_sensory_conditions/other_factors_today" type="string" required="false()"/>
-      <bind nodeset="/data/selected_instrument" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != 'yes', '', if( /data/g_edu_lang_informant/test_language  = 'telugu', 'moca_telugu', if( /data/g_edu_lang_informant/test_language  = 'english' and  /data/g_edu_lang_informant/education_band  = 'A', 'moca_b', if( /data/g_edu_lang_informant/test_language  = 'english' and ( /data/g_edu_lang_informant/education_band  = 'B' or  /data/g_edu_lang_informant/education_band  = 'C'), 'moca_8_1', 'none'))))"/>
+      <bind nodeset="/data/selected_instrument" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != 'yes', '', if( /data/g_edu_lang_informant/test_language  = 'telugu', 'moca_telugu', if( /data/g_edu_lang_informant/test_language  = 'english' and  /data/g_edu_lang_informant/education_band  = 'A', 'moca_b', if( /data/g_edu_lang_informant/test_language  = 'english' and ( /data/g_edu_lang_informant/education_band  = 'B' or  /data/g_edu_lang_informant/education_band  = 'C'), 'moca_8_2', 'none'))))"/>
       <bind nodeset="/data/education_confounded" type="string" calculate="if( /data/selected_instrument  = 'moca_telugu' and  /data/g_edu_lang_informant/education_band  = 'A', 'yes', 'no')"/>
       <bind nodeset="/data/g_instrument_banner" relevant=" /data/selected_instrument  != ''"/>
       <bind nodeset="/data/g_instrument_banner/banner_telugu_a" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' and  /data/g_edu_lang_informant/education_band  = 'A'"/>
       <bind nodeset="/data/g_instrument_banner/banner_telugu_b" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' and  /data/g_edu_lang_informant/education_band  = 'B'"/>
       <bind nodeset="/data/g_instrument_banner/banner_telugu_c" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' and  /data/g_edu_lang_informant/education_band  = 'C'"/>
       <bind nodeset="/data/g_instrument_banner/banner_moca_b" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_b'"/>
-      <bind nodeset="/data/g_instrument_banner/banner_moca_8_1" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/g_instrument_banner/banner_moca_8_2" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/g_instrument_banner/banner_none" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'none'"/>
       <bind nodeset="/data/te_g_visuospatial" relevant=" /data/selected_instrument  = 'moca_telugu'"/>
       <bind nodeset="/data/te_g_visuospatial/te_trail_making_inst" readonly="true()" type="string"/>
@@ -2703,34 +2703,34 @@
       <bind nodeset="/data/mb_g_attention/mb_end_time" type="time" required="false()"/>
       <bind nodeset="/data/mb_g_attention/mb_total_time_min" type="int" constraint=". &gt;= 0 and . &lt;= 180" jr:constraintMsg="jr:itext('/data/mb_g_attention/mb_total_time_min:jr:constraintMsg')" required="false()"/>
       <bind nodeset="/data/mb_g_attention/mb_total_time_sec" type="int" constraint=". &gt;= 0 and . &lt;= 59" jr:constraintMsg="jr:itext('/data/mb_g_attention/mb_total_time_sec:jr:constraintMsg')" required="false()"/>
-      <bind nodeset="/data/m8_g_visuospatial" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_visuospatial" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_trail_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_trail_making" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_visuospatial/m8_cube_inst" readonly="true()" type="string"/>
-      <bind nodeset="/data/m8_g_visuospatial/m8_cube_copy" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_visuospatial/m8_chair_inst" readonly="true()" type="string"/>
+      <bind nodeset="/data/m8_g_visuospatial/m8_chair_copy" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_clock_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_clock_contour" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_clock_numbers" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_clock_hands" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_naming" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_naming" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_naming/m8_naming_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_naming/m8_naming_1" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_naming/m8_naming_2" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_naming/m8_naming_3" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_memory" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_memory/m8_memory_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_memory/m8_memory_words" readonly="true()" type="string"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_face" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_velvet" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_church" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_daisy" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_red" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_face" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_velvet" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_church" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_daisy" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_red" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_attention" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_hand" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_nylon" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_park" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_carrot" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_yellow" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_hand" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_nylon" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_park" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_carrot" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_yellow" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_attention" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_attention/m8_digits_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_attention/m8_digit_span_fwd" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_attention/m8_digit_span_bwd" type="string" required="true()"/>
@@ -2738,22 +2738,22 @@
       <bind nodeset="/data/m8_g_attention/m8_vigilance" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_attention/m8_serial7_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_attention/m8_serial_7s" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_language" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_language" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_language/m8_sentence_rep_1" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_language/m8_sentence_rep_2" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_language/m8_fluency_count" type="int" constraint=". &gt;= 0 and . &lt;= 100" jr:constraintMsg="jr:itext('/data/m8_g_language/m8_fluency_count:jr:constraintMsg')" required="true()"/>
-      <bind nodeset="/data/m8_g_abstraction" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_abstraction" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_abstraction/m8_abstraction_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_abstraction/m8_abstraction_1" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_abstraction/m8_abstraction_2" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_delayed_recall" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_delayed_recall" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_inst" readonly="true()" type="string"/>
-      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_face" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_velvet" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_church" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_daisy" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_red" type="string" required="true()"/>
-      <bind nodeset="/data/m8_g_orientation" relevant=" /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_hand" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_nylon" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_park" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_carrot" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_delayed_recall/m8_delayed_yellow" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_orientation" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_orientation/m8_orientation_date" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_orientation/m8_orientation_month" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_orientation/m8_orientation_year" type="string" required="true()"/>
@@ -2802,23 +2802,23 @@
       <bind nodeset="/data/mb_education_adj" type="string" calculate="if( /data/g_edu_lang_informant/years_schooling  != &quot;&quot; and number( /data/g_edu_lang_informant/years_schooling ) &lt; 4, 1, 0)"/>
       <bind nodeset="/data/mb_literacy_adj" type="string" calculate="if( /data/g_edu_lang_informant/can_read_write  = &quot;no&quot;, 1, 0)"/>
       <bind nodeset="/data/mb_total_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_b&quot;, min( /data/mb_raw_total  +  /data/mb_education_adj  +  /data/mb_literacy_adj , 30), &quot;&quot;)"/>
-      <bind nodeset="/data/m8_visuospatial_total" type="string" calculate="if( /data/m8_g_visuospatial/m8_trail_making  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_cube_copy  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_clock_contour  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_clock_numbers  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_clock_hands  = &quot;yes&quot;, 1, 0)"/>
+      <bind nodeset="/data/m8_visuospatial_total" type="string" calculate="if( /data/m8_g_visuospatial/m8_trail_making  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_chair_copy  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_clock_contour  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_clock_numbers  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_visuospatial/m8_clock_hands  = &quot;yes&quot;, 1, 0)"/>
       <bind nodeset="/data/m8_naming_total" type="string" calculate="if( /data/m8_g_naming/m8_naming_1  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_naming/m8_naming_2  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_naming/m8_naming_3  = &quot;yes&quot;, 1, 0)"/>
       <bind nodeset="/data/m8_attention_total" type="string" calculate="if( /data/m8_g_attention/m8_digit_span_fwd  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_attention/m8_digit_span_bwd  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_attention/m8_vigilance  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_attention/m8_serial_7s  != &quot;&quot;, number( /data/m8_g_attention/m8_serial_7s ), 0)"/>
       <bind nodeset="/data/m8_language_total" type="string" calculate="if( /data/m8_g_language/m8_sentence_rep_1  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_language/m8_sentence_rep_2  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_language/m8_fluency_count  != &quot;&quot; and  /data/m8_g_language/m8_fluency_count  &gt;= 11, 1, 0)"/>
       <bind nodeset="/data/m8_abstraction_total" type="string" calculate="if( /data/m8_g_abstraction/m8_abstraction_1  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_abstraction/m8_abstraction_2  = &quot;yes&quot;, 1, 0)"/>
-      <bind nodeset="/data/m8_memory_total" type="string" calculate="if( /data/m8_g_delayed_recall/m8_delayed_face  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_velvet  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_church  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_daisy  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_red  = &quot;uncued&quot;, 1, 0)"/>
-      <bind nodeset="/data/m8_mis_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_1&quot;, (if( /data/m8_g_delayed_recall/m8_delayed_face  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_face  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_face  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_velvet  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_velvet  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_velvet  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_church  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_church  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_church  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_daisy  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_daisy  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_daisy  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_red  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_red  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_red  = &quot;multiple_choice&quot;, 1, 0)))), &quot;&quot;)"/>
+      <bind nodeset="/data/m8_memory_total" type="string" calculate="if( /data/m8_g_delayed_recall/m8_delayed_hand  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_nylon  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_park  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_carrot  = &quot;uncued&quot;, 1, 0) + if( /data/m8_g_delayed_recall/m8_delayed_yellow  = &quot;uncued&quot;, 1, 0)"/>
+      <bind nodeset="/data/m8_mis_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_2&quot;, (if( /data/m8_g_delayed_recall/m8_delayed_hand  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_hand  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_hand  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_nylon  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_nylon  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_nylon  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_park  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_park  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_park  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_carrot  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_carrot  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_carrot  = &quot;multiple_choice&quot;, 1, 0))) + if( /data/m8_g_delayed_recall/m8_delayed_yellow  = &quot;uncued&quot;, 3, if( /data/m8_g_delayed_recall/m8_delayed_yellow  = &quot;category&quot;, 2, if( /data/m8_g_delayed_recall/m8_delayed_yellow  = &quot;multiple_choice&quot;, 1, 0)))), &quot;&quot;)"/>
       <bind nodeset="/data/m8_orientation_total" type="string" calculate="if( /data/m8_g_orientation/m8_orientation_date  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_orientation/m8_orientation_month  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_orientation/m8_orientation_year  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_orientation/m8_orientation_day  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_orientation/m8_orientation_place  = &quot;yes&quot;, 1, 0) + if( /data/m8_g_orientation/m8_orientation_city  = &quot;yes&quot;, 1, 0)"/>
       <bind nodeset="/data/m8_raw_total" type="string" calculate=" /data/m8_visuospatial_total  +  /data/m8_naming_total  +  /data/m8_attention_total  +  /data/m8_language_total  +  /data/m8_abstraction_total  +  /data/m8_memory_total  +  /data/m8_orientation_total "/>
       <bind nodeset="/data/m8_education_adj" type="string" calculate="if( /data/g_edu_lang_informant/years_schooling  != &quot;&quot; and number( /data/g_edu_lang_informant/years_schooling ) &lt;= 12, 1, 0)"/>
-      <bind nodeset="/data/m8_total_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_1&quot;, min( /data/m8_raw_total  +  /data/m8_education_adj , 30), &quot;&quot;)"/>
-      <bind nodeset="/data/moca_total_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_telugu&quot;,  /data/te_total_score , if( /data/selected_instrument  = &quot;moca_b&quot;,  /data/mb_total_score , if( /data/selected_instrument  = &quot;moca_8_1&quot;,  /data/m8_total_score , &quot;&quot;)))"/>
-      <bind nodeset="/data/moca_mis_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_1&quot;,  /data/m8_mis_score , &quot;&quot;)"/>
-      <bind nodeset="/data/moca_interpretation" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != &quot;yes&quot;, &quot;Not assessed (no consent)&quot;, if( /data/selected_instrument  = &quot;moca_telugu&quot; or  /data/selected_instrument  = &quot;moca_8_1&quot;, if( /data/moca_total_score  &gt;= 26, &quot;Normal (&gt;= 26/30)&quot;, &quot;Below normal (&lt; 26/30)&quot;), &quot;&quot;))"/>
+      <bind nodeset="/data/m8_total_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_2&quot;, min( /data/m8_raw_total  +  /data/m8_education_adj , 30), &quot;&quot;)"/>
+      <bind nodeset="/data/moca_total_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_telugu&quot;,  /data/te_total_score , if( /data/selected_instrument  = &quot;moca_b&quot;,  /data/mb_total_score , if( /data/selected_instrument  = &quot;moca_8_2&quot;,  /data/m8_total_score , &quot;&quot;)))"/>
+      <bind nodeset="/data/moca_mis_score" type="string" calculate="if( /data/selected_instrument  = &quot;moca_8_2&quot;,  /data/m8_mis_score , &quot;&quot;)"/>
+      <bind nodeset="/data/moca_interpretation" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != &quot;yes&quot;, &quot;Not assessed (no consent)&quot;, if( /data/selected_instrument  = &quot;moca_telugu&quot; or  /data/selected_instrument  = &quot;moca_8_2&quot;, if( /data/moca_total_score  &gt;= 26, &quot;Normal (&gt;= 26/30)&quot;, &quot;Below normal (&lt; 26/30)&quot;), &quot;&quot;))"/>
       <bind nodeset="/data/g_admin/administered_by" type="string" required="true()"/>
       <bind nodeset="/data/g_admin/assessment_datetime" type="dateTime" required="true()" calculate="if(. = '', now(), .)"/>
-      <bind nodeset="/data/g_admin/score_summary_note" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' or  /data/selected_instrument  = 'moca_b' or  /data/selected_instrument  = 'moca_8_1'"/>
+      <bind nodeset="/data/g_admin/score_summary_note" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' or  /data/selected_instrument  = 'moca_b' or  /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/g_supporting_docs" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
       <bind nodeset="/data/g_supporting_docs/upload_scale_image" type="binary" required="false()"/>
       <bind nodeset="/data/g_supporting_docs/upload_scale_pdf" type="binary" required="false()"/>
@@ -2973,8 +2973,8 @@
       <input ref="/data/g_instrument_banner/banner_moca_b">
         <label ref="jr:itext('/data/g_instrument_banner/banner_moca_b:label')"/>
       </input>
-      <input ref="/data/g_instrument_banner/banner_moca_8_1">
-        <label ref="jr:itext('/data/g_instrument_banner/banner_moca_8_1:label')"/>
+      <input ref="/data/g_instrument_banner/banner_moca_8_2">
+        <label ref="jr:itext('/data/g_instrument_banner/banner_moca_8_2:label')"/>
       </input>
       <input ref="/data/g_instrument_banner/banner_none">
         <label ref="jr:itext('/data/g_instrument_banner/banner_none:label')"/>
@@ -3839,11 +3839,11 @@
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <input ref="/data/m8_g_visuospatial/m8_cube_inst">
-        <label ref="jr:itext('/data/m8_g_visuospatial/m8_cube_inst:label')"/>
+      <input ref="/data/m8_g_visuospatial/m8_chair_inst">
+        <label ref="jr:itext('/data/m8_g_visuospatial/m8_chair_inst:label')"/>
       </input>
-      <select1 ref="/data/m8_g_visuospatial/m8_cube_copy" appearance="horizontal-compact">
-        <label ref="jr:itext('/data/m8_g_visuospatial/m8_cube_copy:label')"/>
+      <select1 ref="/data/m8_g_visuospatial/m8_chair_copy" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/m8_g_visuospatial/m8_chair_copy:label')"/>
         <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
@@ -3911,36 +3911,36 @@
       </input>
       <group appearance="field-list" ref="/data/m8_g_memory/m8_mem_trial1">
         <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1:label')"/>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_face" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_face:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_hand" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_hand:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_velvet" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_velvet:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_nylon" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_nylon:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_church" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_church:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_park" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_park:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_daisy" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_daisy:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_carrot" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_carrot:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_red" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_red:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_yellow" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial1/m8_mem_t1_yellow:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
@@ -3949,36 +3949,36 @@
       </group>
       <group appearance="field-list" ref="/data/m8_g_memory/m8_mem_trial2">
         <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2:label')"/>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_face" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_face:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_hand" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_hand:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_velvet" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_velvet:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_nylon" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_nylon:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_church" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_church:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_park" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_park:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_daisy" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_daisy:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_carrot" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_carrot:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_red" appearance="horizontal-compact">
-          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_red:label')"/>
+        <select1 ref="/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_yellow" appearance="horizontal-compact">
+          <label ref="jr:itext('/data/m8_g_memory/m8_mem_trial2/m8_mem_t2_yellow:label')"/>
           <itemset nodeset="instance('yesno')/root/item">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
@@ -4071,36 +4071,36 @@
       <input ref="/data/m8_g_delayed_recall/m8_delayed_inst">
         <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_inst:label')"/>
       </input>
-      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_face">
-        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_face:label')"/>
+      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_hand">
+        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_hand:label')"/>
         <itemset nodeset="instance('m8_recall_type')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_velvet">
-        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_velvet:label')"/>
+      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_nylon">
+        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_nylon:label')"/>
         <itemset nodeset="instance('m8_recall_type')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_church">
-        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_church:label')"/>
+      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_park">
+        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_park:label')"/>
         <itemset nodeset="instance('m8_recall_type')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_daisy">
-        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_daisy:label')"/>
+      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_carrot">
+        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_carrot:label')"/>
         <itemset nodeset="instance('m8_recall_type')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_red">
-        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_red:label')"/>
+      <select1 ref="/data/m8_g_delayed_recall/m8_delayed_yellow">
+        <label ref="jr:itext('/data/m8_g_delayed_recall/m8_delayed_yellow:label')"/>
         <itemset nodeset="instance('m8_recall_type')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>

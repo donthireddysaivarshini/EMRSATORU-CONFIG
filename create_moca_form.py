@@ -35,7 +35,7 @@ def build_moca_xlsx():
     consent_yes = "${consent_reconfirmed} = 'yes'"
     is_te = "${selected_instrument} = 'moca_telugu'"
     is_mb = "${selected_instrument} = 'moca_b'"
-    is_m8 = "${selected_instrument} = 'moca_8_1'"
+    is_m8 = "${selected_instrument} = 'moca_8_2'"
 
     rows = [
         # Contact & user metadata inputs (CHT standard)
@@ -112,7 +112,7 @@ def build_moca_xlsx():
         # ------------------------------------------------------------
         # INSTRUMENT SELECTION (Table 8.2)
         # ------------------------------------------------------------
-        ['calculate', 'selected_instrument', '', '', '', '', '', '', '', '', "if(${consent_reconfirmed} != 'yes', '', if(${test_language} = 'telugu', 'moca_telugu', if(${test_language} = 'english' and ${education_band} = 'A', 'moca_b', if(${test_language} = 'english' and (${education_band} = 'B' or ${education_band} = 'C'), 'moca_8_1', 'none'))))", '', '', ''],
+        ['calculate', 'selected_instrument', '', '', '', '', '', '', '', '', "if(${consent_reconfirmed} != 'yes', '', if(${test_language} = 'telugu', 'moca_telugu', if(${test_language} = 'english' and ${education_band} = 'A', 'moca_b', if(${test_language} = 'english' and (${education_band} = 'B' or ${education_band} = 'C'), 'moca_8_2', 'none'))))", '', '', ''],
         ['calculate', 'education_confounded', '', '', '', '', '', '', '', '', "if(${selected_instrument} = 'moca_telugu' and ${education_band} = 'A', 'yes', 'no')", '', '', ''],
 
         ['begin group', 'g_instrument_banner', '4. INSTRUMENT SELECTION', '4. పరీక్ష ఎంపిక', '', 'field-list', "${selected_instrument} != ''", '', '', '', '', '', '', ''],
@@ -120,7 +120,7 @@ def build_moca_xlsx():
         ['note', 'banner_telugu_b', 'Primary instrument: ICMR-NCTB Telugu MoCA. Informant: EASI-Telugu strongly recommended (mandatory if referral concerns daily functioning).', '', '', '', "${selected_instrument} = 'moca_telugu' and ${education_band} = 'B'", '', '', '', '', '', '', ''],
         ['note', 'banner_telugu_c', 'Primary instrument: ICMR-NCTB Telugu MoCA. Informant: EASI-Telugu if an informant is present.', '', '', '', "${selected_instrument} = 'moca_telugu' and ${education_band} = 'C'", '', '', '', '', '', '', ''],
         ['note', 'banner_moca_b', 'Primary instrument: MoCA-Basic (English Band A: illiterate or <=4 yrs). Informant: EASI Mandatory.', '', '', '', is_mb, '', '', '', '', '', '', ''],
-        ['note', 'banner_moca_8_1', 'Primary instrument: MoCA Full, English, Version 8.1 (English Band B or C). Informant: EASI if an informant is present.', '', '', '', is_m8, '', '', '', '', '', '', ''],
+        ['note', 'banner_moca_8_2', 'Primary instrument: MoCA Full, English, Version 8.2 (English Band B or C). Informant: EASI if an informant is present.', '', '', '', is_m8, '', '', '', '', '', '', ''],
         ['note', 'banner_none', 'Neither Telugu nor English selected — no MoCA instrument is opened. Continue to Mandatory History Questions.', '', '', '', "${selected_instrument} = 'none'", '', '', '', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
@@ -326,77 +326,77 @@ def build_moca_xlsx():
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
         # ============================================================
-        # BRANCH 4C: MoCA FULL, ENGLISH, VERSION 8.1 (exact page 6 wording)
+        # BRANCH 4C: MoCA FULL, ENGLISH, VERSION 8.2 (exact page 12 wording)
         # ============================================================
-        ['begin group', 'm8_g_visuospatial', 'MoCA 8.1 — VISUOSPATIAL / EXECUTIVE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
-        ['note', 'm8_trail_inst', 'Alternating Trail Making (Begin -> End)', '', '', '', '', '', '', '', '', '', '', 'trail_making_8_1.png'],
+        ['begin group', 'm8_g_visuospatial', 'MoCA 8.2 — VISUOSPATIAL / EXECUTIVE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['note', 'm8_trail_inst', 'Alternating Trail Making (Begin -> End)', '', '', '', '', '', '', '', '', '', '', 'trail_making_8_2.png'],
         ['select_one yesno', 'm8_trail_making', 'Alternating Trail Making', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['note', 'm8_cube_inst', 'Copy cube', '', '', '', '', '', '', '', '', '', '', 'cube_8_1.png'],
-        ['select_one yesno', 'm8_cube_copy', 'Copy cube', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['note', 'm8_clock_inst', 'Draw CLOCK ( Ten past eleven ) ( 3 points )', '', '', '', '', '', '', '', '', '', '', ''],
+        ['note', 'm8_chair_inst', 'Copy chair', '', '', '', '', '', '', '', '', '', '', 'chair_8_2.png'],
+        ['select_one yesno', 'm8_chair_copy', 'Copy chair', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['note', 'm8_clock_inst', 'Draw CLOCK ( Ten past nine ) ( 3 points )', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'm8_clock_contour', 'Contour', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_clock_numbers', 'Numbers', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_clock_hands', 'Hands', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_naming', 'MoCA 8.1 — NAMING', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
-        ['note', 'm8_naming_inst', 'NAMING', '', '', '', '', '', '', '', '', '', '', 'naming_8_1.png'],
-        ['select_one yesno', 'm8_naming_1', '1. Lion', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_naming_2', '2. Rhinoceros / Rhino', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_naming_3', '3. Camel / Dromedary', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['begin group', 'm8_g_naming', 'MoCA 8.2 — NAMING', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['note', 'm8_naming_inst', 'NAMING', '', '', '', '', '', '', '', '', '', '', 'naming_8_2.png'],
+        ['select_one yesno', 'm8_naming_1', '1. Snake (or a type of snake like Boa or Cobra)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_naming_2', '2. Elephant', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_naming_3', '3. Crocodile or Alligator', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_memory', 'MoCA 8.1 — MEMORY (NO POINTS)', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_memory', 'MoCA 8.2 — MEMORY (NO POINTS)', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_memory_inst', 'Read list of words, subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall after 5 minutes.', '', '', '', '', '', '', '', '', '', '', ''],
-        ['note', 'm8_memory_words', 'FACE | VELVET | CHURCH | DAISY | RED', '', '', '', '', '', '', '', '', '', '', ''],
+        ['note', 'm8_memory_words', 'HAND | NYLON | PARK | CARROT | YELLOW', '', '', '', '', '', '', '', '', '', '', ''],
         ['begin group', 'm8_mem_trial1', '1ST TRIAL', '', '', 'field-list', '', '', '', '', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t1_face', 'FACE (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t1_velvet', 'VELVET (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t1_church', 'CHURCH (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t1_daisy', 'DAISY (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t1_red', 'RED (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t1_hand', 'HAND (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t1_nylon', 'NYLON (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t1_park', 'PARK (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t1_carrot', 'CARROT (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t1_yellow', 'YELLOW (1ST TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
         ['begin group', 'm8_mem_trial2', '2ND TRIAL', '', '', 'field-list', '', '', '', '', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t2_face', 'FACE (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t2_velvet', 'VELVET (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t2_church', 'CHURCH (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t2_daisy', 'DAISY (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_mem_t2_red', 'RED (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t2_hand', 'HAND (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t2_nylon', 'NYLON (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t2_park', 'PARK (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t2_carrot', 'CARROT (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_mem_t2_yellow', 'YELLOW (2ND TRIAL)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_attention', 'MoCA 8.1 — ATTENTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_attention', 'MoCA 8.2 — ATTENTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_digits_inst', 'Read list of digits ( 1 digit/ sec. ).', '', '', '', '', '', '', '', '', '', '', ''],
-        ['select_one yesno', 'm8_digit_span_fwd', 'Subject has to repeat them in the forward order. 2 1 8 5 4', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_digit_span_bwd', 'Subject has to repeat them in the backward order. 7 4 2', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_digit_span_fwd', 'Subject has to repeat them in the forward order. 8 1 5 2 4', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_digit_span_bwd', 'Subject has to repeat them in the backward order. 2 4 7', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['note', 'm8_vigilance_inst', 'Read list of letters. The subject must tap with his hand at each letter A. No points if >= 2 errors: F B A C M N A A J K L B A F A K D E A A A J A M O F A A B', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'm8_vigilance', 'Vigilance (No points if >= 2 errors)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['note', 'm8_serial7_inst', 'Serial 7 subtraction starting at 100. [ ] 93  [ ] 86  [ ] 79  [ ] 72  [ ] 65', '', '', '', '', '', '', '', '', '', '', ''],
-        ['select_one serial7_score', 'm8_serial_7s', 'Serial 7 subtraction starting at 100.', '', '', '', '', '', '', 'yes', '', '', '', ''],
+        ['note', 'm8_serial7_inst', 'Serial 7 subtraction starting at 70. [ ] 63  [ ] 56  [ ] 49  [ ] 42  [ ] 35', '', '', '', '', '', '', '', '', '', '', ''],
+        ['select_one serial7_score', 'm8_serial_7s', 'Serial 7 subtraction starting at 70.', '', '', '', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_language', 'MoCA 8.1 — LANGUAGE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
-        ['select_one yesno', 'm8_sentence_rep_1', 'Repeat: I only know that John is the one to help today.', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_sentence_rep_2', 'The cat always hid under the couch when dogs were in the room.', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['integer', 'm8_fluency_count', 'Fluency: Name maximum number of words in one minute that begin with the letter F. (N>=11 words)', '', '', '', '', '. >= 0 and . <= 100', 'Enter a count between 0 and 100.', 'yes', '', '', '', ''],
+        ['begin group', 'm8_g_language', 'MoCA 8.2 — LANGUAGE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['select_one yesno', 'm8_sentence_rep_1', 'Repeat: The robber of the gray car was stopped by the police.', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_sentence_rep_2', 'The student went back to school without his books and pencils.', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['integer', 'm8_fluency_count', 'Language Fluency. Name maximum number of words in one minute that begin with the letter S. (N>=11 words)', '', '', '', '', '. >= 0 and . <= 100', 'Enter a count between 0 and 100.', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_abstraction', 'MoCA 8.1 — ABSTRACTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_abstraction', 'MoCA 8.2 — ABSTRACTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_abstraction_inst', 'Similarity between e.g. banana - orange = fruit', '', '', '', '', '', '', '', '', '', '', ''],
-        ['select_one yesno', 'm8_abstraction_1', 'train - bicycle', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
-        ['select_one yesno', 'm8_abstraction_2', 'watch - ruler', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_abstraction_1', 'bed - table', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
+        ['select_one yesno', 'm8_abstraction_2', 'letter - telephone', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_delayed_recall', 'MoCA 8.1 — DELAYED RECALL', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_delayed_recall', 'MoCA 8.2 — DELAYED RECALL', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_delayed_inst', 'Has to recall words WITH NO CUE. Points for UNCUED recall only.', '', '', '', '', '', '', '', '', '', '', ''],
-        ['select_one m8_recall_type', 'm8_delayed_face', 'FACE', 'Category cue: body part | Multiple choice: nose, face, hand (shoulder, leg)', '', '', '', '', '', 'yes', '', '', '', ''],
-        ['select_one m8_recall_type', 'm8_delayed_velvet', 'VELVET', 'Category cue: type of fabric | Multiple choice: denim, velvet, cotton (nylon, silk)', '', '', '', '', '', 'yes', '', '', '', ''],
-        ['select_one m8_recall_type', 'm8_delayed_church', 'CHURCH', 'Category cue: type of building | Multiple choice: church, school, hospital (library, store)', '', '', '', '', '', 'yes', '', '', '', ''],
-        ['select_one m8_recall_type', 'm8_delayed_daisy', 'DAISY', 'Category cue: type of flower | Multiple choice: rose, daisy, tulip (lily, daffodil)', '', '', '', '', '', 'yes', '', '', '', ''],
-        ['select_one m8_recall_type', 'm8_delayed_red', 'RED', 'Category cue: color | Multiple choice: red, blue, green (yellow, purple)', '', '', '', '', '', 'yes', '', '', '', ''],
+        ['select_one m8_recall_type', 'm8_delayed_hand', 'HAND', 'Category cue: body part | Multiple choice: hand, shoulder, face (nose, leg)', '', '', '', '', '', 'yes', '', '', '', ''],
+        ['select_one m8_recall_type', 'm8_delayed_nylon', 'NYLON', 'Category cue: type of fabric | Multiple choice: cotton, nylon, silk (velvet, denim)', '', '', '', '', '', 'yes', '', '', '', ''],
+        ['select_one m8_recall_type', 'm8_delayed_park', 'PARK', 'Category cue: public place | Multiple choice: park, library, school (church, hospital)', '', '', '', '', '', 'yes', '', '', '', ''],
+        ['select_one m8_recall_type', 'm8_delayed_carrot', 'CARROT', 'Category cue: type of food | Multiple choice: tomato, carrot, lettuce (cucumber, celery)', '', '', '', '', '', 'yes', '', '', '', ''],
+        ['select_one m8_recall_type', 'm8_delayed_yellow', 'YELLOW', 'Category cue: color | Multiple choice: yellow, purple, green (red, blue)', '', '', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_orientation', 'MoCA 8.1 — ORIENTATION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_orientation', 'MoCA 8.2 — ORIENTATION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['select_one yesno', 'm8_orientation_date', 'Date', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_orientation_month', 'Month', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_orientation_year', 'Year', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -459,29 +459,29 @@ def build_moca_xlsx():
         ['calculate', 'mb_literacy_adj', '', '', '', '', '', '', '', '', 'if(${can_read_write} = "no", 1, 0)', '', '', ''],
         ['calculate', 'mb_total_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_b", min(${mb_raw_total} + ${mb_education_adj} + ${mb_literacy_adj}, 30), "")', '', '', ''],
 
-        # MoCA 8.1
-        ['calculate', 'm8_visuospatial_total', '', '', '', '', '', '', '', '', 'if(${m8_trail_making} = "yes", 1, 0) + if(${m8_cube_copy} = "yes", 1, 0) + if(${m8_clock_contour} = "yes", 1, 0) + if(${m8_clock_numbers} = "yes", 1, 0) + if(${m8_clock_hands} = "yes", 1, 0)', '', '', ''],
+        # MoCA 8.2
+        ['calculate', 'm8_visuospatial_total', '', '', '', '', '', '', '', '', 'if(${m8_trail_making} = "yes", 1, 0) + if(${m8_chair_copy} = "yes", 1, 0) + if(${m8_clock_contour} = "yes", 1, 0) + if(${m8_clock_numbers} = "yes", 1, 0) + if(${m8_clock_hands} = "yes", 1, 0)', '', '', ''],
         ['calculate', 'm8_naming_total', '', '', '', '', '', '', '', '', 'if(${m8_naming_1} = "yes", 1, 0) + if(${m8_naming_2} = "yes", 1, 0) + if(${m8_naming_3} = "yes", 1, 0)', '', '', ''],
         ['calculate', 'm8_attention_total', '', '', '', '', '', '', '', '', 'if(${m8_digit_span_fwd} = "yes", 1, 0) + if(${m8_digit_span_bwd} = "yes", 1, 0) + if(${m8_vigilance} = "yes", 1, 0) + if(${m8_serial_7s} != "", number(${m8_serial_7s}), 0)', '', '', ''],
         ['calculate', 'm8_language_total', '', '', '', '', '', '', '', '', 'if(${m8_sentence_rep_1} = "yes", 1, 0) + if(${m8_sentence_rep_2} = "yes", 1, 0) + if(${m8_fluency_count} != "" and ${m8_fluency_count} >= 11, 1, 0)', '', '', ''],
         ['calculate', 'm8_abstraction_total', '', '', '', '', '', '', '', '', 'if(${m8_abstraction_1} = "yes", 1, 0) + if(${m8_abstraction_2} = "yes", 1, 0)', '', '', ''],
-        ['calculate', 'm8_memory_total', '', '', '', '', '', '', '', '', 'if(${m8_delayed_face} = "uncued", 1, 0) + if(${m8_delayed_velvet} = "uncued", 1, 0) + if(${m8_delayed_church} = "uncued", 1, 0) + if(${m8_delayed_daisy} = "uncued", 1, 0) + if(${m8_delayed_red} = "uncued", 1, 0)', '', '', ''],
-        ['calculate', 'm8_mis_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_8_1", (if(${m8_delayed_face} = "uncued", 3, if(${m8_delayed_face} = "category", 2, if(${m8_delayed_face} = "multiple_choice", 1, 0))) + if(${m8_delayed_velvet} = "uncued", 3, if(${m8_delayed_velvet} = "category", 2, if(${m8_delayed_velvet} = "multiple_choice", 1, 0))) + if(${m8_delayed_church} = "uncued", 3, if(${m8_delayed_church} = "category", 2, if(${m8_delayed_church} = "multiple_choice", 1, 0))) + if(${m8_delayed_daisy} = "uncued", 3, if(${m8_delayed_daisy} = "category", 2, if(${m8_delayed_daisy} = "multiple_choice", 1, 0))) + if(${m8_delayed_red} = "uncued", 3, if(${m8_delayed_red} = "category", 2, if(${m8_delayed_red} = "multiple_choice", 1, 0)))), "")', '', '', ''],
+        ['calculate', 'm8_memory_total', '', '', '', '', '', '', '', '', 'if(${m8_delayed_hand} = "uncued", 1, 0) + if(${m8_delayed_nylon} = "uncued", 1, 0) + if(${m8_delayed_park} = "uncued", 1, 0) + if(${m8_delayed_carrot} = "uncued", 1, 0) + if(${m8_delayed_yellow} = "uncued", 1, 0)', '', '', ''],
+        ['calculate', 'm8_mis_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_8_2", (if(${m8_delayed_hand} = "uncued", 3, if(${m8_delayed_hand} = "category", 2, if(${m8_delayed_hand} = "multiple_choice", 1, 0))) + if(${m8_delayed_nylon} = "uncued", 3, if(${m8_delayed_nylon} = "category", 2, if(${m8_delayed_nylon} = "multiple_choice", 1, 0))) + if(${m8_delayed_park} = "uncued", 3, if(${m8_delayed_park} = "category", 2, if(${m8_delayed_park} = "multiple_choice", 1, 0))) + if(${m8_delayed_carrot} = "uncued", 3, if(${m8_delayed_carrot} = "category", 2, if(${m8_delayed_carrot} = "multiple_choice", 1, 0))) + if(${m8_delayed_yellow} = "uncued", 3, if(${m8_delayed_yellow} = "category", 2, if(${m8_delayed_yellow} = "multiple_choice", 1, 0)))), "")', '', '', ''],
         ['calculate', 'm8_orientation_total', '', '', '', '', '', '', '', '', 'if(${m8_orientation_date} = "yes", 1, 0) + if(${m8_orientation_month} = "yes", 1, 0) + if(${m8_orientation_year} = "yes", 1, 0) + if(${m8_orientation_day} = "yes", 1, 0) + if(${m8_orientation_place} = "yes", 1, 0) + if(${m8_orientation_city} = "yes", 1, 0)', '', '', ''],
         ['calculate', 'm8_raw_total', '', '', '', '', '', '', '', '', '${m8_visuospatial_total} + ${m8_naming_total} + ${m8_attention_total} + ${m8_language_total} + ${m8_abstraction_total} + ${m8_memory_total} + ${m8_orientation_total}', '', '', ''],
         ['calculate', 'm8_education_adj', '', '', '', '', '', '', '', '', 'if(${years_schooling} != "" and number(${years_schooling}) <= 12, 1, 0)', '', '', ''],
-        ['calculate', 'm8_total_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_8_1", min(${m8_raw_total} + ${m8_education_adj}, 30), "")', '', '', ''],
+        ['calculate', 'm8_total_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_8_2", min(${m8_raw_total} + ${m8_education_adj}, 30), "")', '', '', ''],
 
         # Unified totals
-        ['calculate', 'moca_total_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_telugu", ${te_total_score}, if(${selected_instrument} = "moca_b", ${mb_total_score}, if(${selected_instrument} = "moca_8_1", ${m8_total_score}, "")))', '', '', ''],
-        ['calculate', 'moca_mis_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_8_1", ${m8_mis_score}, "")', '', '', ''],
-        ['calculate', 'moca_interpretation', '', '', '', '', '', '', '', '', 'if(${consent_reconfirmed} != "yes", "Not assessed (no consent)", if(${selected_instrument} = "moca_telugu" or ${selected_instrument} = "moca_8_1", if(${moca_total_score} >= 26, "Normal (>= 26/30)", "Below normal (< 26/30)"), ""))', '', '', ''],
+        ['calculate', 'moca_total_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_telugu", ${te_total_score}, if(${selected_instrument} = "moca_b", ${mb_total_score}, if(${selected_instrument} = "moca_8_2", ${m8_total_score}, "")))', '', '', ''],
+        ['calculate', 'moca_mis_score', '', '', '', '', '', '', '', '', 'if(${selected_instrument} = "moca_8_2", ${m8_mis_score}, "")', '', '', ''],
+        ['calculate', 'moca_interpretation', '', '', '', '', '', '', '', '', 'if(${consent_reconfirmed} != "yes", "Not assessed (no consent)", if(${selected_instrument} = "moca_telugu" or ${selected_instrument} = "moca_8_2", if(${moca_total_score} >= 26, "Normal (>= 26/30)", "Below normal (< 26/30)"), ""))', '', '', ''],
 
         # Admin / Summary
         ['begin group', 'g_admin', 'TOTAL & SIGN-OFF', 'మొత్తం స్కోరు', '', 'field-list', '', '', '', '', '', '', '', ''],
         ['string', 'administered_by', 'Administered by', 'పరీక్ష నిర్వహించినవారు', '', '', '', '', '', 'yes', '', '', '', ''],
         ['dateTime', 'assessment_datetime', 'Date of exam', 'తేదీ', '', '', '', '', '', 'yes', "if(. = '', now(), .)", '', '', ''],
-        ['note', 'score_summary_note', 'Instrument: ${selected_instrument} | TOTAL SCORE: ${moca_total_score} / 30', '', '', '', "${selected_instrument} = 'moca_telugu' or ${selected_instrument} = 'moca_b' or ${selected_instrument} = 'moca_8_1'", '', '', '', '', '', '', ''],
+        ['note', 'score_summary_note', 'Instrument: ${selected_instrument} | TOTAL SCORE: ${moca_total_score} / 30', '', '', '', "${selected_instrument} = 'moca_telugu' or ${selected_instrument} = 'moca_b' or ${selected_instrument} = 'moca_8_2'", '', '', '', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
         # ============================================================

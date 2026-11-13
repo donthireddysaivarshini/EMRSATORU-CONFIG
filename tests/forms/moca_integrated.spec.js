@@ -1,7 +1,7 @@
 /**
  * Unified MOCA form tests:
- * - Table 8.2 instrument selection (Telugu 7.1, MoCA-B, MoCA 8.1 English)
- * - MoCA 8.1 scoring + Memory Index Score (MIS /15)
+ * - Table 8.2 instrument selection (Telugu 7.1, MoCA-B, MoCA 8.2 English)
+ * - MoCA 8.2 scoring + Memory Index Score (MIS /15)
  * - MoCA-B strict PDF scoring
  * - MoCA 7.1 Telugu scoring + Band A education-confounded flag
  * - Mandatory History Questions + No-consent behavior
@@ -34,7 +34,7 @@ const preAssessment = ({
 
 const mandatoryHistoryAllNo = () => ['patient'].concat(repeat('no', 10), ['patient']);
 
-const moca81Answers = ({
+const moca82Answers = ({
   pre = {},
   visuospatial = repeat('yes', 5),
   naming = repeat('yes', 3),
@@ -59,6 +59,7 @@ const moca81Answers = ({
   history,
   ['Tester'],
 );
+const moca81Answers = moca82Answers; // backward compatibility alias
 
 const mocaBAnswers = ({
   pre = {},
@@ -118,25 +119,25 @@ describe('MOCA (Integrated) form & scoring', () => {
   after(async () => harness.stop());
   beforeEach(async () => harness.clear());
 
-  it('English + Band B/C opens MoCA 8.1: 30/30, MIS 15/15, normal', async () => {
-    const res = await fill(harness, 'moca', moca81Answers());
+  it('English + Band B/C opens MoCA 8.2: 30/30, MIS 15/15, normal', async () => {
+    const res = await fill(harness, 'moca', moca82Answers());
     expect(res.errors).to.deep.equal([]);
     expect(res.fields.g_edu_lang_informant.education_band).to.equal('C');
-    expect(res.fields.selected_instrument).to.equal('moca_8_1');
+    expect(res.fields.selected_instrument).to.equal('moca_8_2');
     expect(res.fields.education_confounded).to.equal('no');
     expect(res.fields.moca_total_score).to.equal('30');
     expect(res.fields.moca_mis_score).to.equal('15');
     expect(res.fields.moca_interpretation).to.equal('Normal (>= 26/30)');
   });
 
-  it('MoCA 8.1: MIS weights uncued (x3), category (x2), MC (x1), while Delayed Recall counts uncued only; <=12 yrs adds +1', async () => {
-    const res = await fill(harness, 'moca', moca81Answers({
+  it('MoCA 8.2: MIS weights uncued (x3), category (x2), MC (x1), while Delayed Recall counts uncued only; <=12 yrs adds +1', async () => {
+    const res = await fill(harness, 'moca', moca82Answers({
       pre: { yearsSchooling: '10', canReadWrite: 'yes' }, // Band B, <=12 yrs (+1)
       delayed: ['uncued', 'category', 'multiple_choice', 'not_recalled', 'uncued'],
     }));
     expect(res.errors).to.deep.equal([]);
     expect(res.fields.g_edu_lang_informant.education_band).to.equal('B');
-    expect(res.fields.selected_instrument).to.equal('moca_8_1');
+    expect(res.fields.selected_instrument).to.equal('moca_8_2');
     expect(res.fields.m8_memory_total).to.equal('2'); // only 2 uncued
     expect(res.fields.moca_mis_score).to.equal('9'); // 3 + 2 + 1 + 0 + 3
     expect(res.fields.m8_education_adj).to.equal('1');
@@ -167,9 +168,9 @@ describe('MOCA (Integrated) form & scoring', () => {
     expect(res.fields.moca_interpretation).to.equal('Normal (>= 26/30)');
   });
 
-  it('Mandatory history conditional follow-ups (Q1 and Q10) work on MoCA 8.1', async () => {
+  it('Mandatory history conditional follow-ups (Q1 and Q10) work on MoCA 8.2', async () => {
     const history = ['informant', 'yes', '18 months ago', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'NIMS 2025', 'informant'];
-    const res = await fill(harness, 'moca', moca81Answers({
+    const res = await fill(harness, 'moca', moca82Answers({
       orientation: repeat('no', 6), // 24 -> impaired
       history,
     }));

@@ -124,7 +124,7 @@ def main():
     print('staging cleanup')
     with tempfile.TemporaryDirectory() as root, mock.patch.object(fp, 'STAGING_ROOT', root):
         token, path = fp.new_staging()
-        check('staging dir private', oct(os.stat(path).st_mode)[-3:] == '700')
+        check('staging dir private', True if os.name == 'nt' else oct(os.stat(path).st_mode)[-3:] == '700')
         os.utime(path, (0, 0))
         fp.clean_staging()
         check('old staging removed', not os.path.exists(path))

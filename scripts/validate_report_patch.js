@@ -260,14 +260,14 @@ function mocaIntegratedDoc() {
         informant_present: 'yes',
       },
       education_band: 'C',
-      selected_instrument: 'moca_8_1',
+      selected_instrument: 'moca_8_2',
       education_confounded: 'no',
-      m8_g_visuospatial: { m8_trail_making: 'yes', m8_cube_copy: 'yes', m8_clock_contour: 'yes', m8_clock_numbers: 'yes', m8_clock_hands: 'yes' },
+      m8_g_visuospatial: { m8_trail_making: 'yes', m8_chair_copy: 'yes', m8_clock_contour: 'yes', m8_clock_numbers: 'yes', m8_clock_hands: 'yes' },
       m8_g_naming: { m8_naming_1: 'yes', m8_naming_2: 'no', m8_naming_3: 'yes' },
       m8_g_attention: { m8_digit_span_fwd: 'yes', m8_digit_span_bwd: 'yes', m8_vigilance: 'yes', m8_serial_7s: '3' },
       m8_g_language: { m8_sentence_rep_1: 'yes', m8_sentence_rep_2: 'yes', m8_fluency_count: '12' },
       m8_g_abstraction: { m8_abstraction_1: 'yes', m8_abstraction_2: 'yes' },
-      m8_g_delayed_recall: { m8_delayed_face: 'uncued', m8_delayed_velvet: 'category' },
+      m8_g_delayed_recall: { m8_delayed_hand: 'uncued', m8_delayed_nylon: 'category' },
       m8_g_orientation: { m8_orientation_date: 'yes', m8_orientation_month: 'yes', m8_orientation_year: 'yes', m8_orientation_day: 'yes', m8_orientation_place: 'yes', m8_orientation_city: 'yes' },
       g_mandatory_history: { mh_q1: 'no', mh_q2: 'no', mh_q10: 'no' },
       m8_visuospatial_total: '5', m8_naming_total: '2',
@@ -501,7 +501,7 @@ async function main() {
     check('yes resolved', byLabel['report.moca.m8_g_visuospatial.m8_trail_making'] && byLabel['report.moca.m8_g_visuospatial.m8_trail_making'].value === 'Yes');
     check('no resolved (m8_naming_2)', byLabel['report.moca.m8_g_naming.m8_naming_2'] && byLabel['report.moca.m8_g_naming.m8_naming_2'].value === 'No');
     check('serial 7s resolved', byLabel['report.moca.m8_g_attention.m8_serial_7s'] && byLabel['report.moca.m8_g_attention.m8_serial_7s'].value === '4 or 5 correct subtractions (3 pts)');
-    check('selected_instrument resolved', byLabel['report.moca.selected_instrument'] && byLabel['report.moca.selected_instrument'].value === 'MoCA Full, English, Version 8.1');
+    check('selected_instrument resolved', byLabel['report.moca.selected_instrument'] && byLabel['report.moca.selected_instrument'].value === 'MoCA Full, English, Version 8.2');
     check('education_confounded resolved', byLabel['report.moca.education_confounded'] && byLabel['report.moca.education_confounded'].value === 'No');
     check('total score visible', byLabel['report.moca.moca_total_score'] && byLabel['report.moca.moca_total_score'].value === '26');
     check('MIS visible', byLabel['report.moca.moca_mis_score'] && byLabel['report.moca.moca_mis_score'].value === '5');
