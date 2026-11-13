@@ -87,6 +87,7 @@ def build_moca_xlsx():
         ['calculate', 'education_band', '', '', '', '', '', '', '', '', "if(${years_schooling} != '' and (number(${years_schooling}) <= 4 or ${can_read_write} = 'no'), 'A', if(${years_schooling} != '' and number(${years_schooling}) <= 10, 'B', if(${years_schooling} != '', 'C', '')))", '', '', ''],
         ['note', 'education_band_note', 'Education band: ${education_band} (A: <=4 yrs or illiterate | B: 5-10 yrs | C: >10 yrs)', 'విద్యా స్థాయి: ${education_band}', '', '', "${education_band} != ''", '', '', '', '', '', '', ''],
         ['select_one spoken_lang', 'languages_spoken', 'Language spoken', 'మాట్లాడే భాష', 'Select the participant’s spoken language.', 'minimal', '', '', '', 'yes', '', '', '', ''],
+        ['text', 'other_language_spoken', 'What language? (specify other language)', 'ఏ భాష? (ఇతర భాషను పేర్కొనండి)', '', '', "${languages_spoken} = 'other'", '', '', 'yes', '', '', '', ''],
         ['select_one luq_lang', 'luq_proficiency', 'Language Usage Questionnaire (LUQ) — >=70% daily proficiency in:', 'భాషా వినియోగ ప్రశ్నావళి (LUQ) — >=70% ప్రావీణ్యం ఉన్న భాష:', 'Select the language the patient uses at least 70% of the time in daily life based on LUQ.', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'is_strongest_language', "Is this the patient's strongest language?", 'ఇది రోగికి అత్యంత బలమైన భాషా?', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one test_lang', 'test_language', 'Test language used', 'పరీక్షకు ఉపయోగించిన భాష', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -338,7 +339,8 @@ def build_moca_xlsx():
         # ============================================================
         # BRANCH 4C: MoCA FULL, ENGLISH, VERSION 8.2 (exact page 12 wording)
         # ============================================================
-        ['begin group', 'm8_g_visuospatial', 'MoCA 8.2 — VISUOSPATIAL / EXECUTIVE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['note', 'm8_top_header', '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n# MONTREAL COGNITIVE ASSESSMENT (MoCA 8.2)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', '', '', '', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_visuospatial', 'VISUOSPATIAL / EXECUTIVE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_trail_inst', 'Alternating Trail Making (Begin -> End)', '', '', '', '', '', '', '', '', '', '', 'trail_making_8_2.png'],
         ['select_one yesno', 'm8_trail_making', 'Alternating Trail Making', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['note', 'm8_chair_inst', 'Copy chair', '', '', '', '', '', '', '', '', '', '', 'chair_8_2.png'],
@@ -349,14 +351,14 @@ def build_moca_xlsx():
         ['select_one yesno', 'm8_clock_hands', 'Hands', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_naming', 'MoCA 8.2 — NAMING', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_naming', 'NAMING', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_naming_inst', 'NAMING', '', '', '', '', '', '', '', '', '', '', 'naming_8_2.png'],
         ['select_one yesno', 'm8_naming_1', '1. Snake (or a type of snake like Boa or Cobra)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_naming_2', '2. Elephant', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_naming_3', '3. Crocodile or Alligator', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_memory', 'MoCA 8.2 — MEMORY (NO POINTS)', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_memory', 'MEMORY (NO POINTS)', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_memory_inst', 'Read list of words, subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall after 5 minutes.', '', '', '', '', '', '', '', '', '', '', ''],
         ['note', 'm8_memory_words', 'HAND | NYLON | PARK | CARROT | YELLOW', '', '', '', '', '', '', '', '', '', '', ''],
         ['begin group', 'm8_mem_trial1', '1ST TRIAL', '', '', 'field-list', '', '', '', '', '', '', '', ''],
@@ -375,7 +377,7 @@ def build_moca_xlsx():
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_attention', 'MoCA 8.2 — ATTENTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_attention', 'ATTENTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_digits_inst', 'Read list of digits ( 1 digit/ sec. ).', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'm8_digit_span_fwd', 'Subject has to repeat them in the forward order. 8 1 5 2 4', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_digit_span_bwd', 'Subject has to repeat them in the backward order. 2 4 7', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -385,20 +387,20 @@ def build_moca_xlsx():
         ['select_one serial7_score', 'm8_serial_7s', 'Serial 7s Score (subtraction starting at 70)', '', '', '', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_language', 'MoCA 8.2 — LANGUAGE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_language', 'LANGUAGE', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['select_one yesno', 'm8_sentence_rep_1', 'Repeat: The robber of the gray car was stopped by the police.', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_sentence_rep_2', 'The student went back to school without his books and pencils.', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['note', 'm8_fluency_timer_guidance', '⏱️ 1-MINUTE TIMER GUIDANCE:\n• Instruct: "Tell me as many words you can think of that begin with the letter S in one minute."\n• Start your stopwatch as soon as you finish instructions.\n• Stop the participant immediately after exactly 60 seconds (1 minute).', '', '', '', '', '', '', '', '', '', '', ''],
         ['integer', 'm8_fluency_count', 'Language Fluency (N words in 1 minute, N >= 11 words = 1 pt)', '', 'Do not count proper nouns (like Sam, Seattle), numbers, or words with different endings of the same word (e.g. swim, swimming).', '', '', '. >= 0 and . <= 100', 'Enter a count between 0 and 100.', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_abstraction', 'MoCA 8.2 — ABSTRACTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_abstraction', 'ABSTRACTION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_abstraction_inst', 'Similarity between e.g. banana - orange = fruit', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'm8_abstraction_1', 'bed - table', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_abstraction_2', 'letter - telephone', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_delayed_recall', 'MoCA 8.2 — DELAYED RECALL', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_delayed_recall', 'DELAYED RECALL', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['note', 'm8_delayed_inst', 'Has to recall words WITH NO CUE. Points for UNCUED recall only.', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one m8_recall_type', 'm8_delayed_hand', 'HAND', 'Category cue: body part | Multiple choice: hand, shoulder, face (nose, leg)', '', '', '', '', '', 'yes', '', '', '', ''],
         ['select_one m8_recall_type', 'm8_delayed_nylon', 'NYLON', 'Category cue: type of fabric | Multiple choice: cotton, nylon, silk (velvet, denim)', '', '', '', '', '', 'yes', '', '', '', ''],
@@ -407,7 +409,7 @@ def build_moca_xlsx():
         ['select_one m8_recall_type', 'm8_delayed_yellow', 'YELLOW', 'Category cue: color | Multiple choice: yellow, purple, green (red, blue)', '', '', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'm8_g_orientation', 'MoCA 8.2 — ORIENTATION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
+        ['begin group', 'm8_g_orientation', 'ORIENTATION', '', '', 'field-list', is_m8, '', '', '', '', '', '', ''],
         ['select_one yesno', 'm8_orientation_date', 'Date', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_orientation_month', 'Month', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'm8_orientation_year', 'Year', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],

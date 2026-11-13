@@ -164,6 +164,9 @@
           <text id="/data/g_edu_lang_informant/languages_spoken:hint">
             <value>Select the participant's spoken language.</value>
           </text>
+          <text id="/data/g_edu_lang_informant/other_language_spoken:label">
+            <value>What language? (specify other language)</value>
+          </text>
           <text id="/data/g_edu_lang_informant/luq_proficiency:label">
             <value>Language Usage Questionnaire (LUQ) — &gt;=70% daily proficiency in:</value>
           </text>
@@ -765,8 +768,13 @@
           <text id="/data/mb_g_attention/mb_total_time_sec:label">
             <value>TOTAL TIME (sec)</value>
           </text>
+          <text id="/data/m8_top_header:label">
+            <value>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# MONTREAL COGNITIVE ASSESSMENT (MoCA 8.2)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</value>
+          </text>
           <text id="/data/m8_g_visuospatial:label">
-            <value>MoCA 8.2 — VISUOSPATIAL / EXECUTIVE</value>
+            <value>VISUOSPATIAL / EXECUTIVE</value>
           </text>
           <text id="/data/m8_g_visuospatial/m8_trail_inst:label">
             <value>Alternating Trail Making (Begin -&gt; End)</value>
@@ -795,7 +803,7 @@
             <value>Hands</value>
           </text>
           <text id="/data/m8_g_naming:label">
-            <value>MoCA 8.2 — NAMING</value>
+            <value>NAMING</value>
           </text>
           <text id="/data/m8_g_naming/m8_naming_inst:label">
             <value>NAMING</value>
@@ -811,7 +819,7 @@
             <value>3. Crocodile or Alligator</value>
           </text>
           <text id="/data/m8_g_memory:label">
-            <value>MoCA 8.2 — MEMORY (NO POINTS)</value>
+            <value>MEMORY (NO POINTS)</value>
           </text>
           <text id="/data/m8_g_memory/m8_memory_inst:label">
             <value>Read list of words, subject must repeat them. Do 2 trials, even if 1st trial is successful. Do a recall after 5 minutes.</value>
@@ -856,7 +864,7 @@
             <value>YELLOW (2ND TRIAL)</value>
           </text>
           <text id="/data/m8_g_attention:label">
-            <value>MoCA 8.2 — ATTENTION</value>
+            <value>ATTENTION</value>
           </text>
           <text id="/data/m8_g_attention/m8_digits_inst:label">
             <value>Read list of digits ( 1 digit/ sec. ).</value>
@@ -895,7 +903,7 @@
             <value>Serial 7s Score (subtraction starting at 70)</value>
           </text>
           <text id="/data/m8_g_language:label">
-            <value>MoCA 8.2 — LANGUAGE</value>
+            <value>LANGUAGE</value>
           </text>
           <text id="/data/m8_g_language/m8_sentence_rep_1:label">
             <value>Repeat: The robber of the gray car was stopped by the police.</value>
@@ -919,7 +927,7 @@
             <value>Do not count proper nouns (like Sam, Seattle), numbers, or words with different endings of the same word (e.g. swim, swimming).</value>
           </text>
           <text id="/data/m8_g_abstraction:label">
-            <value>MoCA 8.2 — ABSTRACTION</value>
+            <value>ABSTRACTION</value>
           </text>
           <text id="/data/m8_g_abstraction/m8_abstraction_inst:label">
             <value>Similarity between e.g. banana - orange = fruit</value>
@@ -931,7 +939,7 @@
             <value>letter - telephone</value>
           </text>
           <text id="/data/m8_g_delayed_recall:label">
-            <value>MoCA 8.2 — DELAYED RECALL</value>
+            <value>DELAYED RECALL</value>
           </text>
           <text id="/data/m8_g_delayed_recall/m8_delayed_inst:label">
             <value>Has to recall words WITH NO CUE. Points for UNCUED recall only.</value>
@@ -952,7 +960,7 @@
             <value>YELLOW</value>
           </text>
           <text id="/data/m8_g_orientation:label">
-            <value>MoCA 8.2 — ORIENTATION</value>
+            <value>ORIENTATION</value>
           </text>
           <text id="/data/m8_g_orientation/m8_orientation_date:label">
             <value>Date</value>
@@ -1207,6 +1215,9 @@
           </text>
           <text id="/data/g_edu_lang_informant/languages_spoken:label">
             <value>మాట్లాడే భాష</value>
+          </text>
+          <text id="/data/g_edu_lang_informant/other_language_spoken:label">
+            <value>ఏ భాష? (ఇతర భాషను పేర్కొనండి)</value>
           </text>
           <text id="/data/g_edu_lang_informant/luq_proficiency:label">
             <value>భాషా వినియోగ ప్రశ్నావళి (LUQ) — &gt;=70% ప్రావీణ్యం ఉన్న భాష:</value>
@@ -1846,6 +1857,9 @@
           <text id="/data/mb_g_attention/mb_total_time_sec:label">
             <value>-</value>
           </text>
+          <text id="/data/m8_top_header:label">
+            <value>-</value>
+          </text>
           <text id="/data/m8_g_visuospatial:label">
             <value>-</value>
           </text>
@@ -2125,6 +2139,7 @@
             <education_band/>
             <education_band_note/>
             <languages_spoken/>
+            <other_language_spoken/>
             <luq_proficiency/>
             <is_strongest_language/>
             <test_language/>
@@ -2337,6 +2352,7 @@
             <mb_total_time_min/>
             <mb_total_time_sec/>
           </mb_g_attention>
+          <m8_top_header/>
           <m8_g_visuospatial>
             <m8_trail_inst/>
             <m8_trail_making/>
@@ -2713,6 +2729,7 @@
       <bind nodeset="/data/g_edu_lang_informant/education_band" type="string" calculate="if( /data/g_edu_lang_informant/years_schooling  != '' and (number( /data/g_edu_lang_informant/years_schooling ) &lt;= 4 or  /data/g_edu_lang_informant/can_read_write  = 'no'), 'A', if( /data/g_edu_lang_informant/years_schooling  != '' and number( /data/g_edu_lang_informant/years_schooling ) &lt;= 10, 'B', if( /data/g_edu_lang_informant/years_schooling  != '', 'C', '')))"/>
       <bind nodeset="/data/g_edu_lang_informant/education_band_note" readonly="true()" type="string" relevant=" /data/g_edu_lang_informant/education_band  != ''"/>
       <bind nodeset="/data/g_edu_lang_informant/languages_spoken" type="string" required="true()"/>
+      <bind nodeset="/data/g_edu_lang_informant/other_language_spoken" type="string" relevant=" /data/g_edu_lang_informant/languages_spoken  = 'other'" required="true()"/>
       <bind nodeset="/data/g_edu_lang_informant/luq_proficiency" type="string" required="true()"/>
       <bind nodeset="/data/g_edu_lang_informant/is_strongest_language" type="string" required="true()"/>
       <bind nodeset="/data/g_edu_lang_informant/test_language" type="string" required="true()"/>
@@ -2895,6 +2912,7 @@
       <bind nodeset="/data/mb_g_attention/mb_end_time" type="time" required="false()"/>
       <bind nodeset="/data/mb_g_attention/mb_total_time_min" type="int" constraint=". &gt;= 0 and . &lt;= 180" jr:constraintMsg="jr:itext('/data/mb_g_attention/mb_total_time_min:jr:constraintMsg')" required="false()"/>
       <bind nodeset="/data/mb_g_attention/mb_total_time_sec" type="int" constraint=". &gt;= 0 and . &lt;= 59" jr:constraintMsg="jr:itext('/data/mb_g_attention/mb_total_time_sec:jr:constraintMsg')" required="false()"/>
+      <bind nodeset="/data/m8_top_header" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_visuospatial" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_trail_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_visuospatial/m8_trail_making" type="string" required="true()"/>
@@ -3068,6 +3086,9 @@
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
+      <input ref="/data/g_edu_lang_informant/other_language_spoken">
+        <label ref="jr:itext('/data/g_edu_lang_informant/other_language_spoken:label')"/>
+      </input>
       <select1 ref="/data/g_edu_lang_informant/luq_proficiency" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_edu_lang_informant/luq_proficiency:label')"/>
         <hint ref="jr:itext('/data/g_edu_lang_informant/luq_proficiency:hint')"/>
@@ -4075,6 +4096,9 @@
         <label ref="jr:itext('/data/mb_g_attention/mb_total_time_sec:label')"/>
       </input>
     </group>
+    <input ref="/data/m8_top_header">
+      <label ref="jr:itext('/data/m8_top_header:label')"/>
+    </input>
     <group appearance="field-list" ref="/data/m8_g_visuospatial">
       <label ref="jr:itext('/data/m8_g_visuospatial:label')"/>
       <input ref="/data/m8_g_visuospatial/m8_trail_inst">

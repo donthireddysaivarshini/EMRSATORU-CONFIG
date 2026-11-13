@@ -15,6 +15,7 @@ const preAssessment = ({
   yearsSchooling = '15',
   canReadWrite = 'yes',
   spokenLang = 'english',
+  otherSpokenLang = 'French',
   testLanguage = 'english',
   luq = testLanguage === 'telugu' ? 'telugu' : (testLanguage === 'english' ? 'english' : 'neither'),
   informantPresent = 'yes',
@@ -25,6 +26,9 @@ const preAssessment = ({
     yearsSchooling,
     canReadWrite,
     spokenLang,
+  ],
+  spokenLang === 'other' ? [otherSpokenLang] : [],
+  [
     luq,
     'yes',
     testLanguage,
@@ -188,6 +192,15 @@ describe('MOCA (Integrated) form & scoring', () => {
     expect(res.fields.g_mandatory_history.mh_answered_by).to.equal('informant');
     expect(res.fields.g_mandatory_history.mh_q1_duration).to.equal('18 months ago');
     expect(res.fields.g_mandatory_history.mh_q10_details).to.equal('NIMS 2025');
+  });
+
+  it('Language spoken "other" opens specific language text field', async () => {
+    const res = await fill(harness, 'moca', moca82Answers({
+      pre: { spokenLang: 'other', otherSpokenLang: 'Gondi' },
+    }));
+    expect(res.errors).to.deep.equal([]);
+    expect(res.fields.g_edu_lang_informant.languages_spoken).to.equal('other');
+    expect(res.fields.g_edu_lang_informant.other_language_spoken).to.equal('Gondi');
   });
 
   it('No consent: empty total score, interpretation not assessed (no consent)', async () => {
