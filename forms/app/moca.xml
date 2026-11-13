@@ -26,6 +26,33 @@
           <text id="patient_informant-1">
             <value>Informant</value>
           </text>
+          <text id="spoken_lang-0">
+            <value>Telugu</value>
+          </text>
+          <text id="spoken_lang-1">
+            <value>English</value>
+          </text>
+          <text id="spoken_lang-2">
+            <value>Hindi</value>
+          </text>
+          <text id="spoken_lang-3">
+            <value>Lambada</value>
+          </text>
+          <text id="spoken_lang-4">
+            <value>Marathi</value>
+          </text>
+          <text id="spoken_lang-5">
+            <value>Kannada</value>
+          </text>
+          <text id="spoken_lang-6">
+            <value>Tamil</value>
+          </text>
+          <text id="spoken_lang-7">
+            <value>Odia</value>
+          </text>
+          <text id="spoken_lang-8">
+            <value>Other</value>
+          </text>
           <text id="luq_lang-0">
             <value>Telugu</value>
           </text>
@@ -52,24 +79,6 @@
           </text>
           <text id="contact_freq-2">
             <value>Less often</value>
-          </text>
-          <text id="other_factor-0">
-            <value>Poor sleep</value>
-          </text>
-          <text id="other_factor-1">
-            <value>Fasting</value>
-          </text>
-          <text id="other_factor-2">
-            <value>Long travel</value>
-          </text>
-          <text id="other_factor-3">
-            <value>Recent bereavement</value>
-          </text>
-          <text id="other_factor-4">
-            <value>Sedating medication</value>
-          </text>
-          <text id="other_factor-5">
-            <value>None</value>
           </text>
           <text id="serial7_score-0">
             <value>0 correct (0 pt)</value>
@@ -144,16 +153,22 @@
             <value>Years of formal schooling</value>
           </text>
           <text id="/data/g_edu_lang_informant/can_read_write:label">
-            <value>Can read and write a simple sentence?</value>
+            <value>Can read and write a simple sentence in your own language?</value>
           </text>
           <text id="/data/g_edu_lang_informant/education_band_note:label">
             <value> Education band: <output value=" /data/g_edu_lang_informant/education_band "/> (A: &lt;=4 yrs or illiterate | B: 5-10 yrs | C: &gt;10 yrs)</value>
           </text>
           <text id="/data/g_edu_lang_informant/languages_spoken:label">
-            <value>Languages spoken</value>
+            <value>Language spoken</value>
+          </text>
+          <text id="/data/g_edu_lang_informant/languages_spoken:hint">
+            <value>Select the participant's spoken language.</value>
           </text>
           <text id="/data/g_edu_lang_informant/luq_proficiency:label">
-            <value>LUQ &gt;=70% proficiency in</value>
+            <value>Language Usage Questionnaire (LUQ) — &gt;=70% daily proficiency in:</value>
+          </text>
+          <text id="/data/g_edu_lang_informant/luq_proficiency:hint">
+            <value>Select the language the patient uses at least 70% of the time in daily life based on LUQ.</value>
           </text>
           <text id="/data/g_edu_lang_informant/is_strongest_language:label">
             <value>Is this the patient's strongest language?</value>
@@ -191,17 +206,37 @@
           <text id="/data/g_sensory_conditions/room_conditions_ok:label">
             <value>Room quiet, door closed, phones away, informant outside?</value>
           </text>
-          <text id="/data/g_sensory_conditions/mood_screen_score:jr:constraintMsg">
-            <value>Enter a non-negative integer.</value>
+          <text id="/data/g_sensory_conditions/other_factors_heading:label">
+            <value>Other factors today (potential confounding factors):</value>
           </text>
-          <text id="/data/g_sensory_conditions/mood_screen_score:label">
-            <value>Mood screen score (record only, do not interpret)</value>
+          <text id="/data/g_sensory_conditions/factor_poor_sleep:label">
+            <value>Poor sleep?</value>
           </text>
-          <text id="/data/g_sensory_conditions/other_factors_today:label">
-            <value>Other factors today</value>
+          <text id="/data/g_sensory_conditions/factor_fasting:label">
+            <value>Fasting?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_long_travel:label">
+            <value>Long travel before test?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_recent_bereavement:label">
+            <value>Recent bereavement / grief?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_sedating_medication:label">
+            <value>Sedating / psychiatric medication taken today?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_other:label">
+            <value>Any other confounding factor today?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_other_details:label">
+            <value>Details of other factor</value>
+          </text>
+          <text id="/data/preassessment_divider:label">
+            <value>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 PRE-ASSESSMENT COMPLETE ➔ CLINICAL TEST STARTS HERE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</value>
           </text>
           <text id="/data/g_instrument_banner:label">
-            <value>4. INSTRUMENT SELECTION</value>
+            <value>4. INSTRUMENT SELECTION &amp; START TIME</value>
           </text>
           <text id="/data/g_instrument_banner/banner_telugu_a:label">
             <value>Primary instrument: ICMR-NCTB Telugu MoCA (administer and record; flag as education-confounded). Second instrument: RUDAS-Telugu. Informant: EASI-Telugu Mandatory.</value>
@@ -220,6 +255,12 @@
           </text>
           <text id="/data/g_instrument_banner/banner_none:label">
             <value>Neither Telugu nor English selected — no MoCA instrument is opened. Continue to Mandatory History Questions.</value>
+          </text>
+          <text id="/data/g_instrument_banner/assessment_start_time:label">
+            <value>Clinical Assessment Start Time (HH:MM)</value>
+          </text>
+          <text id="/data/g_instrument_banner/assessment_start_time:hint">
+            <value>Record the time when cognitive testing begins.</value>
           </text>
           <text id="/data/te_g_visuospatial:label">
             <value>ICMR-NCTB Telugu MoCA — VISUOSPATIAL / EXECUTIVE</value>
@@ -324,13 +365,28 @@
             <value>పేషెంట్/సబ్జెక్ట్ అంకెలను వెనుక క్రమంలో చెప్పాలి: 7 4 2</value>
           </text>
           <text id="/data/te_g_attention/te_vigilance_inst:label">
-            <value>అక్షరాల జాబితా చదవండి. 'అ' అనే అక్షరం విన్నప్పుడల్లా పేషెంట్/వ్యక్తి చేయి తో ఒకసారి తట్టాలి. No points if &gt;= 2 errors: ప బ అ క మ న అ అ జ క ల బ అ ఫ అ క డ ఈ అ అ అ జ అ మా ఓ ఫ అ అ బ</value>
+            <value>📋 అవధానం (Vigilance) — స్పష్టమైన సూచనలు:
+1. రోగికి చెప్పండి: 'నేను కొన్ని అక్షరాలు చదువుతాను. నేను "అ" అనే అక్షరం పలికిన ప్రతిసారీ, మీరు మీ చేతితో బల్లపై ఒకసారి తట్టాలి. నేను వేరే అక్షరం పలికినప్పుడు మీరు తట్టకూడదు.'
+2. పరీక్షకుడు సెకనుకు 1 అక్షరం చొప్పున చదవాలి.
+3. అక్షరాల జాబితా (కేవలం [అ] వచ్చినప్పుడు మాత్రమే తట్టాలి):
+ ప బ [అ] క మ న [అ] [అ] జ క ల బ [అ] ఫ [అ] క డ ఈ [అ] [అ] [అ] జ [అ] మా ఓ ఫ [అ] [అ] బ
+4. స్కోరింగ్ నిబంధన: 0 లేదా 1 తప్పు అయితే 1 పాయింట్. 2 లేదా అంతకంటే ఎక్కువ తప్పులు ఉంటే 0 పాయింట్లు.</value>
           </text>
           <text id="/data/te_g_attention/te_vigilance:label">
-            <value>Vigilance ('అ' — No points if &gt;= 2 errors)</value>
+            <value>Vigilance Score ('అ' — 1 pt if 0-1 error, 0 pt if &gt;= 2 errors)</value>
           </text>
           <text id="/data/te_g_attention/te_serial7_inst:label">
-            <value>100 నుండి క్రమంగా 7 ను తీసివేయండి. [ ] 93 [ ] 86 [ ] 79 [ ] 72 [ ] 65</value>
+            <value>📋 7 తీసివేయడం (Serial 7s) — స్పష్టమైన సూచనలు:
+1. రోగికి చెప్పండి: 'ఇప్పుడు, నేను మిమ్మల్ని 100 నుండి 7 తీసివేయమని అడుగుతాను, ఆపై నేను ఆపమని చెప్పే వరకు మీ సమాధానం నుండి 7 తీసివేస్తూ ఉండండి.'
+2. అవసరమైతే ఈ సూచనను రెండుసార్లు ఇవ్వవచ్చు. రోగికి ఎటువంటి సూచనలు ఇవ్వవద్దు లేదా లెక్కను సరిచేయవద్దు.
+3. తీసివేత దశలు:
+ [1] 100 - 7 = 93
+ [2] 93 - 7 = 86
+ [3] 86 - 7 = 79
+ [4] 79 - 7 = 72
+ [5] 72 - 7 = 65
+4. స్వతంత్ర తీసివేత నియమం: ప్రతి తీసివేత స్వతంత్రంగా లెక్కించబడుతుంది.
+5. స్కోరింగ్: 4-5 సరైనవి = 3 పాయింట్లు | 2-3 సరైనవి = 2 పాయింట్లు | 1 సరైనది = 1 పాయింట్ | 0 సరైనవి = 0 పాయింట్లు.</value>
           </text>
           <text id="/data/te_g_attention/te_serial_7s:label">
             <value>Serial 7s (100 నుండి క్రమంగా 7 ను తీసివేయండి)</value>
@@ -344,11 +400,14 @@
           <text id="/data/te_g_language/te_sentence_rep_2:label">
             <value>కుక్కను గదిలో చూసినప్పుడల్లా పిల్లి మంచం కింద దాక్కుంటుంది.</value>
           </text>
+          <text id="/data/te_g_language/te_fluency_timer_guidance:label">
+            <value>⏱️ 1-నిమిషం టైమర్: మీ స్టాప్‌వాచ్ లేదా మొబైల్ టైమర్‌ను ప్రారంభించండి. రోగి ఒక నిమిషంలో వీలైనన్ని పదాలు చెప్పాలి. సరిగ్గా 60 సెకన్ల తర్వాత ఆపండి.</value>
+          </text>
           <text id="/data/te_g_language/te_fluency_count:jr:constraintMsg">
             <value>Enter a count between 0 and 100.</value>
           </text>
           <text id="/data/te_g_language/te_fluency_count:label">
-            <value>ఒక నిమిషంలో 'ప' అక్షరంతో మొదలయ్యే పదాలు ఎన్ని ఎక్కువ చెప్పగలిగితే అన్ని చెప్పండి (N &gt;= 11 words)</value>
+            <value>ఒక నిమిషంలో 'ప' అక్షరంతో మొదలయ్యే పదాలు ఎన్ని ఎక్కువ చెప్పగలిగితే అన్ని చెప్పండి (N &gt;= 11 words = 1 pt)</value>
           </text>
           <text id="/data/te_g_abstraction:label">
             <value>ICMR-NCTB Telugu MoCA — ABSTRACTION</value>
@@ -809,16 +868,31 @@
             <value>Subject has to repeat them in the backward order. 2 4 7</value>
           </text>
           <text id="/data/m8_g_attention/m8_vigilance_inst:label">
-            <value>Read list of letters. The subject must tap with his hand at each letter A. No points if &gt;= 2 errors: F B A C M N A A J K L B A F A K D E A A A J A M O F A A B</value>
+            <value>📋 VIGILANCE — CLEAR INSTRUCTIONS:
+1. Instruct participant: "I am going to read a sequence of letters. Every time I say the letter A, tap your hand once on the table. If I say a different letter, do NOT tap your hand."
+2. Assessor guideline: Read letters at exactly 1 letter per second.
+3. Sequence (tap ONLY on [A]):
+ F B [A] C M N [A] [A] J K L B [A] F [A] K D E [A] [A] [A] J [A] M O F [A] [A] B
+4. Scoring: 1 point if 0 or 1 error (tapping on non-A letter or failing to tap on A). 0 points if &gt;= 2 errors.</value>
           </text>
           <text id="/data/m8_g_attention/m8_vigilance:label">
-            <value>Vigilance (No points if &gt;= 2 errors)</value>
+            <value>Vigilance Score (1 pt if 0-1 error, 0 pt if &gt;= 2 errors)</value>
           </text>
           <text id="/data/m8_g_attention/m8_serial7_inst:label">
-            <value>Serial 7 subtraction starting at 70. [ ] 63 [ ] 56 [ ] 49 [ ] 42 [ ] 35</value>
+            <value>📋 SERIAL 7 SUBTRACTION — CLEAR INSTRUCTIONS:
+1. Instruct participant: "Now, I will ask you to count by subtracting seven from seventy, and keep subtracting seven from your answer until I tell you to stop."
+2. Give instruction twice if needed. Do NOT interrupt, give hints, or correct math.
+3. Correct Subtraction Steps:
+ [1] 70 - 7 = 63
+ [2] 63 - 7 = 56
+ [3] 56 - 7 = 49
+ [4] 49 - 7 = 42
+ [5] 42 - 7 = 35
+4. Independent Subtraction Rule: Each subtraction is scored independently. (e.g. if subject says "62, 55, 48, 41, 34" — 62 is wrong, but 55, 48, 41, 34 are all correct subtractions from the previous number, so award 4 correct = 3 points).
+5. Score criteria: 4-5 correct = 3 pts | 2-3 correct = 2 pts | 1 correct = 1 pt | 0 correct = 0 pts.</value>
           </text>
           <text id="/data/m8_g_attention/m8_serial_7s:label">
-            <value>Serial 7 subtraction starting at 70.</value>
+            <value>Serial 7s Score (subtraction starting at 70)</value>
           </text>
           <text id="/data/m8_g_language:label">
             <value>MoCA 8.2 — LANGUAGE</value>
@@ -829,11 +903,20 @@
           <text id="/data/m8_g_language/m8_sentence_rep_2:label">
             <value>The student went back to school without his books and pencils.</value>
           </text>
+          <text id="/data/m8_g_language/m8_fluency_timer_guidance:label">
+            <value>⏱️ 1-MINUTE TIMER GUIDANCE:
+• Instruct: "Tell me as many words you can think of that begin with the letter S in one minute."
+• Start your stopwatch as soon as you finish instructions.
+• Stop the participant immediately after exactly 60 seconds (1 minute).</value>
+          </text>
           <text id="/data/m8_g_language/m8_fluency_count:jr:constraintMsg">
             <value>Enter a count between 0 and 100.</value>
           </text>
           <text id="/data/m8_g_language/m8_fluency_count:label">
-            <value>Language Fluency. Name maximum number of words in one minute that begin with the letter S. (N&gt;=11 words)</value>
+            <value>Language Fluency (N words in 1 minute, N &gt;= 11 words = 1 pt)</value>
+          </text>
+          <text id="/data/m8_g_language/m8_fluency_count:hint">
+            <value>Do not count proper nouns (like Sam, Seattle), numbers, or words with different endings of the same word (e.g. swim, swimming).</value>
           </text>
           <text id="/data/m8_g_abstraction:label">
             <value>MoCA 8.2 — ABSTRACTION</value>
@@ -946,6 +1029,12 @@
           <text id="/data/g_admin/assessment_datetime:label">
             <value>Date of exam</value>
           </text>
+          <text id="/data/g_admin/assessment_end_time:label">
+            <value>Clinical Assessment End Time (HH:MM)</value>
+          </text>
+          <text id="/data/g_admin/assessment_end_time:hint">
+            <value>Record the time when cognitive testing finishes.</value>
+          </text>
           <text id="/data/g_admin/score_summary_note:label">
             <value> Instrument: <output value=" /data/selected_instrument "/> | TOTAL SCORE: <output value=" /data/moca_total_score "/> / 30</value>
           </text>
@@ -987,6 +1076,33 @@
           <text id="patient_informant-1">
             <value>సమాచారకర్త</value>
           </text>
+          <text id="spoken_lang-0">
+            <value>తెలుగు</value>
+          </text>
+          <text id="spoken_lang-1">
+            <value>ఇంగ్లీష్</value>
+          </text>
+          <text id="spoken_lang-2">
+            <value>హిందీ</value>
+          </text>
+          <text id="spoken_lang-3">
+            <value>లంబాడా</value>
+          </text>
+          <text id="spoken_lang-4">
+            <value>మరాఠీ</value>
+          </text>
+          <text id="spoken_lang-5">
+            <value>కన్నడ</value>
+          </text>
+          <text id="spoken_lang-6">
+            <value>తమిళం</value>
+          </text>
+          <text id="spoken_lang-7">
+            <value>ఒడియా</value>
+          </text>
+          <text id="spoken_lang-8">
+            <value>ఇతర భాష</value>
+          </text>
           <text id="luq_lang-0">
             <value>తెలుగు</value>
           </text>
@@ -1013,24 +1129,6 @@
           </text>
           <text id="contact_freq-2">
             <value>తక్కువసార్లు</value>
-          </text>
-          <text id="other_factor-0">
-            <value>నిద్ర లేకపోవడం</value>
-          </text>
-          <text id="other_factor-1">
-            <value>ఉపవాసం</value>
-          </text>
-          <text id="other_factor-2">
-            <value>సుదీర్ఘ ప్రయాణం</value>
-          </text>
-          <text id="other_factor-3">
-            <value>ఇటీవలి విషాదం</value>
-          </text>
-          <text id="other_factor-4">
-            <value>మత్తుమందు</value>
-          </text>
-          <text id="other_factor-5">
-            <value>ఏవీ లేవు</value>
           </text>
           <text id="serial7_score-0">
             <value>0 సరిగ్గా (0 pt)</value>
@@ -1102,16 +1200,16 @@
             <value>పాఠశాల విద్య సంవత్సరాలు</value>
           </text>
           <text id="/data/g_edu_lang_informant/can_read_write:label">
-            <value>సాధారణ వాక్యాన్ని చదవగలరా మరియు వ్రాయగలరా?</value>
+            <value>మీ స్వంత భాషలో ఒక సాధారణ వాక్యాన్ని చదవగలరా మరియు వ్రాయగలరా?</value>
           </text>
           <text id="/data/g_edu_lang_informant/education_band_note:label">
             <value> విద్యా స్థాయి: <output value=" /data/g_edu_lang_informant/education_band "/></value>
           </text>
           <text id="/data/g_edu_lang_informant/languages_spoken:label">
-            <value>మాట్లాడే భాషలు</value>
+            <value>మాట్లాడే భాష</value>
           </text>
           <text id="/data/g_edu_lang_informant/luq_proficiency:label">
-            <value>LUQ &gt;=70% ప్రావీణ్యం ఉన్న భాష</value>
+            <value>భాషా వినియోగ ప్రశ్నావళి (LUQ) — &gt;=70% ప్రావీణ్యం ఉన్న భాష:</value>
           </text>
           <text id="/data/g_edu_lang_informant/is_strongest_language:label">
             <value>ఇది రోగికి అత్యంత బలమైన భాషా?</value>
@@ -1149,14 +1247,40 @@
           <text id="/data/g_sensory_conditions/room_conditions_ok:label">
             <value>గది నిశ్శబ్దంగా, తలుపు మూసి, ఫోన్లు దూరంగా, సమాచారకర్త బయట ఉన్నారా?</value>
           </text>
-          <text id="/data/g_sensory_conditions/mood_screen_score:label">
-            <value>మూడ్ స్క్రీన్ స్కోరు (నమోదు మాత్రమే)</value>
+          <text id="/data/g_sensory_conditions/other_factors_heading:label">
+            <value>ఈ రోజు ఇతర అంశాలు:</value>
           </text>
-          <text id="/data/g_sensory_conditions/other_factors_today:label">
-            <value>ఈ రోజు ఇతర అంశాలు</value>
+          <text id="/data/g_sensory_conditions/factor_poor_sleep:label">
+            <value>నిద్ర లేకపోవడం?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_fasting:label">
+            <value>ఉపవాసం?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_long_travel:label">
+            <value>సుదీర్ఘ ప్రయాణం?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_recent_bereavement:label">
+            <value>ఇటీవలి విషాదం?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_sedating_medication:label">
+            <value>మత్తుమందు తీసుకున్నారా?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_other:label">
+            <value>ఇతర అంశాలు ఏవైనా ఉన్నాయా?</value>
+          </text>
+          <text id="/data/g_sensory_conditions/factor_other_details:label">
+            <value>ఇతర వివరాలు</value>
+          </text>
+          <text id="/data/preassessment_divider:label">
+            <value>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 ముందస్తు అంచనా పూర్తయింది ➔ క్లినికల్ పరీక్ష ఇక్కడ ప్రారంభమవుతుంది
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</value>
           </text>
           <text id="/data/g_instrument_banner:label">
-            <value>4. పరీక్ష ఎంపిక</value>
+            <value>4. పరీక్ష ఎంపిక మరియు ప్రారంభ సమయం</value>
+          </text>
+          <text id="/data/g_instrument_banner/assessment_start_time:label">
+            <value>పరీక్ష ప్రారంభ సమయం</value>
           </text>
           <text id="/data/te_g_visuospatial:label">
             <value>విజువోస్పేషియల్ / ఎగ్జిక్యూటివ్</value>
@@ -1258,13 +1382,28 @@
             <value>పేషెంట్/సబ్జెక్ట్ అంకెలను వెనుక క్రమంలో చెప్పాలి: 7 4 2</value>
           </text>
           <text id="/data/te_g_attention/te_vigilance_inst:label">
-            <value>అక్షరాల జాబితా చదవండి. 'అ' అనే అక్షరం విన్నప్పుడల్లా పేషెంట్/వ్యక్తి చేయి తో ఒకసారి తట్టాలి. No points if &gt;= 2 errors: ప బ అ క మ న అ అ జ క ల బ అ ఫ అ క డ ఈ అ అ అ జ అ మా ఓ ఫ అ అ బ</value>
+            <value>📋 అవధానం (Vigilance) — స్పష్టమైన సూచనలు:
+1. రోగికి చెప్పండి: 'నేను కొన్ని అక్షరాలు చదువుతాను. నేను "అ" అనే అక్షరం పలికిన ప్రతిసారీ, మీరు మీ చేతితో బల్లపై ఒకసారి తట్టాలి. నేను వేరే అక్షరం పలికినప్పుడు మీరు తట్టకూడదు.'
+2. పరీక్షకుడు సెకనుకు 1 అక్షరం చొప్పున చదవాలి.
+3. అక్షరాల జాబితా (కేవలం [అ] వచ్చినప్పుడు మాత్రమే తట్టాలి):
+ ప బ [అ] క మ న [అ] [అ] జ క ల బ [అ] ఫ [అ] క డ ఈ [అ] [అ] [అ] జ [అ] మా ఓ ఫ [అ] [అ] బ
+4. స్కోరింగ్ నిబంధన: 0 లేదా 1 తప్పు అయితే 1 పాయింట్. 2 లేదా అంతకంటే ఎక్కువ తప్పులు ఉంటే 0 పాయింట్లు.</value>
           </text>
           <text id="/data/te_g_attention/te_vigilance:label">
-            <value>అక్షరాల జాబితా ('అ' — No points if &gt;= 2 errors)</value>
+            <value>అక్షరాల జాబితా ('అ' — 0-1 తప్పులకు 1 పాయింట్, &gt;=2 తప్పులకు 0)</value>
           </text>
           <text id="/data/te_g_attention/te_serial7_inst:label">
-            <value>100 నుండి క్రమంగా 7 ను తీసివేయండి. [ ] 93 [ ] 86 [ ] 79 [ ] 72 [ ] 65</value>
+            <value>📋 7 తీసివేయడం (Serial 7s) — స్పష్టమైన సూచనలు:
+1. రోగికి చెప్పండి: 'ఇప్పుడు, నేను మిమ్మల్ని 100 నుండి 7 తీసివేయమని అడుగుతాను, ఆపై నేను ఆపమని చెప్పే వరకు మీ సమాధానం నుండి 7 తీసివేస్తూ ఉండండి.'
+2. అవసరమైతే ఈ సూచనను రెండుసార్లు ఇవ్వవచ్చు. రోగికి ఎటువంటి సూచనలు ఇవ్వవద్దు లేదా లెక్కను సరిచేయవద్దు.
+3. తీసివేత దశలు:
+ [1] 100 - 7 = 93
+ [2] 93 - 7 = 86
+ [3] 86 - 7 = 79
+ [4] 79 - 7 = 72
+ [5] 72 - 7 = 65
+4. స్వతంత్ర తీసివేత నియమం: ప్రతి తీసివేత స్వతంత్రంగా లెక్కించబడుతుంది.
+5. స్కోరింగ్: 4-5 సరైనవి = 3 పాయింట్లు | 2-3 సరైనవి = 2 పాయింట్లు | 1 సరైనది = 1 పాయింట్ | 0 సరైనవి = 0 పాయింట్లు.</value>
           </text>
           <text id="/data/te_g_attention/te_serial_7s:label">
             <value>100 నుండి 7 తీసివేయడం</value>
@@ -1278,8 +1417,11 @@
           <text id="/data/te_g_language/te_sentence_rep_2:label">
             <value>కుక్కను గదిలో చూసినప్పుడల్లా పిల్లి మంచం కింద దాక్కుంటుంది.</value>
           </text>
+          <text id="/data/te_g_language/te_fluency_timer_guidance:label">
+            <value>⏱️ 1-నిమిషం టైమర్: మీ స్టాప్‌వాచ్ లేదా మొబైల్ టైమర్‌ను ప్రారంభించండి. రోగి ఒక నిమిషంలో వీలైనన్ని పదాలు చెప్పాలి. సరిగ్గా 60 సెకన్ల తర్వాత ఆపండి.</value>
+          </text>
           <text id="/data/te_g_language/te_fluency_count:label">
-            <value>ఒక నిమిషంలో 'ప' అక్షరంతో మొదలయ్యే పదాలు (N &gt;= 11 words)</value>
+            <value>ఒక నిమిషంలో 'ప' అక్షరంతో మొదలయ్యే పదాలు (N &gt;= 11 words = 1 pt)</value>
           </text>
           <text id="/data/te_g_abstraction:label">
             <value>పోలికలు (ABSTRACTION)</value>
@@ -1401,10 +1543,16 @@
           <text id="/data/g_admin/assessment_datetime:label">
             <value>తేదీ</value>
           </text>
+          <text id="/data/g_admin/assessment_end_time:label">
+            <value>పరీక్ష ముగింపు సమయం</value>
+          </text>
           <text id="/data/g_edu_lang_informant/years_schooling:jr:constraintMsg">
             <value>-</value>
           </text>
-          <text id="/data/g_sensory_conditions/mood_screen_score:jr:constraintMsg">
+          <text id="/data/g_edu_lang_informant/languages_spoken:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/g_edu_lang_informant/luq_proficiency:hint">
             <value>-</value>
           </text>
           <text id="/data/g_instrument_banner/banner_telugu_a:label">
@@ -1423,6 +1571,9 @@
             <value>-</value>
           </text>
           <text id="/data/g_instrument_banner/banner_none:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_instrument_banner/assessment_start_time:hint">
             <value>-</value>
           </text>
           <text id="/data/te_g_language/te_fluency_count:jr:constraintMsg">
@@ -1815,10 +1966,16 @@
           <text id="/data/m8_g_language/m8_sentence_rep_2:label">
             <value>-</value>
           </text>
+          <text id="/data/m8_g_language/m8_fluency_timer_guidance:label">
+            <value>-</value>
+          </text>
           <text id="/data/m8_g_language/m8_fluency_count:jr:constraintMsg">
             <value>-</value>
           </text>
           <text id="/data/m8_g_language/m8_fluency_count:label">
+            <value>-</value>
+          </text>
+          <text id="/data/m8_g_language/m8_fluency_count:hint">
             <value>-</value>
           </text>
           <text id="/data/m8_g_abstraction:label">
@@ -1894,6 +2051,9 @@
             <value>-</value>
           </text>
           <text id="/data/g_mandatory_history/mh_q10_details:label">
+            <value>-</value>
+          </text>
+          <text id="/data/g_admin/assessment_end_time:hint">
             <value>-</value>
           </text>
           <text id="/data/g_admin/score_summary_note:label">
@@ -1979,11 +2139,18 @@
             <whisper_test_passed/>
             <near_vision_passed/>
             <room_conditions_ok/>
-            <mood_screen_score/>
-            <other_factors_today/>
+            <other_factors_heading/>
+            <factor_poor_sleep/>
+            <factor_fasting/>
+            <factor_long_travel/>
+            <factor_recent_bereavement/>
+            <factor_sedating_medication/>
+            <factor_other/>
+            <factor_other_details/>
           </g_sensory_conditions>
           <selected_instrument/>
           <education_confounded/>
+          <preassessment_divider/>
           <g_instrument_banner>
             <banner_telugu_a/>
             <banner_telugu_b/>
@@ -1991,6 +2158,7 @@
             <banner_moca_b/>
             <banner_moca_8_2/>
             <banner_none/>
+            <assessment_start_time/>
           </g_instrument_banner>
           <te_g_visuospatial>
             <te_trail_making_inst/>
@@ -2038,6 +2206,7 @@
           <te_g_language>
             <te_sentence_rep_1/>
             <te_sentence_rep_2/>
+            <te_fluency_timer_guidance/>
             <te_fluency_count/>
           </te_g_language>
           <te_g_abstraction>
@@ -2214,6 +2383,7 @@
           <m8_g_language>
             <m8_sentence_rep_1/>
             <m8_sentence_rep_2/>
+            <m8_fluency_timer_guidance/>
             <m8_fluency_count/>
           </m8_g_language>
           <m8_g_abstraction>
@@ -2297,6 +2467,7 @@
           <g_admin>
             <administered_by/>
             <assessment_datetime/>
+            <assessment_end_time/>
             <score_summary_note/>
           </g_admin>
           <g_supporting_docs>
@@ -2350,6 +2521,46 @@
           </item>
         </root>
       </instance>
+      <instance id="spoken_lang">
+        <root>
+          <item>
+            <itextId>spoken_lang-0</itextId>
+            <name>telugu</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-1</itextId>
+            <name>english</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-2</itextId>
+            <name>hindi</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-3</itextId>
+            <name>lambada</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-4</itextId>
+            <name>marathi</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-5</itextId>
+            <name>kannada</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-6</itextId>
+            <name>tamil</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-7</itextId>
+            <name>odia</name>
+          </item>
+          <item>
+            <itextId>spoken_lang-8</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
       <instance id="luq_lang">
         <root>
           <item>
@@ -2395,34 +2606,6 @@
           <item>
             <itextId>contact_freq-2</itextId>
             <name>less_often</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="other_factor">
-        <root>
-          <item>
-            <itextId>other_factor-0</itextId>
-            <name>poor_sleep</name>
-          </item>
-          <item>
-            <itextId>other_factor-1</itextId>
-            <name>fasting</name>
-          </item>
-          <item>
-            <itextId>other_factor-2</itextId>
-            <name>long_travel</name>
-          </item>
-          <item>
-            <itextId>other_factor-3</itextId>
-            <name>recent_bereavement</name>
-          </item>
-          <item>
-            <itextId>other_factor-4</itextId>
-            <name>sedating_medication</name>
-          </item>
-          <item>
-            <itextId>other_factor-5</itextId>
-            <name>none</name>
           </item>
         </root>
       </instance>
@@ -2529,7 +2712,7 @@
       <bind nodeset="/data/g_edu_lang_informant/can_read_write" type="string" required="true()"/>
       <bind nodeset="/data/g_edu_lang_informant/education_band" type="string" calculate="if( /data/g_edu_lang_informant/years_schooling  != '' and (number( /data/g_edu_lang_informant/years_schooling ) &lt;= 4 or  /data/g_edu_lang_informant/can_read_write  = 'no'), 'A', if( /data/g_edu_lang_informant/years_schooling  != '' and number( /data/g_edu_lang_informant/years_schooling ) &lt;= 10, 'B', if( /data/g_edu_lang_informant/years_schooling  != '', 'C', '')))"/>
       <bind nodeset="/data/g_edu_lang_informant/education_band_note" readonly="true()" type="string" relevant=" /data/g_edu_lang_informant/education_band  != ''"/>
-      <bind nodeset="/data/g_edu_lang_informant/languages_spoken" type="string" required="false()"/>
+      <bind nodeset="/data/g_edu_lang_informant/languages_spoken" type="string" required="true()"/>
       <bind nodeset="/data/g_edu_lang_informant/luq_proficiency" type="string" required="true()"/>
       <bind nodeset="/data/g_edu_lang_informant/is_strongest_language" type="string" required="true()"/>
       <bind nodeset="/data/g_edu_lang_informant/test_language" type="string" required="true()"/>
@@ -2543,10 +2726,17 @@
       <bind nodeset="/data/g_sensory_conditions/whisper_test_passed" type="string" required="true()"/>
       <bind nodeset="/data/g_sensory_conditions/near_vision_passed" type="string" required="true()"/>
       <bind nodeset="/data/g_sensory_conditions/room_conditions_ok" type="string" required="true()"/>
-      <bind nodeset="/data/g_sensory_conditions/mood_screen_score" type="int" constraint=". &gt;= 0 and . &lt;= 100" jr:constraintMsg="jr:itext('/data/g_sensory_conditions/mood_screen_score:jr:constraintMsg')" required="false()"/>
-      <bind nodeset="/data/g_sensory_conditions/other_factors_today" type="string" required="false()"/>
+      <bind nodeset="/data/g_sensory_conditions/other_factors_heading" readonly="true()" type="string"/>
+      <bind nodeset="/data/g_sensory_conditions/factor_poor_sleep" type="string" required="true()"/>
+      <bind nodeset="/data/g_sensory_conditions/factor_fasting" type="string" required="true()"/>
+      <bind nodeset="/data/g_sensory_conditions/factor_long_travel" type="string" required="true()"/>
+      <bind nodeset="/data/g_sensory_conditions/factor_recent_bereavement" type="string" required="true()"/>
+      <bind nodeset="/data/g_sensory_conditions/factor_sedating_medication" type="string" required="true()"/>
+      <bind nodeset="/data/g_sensory_conditions/factor_other" type="string" required="true()"/>
+      <bind nodeset="/data/g_sensory_conditions/factor_other_details" type="string" relevant=" /data/g_sensory_conditions/factor_other  = 'yes'" required="false()"/>
       <bind nodeset="/data/selected_instrument" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != 'yes', '', if( /data/g_edu_lang_informant/test_language  = 'telugu', 'moca_telugu', if( /data/g_edu_lang_informant/test_language  = 'english' and  /data/g_edu_lang_informant/education_band  = 'A', 'moca_b', if( /data/g_edu_lang_informant/test_language  = 'english' and ( /data/g_edu_lang_informant/education_band  = 'B' or  /data/g_edu_lang_informant/education_band  = 'C'), 'moca_8_2', 'none'))))"/>
       <bind nodeset="/data/education_confounded" type="string" calculate="if( /data/selected_instrument  = 'moca_telugu' and  /data/g_edu_lang_informant/education_band  = 'A', 'yes', 'no')"/>
+      <bind nodeset="/data/preassessment_divider" readonly="true()" type="string" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
       <bind nodeset="/data/g_instrument_banner" relevant=" /data/selected_instrument  != ''"/>
       <bind nodeset="/data/g_instrument_banner/banner_telugu_a" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' and  /data/g_edu_lang_informant/education_band  = 'A'"/>
       <bind nodeset="/data/g_instrument_banner/banner_telugu_b" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' and  /data/g_edu_lang_informant/education_band  = 'B'"/>
@@ -2554,6 +2744,7 @@
       <bind nodeset="/data/g_instrument_banner/banner_moca_b" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_b'"/>
       <bind nodeset="/data/g_instrument_banner/banner_moca_8_2" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/g_instrument_banner/banner_none" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'none'"/>
+      <bind nodeset="/data/g_instrument_banner/assessment_start_time" type="time" relevant=" /data/selected_instrument  != 'none'" required="true()"/>
       <bind nodeset="/data/te_g_visuospatial" relevant=" /data/selected_instrument  = 'moca_telugu'"/>
       <bind nodeset="/data/te_g_visuospatial/te_trail_making_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/te_g_visuospatial/te_trail_making" type="string" required="true()"/>
@@ -2592,6 +2783,7 @@
       <bind nodeset="/data/te_g_language" relevant=" /data/selected_instrument  = 'moca_telugu'"/>
       <bind nodeset="/data/te_g_language/te_sentence_rep_1" type="string" required="true()"/>
       <bind nodeset="/data/te_g_language/te_sentence_rep_2" type="string" required="true()"/>
+      <bind nodeset="/data/te_g_language/te_fluency_timer_guidance" readonly="true()" type="string"/>
       <bind nodeset="/data/te_g_language/te_fluency_count" type="int" constraint=". &gt;= 0 and . &lt;= 100" jr:constraintMsg="jr:itext('/data/te_g_language/te_fluency_count:jr:constraintMsg')" required="true()"/>
       <bind nodeset="/data/te_g_abstraction" relevant=" /data/selected_instrument  = 'moca_telugu'"/>
       <bind nodeset="/data/te_g_abstraction/te_abstraction_inst_practice" readonly="true()" type="string"/>
@@ -2741,6 +2933,7 @@
       <bind nodeset="/data/m8_g_language" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_language/m8_sentence_rep_1" type="string" required="true()"/>
       <bind nodeset="/data/m8_g_language/m8_sentence_rep_2" type="string" required="true()"/>
+      <bind nodeset="/data/m8_g_language/m8_fluency_timer_guidance" readonly="true()" type="string"/>
       <bind nodeset="/data/m8_g_language/m8_fluency_count" type="int" constraint=". &gt;= 0 and . &lt;= 100" jr:constraintMsg="jr:itext('/data/m8_g_language/m8_fluency_count:jr:constraintMsg')" required="true()"/>
       <bind nodeset="/data/m8_g_abstraction" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/m8_g_abstraction/m8_abstraction_inst" readonly="true()" type="string"/>
@@ -2818,6 +3011,7 @@
       <bind nodeset="/data/moca_interpretation" type="string" calculate="if( /data/g_consent/consent_reconfirmed  != &quot;yes&quot;, &quot;Not assessed (no consent)&quot;, if( /data/selected_instrument  = &quot;moca_telugu&quot; or  /data/selected_instrument  = &quot;moca_8_2&quot;, if( /data/moca_total_score  &gt;= 26, &quot;Normal (&gt;= 26/30)&quot;, &quot;Below normal (&lt; 26/30)&quot;), &quot;&quot;))"/>
       <bind nodeset="/data/g_admin/administered_by" type="string" required="true()"/>
       <bind nodeset="/data/g_admin/assessment_datetime" type="dateTime" required="true()" calculate="if(. = '', now(), .)"/>
+      <bind nodeset="/data/g_admin/assessment_end_time" type="time" relevant=" /data/selected_instrument  != 'none'" required="true()"/>
       <bind nodeset="/data/g_admin/score_summary_note" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu' or  /data/selected_instrument  = 'moca_b' or  /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/g_supporting_docs" relevant=" /data/g_consent/consent_reconfirmed  = 'yes'"/>
       <bind nodeset="/data/g_supporting_docs/upload_scale_image" type="binary" required="false()"/>
@@ -2866,11 +3060,17 @@
       <input ref="/data/g_edu_lang_informant/education_band_note">
         <label ref="jr:itext('/data/g_edu_lang_informant/education_band_note:label')"/>
       </input>
-      <input ref="/data/g_edu_lang_informant/languages_spoken">
+      <select1 ref="/data/g_edu_lang_informant/languages_spoken" appearance="minimal">
         <label ref="jr:itext('/data/g_edu_lang_informant/languages_spoken:label')"/>
-      </input>
+        <hint ref="jr:itext('/data/g_edu_lang_informant/languages_spoken:hint')"/>
+        <itemset nodeset="instance('spoken_lang')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
       <select1 ref="/data/g_edu_lang_informant/luq_proficiency" appearance="horizontal-compact">
         <label ref="jr:itext('/data/g_edu_lang_informant/luq_proficiency:label')"/>
+        <hint ref="jr:itext('/data/g_edu_lang_informant/luq_proficiency:hint')"/>
         <itemset nodeset="instance('luq_lang')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
@@ -2948,17 +3148,58 @@
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <input ref="/data/g_sensory_conditions/mood_screen_score">
-        <label ref="jr:itext('/data/g_sensory_conditions/mood_screen_score:label')"/>
+      <input ref="/data/g_sensory_conditions/other_factors_heading">
+        <label ref="jr:itext('/data/g_sensory_conditions/other_factors_heading:label')"/>
       </input>
-      <select ref="/data/g_sensory_conditions/other_factors_today">
-        <label ref="jr:itext('/data/g_sensory_conditions/other_factors_today:label')"/>
-        <itemset nodeset="instance('other_factor')/root/item">
+      <select1 ref="/data/g_sensory_conditions/factor_poor_sleep" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_sensory_conditions/factor_poor_sleep:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
-      </select>
+      </select1>
+      <select1 ref="/data/g_sensory_conditions/factor_fasting" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_sensory_conditions/factor_fasting:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_sensory_conditions/factor_long_travel" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_sensory_conditions/factor_long_travel:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_sensory_conditions/factor_recent_bereavement" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_sensory_conditions/factor_recent_bereavement:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_sensory_conditions/factor_sedating_medication" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_sensory_conditions/factor_sedating_medication:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/g_sensory_conditions/factor_other" appearance="horizontal-compact">
+        <label ref="jr:itext('/data/g_sensory_conditions/factor_other:label')"/>
+        <itemset nodeset="instance('yesno')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/g_sensory_conditions/factor_other_details">
+        <label ref="jr:itext('/data/g_sensory_conditions/factor_other_details:label')"/>
+      </input>
     </group>
+    <input ref="/data/preassessment_divider">
+      <label ref="jr:itext('/data/preassessment_divider:label')"/>
+    </input>
     <group appearance="field-list" ref="/data/g_instrument_banner">
       <label ref="jr:itext('/data/g_instrument_banner:label')"/>
       <input ref="/data/g_instrument_banner/banner_telugu_a">
@@ -2978,6 +3219,10 @@
       </input>
       <input ref="/data/g_instrument_banner/banner_none">
         <label ref="jr:itext('/data/g_instrument_banner/banner_none:label')"/>
+      </input>
+      <input ref="/data/g_instrument_banner/assessment_start_time">
+        <label ref="jr:itext('/data/g_instrument_banner/assessment_start_time:label')"/>
+        <hint ref="jr:itext('/data/g_instrument_banner/assessment_start_time:hint')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/te_g_visuospatial">
@@ -3195,6 +3440,9 @@
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
+      <input ref="/data/te_g_language/te_fluency_timer_guidance">
+        <label ref="jr:itext('/data/te_g_language/te_fluency_timer_guidance:label')"/>
+      </input>
       <input ref="/data/te_g_language/te_fluency_count">
         <label ref="jr:itext('/data/te_g_language/te_fluency_count:label')"/>
       </input>
@@ -4042,8 +4290,12 @@
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
+      <input ref="/data/m8_g_language/m8_fluency_timer_guidance">
+        <label ref="jr:itext('/data/m8_g_language/m8_fluency_timer_guidance:label')"/>
+      </input>
       <input ref="/data/m8_g_language/m8_fluency_count">
         <label ref="jr:itext('/data/m8_g_language/m8_fluency_count:label')"/>
+        <hint ref="jr:itext('/data/m8_g_language/m8_fluency_count:hint')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/m8_g_abstraction">
@@ -4255,6 +4507,10 @@
       </input>
       <input ref="/data/g_admin/assessment_datetime">
         <label ref="jr:itext('/data/g_admin/assessment_datetime:label')"/>
+      </input>
+      <input ref="/data/g_admin/assessment_end_time">
+        <label ref="jr:itext('/data/g_admin/assessment_end_time:label')"/>
+        <hint ref="jr:itext('/data/g_admin/assessment_end_time:hint')"/>
       </input>
       <input ref="/data/g_admin/score_summary_note">
         <label ref="jr:itext('/data/g_admin/score_summary_note:label')"/>

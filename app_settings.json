@@ -1494,6 +1494,17 @@
           "yes": "Yes",
           "no": "No"
         },
+        "g_edu_lang_informant.languages_spoken": {
+          "telugu": "Telugu",
+          "english": "English",
+          "hindi": "Hindi",
+          "lambada": "Lambada",
+          "marathi": "Marathi",
+          "kannada": "Kannada",
+          "tamil": "Tamil",
+          "odia": "Odia",
+          "other": "Other"
+        },
         "g_edu_lang_informant.luq_proficiency": {
           "telugu": "Telugu",
           "english": "English",
@@ -1537,13 +1548,29 @@
           "yes": "Yes",
           "no": "No"
         },
-        "g_sensory_conditions.other_factors_today": {
-          "poor_sleep": "Poor sleep",
-          "fasting": "Fasting",
-          "long_travel": "Long travel",
-          "recent_bereavement": "Recent bereavement",
-          "sedating_medication": "Sedating medication",
-          "none": "None"
+        "g_sensory_conditions.factor_poor_sleep": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.factor_fasting": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.factor_long_travel": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.factor_recent_bereavement": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.factor_sedating_medication": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sensory_conditions.factor_other": {
+          "yes": "Yes",
+          "no": "No"
         },
         "te_g_visuospatial.te_trail_making": {
           "yes": "Yes",

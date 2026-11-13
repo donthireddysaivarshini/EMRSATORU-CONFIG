@@ -14,22 +14,26 @@ const harness = newHarness();
 const preAssessment = ({
   yearsSchooling = '15',
   canReadWrite = 'yes',
+  spokenLang = 'english',
   testLanguage = 'english',
   luq = testLanguage === 'telugu' ? 'telugu' : (testLanguage === 'english' ? 'english' : 'neither'),
   informantPresent = 'yes',
+  startTime = '09:00',
 } = {}) => [].concat(
   ['yes'], // consent_reconfirmed
   [
     yearsSchooling,
     canReadWrite,
-    'English, Telugu',
+    spokenLang,
     luq,
     'yes',
     testLanguage,
     informantPresent,
   ],
   informantPresent === 'yes' ? ['Ramesh', 'daily'] : [],
-  ['yes', 'yes', 'yes', 'yes', 'yes', '2', 'none'], // sensory + testing conditions
+  ['yes', 'yes', 'yes', 'yes', 'yes'], // sensory conditions
+  ['no', 'no', 'no', 'no', 'no', 'no'], // factor_poor_sleep, fasting, long_travel, bereavement, medication, other
+  [startTime], // assessment_start_time
 );
 
 const mandatoryHistoryAllNo = () => ['patient'].concat(repeat('no', 10), ['patient']);
@@ -45,6 +49,7 @@ const moca82Answers = ({
   delayed = repeat('uncued', 5),
   orientation = repeat('yes', 6),
   history = mandatoryHistoryAllNo(),
+  endTime = '09:30',
 } = {}) => [].concat(
   preAssessment({ testLanguage: 'english', yearsSchooling: '15', canReadWrite: 'yes', ...pre }),
   visuospatial,
@@ -57,7 +62,7 @@ const moca82Answers = ({
   delayed,
   orientation,
   history,
-  ['Tester'],
+  ['Tester', '2026-11-13 09:30', endTime],
 );
 const moca81Answers = moca82Answers; // backward compatibility alias
 
@@ -73,6 +78,7 @@ const mocaBAnswers = ({
   naming = repeat('yes', 4),
   whiteErrors = '0',
   blackErrors = '0',
+  endTime = '09:30',
 } = {}) => [].concat(
   preAssessment({ testLanguage: 'english', yearsSchooling: '3', canReadWrite: 'no', ...pre }),
   ['09:00', trailMaking],
@@ -86,7 +92,7 @@ const mocaBAnswers = ({
   naming,
   [whiteErrors, blackErrors, '09:12', '12', '0'],
   mandatoryHistoryAllNo(),
-  ['Tester'],
+  ['Tester', '2026-11-13 09:30', endTime],
 );
 
 const mocaTeluguAnswers = ({
@@ -99,8 +105,9 @@ const mocaTeluguAnswers = ({
   abstraction = repeat('yes', 2),
   delayed = repeat(['yes'], 5),
   orientation = repeat('yes', 6),
+  endTime = '09:30',
 } = {}) => [].concat(
-  preAssessment({ testLanguage: 'telugu', yearsSchooling: '10', canReadWrite: 'yes', ...pre }),
+  preAssessment({ testLanguage: 'telugu', yearsSchooling: '10', canReadWrite: 'yes', spokenLang: 'telugu', ...pre }),
   visuospatial,
   naming,
   repeat('yes', 10),
@@ -111,7 +118,7 @@ const mocaTeluguAnswers = ({
   ...delayed,
   orientation,
   mandatoryHistoryAllNo(),
-  ['Tester'],
+  ['Tester', '2026-11-13 09:30', endTime],
 );
 
 describe('MOCA (Integrated) form & scoring', () => {
