@@ -137,7 +137,8 @@ def build_moca_xlsx():
         # ============================================================
         # BRANCH 4A: ICMR-NCTB TELUGU MoCA (Version 7.1)
         # ============================================================
-        ['begin group', 'te_g_visuospatial', 'ICMR-NCTB Telugu MoCA — VISUOSPATIAL / EXECUTIVE', 'విజువోస్పేషియల్ / ఎగ్జిక్యూటివ్', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['note', 'te_top_header', '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n# ICMR-NCTB TELUGU MoCA (Version 7.1)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n# ICMR-NCTB తెలుగు మోకా (వెర్షన్ 7.1)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', '', '', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_visuospatial', 'VISUOSPATIAL / EXECUTIVE', 'విజువోస్పేషియల్ / ఎగ్జిక్యూటివ్', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['note', 'te_trail_making_inst', '1 − క - 2 - ఖ - 3 - గ - 4 - ఘ - 5 - ఙ (మొదలు పెట్టండి -> ఆపండి)', '1 − క - 2 - ఖ - 3 - గ - 4 - ఘ - 5 - ఙ (మొదలు పెట్టండి -> ఆపండి)', '', '', '', '', '', '', '', '', '', 'trail_making_telugu.png'],
         ['select_one yesno', 'te_trail_making', 'Alternating Trail Making (1 - క - 2 - ఖ - 3 - గ - 4 - ఘ - 5 - ఙ)', 'ట్రయల్ మేకింగ్ (1 - క - 2 - ఖ - 3 - గ - 4 - ఘ - 5 - ఙ)', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['note', 'te_cube_inst', 'చిత్రాన్ని గీయండి.', 'చిత్రాన్ని గీయండి.', '', '', '', '', '', '', '', '', '', 'cube_telugu.png'],
@@ -148,14 +149,14 @@ def build_moca_xlsx():
         ['select_one yesno', 'te_clock_hands', 'Hands', 'ముళ్ళు (Hands)', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'te_g_naming', 'ICMR-NCTB Telugu MoCA — NAMING', 'పేర్లు చెప్పడం (NAMING)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_naming', 'NAMING', 'పేర్లు చెప్పడం (NAMING)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['note', 'te_naming_inst', 'ఈ జంతువు పేరు చెప్పండి.', 'ఈ జంతువు పేరు చెప్పండి.', '', '', '', '', '', '', '', '', '', 'naming_telugu.png'],
         ['select_one yesno', 'te_naming_1', '1. Lion', '1. సింహం (Lion)', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'te_naming_2', '2. Rhinoceros / Rhino', '2. ఖడ్గమృగం (Rhinoceros)', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'te_naming_3', '3. Camel / Dromedary', '3. ఒంటె (Camel)', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'te_g_memory', 'ICMR-NCTB Telugu MoCA — MEMORY (No points)', 'జ్ఞాపకశక్తి (No points)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_memory', 'MEMORY (No points)', 'జ్ఞాపకశక్తి (No points)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['note', 'te_memory_inst_trial1', 'పదాల జాబితా చదవండి, పేషెంట్/సబ్జెక్ట్ ఆ పదాలను తిరిగి చెప్పాలి. మొదటి ప్రయత్నం సరి అయినా కూడా రెండు ప్రయత్నాలు చేయండి. 5 నిమిషాల తరువాత మళ్ళీ అడగండి.', 'పదాల జాబితా చదవండి, పేషెంట్/సబ్జెక్ట్ ఆ పదాలను తిరిగి చెప్పాలి. మొదటి ప్రయత్నం సరి అయినా కూడా రెండు ప్రయత్నాలు చేయండి. 5 నిమిషాల తరువాత మళ్ళీ అడగండి.', '', '', '', '', '', '', '', '', '', ''],
         ['note', 'te_memory_words', 'కన్ను | చీర | గుడి | గులాబీ | నీలం', 'కన్ను | చీర | గుడి | గులాబీ | నీలం', '', '', '', '', '', '', '', '', '', ''],
         ['begin group', 'te_mem_trial1', '1వ ప్రయత్నం (1st trial)', '1వ ప్రయత్నం', '', 'field-list', '', '', '', '', '', '', '', ''],
@@ -174,7 +175,7 @@ def build_moca_xlsx():
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'te_g_attention', 'ICMR-NCTB Telugu MoCA — ATTENTION', 'అవధానం (ATTENTION)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_attention', 'ATTENTION', 'అవధానం (ATTENTION)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['note', 'te_digits_inst', 'ఈ అంకెలు చదవండి. [ 1 Digit / sec. ]', 'ఈ అంకెలు చదవండి. [ 1 Digit / sec. ]', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'te_digit_span_fwd', 'పేషెంట్/సబ్జెక్ట్ అంకెలను వరుస క్రమంలో చెప్పాలి: 2 1 8 5 4', 'పేషెంట్/సబ్జెక్ట్ అంకెలను వరుస క్రమంలో చెప్పాలి: 2 1 8 5 4', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'te_digit_span_bwd', 'పేషెంట్/సబ్జెక్ట్ అంకెలను వెనుక క్రమంలో చెప్పాలి: 7 4 2', 'పేషెంట్/సబ్జెక్ట్ అంకెలను వెనుక క్రమంలో చెప్పాలి: 7 4 2', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -184,20 +185,20 @@ def build_moca_xlsx():
         ['select_one serial7_score', 'te_serial_7s', 'Serial 7s (100 నుండి క్రమంగా 7 ను తీసివేయండి)', '100 నుండి 7 తీసివేయడం', '', '', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'te_g_language', 'ICMR-NCTB Telugu MoCA — LANGUAGE', 'భాష (LANGUAGE)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_language', 'LANGUAGE', 'భాష (LANGUAGE)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['select_one yesno', 'te_sentence_rep_1', 'తిరిగి చెప్పండి: రాజు ఒక్కడే ఈ రోజు సహాయం చేస్తాడని నేను అనుకుంటున్నాను.', 'తిరిగి చెప్పండి: రాజు ఒక్కడే ఈ రోజు సహాయం చేస్తాడని నేను అనుకుంటున్నాను.', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'te_sentence_rep_2', 'కుక్కను గదిలో చూసినప్పుడల్లా పిల్లి మంచం కింద దాక్కుంటుంది.', 'కుక్కను గదిలో చూసినప్పుడల్లా పిల్లి మంచం కింద దాక్కుంటుంది.', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['note', 'te_fluency_timer_guidance', '⏱️ 1-నిమిషం టైమర్: మీ స్టాప్‌వాచ్ లేదా మొబైల్ టైమర్‌ను ప్రారంభించండి. రోగి ఒక నిమిషంలో వీలైనన్ని పదాలు చెప్పాలి. సరిగ్గా 60 సెకన్ల తర్వాత ఆపండి.', '⏱️ 1-నిమిషం టైమర్: మీ స్టాప్‌వాచ్ లేదా మొబైల్ టైమర్‌ను ప్రారంభించండి. రోగి ఒక నిమిషంలో వీలైనన్ని పదాలు చెప్పాలి. సరిగ్గా 60 సెకన్ల తర్వాత ఆపండి.', '', '', '', '', '', '', '', '', '', ''],
         ['integer', 'te_fluency_count', "ఒక నిమిషంలో 'ప' అక్షరంతో మొదలయ్యే పదాలు ఎన్ని ఎక్కువ చెప్పగలిగితే అన్ని చెప్పండి (N >= 11 words = 1 pt)", "ఒక నిమిషంలో 'ప' అక్షరంతో మొదలయ్యే పదాలు (N >= 11 words = 1 pt)", '', '', '', '. >= 0 and . <= 100', 'Enter a count between 0 and 100.', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'te_g_abstraction', 'ICMR-NCTB Telugu MoCA — ABSTRACTION', 'పోలికలు (ABSTRACTION)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_abstraction', 'ABSTRACTION', 'పోలికలు (ABSTRACTION)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['note', 'te_abstraction_inst_practice', 'పోలికలు : టమాట - బంగాళాదుంప = కూరగాయలు', 'పోలికలు : టమాట - బంగాళాదుంప = కూరగాయలు', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'te_abstraction_1', 'రైలు - సైకిల్', 'రైలు - సైకిల్', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'te_abstraction_2', 'గడియారం - స్కేలు', 'గడియారం - స్కేలు', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'te_g_delayed_recall', 'ICMR-NCTB Telugu MoCA — DELAYED RECALL', 'ఆలస్య జ్ఞాపకశక్తి (DELAYED RECALL)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_delayed_recall', 'DELAYED RECALL', 'ఆలస్య జ్ఞాపకశక్తి (DELAYED RECALL)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['note', 'te_delayed_inst', 'ఇంతకుముందు చెప్పిన పదాలను చెప్పండి. (ఎటువంటి సూచన లేకుండా) — Points for UNCUED recall only', 'ఇంతకుముందు చెప్పిన పదాలను చెప్పండి. (ఎటువంటి సూచన లేకుండా) — Points for UNCUED recall only', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'te_delayed_kannu', 'కన్ను (ఎటువంటి సూచన లేకుండా)', 'కన్ను (ఎటువంటి సూచన లేకుండా)', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one delayed_cue', 'te_delayed_kannu_cat', 'కన్ను — Category cue: ముఖంలో ఒక భాగం.', 'కన్ను — Category cue: ముఖంలో ఒక భాగం.', '', '', "${te_delayed_kannu} = 'no'", '', '', 'yes', '', '', '', ''],
@@ -216,7 +217,7 @@ def build_moca_xlsx():
         ['select_one delayed_cue', 'te_delayed_neelam_mc', 'నీలం — Multiple choice: తెలుపు, ఎరుపు, నీలం', 'నీలం — Multiple choice: తెలుపు, ఎరుపు, నీలం', '', '', "${te_delayed_neelam} = 'no' and ${te_delayed_neelam_cat} = 'no'", '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'te_g_orientation', 'ICMR-NCTB Telugu MoCA — ORIENTATION', 'దిక్సూచి (ORIENTATION)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
+        ['begin group', 'te_g_orientation', 'ORIENTATION', 'దిక్సూచి (ORIENTATION)', '', 'field-list', is_te, '', '', '', '', '', '', ''],
         ['select_one yesno', 'te_orientation_date', 'తేది (Date)', 'తేది', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'te_orientation_month', 'నెల (Month)', 'నెల', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'te_orientation_year', 'సంవత్సరం (Year)', 'సంవత్సరం', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -228,16 +229,17 @@ def build_moca_xlsx():
         # ============================================================
         # BRANCH 4B: MoCA-BASIC (MoCA-B)
         # ============================================================
-        ['begin group', 'mb_g_timing', 'MoCA-Basic (MoCA-B) — Timing', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['note', 'mb_top_header', '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n# MONTREAL COGNITIVE ASSESSMENT - BASIC (MoCA-B)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━', '', '', '', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_timing', 'TIMING', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['time', 'mb_start_time', 'START TIME', '', '', '', '', '', '', 'no', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_executive', 'MoCA-B — EXECUTIVE FUNCTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_executive', 'EXECUTIVE FUNCTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_trail_making_inst', 'Please draw a line alternating between a square with a number and a square with dots in increasing order. Begin here [1] and draw a line to [1 dot], then [2], then [2 dots], and so on. End here [6 dots]. 1 point if completed on first attempt without any errors or self-corrections.', '', '', '', '', '', '', '', '', '', '', 'trail_making.png'],
         ['select_one yesno', 'mb_trail_making', 'Alternating Trail Making (SCORE /1)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_memory', 'MoCA-B — IMMEDIATE RECALL (No point)', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_memory', 'IMMEDIATE RECALL (No points)', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_memory_inst_trial1', 'Perform 2 trials even if 1st trial is successful. No point.', '', '', '', '', '', '', '', '', '', '', ''],
         ['note', 'mb_memory_words', 'ROSE | CHAIR | HAND | BLUE | SPOON', '', '', '', '', '', '', '', '', '', '', ''],
         ['begin group', 'mb_mem_trial1', '1st trial', '', '', 'field-list', '', '', '', '', '', '', '', ''],
@@ -256,13 +258,13 @@ def build_moca_xlsx():
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_fluency', 'MoCA-B — FLUENCY', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_fluency', 'FLUENCY', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_fluency_inst', 'Name maximum numbers of FRUITS in 1 minute. 2 points if N = 13 or more; 1 point if N = 8-12; 0 point if N = 7 or less.', '', '', '', '', '', '', '', '', '', '', ''],
         ['text', 'mb_fluency_words', 'Fruits named (1-18)', '', '', '', '', '', '', 'no', '', '', '', ''],
         ['integer', 'mb_fluency_count', 'N items', '', '', '', '', '. >= 0 and . <= 100', 'Enter a count between 0 and 100.', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_orientation', 'MoCA-B — ORIENTATION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_orientation', 'ORIENTATION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_orientation_inst', '1 point is allocated for each correct answer.', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'mb_orientation_time', 'time (± 2 hr)', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'mb_orientation_day', 'day', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -272,20 +274,20 @@ def build_moca_xlsx():
         ['select_one yesno', 'mb_orientation_city', 'city', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_calculation', 'MoCA-B — CALCULATION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_calculation', 'CALCULATION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_calculation_inst', 'Provide 3 ways to pay using 1 dollar coins, 5 dollar and 10 dollar bills for an object that costs exactly "13 Dollars". (3 points if 3 ways, 2 points if 2 ways, 1 point if 1 way, 0 point if no correct way)', '', '', '', '', '', '', '', '', '', '', ''],
         ['text', 'mb_calc_combinations', '1. / 2. / 3.', '', '', '', '', '', '', 'no', '', '', '', ''],
         ['select_one calc_score', 'mb_calculation_score_select', 'SCORE ( /3)', '', '', '', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_abstraction', 'MoCA-B — ABSTRACTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_abstraction', 'ABSTRACTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_abstraction_inst_practice', 'To what category these objects belong to? (e.g. orange - banana = fruit)', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'mb_abstraction_1', 'train - boat', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'mb_abstraction_2', 'north - south', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'mb_abstraction_3', 'drum - flute', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_delayed_recall', 'MoCA-B — DELAYED RECALL', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_delayed_recall', 'DELAYED RECALL', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_delayed_inst', 'Points are awarded for recall with No cue (1 point for each item).', '', '', '', '', '', '', '', '', '', '', ''],
         ['select_one yesno', 'mb_delayed_rose', 'ROSE - Recall with No cue', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one delayed_cue', 'mb_delayed_rose_cat', 'ROSE - Recall with category cue (type of flower)', '', '', '', "${mb_delayed_rose} = 'no'", '', '', 'yes', '', '', '', ''],
@@ -304,7 +306,7 @@ def build_moca_xlsx():
         ['select_one delayed_cue', 'mb_delayed_spoon_mc', 'SPOON - Recall with multiple choice cue (fork / spoon / knife)', '', '', '', "${mb_delayed_spoon} = 'no' and ${mb_delayed_spoon_cat} = 'no'", '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_visuoperception', 'MoCA-B — VISUOPERCEPTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_visuoperception', 'VISUOPERCEPTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_visuoperception_inst', 'Identify drawings. No more than 60 seconds. See complementary sheet. 3 points if N = 9-10; 2 points if N = 6-8; 1 point if N = 4-5; 0 point if N = 0-3.', '', '', '', '', '', '', '', '', '', '', 'visuoperception.png'],
         ['select_one yesno', 'mb_vp_scissors', 'scissors', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'mb_vp_tshirt', 'T-shirt', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -318,7 +320,7 @@ def build_moca_xlsx():
         ['select_one yesno', 'mb_vp_spoon', 'spoon', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_naming', 'MoCA-B — NAMING', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_naming', 'NAMING', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_naming_inst', 'Identify animals. See complementary sheet.', '', '', '', '', '', '', '', '', '', '', 'naming_b.png'],
         ['select_one yesno', 'mb_naming_zebra', 'zebra', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['select_one yesno', 'mb_naming_peacock', 'peacock', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
@@ -326,7 +328,7 @@ def build_moca_xlsx():
         ['select_one yesno', 'mb_naming_butterfly', 'butterfly', '', '', 'horizontal-compact', '', '', '', 'yes', '', '', '', ''],
         ['end group', '', '', '', '', '', '', '', '', '', '', '', '', ''],
 
-        ['begin group', 'mb_g_attention', 'MoCA-B — ATTENTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
+        ['begin group', 'mb_g_attention', 'ATTENTION', '', '', 'field-list', is_mb, '', '', '', '', '', '', ''],
         ['note', 'mb_attention_white_inst', 'Name the numbers in circles. See complementary sheet. No point if 2 errors or more.', '', '', '', '', '', '', '', '', '', '', 'attention_white.png'],
         ['integer', 'mb_attention_white_errors', 'ERROR N (White background)', '', '', '', '', '. >= 0 and . <= 50', 'Enter errors between 0 and 50.', 'yes', '', '', '', ''],
         ['note', 'mb_attention_black_inst', 'Name the numbers in circles & squares. See complementary sheet. 2 points if 2 errors or less; 1 point if 3 errors; 0 point if 4 errors or more.', '', '', '', '', '', '', '', '', '', '', 'attention_black.png'],

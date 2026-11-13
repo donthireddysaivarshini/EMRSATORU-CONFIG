@@ -265,8 +265,13 @@
           <text id="/data/g_instrument_banner/assessment_start_time:hint">
             <value>Record the time when cognitive testing begins.</value>
           </text>
+          <text id="/data/te_top_header:label">
+            <value>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ICMR-NCTB TELUGU MoCA (Version 7.1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</value>
+          </text>
           <text id="/data/te_g_visuospatial:label">
-            <value>ICMR-NCTB Telugu MoCA — VISUOSPATIAL / EXECUTIVE</value>
+            <value>VISUOSPATIAL / EXECUTIVE</value>
           </text>
           <text id="/data/te_g_visuospatial/te_trail_making_inst:label">
             <value>1 − క - 2 - ఖ - 3 - గ - 4 - ఘ - 5 - ఙ (మొదలు పెట్టండి -&gt; ఆపండి)</value>
@@ -295,7 +300,7 @@
             <value>Hands</value>
           </text>
           <text id="/data/te_g_naming:label">
-            <value>ICMR-NCTB Telugu MoCA — NAMING</value>
+            <value>NAMING</value>
           </text>
           <text id="/data/te_g_naming/te_naming_inst:label">
             <value>ఈ జంతువు పేరు చెప్పండి.</value>
@@ -311,7 +316,7 @@
             <value>3. Camel / Dromedary</value>
           </text>
           <text id="/data/te_g_memory:label">
-            <value>ICMR-NCTB Telugu MoCA — MEMORY (No points)</value>
+            <value>MEMORY (No points)</value>
           </text>
           <text id="/data/te_g_memory/te_memory_inst_trial1:label">
             <value>పదాల జాబితా చదవండి, పేషెంట్/సబ్జెక్ట్ ఆ పదాలను తిరిగి చెప్పాలి. మొదటి ప్రయత్నం సరి అయినా కూడా రెండు ప్రయత్నాలు చేయండి. 5 నిమిషాల తరువాత మళ్ళీ అడగండి.</value>
@@ -356,7 +361,7 @@
             <value>నీలం (2వ ప్రయత్నం)</value>
           </text>
           <text id="/data/te_g_attention:label">
-            <value>ICMR-NCTB Telugu MoCA — ATTENTION</value>
+            <value>ATTENTION</value>
           </text>
           <text id="/data/te_g_attention/te_digits_inst:label">
             <value>ఈ అంకెలు చదవండి. [ 1 Digit / sec. ]</value>
@@ -395,7 +400,7 @@
             <value>Serial 7s (100 నుండి క్రమంగా 7 ను తీసివేయండి)</value>
           </text>
           <text id="/data/te_g_language:label">
-            <value>ICMR-NCTB Telugu MoCA — LANGUAGE</value>
+            <value>LANGUAGE</value>
           </text>
           <text id="/data/te_g_language/te_sentence_rep_1:label">
             <value>తిరిగి చెప్పండి: రాజు ఒక్కడే ఈ రోజు సహాయం చేస్తాడని నేను అనుకుంటున్నాను.</value>
@@ -413,7 +418,7 @@
             <value>ఒక నిమిషంలో 'ప' అక్షరంతో మొదలయ్యే పదాలు ఎన్ని ఎక్కువ చెప్పగలిగితే అన్ని చెప్పండి (N &gt;= 11 words = 1 pt)</value>
           </text>
           <text id="/data/te_g_abstraction:label">
-            <value>ICMR-NCTB Telugu MoCA — ABSTRACTION</value>
+            <value>ABSTRACTION</value>
           </text>
           <text id="/data/te_g_abstraction/te_abstraction_inst_practice:label">
             <value>పోలికలు : టమాట - బంగాళాదుంప = కూరగాయలు</value>
@@ -425,7 +430,7 @@
             <value>గడియారం - స్కేలు</value>
           </text>
           <text id="/data/te_g_delayed_recall:label">
-            <value>ICMR-NCTB Telugu MoCA — DELAYED RECALL</value>
+            <value>DELAYED RECALL</value>
           </text>
           <text id="/data/te_g_delayed_recall/te_delayed_inst:label">
             <value>ఇంతకుముందు చెప్పిన పదాలను చెప్పండి. (ఎటువంటి సూచన లేకుండా) — Points for UNCUED recall only</value>
@@ -476,7 +481,7 @@
             <value>నీలం — Multiple choice: తెలుపు, ఎరుపు, నీలం</value>
           </text>
           <text id="/data/te_g_orientation:label">
-            <value>ICMR-NCTB Telugu MoCA — ORIENTATION</value>
+            <value>ORIENTATION</value>
           </text>
           <text id="/data/te_g_orientation/te_orientation_date:label">
             <value>తేది (Date)</value>
@@ -496,14 +501,19 @@
           <text id="/data/te_g_orientation/te_orientation_city:label">
             <value>నగరం (City)</value>
           </text>
+          <text id="/data/mb_top_header:label">
+            <value>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# MONTREAL COGNITIVE ASSESSMENT - BASIC (MoCA-B)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</value>
+          </text>
           <text id="/data/mb_g_timing:label">
-            <value>MoCA-Basic (MoCA-B) — Timing</value>
+            <value>TIMING</value>
           </text>
           <text id="/data/mb_g_timing/mb_start_time:label">
             <value>START TIME</value>
           </text>
           <text id="/data/mb_g_executive:label">
-            <value>MoCA-B — EXECUTIVE FUNCTION</value>
+            <value>EXECUTIVE FUNCTION</value>
           </text>
           <text id="/data/mb_g_executive/mb_trail_making_inst:label">
             <value>Please draw a line alternating between a square with a number and a square with dots in increasing order. Begin here [1] and draw a line to [1 dot], then [2], then [2 dots], and so on. End here [6 dots]. 1 point if completed on first attempt without any errors or self-corrections.</value>
@@ -513,7 +523,7 @@
             <value>Alternating Trail Making (SCORE /1)</value>
           </text>
           <text id="/data/mb_g_memory:label">
-            <value>MoCA-B — IMMEDIATE RECALL (No point)</value>
+            <value>IMMEDIATE RECALL (No points)</value>
           </text>
           <text id="/data/mb_g_memory/mb_memory_inst_trial1:label">
             <value>Perform 2 trials even if 1st trial is successful. No point.</value>
@@ -558,7 +568,7 @@
             <value>SPOON (2nd trial)</value>
           </text>
           <text id="/data/mb_g_fluency:label">
-            <value>MoCA-B — FLUENCY</value>
+            <value>FLUENCY</value>
           </text>
           <text id="/data/mb_g_fluency/mb_fluency_inst:label">
             <value>Name maximum numbers of FRUITS in 1 minute. 2 points if N = 13 or more; 1 point if N = 8-12; 0 point if N = 7 or less.</value>
@@ -573,7 +583,7 @@
             <value>N items</value>
           </text>
           <text id="/data/mb_g_orientation:label">
-            <value>MoCA-B — ORIENTATION</value>
+            <value>ORIENTATION</value>
           </text>
           <text id="/data/mb_g_orientation/mb_orientation_inst:label">
             <value>1 point is allocated for each correct answer.</value>
@@ -597,7 +607,7 @@
             <value>city</value>
           </text>
           <text id="/data/mb_g_calculation:label">
-            <value>MoCA-B — CALCULATION</value>
+            <value>CALCULATION</value>
           </text>
           <text id="/data/mb_g_calculation/mb_calculation_inst:label">
             <value>Provide 3 ways to pay using 1 dollar coins, 5 dollar and 10 dollar bills for an object that costs exactly "13 Dollars". (3 points if 3 ways, 2 points if 2 ways, 1 point if 1 way, 0 point if no correct way)</value>
@@ -609,7 +619,7 @@
             <value>SCORE ( /3)</value>
           </text>
           <text id="/data/mb_g_abstraction:label">
-            <value>MoCA-B — ABSTRACTION</value>
+            <value>ABSTRACTION</value>
           </text>
           <text id="/data/mb_g_abstraction/mb_abstraction_inst_practice:label">
             <value>To what category these objects belong to? (e.g. orange - banana = fruit)</value>
@@ -624,7 +634,7 @@
             <value>drum - flute</value>
           </text>
           <text id="/data/mb_g_delayed_recall:label">
-            <value>MoCA-B — DELAYED RECALL</value>
+            <value>DELAYED RECALL</value>
           </text>
           <text id="/data/mb_g_delayed_recall/mb_delayed_inst:label">
             <value>Points are awarded for recall with No cue (1 point for each item).</value>
@@ -675,7 +685,7 @@
             <value>SPOON - Recall with multiple choice cue (fork / spoon / knife)</value>
           </text>
           <text id="/data/mb_g_visuoperception:label">
-            <value>MoCA-B — VISUOPERCEPTION</value>
+            <value>VISUOPERCEPTION</value>
           </text>
           <text id="/data/mb_g_visuoperception/mb_visuoperception_inst:label">
             <value>Identify drawings. No more than 60 seconds. See complementary sheet. 3 points if N = 9-10; 2 points if N = 6-8; 1 point if N = 4-5; 0 point if N = 0-3.</value>
@@ -712,7 +722,7 @@
             <value>spoon</value>
           </text>
           <text id="/data/mb_g_naming:label">
-            <value>MoCA-B — NAMING</value>
+            <value>NAMING</value>
           </text>
           <text id="/data/mb_g_naming/mb_naming_inst:label">
             <value>Identify animals. See complementary sheet.</value>
@@ -731,7 +741,7 @@
             <value>butterfly</value>
           </text>
           <text id="/data/mb_g_attention:label">
-            <value>MoCA-B — ATTENTION</value>
+            <value>ATTENTION</value>
           </text>
           <text id="/data/mb_g_attention/mb_attention_white_inst:label">
             <value>Name the numbers in circles. See complementary sheet. No point if 2 errors or more.</value>
@@ -1293,6 +1303,11 @@
           <text id="/data/g_instrument_banner/assessment_start_time:label">
             <value>పరీక్ష ప్రారంభ సమయం</value>
           </text>
+          <text id="/data/te_top_header:label">
+            <value>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ICMR-NCTB తెలుగు మోకా (వెర్షన్ 7.1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</value>
+          </text>
           <text id="/data/te_g_visuospatial:label">
             <value>విజువోస్పేషియల్ / ఎగ్జిక్యూటివ్</value>
           </text>
@@ -1588,6 +1603,9 @@
             <value>-</value>
           </text>
           <text id="/data/te_g_language/te_fluency_count:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/mb_top_header:label">
             <value>-</value>
           </text>
           <text id="/data/mb_g_timing:label">
@@ -2175,6 +2193,7 @@
             <banner_none/>
             <assessment_start_time/>
           </g_instrument_banner>
+          <te_top_header/>
           <te_g_visuospatial>
             <te_trail_making_inst/>
             <te_trail_making/>
@@ -2255,6 +2274,7 @@
             <te_orientation_place/>
             <te_orientation_city/>
           </te_g_orientation>
+          <mb_top_header/>
           <mb_g_timing>
             <mb_start_time/>
           </mb_g_timing>
@@ -2762,6 +2782,7 @@
       <bind nodeset="/data/g_instrument_banner/banner_moca_8_2" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_8_2'"/>
       <bind nodeset="/data/g_instrument_banner/banner_none" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'none'"/>
       <bind nodeset="/data/g_instrument_banner/assessment_start_time" type="time" relevant=" /data/selected_instrument  != 'none'" required="true()"/>
+      <bind nodeset="/data/te_top_header" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_telugu'"/>
       <bind nodeset="/data/te_g_visuospatial" relevant=" /data/selected_instrument  = 'moca_telugu'"/>
       <bind nodeset="/data/te_g_visuospatial/te_trail_making_inst" readonly="true()" type="string"/>
       <bind nodeset="/data/te_g_visuospatial/te_trail_making" type="string" required="true()"/>
@@ -2830,6 +2851,7 @@
       <bind nodeset="/data/te_g_orientation/te_orientation_day" type="string" required="true()"/>
       <bind nodeset="/data/te_g_orientation/te_orientation_place" type="string" required="true()"/>
       <bind nodeset="/data/te_g_orientation/te_orientation_city" type="string" required="true()"/>
+      <bind nodeset="/data/mb_top_header" readonly="true()" type="string" relevant=" /data/selected_instrument  = 'moca_b'"/>
       <bind nodeset="/data/mb_g_timing" relevant=" /data/selected_instrument  = 'moca_b'"/>
       <bind nodeset="/data/mb_g_timing/mb_start_time" type="time" required="false()"/>
       <bind nodeset="/data/mb_g_executive" relevant=" /data/selected_instrument  = 'moca_b'"/>
@@ -3246,6 +3268,9 @@
         <hint ref="jr:itext('/data/g_instrument_banner/assessment_start_time:hint')"/>
       </input>
     </group>
+    <input ref="/data/te_top_header">
+      <label ref="jr:itext('/data/te_top_header:label')"/>
+    </input>
     <group appearance="field-list" ref="/data/te_g_visuospatial">
       <label ref="jr:itext('/data/te_g_visuospatial:label')"/>
       <input ref="/data/te_g_visuospatial/te_trail_making_inst">
@@ -3644,6 +3669,9 @@
         </itemset>
       </select1>
     </group>
+    <input ref="/data/mb_top_header">
+      <label ref="jr:itext('/data/mb_top_header:label')"/>
+    </input>
     <group appearance="field-list" ref="/data/mb_g_timing">
       <label ref="jr:itext('/data/mb_g_timing:label')"/>
       <input ref="/data/mb_g_timing/mb_start_time">
