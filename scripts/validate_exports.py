@@ -426,12 +426,96 @@ def test_edge_cases():
             check(f'edge export {scope}', False, repr(exc))
 
 
+def test_assessment_visit_integration():
+    print('== Assessment visit & registration fields integration ==')
+    part_multi = {
+        '_id': 'p-multi', 'type': 'contact', 'contact_type': 'participant',
+        'parent': {'_id': 'camp-1'}, 'cr_no': 'CR-901', 'name': 'Aarav Sharma',
+        'age': 45, 'gender': 'male', 'phone': '9876543210', 'aadhaar_last4': '1234',
+        'education_level': 'Graduate', 'occupation': 'Engineer', 'hospital_name': 'City Hospital',
+        'ward_dept_no': 'Ward 3', 'address': 'MG Road, Hyderabad', 'registration_date': '2026-05-10',
+        'referral_department': 'Neurology', 'referred_by': 'Dr. Rao', 'referral_complaint': 'Memory loss',
+        'notes': 'Family history of dementia', 'created_by_name': 'Intern Sunita'
+    }
+    part_none = {
+        '_id': 'p-none', 'type': 'contact', 'contact_type': 'participant',
+        'parent': {'_id': 'camp-1'}, 'cr_no': 'CR-902', 'name': 'Bhavani Devi',
+        'age': 62, 'gender': 'female', 'phone': '9876543211', 'aadhaar_last4': '5678',
+        'education_level': 'Secondary', 'occupation': 'Homemaker', 'hospital_name': 'City Hospital',
+        'ward_dept_no': 'Ward 5', 'address': 'Station Road, Warangal', 'registration_date': '2026-06-01',
+        'created_by_name': 'Intern Sunita'
+    }
+    v1 = {
+        '_id': 'v-001', 'type': 'data_record', 'form': 'assessment_visit', 'reported_date': 1780000000000,
+        'fields': {
+            'patient_uuid': 'p-multi',
+            'g_assessment': {
+                'assessment_datetime': '2026-06-15T10:30:00Z',
+                'administered_by': 'Dr. Priya',
+                'g_scale': {'scale_name': 'MoCA', 'score': '24', 'interpretation': 'Mild Cognitive Impairment'}
+            },
+            'g_consent': {'consent_mode': 'written', 'consent_given': 'yes'},
+            'g_clinical': {'clinical_impression': 'MCI suspected'},
+            'g_followup': {'next_visit_date': '2026-07-15', 'notes': 'Schedule follow-up visit'}
+        }
+    }
+    v2 = {
+        '_id': 'v-002', 'type': 'data_record', 'form': 'assessment_visit', 'reported_date': 1785000000000,
+        'fields': {
+            'patient_uuid': 'p-multi',
+            'g_assessment': {
+                'assessment_datetime': '2026-07-20T11:00:00Z',
+                'administered_by': 'Dr. Priya',
+                'g_scale': {'scale_name': 'MoCA', 'score': '25', 'interpretation': 'Stable'}
+            },
+            'g_consent': {'consent_mode': 'verbal', 'consent_given': 'yes'},
+            'g_clinical': {'clinical_impression': 'Follow-up stable'},
+            'g_followup': {'next_visit_date': '2026-09-20', 'notes': 'Continue observation'}
+        }
+    }
+    docs = [SETTINGS, CAMP_1, part_multi, part_none, v1, v2]
+    wb = export_emr.build_workbook('camp-workbook=camp-1', FakeDb(docs))
+    hdr, rows = read_only_ws(wb, 'Participants')
+    idx = {h: i for i, h in enumerate(hdr)}
+
+    check('multi-visit: 2 visits for Aarav + 1 for Bhavani -> 3 rows', len(rows) == 3, len(rows))
+    check('multi-visit: CHT ID column present', 'CHT ID' in idx)
+    check('multi-visit: Aadhaar (Last 4) column present', 'Aadhaar (Last 4)' in idx)
+    check('multi-visit: Visit # column present', 'Visit #' in idx)
+    check('multi-visit: Clinical Impression column present', 'Clinical Impression' in idx)
+
+    aarav_rows = [r for r in rows if r[idx['Name']] == 'Aarav Sharma']
+    check('multi-visit: Aarav has exactly 2 rows', len(aarav_rows) == 2, len(aarav_rows))
+    check('multi-visit: Aarav rows have visit #1 and #2',
+          aarav_rows[0][idx['Visit #']] == 1 and aarav_rows[1][idx['Visit #']] == 2)
+    check('multi-visit: Aarav visit 1 consent mode resolved to Written',
+          aarav_rows[0][idx['Consent Mode']] == 'Written')
+    check('multi-visit: Aarav visit 2 consent mode resolved to Verbal',
+          aarav_rows[1][idx['Consent Mode']] == 'Verbal')
+    check('multi-visit: Aarav visit dates distinct',
+          '2026-06-15' in str(aarav_rows[0][idx['Assessment Date']]) and
+          '2026-07-20' in str(aarav_rows[1][idx['Assessment Date']]))
+
+    bhavani_rows = [r for r in rows if r[idx['Name']] == 'Bhavani Devi']
+    check('multi-visit: Bhavani has 1 row with empty visit',
+          len(bhavani_rows) == 1 and bhavani_rows[0][idx['Visit #']] is None)
+
+    # Participant report check
+    wb_pr = export_emr.build_workbook('participant-report=p-multi', FakeDb(docs))
+    hdr_pr, rows_pr = read_only_ws(wb_pr, 'Participant')
+    kv_pr = {r[0]: r[1] for r in rows_pr if r[0]}
+    check('participant-report: CHT ID present', kv_pr.get('CHT ID') == 'p-multi')
+    check('participant-report: Assessment visit section 1 present', '--- Assessment Visit #1 ---' in kv_pr)
+    check('participant-report: Assessment visit section 2 present', '--- Assessment Visit #2 ---' in kv_pr)
+
+
 def main():
     test_edge_cases()
     test_camp_workbook()
     test_all_workbook()
     test_participant_report()
     test_scale_row_alignment()
+    test_assessment_visit_integration()
     print(f'\n{CHECKS[0]} checks, {len(FAILURES)} failures')
     if FAILURES:
         print('FAILURES:')

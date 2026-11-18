@@ -234,6 +234,101 @@ def report_submitter_ids(reports):
     return ids
 
 
+def extract_participant_columns(p, camp_doc=None, all_camps=False, scales_done=None):
+    row = {
+        'CHT ID': p.get('_id'),
+        'Participant ID': p.get('cr_no'),
+        'Name': p.get('name'),
+    }
+    if all_camps:
+        row['Camp'] = (camp_doc or {}).get('name') or ''
+    row.update({
+        'Age': p.get('age'),
+        'Gender': GENDER_LABELS.get(p.get('gender'), p.get('gender')),
+        'Phone': p.get('phone'),
+        'Aadhaar (Last 4)': p.get('aadhaar_last4'),
+        'Education Level': p.get('education_level'),
+        'Occupation': p.get('occupation'),
+        'Hospital': p.get('hospital_name'),
+        'Ward/Dept No': p.get('ward_dept_no'),
+        'Address': p.get('address'),
+        'Registration date': iso_datetime(p.get('registration_date')),
+        'Referral Department': p.get('referral_department'),
+        'Referred By': p.get('referred_by'),
+        'Referral Complaint': p.get('referral_complaint'),
+        'Registration Notes': p.get('notes'),
+        'Registered By': p.get('created_by_name') or p.get('created_by_user'),
+        'Scales completed': ', '.join(scales_done or []),
+    })
+    return row
+
+
+def extract_assessment_visit_columns(r=None, visit_idx=None):
+    if not r:
+        return {
+            'Visit #': None,
+            'Assessment Date': None,
+            'Assessment Administered By': None,
+            'Assessment Uploaded By': None,
+            'Patient Name (Confirmed)': None,
+            'CR No (Confirmed)': None,
+            'Consent Mode': None,
+            'Consent Given': None,
+            'Consent Recorded At': None,
+            'Consent Version': None,
+            'Informant Name': None,
+            'Informant Phone': None,
+            'Assessment Scale Used': None,
+            'Scale Score / Result': None,
+            'Scale Interpretation': None,
+            'Clinical Impression': None,
+            'Next Visit Date': None,
+            'Follow-up Notes': None,
+            'Assessed By': None,
+            'Reviewed By': None,
+            'Entered in CHT': None,
+            'QC Checked By': None,
+            'QC Check Date': None,
+            'Participant Record ID': None,
+            'Supporting Docs Caption': None,
+            'Assessment Attachments': None,
+            'Assessment Report ID': None,
+        }
+    fields = flatten(r.get('fields') or {})
+    consent_mode = fields.get('g_consent.consent_mode')
+    consent_given = fields.get('g_consent.consent_given')
+    att = attachment_names(r)
+    return {
+        'Visit #': visit_idx or 1,
+        'Assessment Date': iso_datetime(fields.get('g_assessment.assessment_datetime') or r.get('reported_date')),
+        'Assessment Administered By': fields.get('g_assessment.administered_by'),
+        'Assessment Uploaded By': fields.get('g_assessment.uploaded_by'),
+        'Patient Name (Confirmed)': fields.get('g_patient.patient_name_confirm'),
+        'CR No (Confirmed)': fields.get('g_patient.patient_cr_confirm'),
+        'Consent Mode': {'written': 'Written', 'verbal': 'Verbal'}.get(consent_mode, consent_mode),
+        'Consent Given': {'yes': 'Yes', 'no': 'No'}.get(consent_given, consent_given),
+        'Consent Recorded At': iso_datetime(fields.get('g_consent.consent_recorded_at')),
+        'Consent Version': fields.get('g_consent.consent_version'),
+        'Informant Name': fields.get('g_informant.informant_name'),
+        'Informant Phone': fields.get('g_informant.informant_phone'),
+        'Assessment Scale Used': fields.get('g_assessment.g_scale.scale_name'),
+        'Scale Score / Result': fields.get('g_assessment.g_scale.score'),
+        'Scale Interpretation': fields.get('g_assessment.g_scale.interpretation'),
+        'Clinical Impression': fields.get('g_clinical.clinical_impression'),
+        'Next Visit Date': iso_datetime(fields.get('g_followup.next_visit_date')),
+        'Follow-up Notes': fields.get('g_followup.notes'),
+        'Assessed By': fields.get('g_followup.assessed_by'),
+        'Reviewed By': fields.get('g_followup.reviewed_by'),
+        'Entered in CHT': fields.get('g_office.entered_in_cht'),
+        'QC Checked By': fields.get('g_office.qc_checked_by'),
+        'QC Check Date': iso_datetime(fields.get('g_office.qc_check_date')),
+        'Participant Record ID': fields.get('g_office.record_id'),
+        'Supporting Docs Caption': fields.get('g_supporting_docs.upload_caption'),
+        'Assessment Attachments': ', '.join(att) if att else None,
+        'Assessment Report ID': r.get('_id'),
+    }
+
+
 def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
     """Participants sheet + one sheet per scale completed.
 
@@ -250,35 +345,43 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
     active_forms = [f for f, docs in by_form.items() if docs]
     order = get_scale_order(active_forms)
 
+    # Collect assessment visits by participant
+    assessment_visits_by_pid = {}
+    for r in reports:
+        if r.get('form') == 'assessment_visit':
+            pid = subject_id_of(r)
+            if pid and pid in members:
+                assessment_visits_by_pid.setdefault(pid, []).append(r)
+    for visits in assessment_visits_by_pid.values():
+        visits.sort(key=lambda d: (d.get('reported_date') or 0, d.get('_id') or ''))
+
     rows = []
     for pid, p in members.items():
         scales_done = [scale_export.sheet_title(f) for f in order
                        if any(subject_id_of(d) == pid for d in by_form.get(f, []))]
-        row = {
-            'Participant ID': p.get('cr_no'),
-            'Name': p.get('name'),
-        }
-        if all_camps:
-            camp_doc = (camps or {}).get((p.get('parent') or {}).get('_id'))
-            row['Camp'] = (camp_doc or {}).get('name') or ''
-        row.update({
-            'Age': p.get('age'),
-            'Gender': GENDER_LABELS.get(p.get('gender'), p.get('gender')),
-            'Phone': p.get('phone'),
-            'Hospital': p.get('hospital_name'),
-            'Ward/Dept No': p.get('ward_dept_no'),
-            'Address': p.get('address'),
-            'Registration date': iso_datetime(p.get('registration_date')),
-            'Scales completed': ', '.join(scales_done),
-        })
-        rows.append(row)
+        camp_doc = (camps or {}).get((p.get('parent') or {}).get('_id')) if all_camps else None
+        base_part = extract_participant_columns(p, camp_doc=camp_doc, all_camps=all_camps, scales_done=scales_done)
+
+        p_visits = assessment_visits_by_pid.get(pid, [])
+        if not p_visits:
+            combined = dict(base_part)
+            combined.update(extract_assessment_visit_columns(None))
+            rows.append(combined)
+        else:
+            for v_idx, visit_doc in enumerate(p_visits, 1):
+                combined = dict(base_part)
+                combined.update(extract_assessment_visit_columns(visit_doc, visit_idx=v_idx))
+                rows.append(combined)
+
     if all_camps:
         rows.sort(key=lambda r: (r.get('Camp') or '',
                                  r.get('Participant ID') or '',
-                                 r.get('Name') or ''))
+                                 r.get('Name') or '',
+                                 r.get('Visit #') or 0))
     else:
         rows.sort(key=lambda r: (r.get('Participant ID') or '',
-                                 r.get('Name') or ''))
+                                 r.get('Name') or '',
+                                 r.get('Visit #') or 0))
     write_sheet(wb, 'Participants', rows)
 
     for form in order:
@@ -288,32 +391,81 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
     return by_form
 
 
-def write_participant_sheet(wb, participant, camp, scales_done):
+def write_participant_sheet(wb, participant, camp, scales_done, assessment_visits=None):
     """Field | Value summary sheet for one participant."""
     rows = [
+        {'Field': 'CHT ID', 'Value': participant.get('_id')},
         {'Field': 'Participant ID', 'Value': participant.get('cr_no')},
         {'Field': 'Name', 'Value': participant.get('name')},
         {'Field': 'Age', 'Value': participant.get('age')},
         {'Field': 'Gender', 'Value': GENDER_LABELS.get(participant.get('gender'),
                                                        participant.get('gender'))},
         {'Field': 'Phone', 'Value': participant.get('phone')},
-        {'Field': 'Address', 'Value': participant.get('address')},
+        {'Field': 'Aadhaar (Last 4)', 'Value': participant.get('aadhaar_last4')},
+        {'Field': 'Education', 'Value': participant.get('education_level')},
+        {'Field': 'Occupation', 'Value': participant.get('occupation')},
         {'Field': 'Hospital', 'Value': participant.get('hospital_name')},
         {'Field': 'Ward/Dept No', 'Value': participant.get('ward_dept_no')},
+        {'Field': 'Address', 'Value': participant.get('address')},
         {'Field': 'Camp', 'Value': camp.get('name') if camp else None},
         {'Field': 'Registration date',
          'Value': iso_datetime(participant.get('registration_date'))},
-        {'Field': 'Education', 'Value': participant.get('education_level')},
-        {'Field': 'Occupation', 'Value': participant.get('occupation')},
-        {'Field': 'Referred by', 'Value': participant.get('referred_by')},
         {'Field': 'Referral department',
          'Value': participant.get('referral_department')},
+        {'Field': 'Referred by', 'Value': participant.get('referred_by')},
         {'Field': 'Referral complaint',
          'Value': participant.get('referral_complaint')},
         {'Field': 'Notes', 'Value': participant.get('notes')},
+        {'Field': 'Registered by',
+         'Value': participant.get('created_by_name') or participant.get('created_by_user')},
         {'Field': 'Scales completed', 'Value': ', '.join(scales_done)},
     ]
-    rows = [r for r in rows if r['Value'] not in (None, '')]
+    if assessment_visits:
+        for idx, r in enumerate(assessment_visits, 1):
+            fields = flatten(r.get('fields') or {})
+            rows.append({'Field': f'--- Assessment Visit #{idx} ---', 'Value': ''})
+            rows.append({'Field': 'Assessment Date',
+                         'Value': iso_datetime(fields.get('g_assessment.assessment_datetime') or r.get('reported_date'))})
+            if fields.get('g_assessment.administered_by'):
+                rows.append({'Field': 'Administered by', 'Value': fields.get('g_assessment.administered_by')})
+            if fields.get('g_assessment.uploaded_by'):
+                rows.append({'Field': 'Uploaded by', 'Value': fields.get('g_assessment.uploaded_by')})
+            if fields.get('g_consent.consent_mode'):
+                rows.append({'Field': 'Consent mode',
+                             'Value': {'written': 'Written', 'verbal': 'Verbal'}.get(fields.get('g_consent.consent_mode'), fields.get('g_consent.consent_mode'))})
+            if fields.get('g_consent.consent_given'):
+                rows.append({'Field': 'Consent given',
+                             'Value': {'yes': 'Yes', 'no': 'No'}.get(fields.get('g_consent.consent_given'), fields.get('g_consent.consent_given'))})
+            if fields.get('g_informant.informant_name'):
+                rows.append({'Field': 'Informant name', 'Value': fields.get('g_informant.informant_name')})
+            if fields.get('g_informant.informant_phone'):
+                rows.append({'Field': 'Informant phone', 'Value': fields.get('g_informant.informant_phone')})
+            if fields.get('g_assessment.g_scale.scale_name'):
+                rows.append({'Field': 'Scale used', 'Value': fields.get('g_assessment.g_scale.scale_name')})
+            if fields.get('g_assessment.g_scale.score'):
+                rows.append({'Field': 'Scale score', 'Value': fields.get('g_assessment.g_scale.score')})
+            if fields.get('g_assessment.g_scale.interpretation'):
+                rows.append({'Field': 'Scale interpretation', 'Value': fields.get('g_assessment.g_scale.interpretation')})
+            if fields.get('g_clinical.clinical_impression'):
+                rows.append({'Field': 'Clinical impression', 'Value': fields.get('g_clinical.clinical_impression')})
+            if fields.get('g_followup.next_visit_date'):
+                rows.append({'Field': 'Next visit date', 'Value': iso_datetime(fields.get('g_followup.next_visit_date'))})
+            if fields.get('g_followup.notes'):
+                rows.append({'Field': 'Follow-up notes', 'Value': fields.get('g_followup.notes')})
+            if fields.get('g_followup.assessed_by'):
+                rows.append({'Field': 'Assessed by', 'Value': fields.get('g_followup.assessed_by')})
+            if fields.get('g_followup.reviewed_by'):
+                rows.append({'Field': 'Reviewed by', 'Value': fields.get('g_followup.reviewed_by')})
+            if fields.get('g_office.entered_in_cht'):
+                rows.append({'Field': 'Entered in CHT', 'Value': fields.get('g_office.entered_in_cht')})
+            if fields.get('g_office.qc_checked_by'):
+                rows.append({'Field': 'QC checked by', 'Value': fields.get('g_office.qc_checked_by')})
+            if fields.get('g_office.record_id'):
+                rows.append({'Field': 'Record ID', 'Value': fields.get('g_office.record_id')})
+            att = attachment_names(r)
+            if att:
+                rows.append({'Field': 'Attachments', 'Value': ', '.join(att)})
+    rows = [r for r in rows if r['Value'] not in (None, '') or r['Field'].startswith('---')]
     return write_sheet(wb, 'Participant', rows)
 
 
@@ -352,7 +504,11 @@ def build_participant_report_workbook(wb, participant_id, participants, camps, r
     order = get_scale_order(active_forms)
     scales_done = [scale_export.sheet_title(f) for f in order if by_form.get(f)]
 
-    write_participant_sheet(wb, participant, camp, scales_done)
+    p_assessment_visits = [d for d in reports
+                           if d.get('form') == 'assessment_visit' and subject_id_of(d) == participant_id]
+    p_assessment_visits.sort(key=lambda d: (d.get('reported_date') or 0, d.get('_id') or ''))
+
+    write_participant_sheet(wb, participant, camp, scales_done, assessment_visits=p_assessment_visits)
     for form in order:
         for doc in by_form.get(form, []):  # a re-completed scale gets its own sheet copy
             write_participant_scale_sheet(wb, form, doc, participant)
