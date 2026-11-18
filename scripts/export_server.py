@@ -211,8 +211,21 @@ def sync_live_forms(couch):
     panel can publish new versions), not the copies baked into the image.
     Call while holding scale_meta.LOCK."""
     global _live_forms_hash
-    contents = {info['file']: couch.get_attachment(f'form:{form}', 'xml')
-                for form, info in scale_meta.SCALES.items()}
+    contents = {}
+    for form, info in scale_meta.SCALES.items():
+        fname = info['file']
+        try:
+            contents[fname] = couch.get_attachment(f'form:{form}', 'xml')
+        except Exception:
+            local_path = os.path.join(scale_meta.FORMS_DIR, fname)
+            if os.path.isfile(local_path):
+                try:
+                    with open(local_path, 'rb') as f:
+                        contents[fname] = f.read()
+                except Exception:
+                    pass
+    if not contents:
+        return
     digest = hashlib.sha256(b''.join(contents[k] for k in sorted(contents))).hexdigest()
     if digest != _live_forms_hash:
         os.makedirs(LIVE_FORMS_DIR, exist_ok=True)
@@ -399,8 +412,10 @@ def make_handler(url, base_path='', require_login=True, check=None, live_forms=T
             except SystemExit as exc:                     # build_workbook's own errors
                 return self._fail(str(exc))
             except Exception as exc:                      # noqa: BLE001
+                import traceback
+                traceback.print_exc()
                 sys.stderr.write(f'  EXPORT FAILED scope={scope}: {exc}\n')
-                return self._fail('Export failed. Ask the admin to check '
+                return self._fail(f'Export failed: {exc}. Ask the admin to check '
                                   'the exports log.')
             data = buf.getvalue()
             self.send_response(200)
