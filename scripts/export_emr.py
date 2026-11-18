@@ -210,7 +210,7 @@ def write_generic_scale_sheet(ws, form, reports, participants, camps=None):
     if camps is not None:
         headers.append('Camp')
     headers.extend(['Report Date', 'Submitted By'])
-    headers.extend(keys)
+    headers.extend([scale_meta.clean_human_label(k) for k in keys])
     ws.append(headers)
 
     for doc in reports:

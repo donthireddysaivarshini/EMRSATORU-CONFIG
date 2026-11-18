@@ -414,22 +414,21 @@ function getCurrentUserContext() {
   if (!userName && u && typeof u._id === 'string' && u._id.startsWith('org.couchdb.user:')) {
     userName = u._id.replace('org.couchdb.user:', '');
   }
+  const ADMIN_ROLES = ['_admin', 'admin', 'national_admin', 'supervisor', 'chw_supervisor', 'district_admin'];
   const isSupervisor = Boolean(
     (c && c.v1 && typeof c.v1.hasPermissions === 'function' && (
       c.v1.hasPermissions('can_browse_all_participants') ||
-      c.v1.hasPermissions('can_view_participants')
+      c.v1.hasPermissions('can_view_participants') ||
+      c.v1.hasPermissions('admin')
     )) ||
-    (u && u.roles && (
-      u.roles.indexOf('supervisor') !== -1 ||
-      u.roles.indexOf('admin') !== -1 ||
-      u.roles.indexOf('national_admin') !== -1
-    ))
+    (u && u.roles && u.roles.some((r) => ADMIN_ROLES.indexOf(r) !== -1)) ||
+    (u && (u.name === 'medic' || (typeof u._id === 'string' && u._id.includes('medic'))))
   );
   return { userId, userName, isSupervisor };
 }
 
 /** Check if a report was submitted/done by the current user (or user is supervisor) */
-function isReportDoneByCurrentUser(report) {
+function isReportDoneByCurrentUser(report, contact) {
   if (!report) { return false; }
   const ctx = getCurrentUserContext();
   if (ctx.isSupervisor) { return true; }
@@ -440,12 +439,23 @@ function isReportDoneByCurrentUser(report) {
     if (getField(report, 'screened_by') === ctx.userId) { return true; }
     if (report.fields && report.fields.screened_by === ctx.userId) { return true; }
     if (report.created_by_person_uuid === ctx.userId) { return true; }
+    if (getField(report, 'inputs.user.contact_id') === ctx.userId) { return true; }
   }
 
   if (ctx.userName) {
     if (report.reported_by === ctx.userName) { return true; }
+    if (report.created_by === ctx.userName) { return true; }
+    if (report.created_by_user === ctx.userName) { return true; }
     if (getField(report, 'screened_by_name') === ctx.userName) { return true; }
+    if (getField(report, 'inputs.user.name') === ctx.userName) { return true; }
     if (getField(report, 'g_assessment.administered_by') === ctx.userName) { return true; }
+  }
+
+  // If the report belongs to a participant registered or owned by the current user
+  const contactDoc = (contact && (contact.contact || contact)) || null;
+  if (contactDoc) {
+    if (ctx.userId && contactDoc.created_by_person_uuid === ctx.userId) { return true; }
+    if (ctx.userName && (contactDoc.created_by_user === ctx.userName || contactDoc.created_by_name === ctx.userName)) { return true; }
   }
 
   return false;

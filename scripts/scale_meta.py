@@ -227,14 +227,38 @@ def parse_form_xml(path):
     body_groups = []   # [(ref, group_label, [field dicts])]
     body_loose = []    # top-level fields (ref, label, hint, itemset)
 
+    def _resolve_label(elem):
+        lbl_elem = _child(elem, 'label')
+        label = _text(lbl_elem)
+        if not label and lbl_elem is not None:
+            lref = lbl_elem.get('ref') or ''
+            m = re.search(r"jr:itext\('([^']+)'\)", lref)
+            if m:
+                label = itext.get(m.group(1), '')
+        if label:
+            label = re.sub(r'\*\*|__', '', label).strip().rstrip(':').strip()
+        return label
+
+    def _resolve_hint(elem):
+        hint_elem = _child(elem, 'hint')
+        hint = _text(hint_elem)
+        if not hint and hint_elem is not None:
+            href = hint_elem.get('ref') or ''
+            m = re.search(r"jr:itext\('([^']+)'\)", href)
+            if m:
+                hint = itext.get(m.group(1), '')
+        if hint:
+            hint = re.sub(r'\*\*|__', '', hint).strip()
+        return hint
+
     def parse_field(elem):
         ref = elem.get('ref') or ''
         path = ref.split('/')[-1] if ref else ''
         # full path relative to /data: replace '/' separators
         parts = [p for p in ref.split('/') if p and p != 'data']
         fpath = '.'.join(parts)
-        label = _text(_child(elem, 'label'))
-        hint = _text(_child(elem, 'hint'))
+        label = _resolve_label(elem)
+        hint = _resolve_hint(elem)
         itemset = None
         iset = _child(elem, 'itemset')
         if iset is not None:
@@ -250,35 +274,28 @@ def parse_form_xml(path):
             'itemset': itemset,
         }
 
-    def walk_body(parent, depth):
-        groups = []
-        for elem in parent:
-            tag = _local(elem.tag)
-            if tag == 'group':
-                ref = elem.get('ref') or ''
-                parts = [p for p in ref.split('/') if p and p != 'data']
-                gpath = '.'.join(parts)
-                glabel = _text(_child(elem, 'label'))
-                children = []
-                for sub in elem:
-                    stag = _local(sub.tag)
-                    if stag in ('select1', 'select', 'input', 'upload',
-                                'repeat'):
-                        children.append(parse_field(sub))
-                    elif stag == 'group':
-                        sub_groups = walk_body(sub, depth + 1)
-                        for sg in sub_groups:
-                            children.append({'__group__': sg})
-                groups.append({
-                    'ref': ref,
-                    'path': gpath,
-                    'label': glabel,
-                    'depth': depth,
-                    'fields': children,
-                })
-        return groups
+    def parse_group(group_elem, depth=0):
+        ref = group_elem.get('ref') or ''
+        parts = [p for p in ref.split('/') if p and p != 'data']
+        gpath = '.'.join(parts)
+        glabel = _resolve_label(group_elem)
+        children = []
+        for sub in group_elem:
+            stag = _local(sub.tag)
+            if stag in ('select1', 'select', 'input', 'upload', 'repeat', 'trigger'):
+                children.append(parse_field(sub))
+            elif stag == 'group':
+                sub_g = parse_group(sub, depth + 1)
+                children.append({'__group__': sub_g})
+        return {
+            'ref': ref,
+            'path': gpath,
+            'label': glabel,
+            'depth': depth,
+            'fields': children,
+        }
 
-    all_groups = walk_body(body, 0)
+    all_groups = [parse_group(elem, 0) for elem in body if _local(elem.tag) == 'group']
 
     # fields that sit directly in <h:body> outside any group
     direct_children = []
@@ -440,6 +457,31 @@ def _hidden_scale_fields(flat, form, parsed=None):
         for path in every:
             if path.endswith('_inst'):
                 hidden.add(path)
+    if form == 'cog5':
+        hidden |= {
+            'patient_sex',
+            'patient_age',
+            'patient_phone',
+            'patient_education',
+            'grp_cog5_scale.grp_picture_based_memory_impairment.pmis_image',
+            'grp_cog5_scale.grp_picture_based_screening_test.triangle_thing',
+            'grp_cog5_scale.grp_timed_walk.walk_note',
+            'grp_cog5_scale.grp_timed_walk.walk_intro',
+            'grp_cog5_scale.results_summary',
+            'grp_cog5_scale.display_pmis',
+            'grp_cog5_scale.display_pbst',
+            'grp_cog5_scale.display_mcr',
+            'grp_cog5_scale.display_risk',
+            'grp_cog5_scale.display_triage',
+            'grp_cog5_scale.display_overall',
+        }
+        for path in every:
+            if any(path.endswith('.' + s) or path == s for s in (
+                'pmis_image', 'triangle_thing', 'walk_note', 'walk_intro',
+                'results_summary', 'display_pmis', 'display_pbst', 'display_mcr',
+                'display_risk', 'display_triage', 'display_overall'
+            )):
+                hidden.add(path)
     if form == 'moca':
         hidden |= {
             'patient_sex',
@@ -558,6 +600,11 @@ DATE_FIELDS = {
 
 # Calculated result fields shown in the results summary, in order.
 RESULT_FIELDS = {
+    'cog5': [
+        'score_pmis_total', 'score_pbst', 'score_dementia_risk',
+        'PMIS_FINAL_RESULT', 'PBST_FINAL_RESULT', 'MCR_FINAL_RESULT',
+        'FINAL_TRIAGE', 'calc_overall_conclusion',
+    ],
     'vineland': [
         'raw_score', 'total_yes_items', 'total_no_items',
         'total_not_assessed_items', 'social_age_months', 'social_age_years',
@@ -621,12 +668,146 @@ def _derive_score_fields(flat, parsed):
 
 # Free-text/notes fields (kept visible, suppressed when empty).
 NOTES_FIELDS = {
+    'cog5': ['Survey_Status_cog5', 'Reason_for_Dropout_cog5', 'screener_notes', 'clinical_notes'],
     'vineland': ['na_reason', 'clinical_notes', 'scoring_notes'],
     'dst': ['na_reason', 'clinical_notes'],
     'ddst': [],
     'moca': [],
     'moca_assessment': [],
 }
+
+# Curated human-readable labels for calculated, score, and system fields
+KNOWN_FIELD_LABELS = {
+    # CoG5 result & score fields
+    'score_pmis_total': 'PMIS Total Score',
+    'score_pbst': 'PBST Total Score',
+    'score_dementia_risk': 'Dementia Risk Score',
+    'PMIS_FINAL_RESULT': 'PMIS Final Result',
+    'PBST_FINAL_RESULT': 'PBST Final Result',
+    'MCR_FINAL_RESULT': 'MCR Final Result',
+    'FINAL_TRIAGE': 'Overall Triage',
+    'calc_overall_conclusion': 'Overall Conclusion',
+    'Survey_Status_cog5': 'Survey Status',
+    'Reason_for_Dropout_cog5': 'Reason for Dropout / Refusal',
+    'g_meta.test_date': 'Assessment Date',
+    'g_meta.child_dob': 'Date of Birth',
+    'g_child.child_dob': 'Date of Birth',
+    'g_child.assessment_date': 'Assessment Date',
+    'g_admin.assessment_datetime': 'Assessment Date & Time',
+    'upload_scale_image': 'Scale Upload (Image)',
+    'upload_scale_pdf': 'Scale Upload (PDF)',
+    'upload_caption': 'Upload Caption',
+
+    # DDST results
+    'd_ps_status': 'Personal-Social Status',
+    'd_fm_status': 'Fine Motor Status',
+    'd_lang_status': 'Language Status',
+    'd_gm_status': 'Gross Motor Status',
+    'overall': 'Overall Developmental Status',
+
+    # Vineland / VSMS results
+    'raw_score': 'Raw Score',
+    'total_yes_items': 'Total Passed (Yes)',
+    'total_no_items': 'Total Failed (No)',
+    'total_not_assessed_items': 'Total Not Assessed',
+    'social_age_months': 'Social Age (Months)',
+    'social_age_years': 'Social Age (Years)',
+    'social_age_remaining_months': 'Social Age (Remaining Months)',
+    'social_quotient_raw': 'Social Quotient (Raw)',
+    'social_quotient_rounded': 'Social Quotient (Rounded)',
+    'sq_interpretation': 'Social Quotient Interpretation',
+
+    # DST results
+    'total_passed_items': 'Total Passed Items',
+    'total_failed_items': 'Total Failed Items',
+    'developmental_age_months': 'Developmental Age (Months)',
+    'developmental_age_years': 'Developmental Age (Years)',
+    'developmental_age_remaining_months': 'Developmental Age (Remaining Months)',
+    'developmental_quotient_raw': 'Developmental Quotient (Raw)',
+    'developmental_quotient_rounded': 'Developmental Quotient (Rounded)',
+
+    # MoCA results
+    'selected_instrument': 'Selected Instrument',
+    'education_band': 'Education Band',
+    'education_confounded': 'Education Confounded',
+    'moca_total_score': 'MoCA Total Score',
+    'moca_mis_score': 'Memory Index Score (MIS)',
+    'moca_interpretation': 'MoCA Interpretation',
+    'te_visuospatial_total': 'Telugu MoCA Visuospatial Total',
+    'te_naming_total': 'Telugu MoCA Naming Total',
+    'te_memory_total': 'Telugu MoCA Memory Total',
+    'te_attention_total': 'Telugu MoCA Attention Total',
+    'te_language_total': 'Telugu MoCA Language Total',
+    'te_abstraction_total': 'Telugu MoCA Abstraction Total',
+    'te_orientation_total': 'Telugu MoCA Orientation Total',
+    'te_education_adj': 'Telugu MoCA Education Adjustment',
+    'mb_executive_total': 'MoCA-B Executive Total',
+    'mb_fluency_total': 'MoCA-B Fluency Total',
+    'mb_orientation_total': 'MoCA-B Orientation Total',
+    'mb_calculation_total': 'MoCA-B Calculation Total',
+    'mb_abstraction_total': 'MoCA-B Abstraction Total',
+    'mb_memory_total': 'MoCA-B Memory Total',
+    'mb_visuoperception_total': 'MoCA-B Visuoperception Total',
+    'mb_naming_total': 'MoCA-B Naming Total',
+    'mb_attention_total': 'MoCA-B Attention Total',
+    'mb_education_adj': 'MoCA-B Education Adjustment',
+    'mb_literacy_adj': 'MoCA-B Literacy Adjustment',
+    'm8_visuospatial_total': 'MoCA 8.1 Visuospatial Total',
+    'm8_naming_total': 'MoCA 8.1 Naming Total',
+    'm8_memory_total': 'MoCA 8.1 Memory Total',
+    'm8_attention_total': 'MoCA 8.1 Attention Total',
+    'm8_language_total': 'MoCA 8.1 Language Total',
+    'm8_abstraction_total': 'MoCA 8.1 Abstraction Total',
+    'm8_orientation_total': 'MoCA 8.1 Orientation Total',
+    'm8_education_adj': 'MoCA 8.1 Education Adjustment',
+    'moca_visuospatial_total': 'MoCA Visuospatial Total',
+    'moca_naming_total': 'MoCA Naming Total',
+    'moca_memory_total': 'MoCA Memory Total',
+    'moca_attention_total': 'MoCA Attention Total',
+    'moca_language_total': 'MoCA Language Total',
+    'moca_abstraction_total': 'MoCA Abstraction Total',
+    'moca_orientation_total': 'MoCA Orientation Total',
+    'moca_raw_total': 'MoCA Raw Total',
+    'moca_education_adj': 'MoCA Education Adjustment',
+
+    # Notes & general fields
+    'na_reason': 'Reason for Not Assessing',
+    'clinical_notes': 'Clinical Notes',
+    'scoring_notes': 'Scoring Notes',
+    'screener_notes': 'Screener Notes',
+}
+
+
+def clean_human_label(path, fallback=None):
+    """Convert raw field keys or markdown question labels into clean, human-readable column headers."""
+    if not path:
+        return fallback or ''
+    # Strip any markdown bold/italics and trailing colons
+    cleaned = re.sub(r'\*\*|__', '', str(path)).strip().rstrip(':').strip()
+    if cleaned in KNOWN_FIELD_LABELS:
+        return KNOWN_FIELD_LABELS[cleaned]
+    # Check last dotted path segment if it's a technical path
+    last_seg = cleaned.split('.')[-1]
+    if last_seg in KNOWN_FIELD_LABELS:
+        return KNOWN_FIELD_LABELS[last_seg]
+    # If cleaned is already a human phrase with spaces and words (e.g. "Q10. Timed Walk (2.5m)" or "1. Cries, laughs"), return it directly!
+    if ' ' in cleaned and not cleaned.startswith('g_') and not cleaned.startswith('grp_'):
+        return cleaned
+    # If the string contains underscores or technical prefixes or looks like a variable name:
+    if '.' in cleaned or '_' in cleaned or cleaned.startswith('g_') or cleaned.startswith('grp_') or cleaned.islower():
+        s = cleaned
+        for pfx in ('g_supporting_docs.', 'g_participant.', 'grp_cog5_scale.', 'g_meta.',
+                    'g_child.', 'g_intro.', 'g_admin.', 'g_consent.', 'te_g_', 'mb_g_', 'm8_g_', 'grp_'):
+            if s.startswith(pfx):
+                s = s[len(pfx):]
+        if '.' in s and ' ' not in s:
+            s = s.split('.')[-1]
+        for pfx in ('g_', 'calc_', 'grp_'):
+            if s.startswith(pfx):
+                s = s[len(pfx):]
+        words = s.replace('_', ' ').split()
+        return ' '.join(w.capitalize() for w in words)
+    return cleaned
 
 # Supporting-document fields (attachment leaves; suppressed when empty).
 SUPPORTING_PREFIX = 'g_supporting_docs.'

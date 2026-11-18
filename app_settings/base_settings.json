@@ -1604,6 +1604,46 @@
           "yes": "Yes",
           "no": "No"
         },
+        "te_g_memory.te_mem_trial1.te_mem_t1_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
         "te_g_attention.te_digit_span_fwd": {
           "yes": "Yes",
           "no": "No"
@@ -1723,6 +1763,46 @@
           "no": "No"
         },
         "mb_g_executive.mb_trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_spoon": {
           "yes": "Yes",
           "no": "No"
         },
@@ -1913,6 +1993,46 @@
           "no": "No"
         },
         "m8_g_naming.m8_naming_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_nylon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_park": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_carrot": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_yellow": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_nylon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_park": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_carrot": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_yellow": {
           "yes": "Yes",
           "no": "No"
         },
@@ -2190,6 +2310,46 @@
           "no": "Incorrect",
           "dk": "Don't know / Not assessed"
         },
+        "g_memory.mem_trial1.mem_t1_face": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_velvet": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_church": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_daisy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_red": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_face": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_velvet": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_church": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_daisy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_red": {
+          "yes": "Yes",
+          "no": "No"
+        },
         "g_attention.digit_span_fwd": {
           "yes": "Yes",
           "no": "No"
@@ -2329,6 +2489,456 @@
         "moca_total_score",
         "moca_interpretation"
       ]
+    },
+    "moca_b": {
+      "title_key": "report.moca_b._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_consent.is_illiterate": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_executive.trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_time": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_calculation.calculation_score_select": {
+          "0": "0 point if no correct way",
+          "1": "1 point if 1 way",
+          "2": "2 points if 2 ways",
+          "3": "3 points if 3 ways"
+        },
+        "g_abstraction.abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_rose_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_rose_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_chair_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_chair_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_hand_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_hand_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_blue_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_blue_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_spoon_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_spoon_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_visuoperception.vp_scissors": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_tshirt": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_banana": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_lamp": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_candle": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_watch": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_cup": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_leaf": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_key": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_zebra": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_peacock": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_tiger": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_butterfly": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "moca_telugu": {
+      "title_key": "report.moca_telugu._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.cube_copy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_contour": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_numbers": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_hands": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.digit_span_fwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.digit_span_bwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.vigilance": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.serial_7s": {
+          "0": "0 correct (0 pt)",
+          "1": "1 correct (1 pt)",
+          "2": "2 or 3 correct (2 pts)",
+          "3": "4 or 5 correct subtractions (3 pts)"
+        },
+        "g_language.sentence_rep_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_language.sentence_rep_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_kannu_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_kannu_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_cheera_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_cheera_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_gudi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gudi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_gulabi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gulabi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_neelam_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_neelam_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_orientation.orientation_date": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
     },
     "vineland": {
       "title_key": "report.vineland._title",
@@ -3031,6 +3641,21 @@
       "hide_fields": [
         "g_child.dob_warning",
         "g_meta.dob_warning",
+        "grp_cog5_scale.display_mcr",
+        "grp_cog5_scale.display_overall",
+        "grp_cog5_scale.display_pbst",
+        "grp_cog5_scale.display_pmis",
+        "grp_cog5_scale.display_risk",
+        "grp_cog5_scale.display_triage",
+        "grp_cog5_scale.grp_picture_based_memory_impairment.pmis_image",
+        "grp_cog5_scale.grp_picture_based_screening_test.triangle_thing",
+        "grp_cog5_scale.grp_timed_walk.walk_intro",
+        "grp_cog5_scale.grp_timed_walk.walk_note",
+        "grp_cog5_scale.results_summary",
+        "patient_age",
+        "patient_education",
+        "patient_phone",
+        "patient_sex",
         "patient_uuid",
         "result_complete",
         "result_incomplete",
@@ -3063,6 +3688,269 @@
           "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
           "nc_dropout": "Not completed - Dropout (left early / discontinued)"
         },
+        "grp_cog5_scale.grp_picture_based_memory_impairment.able_identify": {
+          "yes": "Yes, in less than 5 attempts",
+          "no": "No, the client was provided the correct name and cue of each item.",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_picture_based_screening_test.pbst_result": {
+          "more_25": "MORE THAN 25: Normal",
+          "less_equal_25": "LESS OR EQUAL TO 25: Possible cognitive impairment",
+          "unable": "Unable to understand practice",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_picture_based_screening_test.pbst_upload_status": {
+          "upload_now": "Upload now",
+          "upload_later": "Upload later",
+          "not_applicable": "Not applicable"
+        },
+        "grp_cog5_scale.grp_mcr.memory_general": {
+          "good": "Good",
+          "fair": "Fair",
+          "poor": "Poor",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_mcr.thinking_problem": {
+          "no": "No",
+          "yes": "Yes",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_mcr.memory_problem": {
+          "none": "No problems",
+          "minor": "Some minor problems",
+          "major": "Major problems",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_mcr.memory_worse": {
+          "no": "No problems",
+          "yes_not_worried": "Yes, but this does not worry me",
+          "yes_worried": "Yes, and this does worry me",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.leg_pain": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.health_restriction": {
+          "none": "No apparent restriction (Continue)",
+          "surgery": "Yes, recent surgery (Skip Walk)",
+          "injury": "Yes, injury (Skip Walk)",
+          "other": "Yes, other health condition (Skip Walk)",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.assistive_device": {
+          "yes": "Yes, able to walk WITHOUT device",
+          "no": "No, cannot walk without device",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.walk_time_result": {
+          "normal": "LESS THAN or EQUAL TO 5.5 seconds",
+          "slow": "MORE THAN 5.5 seconds",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_pmis_recall.recall_combination": {
+          "four_free": "4 pictures Free recall",
+          "three_free_one_cued": "3 pictures Free recall and 1 Cued recall",
+          "other_combo": "Any other combination",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_pmis_recall.free_recall": {
+          "four": "4 pictures Free recall",
+          "three": "3 pictures Free recall",
+          "two": "2 pictures Free recall",
+          "one": "1 picture Free recall",
+          "zero": "No pictures Free recall",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_pmis_recall.cued_recall": {
+          "four": "4 pictures recalled via Cue",
+          "three": "3 pictures recalled via Cue",
+          "two": "2 pictures recalled via Cue",
+          "one": "1 picture recalled via Cue",
+          "zero": "No picture recalled via Cue",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_sad": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_anx": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_sleep": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_daytime": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_snore": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_voice": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_mem": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_speak": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_neuro": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_htn": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_dm": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_ldl": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_head": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_urine": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_alc": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_phys": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_obes": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_hear": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_vis": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_soc": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_smoke": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_dep": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
         "grp_cog5_scale.Survey_Status_cog5": {
           "completed": "Completed",
           "dropout___discontinued": "Dropout / Discontinued"
@@ -3072,8 +3960,22 @@
       "join_fields": [],
       "note_values": {},
       "date_fields": [],
-      "notes_fields": [],
-      "result_fields": []
+      "notes_fields": [
+        "Survey_Status_cog5",
+        "Reason_for_Dropout_cog5",
+        "screener_notes",
+        "clinical_notes"
+      ],
+      "result_fields": [
+        "score_pmis_total",
+        "score_pbst",
+        "score_dementia_risk",
+        "PMIS_FINAL_RESULT",
+        "PBST_FINAL_RESULT",
+        "MCR_FINAL_RESULT",
+        "FINAL_TRIAGE",
+        "calc_overall_conclusion"
+      ]
     },
     "mse": {
       "title_key": "report.mse._title",
@@ -3726,6 +4628,1809 @@
         }
       },
       "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "assessment_visit": {
+      "title_key": "report.assessment_visit._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_mode": {
+          "written": "Written",
+          "verbal": "Verbal"
+        },
+        "g_consent.consent_given": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_office.entered_in_cht": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "follow_up_contact": {
+      "title_key": "report.follow_up_contact._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_fu.contact_mode": {
+          "phone": "Phone call",
+          "home_visit": "Home visit",
+          "camp": "Met at camp",
+          "whatsapp": "WhatsApp / SMS",
+          "community_leader": "Via community leader / ASHA"
+        },
+        "g_fu.outcome": {
+          "scheduled": "Reached - Stage 2 appointment scheduled",
+          "will_think": "Reached - undecided, call again",
+          "refused": "Reached - declined further assessment",
+          "done_elsewhere": "Reached - already assessed elsewhere",
+          "no_answer": "Not reachable - no answer",
+          "wrong_number": "Wrong or invalid number",
+          "moved": "Moved away from the area",
+          "deceased": "Participant has died",
+          "unwell": "Too unwell to attend"
+        },
+        "g_fu.barriers": {
+          "transport": "Transport / distance",
+          "cost": "Cost concerns",
+          "family_permission": "Family not permitting",
+          "stigma": "Stigma / fear of label",
+          "no_perceived_need": "Does not feel it is needed",
+          "caregiver_unavailable": "No informant available",
+          "work": "Work / farming commitments",
+          "other": "Other"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "longitudinal_review": {
+      "title_key": "report.longitudinal_review._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_rev.alive": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_rev.caregiver_reported_trend": {
+          "better": "Better than last time",
+          "same": "About the same",
+          "worse": "Worse than last time"
+        },
+        "g_rev.ad8_1": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.ad8_2": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.ad8_3": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.ad8_4": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.ad8_5": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.ad8_6": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.ad8_7": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.ad8_8": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_rev.phq2_1": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_rev.phq2_2": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_rev.new_falls": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_rev.medication_adherent": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_rev.caregiver_strain": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "referral_outcome": {
+      "title_key": "report.referral_outcome._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_ref.attended": {
+          "attended": "Attended the referral",
+          "pending": "Not yet - appointment still ahead",
+          "missed": "Missed the appointment",
+          "declined": "Declined to go"
+        },
+        "g_ref.diagnosis": {
+          "no_impairment": "No cognitive impairment",
+          "mci": "Mild cognitive impairment",
+          "dementia_ad": "Dementia - Alzheimer type",
+          "dementia_vascular": "Dementia - vascular",
+          "dementia_other": "Dementia - other or mixed",
+          "depression": "Depression",
+          "reversible": "Reversible cause identified",
+          "pending_dx": "Diagnosis pending"
+        },
+        "g_ref.medication_started": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_ref.care_plan_shared": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_ref.caregiver_training_offered": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "stage1_screening": {
+      "title_key": "report.stage1_screening._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_context.setting": {
+          "community_camp": "Community screening camp",
+          "old_age_home": "Old age home",
+          "household": "Household visit",
+          "hospital_opd": "Hospital OPD"
+        },
+        "g_context.education_confirm": {
+          "illiterate": "No formal schooling",
+          "primary": "1-7 years",
+          "secondary_plus": "8 years or more"
+        },
+        "g_symbol.symbol_completed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_mcr.scc_memory_complaint": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_mcr.existing_dementia_dx": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_mcr.mobility_disability": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_outcome.stage2_same_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_outcome.informant_available": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "stage2_assessment": {
+      "title_key": "report.stage2_assessment._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_link.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_link.education_confirm": {
+          "illiterate": "No formal schooling",
+          "primary": "1-7 years",
+          "secondary_plus": "8 years or more"
+        },
+        "g_ad8.informant_available": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_ad8.informant_relationship": {
+          "spouse": "Spouse",
+          "child": "Son / Daughter",
+          "child_in_law": "Daughter-in-law / Son-in-law",
+          "sibling": "Sibling",
+          "other_relative": "Other relative",
+          "paid_carer": "Paid caregiver",
+          "neighbour": "Neighbour / friend"
+        },
+        "g_ad8.ad8_1": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_ad8.ad8_2": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_ad8.ad8_3": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_ad8.ad8_4": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_ad8.ad8_5": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_ad8.ad8_6": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_ad8.ad8_7": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_ad8.ad8_8": {
+          "1": "Yes, a change",
+          "0": "No change / Don't know"
+        },
+        "g_hmse.hmse_subscores_entered": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_phq.phq_1": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_2": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_3": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_4": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_5": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_6": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_7": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_8": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_9": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_supervisor_informed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_easi.easi_private": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_easi.easi_1": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_2": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_3": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_4": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_5": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_6": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_lead_informed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sppb.sppb_attempted": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sppb.sppb_gait_unable": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sppb.sppb_chair_unable": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_grip.grip_attempted": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_glucose.glucose_type": {
+          "fasting": "Fasting",
+          "random": "Random / post-meal",
+          "not_done": "Not done"
+        },
+        "g_glucose.known_diabetes": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_disposition.referral_letter_issued": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "vineland_v2": {
+      "title_key": "report.vineland_v2._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by",
+        "item_10_score",
+        "item_11_score",
+        "item_12_score",
+        "item_13_score",
+        "item_14_score",
+        "item_15_score",
+        "item_16_score",
+        "item_17_score",
+        "item_18_score",
+        "item_19_score",
+        "item_1_score",
+        "item_20_score",
+        "item_21_score",
+        "item_22_score",
+        "item_23_score",
+        "item_24_score",
+        "item_25_score",
+        "item_26_score",
+        "item_27_score",
+        "item_28_score",
+        "item_29_score",
+        "item_2_score",
+        "item_30_score",
+        "item_31_score",
+        "item_32_score",
+        "item_33_score",
+        "item_34_score",
+        "item_35_score",
+        "item_36_score",
+        "item_37_score",
+        "item_38_score",
+        "item_39_score",
+        "item_3_score",
+        "item_40_score",
+        "item_41_score",
+        "item_42_score",
+        "item_43_score",
+        "item_44_score",
+        "item_45_score",
+        "item_46_score",
+        "item_47_score",
+        "item_48_score",
+        "item_49_score",
+        "item_4_score",
+        "item_50_score",
+        "item_51_score",
+        "item_52_score",
+        "item_53_score",
+        "item_54_score",
+        "item_55_score",
+        "item_56_score",
+        "item_57_score",
+        "item_58_score",
+        "item_59_score",
+        "item_5_score",
+        "item_60_score",
+        "item_61_score",
+        "item_62_score",
+        "item_63_score",
+        "item_64_score",
+        "item_65_score",
+        "item_66_score",
+        "item_67_score",
+        "item_68_score",
+        "item_69_score",
+        "item_6_score",
+        "item_70_score",
+        "item_71_score",
+        "item_72_score",
+        "item_73_score",
+        "item_74_score",
+        "item_75_score",
+        "item_76_score",
+        "item_77_score",
+        "item_78_score",
+        "item_79_score",
+        "item_7_score",
+        "item_80_score",
+        "item_81_score",
+        "item_82_score",
+        "item_83_score",
+        "item_84_score",
+        "item_85_score",
+        "item_86_score",
+        "item_87_score",
+        "item_88_score",
+        "item_89_score",
+        "item_8_score",
+        "item_9_score"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_intro.acknowledged": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_child.show_all": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_y0_1.item_1": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_2": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_3": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_4": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_5": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_6": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_7": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_8": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_9": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_10": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_11": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_12": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_13": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_14": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_15": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_16": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_17": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_18": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_19": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_20": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_21": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_22": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_23": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_24": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_25": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_26": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_27": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_28": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_29": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_30": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_31": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_32": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_33": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_34": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_35": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_36": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_37": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_38": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_39": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_40": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_41": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_42": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_43": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_44": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_45": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_46": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_47": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_48": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_49": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_50": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_51": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_52": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_53": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_54": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_55": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_56": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_57": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_58": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_59": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_60": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_61": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_62": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_63": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_64": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_65": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_66": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_67": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_68": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_69": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_70": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_71": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_72": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_73": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_74": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_75": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_76": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_77": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_78": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_79": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_80": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_81": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_82": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_83": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_84": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_85": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_86": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_87": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_88": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_89": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        }
+      },
+      "score_fields": {
+        "g_y0_1.item_10": "item_10_score",
+        "g_y0_1.item_11": "item_11_score",
+        "g_y0_1.item_12": "item_12_score",
+        "g_y0_1.item_13": "item_13_score",
+        "g_y0_1.item_14": "item_14_score",
+        "g_y0_1.item_15": "item_15_score",
+        "g_y0_1.item_16": "item_16_score",
+        "g_y0_1.item_17": "item_17_score",
+        "g_y1_2.item_18": "item_18_score",
+        "g_y1_2.item_19": "item_19_score",
+        "g_y0_1.item_1": "item_1_score",
+        "g_y1_2.item_20": "item_20_score",
+        "g_y1_2.item_21": "item_21_score",
+        "g_y1_2.item_22": "item_22_score",
+        "g_y1_2.item_23": "item_23_score",
+        "g_y1_2.item_24": "item_24_score",
+        "g_y1_2.item_25": "item_25_score",
+        "g_y1_2.item_26": "item_26_score",
+        "g_y1_2.item_27": "item_27_score",
+        "g_y1_2.item_28": "item_28_score",
+        "g_y1_2.item_29": "item_29_score",
+        "g_y0_1.item_2": "item_2_score",
+        "g_y1_2.item_30": "item_30_score",
+        "g_y1_2.item_31": "item_31_score",
+        "g_y1_2.item_32": "item_32_score",
+        "g_y1_2.item_33": "item_33_score",
+        "g_y1_2.item_34": "item_34_score",
+        "g_y2_3.item_35": "item_35_score",
+        "g_y2_3.item_36": "item_36_score",
+        "g_y2_3.item_37": "item_37_score",
+        "g_y2_3.item_38": "item_38_score",
+        "g_y2_3.item_39": "item_39_score",
+        "g_y0_1.item_3": "item_3_score",
+        "g_y2_3.item_40": "item_40_score",
+        "g_y2_3.item_41": "item_41_score",
+        "g_y2_3.item_42": "item_42_score",
+        "g_y2_3.item_43": "item_43_score",
+        "g_y2_3.item_44": "item_44_score",
+        "g_y3_4.item_45": "item_45_score",
+        "g_y3_4.item_46": "item_46_score",
+        "g_y3_4.item_47": "item_47_score",
+        "g_y3_4.item_48": "item_48_score",
+        "g_y3_4.item_49": "item_49_score",
+        "g_y0_1.item_4": "item_4_score",
+        "g_y3_4.item_50": "item_50_score",
+        "g_y4_5.item_51": "item_51_score",
+        "g_y4_5.item_52": "item_52_score",
+        "g_y4_5.item_53": "item_53_score",
+        "g_y4_5.item_54": "item_54_score",
+        "g_y4_5.item_55": "item_55_score",
+        "g_y4_5.item_56": "item_56_score",
+        "g_y5_6.item_57": "item_57_score",
+        "g_y5_6.item_58": "item_58_score",
+        "g_y5_6.item_59": "item_59_score",
+        "g_y0_1.item_5": "item_5_score",
+        "g_y5_6.item_60": "item_60_score",
+        "g_y5_6.item_61": "item_61_score",
+        "g_y6_7.item_62": "item_62_score",
+        "g_y6_7.item_63": "item_63_score",
+        "g_y6_7.item_64": "item_64_score",
+        "g_y6_7.item_65": "item_65_score",
+        "g_y7_8.item_66": "item_66_score",
+        "g_y7_8.item_67": "item_67_score",
+        "g_y7_8.item_68": "item_68_score",
+        "g_y7_8.item_69": "item_69_score",
+        "g_y0_1.item_6": "item_6_score",
+        "g_y7_8.item_70": "item_70_score",
+        "g_y8_9.item_71": "item_71_score",
+        "g_y8_9.item_72": "item_72_score",
+        "g_y8_9.item_73": "item_73_score",
+        "g_y8_9.item_74": "item_74_score",
+        "g_y9_10.item_75": "item_75_score",
+        "g_y9_10.item_76": "item_76_score",
+        "g_y9_10.item_77": "item_77_score",
+        "g_y10_11.item_78": "item_78_score",
+        "g_y10_11.item_79": "item_79_score",
+        "g_y0_1.item_7": "item_7_score",
+        "g_y10_11.item_80": "item_80_score",
+        "g_y10_11.item_81": "item_81_score",
+        "g_y11_12.item_82": "item_82_score",
+        "g_y11_12.item_83": "item_83_score",
+        "g_y11_12.item_84": "item_84_score",
+        "g_y12_15.item_85": "item_85_score",
+        "g_y12_15.item_86": "item_86_score",
+        "g_y12_15.item_87": "item_87_score",
+        "g_y12_15.item_88": "item_88_score",
+        "g_y12_15.item_89": "item_89_score",
+        "g_y0_1.item_8": "item_8_score",
+        "g_y0_1.item_9": "item_9_score"
+      },
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "vsms": {
+      "title_key": "report.vsms._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by",
+        "item_10_score",
+        "item_11_score",
+        "item_12_score",
+        "item_13_score",
+        "item_14_score",
+        "item_15_score",
+        "item_16_score",
+        "item_17_score",
+        "item_18_score",
+        "item_19_score",
+        "item_1_score",
+        "item_20_score",
+        "item_21_score",
+        "item_22_score",
+        "item_23_score",
+        "item_24_score",
+        "item_25_score",
+        "item_26_score",
+        "item_27_score",
+        "item_28_score",
+        "item_29_score",
+        "item_2_score",
+        "item_30_score",
+        "item_31_score",
+        "item_32_score",
+        "item_33_score",
+        "item_34_score",
+        "item_35_score",
+        "item_36_score",
+        "item_37_score",
+        "item_38_score",
+        "item_39_score",
+        "item_3_score",
+        "item_40_score",
+        "item_41_score",
+        "item_42_score",
+        "item_43_score",
+        "item_44_score",
+        "item_45_score",
+        "item_46_score",
+        "item_47_score",
+        "item_48_score",
+        "item_49_score",
+        "item_4_score",
+        "item_50_score",
+        "item_51_score",
+        "item_52_score",
+        "item_53_score",
+        "item_54_score",
+        "item_55_score",
+        "item_56_score",
+        "item_57_score",
+        "item_58_score",
+        "item_59_score",
+        "item_5_score",
+        "item_60_score",
+        "item_61_score",
+        "item_62_score",
+        "item_63_score",
+        "item_64_score",
+        "item_65_score",
+        "item_66_score",
+        "item_67_score",
+        "item_68_score",
+        "item_69_score",
+        "item_6_score",
+        "item_70_score",
+        "item_71_score",
+        "item_72_score",
+        "item_73_score",
+        "item_74_score",
+        "item_75_score",
+        "item_76_score",
+        "item_77_score",
+        "item_78_score",
+        "item_79_score",
+        "item_7_score",
+        "item_80_score",
+        "item_81_score",
+        "item_82_score",
+        "item_83_score",
+        "item_84_score",
+        "item_85_score",
+        "item_86_score",
+        "item_87_score",
+        "item_88_score",
+        "item_89_score",
+        "item_8_score",
+        "item_9_score"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_intro.acknowledged": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_child.show_all": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_y0_1.item_1": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_2": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_3": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_4": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_5": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_6": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_7": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_8": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_9": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_10": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_11": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_12": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_13": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_14": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_15": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_16": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_17": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_18": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_19": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_20": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_21": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_22": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_23": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_24": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_25": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_26": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_27": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_28": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_29": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_30": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_31": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_32": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_33": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_34": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_35": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_36": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_37": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_38": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_39": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_40": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_41": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_42": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_43": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_44": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_45": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_46": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_47": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_48": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_49": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_50": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_51": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_52": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_53": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_54": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_55": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_56": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_57": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_58": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_59": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_60": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_61": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_62": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_63": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_64": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_65": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_66": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_67": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_68": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_69": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_70": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_71": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_72": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_73": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_74": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_75": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_76": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_77": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_78": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_79": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_80": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_81": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_82": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_83": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_84": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_85": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_86": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_87": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_88": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_89": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        }
+      },
+      "score_fields": {
+        "g_y0_1.item_10": "item_10_score",
+        "g_y0_1.item_11": "item_11_score",
+        "g_y0_1.item_12": "item_12_score",
+        "g_y0_1.item_13": "item_13_score",
+        "g_y0_1.item_14": "item_14_score",
+        "g_y0_1.item_15": "item_15_score",
+        "g_y0_1.item_16": "item_16_score",
+        "g_y0_1.item_17": "item_17_score",
+        "g_y1_2.item_18": "item_18_score",
+        "g_y1_2.item_19": "item_19_score",
+        "g_y0_1.item_1": "item_1_score",
+        "g_y1_2.item_20": "item_20_score",
+        "g_y1_2.item_21": "item_21_score",
+        "g_y1_2.item_22": "item_22_score",
+        "g_y1_2.item_23": "item_23_score",
+        "g_y1_2.item_24": "item_24_score",
+        "g_y1_2.item_25": "item_25_score",
+        "g_y1_2.item_26": "item_26_score",
+        "g_y1_2.item_27": "item_27_score",
+        "g_y1_2.item_28": "item_28_score",
+        "g_y1_2.item_29": "item_29_score",
+        "g_y0_1.item_2": "item_2_score",
+        "g_y1_2.item_30": "item_30_score",
+        "g_y1_2.item_31": "item_31_score",
+        "g_y1_2.item_32": "item_32_score",
+        "g_y1_2.item_33": "item_33_score",
+        "g_y1_2.item_34": "item_34_score",
+        "g_y2_3.item_35": "item_35_score",
+        "g_y2_3.item_36": "item_36_score",
+        "g_y2_3.item_37": "item_37_score",
+        "g_y2_3.item_38": "item_38_score",
+        "g_y2_3.item_39": "item_39_score",
+        "g_y0_1.item_3": "item_3_score",
+        "g_y2_3.item_40": "item_40_score",
+        "g_y2_3.item_41": "item_41_score",
+        "g_y2_3.item_42": "item_42_score",
+        "g_y2_3.item_43": "item_43_score",
+        "g_y2_3.item_44": "item_44_score",
+        "g_y3_4.item_45": "item_45_score",
+        "g_y3_4.item_46": "item_46_score",
+        "g_y3_4.item_47": "item_47_score",
+        "g_y3_4.item_48": "item_48_score",
+        "g_y3_4.item_49": "item_49_score",
+        "g_y0_1.item_4": "item_4_score",
+        "g_y3_4.item_50": "item_50_score",
+        "g_y4_5.item_51": "item_51_score",
+        "g_y4_5.item_52": "item_52_score",
+        "g_y4_5.item_53": "item_53_score",
+        "g_y4_5.item_54": "item_54_score",
+        "g_y4_5.item_55": "item_55_score",
+        "g_y4_5.item_56": "item_56_score",
+        "g_y5_6.item_57": "item_57_score",
+        "g_y5_6.item_58": "item_58_score",
+        "g_y5_6.item_59": "item_59_score",
+        "g_y0_1.item_5": "item_5_score",
+        "g_y5_6.item_60": "item_60_score",
+        "g_y5_6.item_61": "item_61_score",
+        "g_y6_7.item_62": "item_62_score",
+        "g_y6_7.item_63": "item_63_score",
+        "g_y6_7.item_64": "item_64_score",
+        "g_y6_7.item_65": "item_65_score",
+        "g_y7_8.item_66": "item_66_score",
+        "g_y7_8.item_67": "item_67_score",
+        "g_y7_8.item_68": "item_68_score",
+        "g_y7_8.item_69": "item_69_score",
+        "g_y0_1.item_6": "item_6_score",
+        "g_y7_8.item_70": "item_70_score",
+        "g_y8_9.item_71": "item_71_score",
+        "g_y8_9.item_72": "item_72_score",
+        "g_y8_9.item_73": "item_73_score",
+        "g_y8_9.item_74": "item_74_score",
+        "g_y9_10.item_75": "item_75_score",
+        "g_y9_10.item_76": "item_76_score",
+        "g_y9_10.item_77": "item_77_score",
+        "g_y10_11.item_78": "item_78_score",
+        "g_y10_11.item_79": "item_79_score",
+        "g_y0_1.item_7": "item_7_score",
+        "g_y10_11.item_80": "item_80_score",
+        "g_y10_11.item_81": "item_81_score",
+        "g_y11_12.item_82": "item_82_score",
+        "g_y11_12.item_83": "item_83_score",
+        "g_y11_12.item_84": "item_84_score",
+        "g_y12_15.item_85": "item_85_score",
+        "g_y12_15.item_86": "item_86_score",
+        "g_y12_15.item_87": "item_87_score",
+        "g_y12_15.item_88": "item_88_score",
+        "g_y12_15.item_89": "item_89_score",
+        "g_y0_1.item_8": "item_8_score",
+        "g_y0_1.item_9": "item_9_score"
+      },
       "join_fields": [],
       "note_values": {},
       "date_fields": [],

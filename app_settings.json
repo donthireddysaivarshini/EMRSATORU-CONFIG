@@ -1604,6 +1604,46 @@
           "yes": "Yes",
           "no": "No"
         },
+        "te_g_memory.te_mem_trial1.te_mem_t1_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial1.te_mem_t1_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "te_g_memory.te_mem_trial2.te_mem_t2_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
         "te_g_attention.te_digit_span_fwd": {
           "yes": "Yes",
           "no": "No"
@@ -1723,6 +1763,46 @@
           "no": "No"
         },
         "mb_g_executive.mb_trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial1.mb_mem_t1_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "mb_g_memory.mb_mem_trial2.mb_mem_t2_spoon": {
           "yes": "Yes",
           "no": "No"
         },
@@ -1913,6 +1993,46 @@
           "no": "No"
         },
         "m8_g_naming.m8_naming_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_nylon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_park": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_carrot": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial1.m8_mem_t1_yellow": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_nylon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_park": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_carrot": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "m8_g_memory.m8_mem_trial2.m8_mem_t2_yellow": {
           "yes": "Yes",
           "no": "No"
         },
@@ -2190,6 +2310,46 @@
           "no": "Incorrect",
           "dk": "Don't know / Not assessed"
         },
+        "g_memory.mem_trial1.mem_t1_face": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_velvet": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_church": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_daisy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_red": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_face": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_velvet": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_church": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_daisy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_red": {
+          "yes": "Yes",
+          "no": "No"
+        },
         "g_attention.digit_span_fwd": {
           "yes": "Yes",
           "no": "No"
@@ -2329,6 +2489,456 @@
         "moca_total_score",
         "moca_interpretation"
       ]
+    },
+    "moca_b": {
+      "title_key": "report.moca_b._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_consent.is_illiterate": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_executive.trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_time": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_calculation.calculation_score_select": {
+          "0": "0 point if no correct way",
+          "1": "1 point if 1 way",
+          "2": "2 points if 2 ways",
+          "3": "3 points if 3 ways"
+        },
+        "g_abstraction.abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_rose": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_rose_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_rose_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_chair": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_chair_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_chair_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_hand": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_hand_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_hand_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_blue": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_blue_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_blue_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_spoon_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_spoon_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_visuoperception.vp_scissors": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_tshirt": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_banana": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_lamp": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_candle": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_watch": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_cup": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_leaf": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_key": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuoperception.vp_spoon": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_zebra": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_peacock": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_tiger": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_butterfly": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "moca_telugu": {
+      "title_key": "report.moca_telugu._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.trail_making": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.cube_copy": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_contour": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_numbers": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_visuospatial.clock_hands": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_naming.naming_3": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial1.mem_t1_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_memory.mem_trial2.mem_t2_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.digit_span_fwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.digit_span_bwd": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.vigilance": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_attention.serial_7s": {
+          "0": "0 correct (0 pt)",
+          "1": "1 correct (1 pt)",
+          "2": "2 or 3 correct (2 pts)",
+          "3": "4 or 5 correct subtractions (3 pts)"
+        },
+        "g_language.sentence_rep_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_language.sentence_rep_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_1": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_abstraction.abstraction_2": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_kannu": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_kannu_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_kannu_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_cheera": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_cheera_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_cheera_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gudi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_gudi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gudi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gulabi": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_gulabi_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_gulabi_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_neelam": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_delayed_recall.delayed_neelam_cat": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_delayed_recall.delayed_neelam_mc": {
+          "yes": "Recalled with cue",
+          "no": "Not recalled even with cue"
+        },
+        "g_orientation.orientation_date": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_month": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_year": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_place": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_orientation.orientation_city": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
     },
     "vineland": {
       "title_key": "report.vineland._title",
@@ -3031,6 +3641,21 @@
       "hide_fields": [
         "g_child.dob_warning",
         "g_meta.dob_warning",
+        "grp_cog5_scale.display_mcr",
+        "grp_cog5_scale.display_overall",
+        "grp_cog5_scale.display_pbst",
+        "grp_cog5_scale.display_pmis",
+        "grp_cog5_scale.display_risk",
+        "grp_cog5_scale.display_triage",
+        "grp_cog5_scale.grp_picture_based_memory_impairment.pmis_image",
+        "grp_cog5_scale.grp_picture_based_screening_test.triangle_thing",
+        "grp_cog5_scale.grp_timed_walk.walk_intro",
+        "grp_cog5_scale.grp_timed_walk.walk_note",
+        "grp_cog5_scale.results_summary",
+        "patient_age",
+        "patient_education",
+        "patient_phone",
+        "patient_sex",
         "patient_uuid",
         "result_complete",
         "result_incomplete",
@@ -3063,6 +3688,269 @@
           "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
           "nc_dropout": "Not completed - Dropout (left early / discontinued)"
         },
+        "grp_cog5_scale.grp_picture_based_memory_impairment.able_identify": {
+          "yes": "Yes, in less than 5 attempts",
+          "no": "No, the client was provided the correct name and cue of each item.",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_picture_based_screening_test.pbst_result": {
+          "more_25": "MORE THAN 25: Normal",
+          "less_equal_25": "LESS OR EQUAL TO 25: Possible cognitive impairment",
+          "unable": "Unable to understand practice",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_picture_based_screening_test.pbst_upload_status": {
+          "upload_now": "Upload now",
+          "upload_later": "Upload later",
+          "not_applicable": "Not applicable"
+        },
+        "grp_cog5_scale.grp_mcr.memory_general": {
+          "good": "Good",
+          "fair": "Fair",
+          "poor": "Poor",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_mcr.thinking_problem": {
+          "no": "No",
+          "yes": "Yes",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_mcr.memory_problem": {
+          "none": "No problems",
+          "minor": "Some minor problems",
+          "major": "Major problems",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_mcr.memory_worse": {
+          "no": "No problems",
+          "yes_not_worried": "Yes, but this does not worry me",
+          "yes_worried": "Yes, and this does worry me",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.leg_pain": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.health_restriction": {
+          "none": "No apparent restriction (Continue)",
+          "surgery": "Yes, recent surgery (Skip Walk)",
+          "injury": "Yes, injury (Skip Walk)",
+          "other": "Yes, other health condition (Skip Walk)",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.assistive_device": {
+          "yes": "Yes, able to walk WITHOUT device",
+          "no": "No, cannot walk without device",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_timed_walk.walk_time_result": {
+          "normal": "LESS THAN or EQUAL TO 5.5 seconds",
+          "slow": "MORE THAN 5.5 seconds",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_pmis_recall.recall_combination": {
+          "four_free": "4 pictures Free recall",
+          "three_free_one_cued": "3 pictures Free recall and 1 Cued recall",
+          "other_combo": "Any other combination",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_pmis_recall.free_recall": {
+          "four": "4 pictures Free recall",
+          "three": "3 pictures Free recall",
+          "two": "2 pictures Free recall",
+          "one": "1 picture Free recall",
+          "zero": "No pictures Free recall",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_pmis_recall.cued_recall": {
+          "four": "4 pictures recalled via Cue",
+          "three": "3 pictures recalled via Cue",
+          "two": "2 pictures recalled via Cue",
+          "one": "1 picture recalled via Cue",
+          "zero": "No picture recalled via Cue",
+          "na": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_sad": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_anx": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_sleep": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_daytime": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_snore": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_voice": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_mem": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_speak": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_symptom_checklist.sym_neuro": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_htn": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_dm": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_ldl": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_head": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_urine": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_alc": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_phys": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_obes": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_hear": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_vis": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_soc": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_smoke": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
+        "grp_cog5_scale.grp_risk_factors.risk_dep": {
+          "yes": "Yes",
+          "no": "No",
+          "_not_completed___unable_to_und": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "nc_instruct": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
+          "nc_dropout": "Not completed - Dropout (left early / discontinued)"
+        },
         "grp_cog5_scale.Survey_Status_cog5": {
           "completed": "Completed",
           "dropout___discontinued": "Dropout / Discontinued"
@@ -3072,8 +3960,22 @@
       "join_fields": [],
       "note_values": {},
       "date_fields": [],
-      "notes_fields": [],
-      "result_fields": []
+      "notes_fields": [
+        "Survey_Status_cog5",
+        "Reason_for_Dropout_cog5",
+        "screener_notes",
+        "clinical_notes"
+      ],
+      "result_fields": [
+        "score_pmis_total",
+        "score_pbst",
+        "score_dementia_risk",
+        "PMIS_FINAL_RESULT",
+        "PBST_FINAL_RESULT",
+        "MCR_FINAL_RESULT",
+        "FINAL_TRIAGE",
+        "calc_overall_conclusion"
+      ]
     },
     "mse": {
       "title_key": "report.mse._title",
@@ -3731,6 +4633,1809 @@
       "date_fields": [],
       "notes_fields": [],
       "result_fields": []
+    },
+    "assessment_visit": {
+      "title_key": "report.assessment_visit._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_mode": {
+          "written": "Written",
+          "verbal": "Verbal"
+        },
+        "g_consent.consent_given": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_office.entered_in_cht": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "follow_up_contact": {
+      "title_key": "report.follow_up_contact._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_fu.contact_mode": {
+          "phone": "Phone call",
+          "home_visit": "Home visit",
+          "camp": "Met at camp",
+          "whatsapp": "WhatsApp / SMS",
+          "community_leader": "Via community leader / ASHA"
+        },
+        "g_fu.outcome": {
+          "scheduled": "Reached - Stage 2 appointment scheduled",
+          "will_think": "Reached - undecided, call again",
+          "refused": "Reached - declined further assessment",
+          "done_elsewhere": "Reached - already assessed elsewhere",
+          "no_answer": "Not reachable - no answer",
+          "wrong_number": "Wrong or invalid number",
+          "moved": "Moved away from the area",
+          "deceased": "Participant has died",
+          "unwell": "Too unwell to attend"
+        },
+        "g_fu.barriers": {
+          "transport": "Transport / distance",
+          "cost": "Cost concerns",
+          "family_permission": "Family not permitting",
+          "stigma": "Stigma / fear of label",
+          "no_perceived_need": "Does not feel it is needed",
+          "caregiver_unavailable": "No informant available",
+          "work": "Work / farming commitments",
+          "other": "Other"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "longitudinal_review": {
+      "title_key": "report.longitudinal_review._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_rev.alive": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_rev.caregiver_reported_trend": {
+          "better": "Better than last time",
+          "same": "About the same",
+          "worse": "Worse than last time"
+        },
+        "g_rev.ad8_1": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.ad8_2": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.ad8_3": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.ad8_4": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.ad8_5": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.ad8_6": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.ad8_7": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.ad8_8": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_rev.phq2_1": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_rev.phq2_2": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_rev.new_falls": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_rev.medication_adherent": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_rev.caregiver_strain": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "referral_outcome": {
+      "title_key": "report.referral_outcome._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_ref.attended": {
+          "attended": "Attended the referral",
+          "pending": "Not yet - appointment still ahead",
+          "missed": "Missed the appointment",
+          "declined": "Declined to go"
+        },
+        "g_ref.diagnosis": {
+          "no_impairment": "No cognitive impairment",
+          "mci": "Mild cognitive impairment",
+          "dementia_ad": "Dementia - Alzheimer type",
+          "dementia_vascular": "Dementia - vascular",
+          "dementia_other": "Dementia - other or mixed",
+          "depression": "Depression",
+          "reversible": "Reversible cause identified",
+          "pending_dx": "Diagnosis pending"
+        },
+        "g_ref.medication_started": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_ref.care_plan_shared": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_ref.caregiver_training_offered": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "stage1_screening": {
+      "title_key": "report.stage1_screening._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_consent.consent_confirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_context.setting": {
+          "community_camp": "Community screening camp",
+          "old_age_home": "Old age home",
+          "household": "Household visit",
+          "hospital_opd": "Hospital OPD"
+        },
+        "g_context.education_confirm": {
+          "illiterate": "No formal schooling",
+          "primary": "1-7 years",
+          "secondary_plus": "8 years or more"
+        },
+        "g_symbol.symbol_completed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_mcr.scc_memory_complaint": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_mcr.existing_dementia_dx": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_mcr.mobility_disability": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_outcome.stage2_same_day": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_outcome.informant_available": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "stage2_assessment": {
+      "title_key": "report.stage2_assessment._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_link.consent_reconfirmed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_link.education_confirm": {
+          "illiterate": "No formal schooling",
+          "primary": "1-7 years",
+          "secondary_plus": "8 years or more"
+        },
+        "g_ad8.informant_available": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_ad8.informant_relationship": {
+          "spouse": "Spouse",
+          "child": "Son / Daughter",
+          "child_in_law": "Daughter-in-law / Son-in-law",
+          "sibling": "Sibling",
+          "other_relative": "Other relative",
+          "paid_carer": "Paid caregiver",
+          "neighbour": "Neighbour / friend"
+        },
+        "g_ad8.ad8_1": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_ad8.ad8_2": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_ad8.ad8_3": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_ad8.ad8_4": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_ad8.ad8_5": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_ad8.ad8_6": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_ad8.ad8_7": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_ad8.ad8_8": {
+          "0": "No change / Don't know",
+          "1": "Yes, a change"
+        },
+        "g_hmse.hmse_subscores_entered": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_phq.phq_1": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_2": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_3": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_4": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_5": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_6": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_7": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_8": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_9": {
+          "0": "Not at all",
+          "1": "Several days",
+          "2": "More than half the days",
+          "3": "Nearly every day"
+        },
+        "g_phq.phq_supervisor_informed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_easi.easi_private": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_easi.easi_1": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_2": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_3": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_4": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_5": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_6": {
+          "yes": "Yes",
+          "no": "No",
+          "dk": "Don't know / Not assessed"
+        },
+        "g_easi.easi_lead_informed": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sppb.sppb_attempted": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sppb.sppb_gait_unable": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_sppb.sppb_chair_unable": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_grip.grip_attempted": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_glucose.glucose_type": {
+          "fasting": "Fasting",
+          "random": "Random / post-meal",
+          "not_done": "Not done"
+        },
+        "g_glucose.known_diabetes": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_disposition.referral_letter_issued": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "score_fields": {},
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "vineland_v2": {
+      "title_key": "report.vineland_v2._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by",
+        "item_10_score",
+        "item_11_score",
+        "item_12_score",
+        "item_13_score",
+        "item_14_score",
+        "item_15_score",
+        "item_16_score",
+        "item_17_score",
+        "item_18_score",
+        "item_19_score",
+        "item_1_score",
+        "item_20_score",
+        "item_21_score",
+        "item_22_score",
+        "item_23_score",
+        "item_24_score",
+        "item_25_score",
+        "item_26_score",
+        "item_27_score",
+        "item_28_score",
+        "item_29_score",
+        "item_2_score",
+        "item_30_score",
+        "item_31_score",
+        "item_32_score",
+        "item_33_score",
+        "item_34_score",
+        "item_35_score",
+        "item_36_score",
+        "item_37_score",
+        "item_38_score",
+        "item_39_score",
+        "item_3_score",
+        "item_40_score",
+        "item_41_score",
+        "item_42_score",
+        "item_43_score",
+        "item_44_score",
+        "item_45_score",
+        "item_46_score",
+        "item_47_score",
+        "item_48_score",
+        "item_49_score",
+        "item_4_score",
+        "item_50_score",
+        "item_51_score",
+        "item_52_score",
+        "item_53_score",
+        "item_54_score",
+        "item_55_score",
+        "item_56_score",
+        "item_57_score",
+        "item_58_score",
+        "item_59_score",
+        "item_5_score",
+        "item_60_score",
+        "item_61_score",
+        "item_62_score",
+        "item_63_score",
+        "item_64_score",
+        "item_65_score",
+        "item_66_score",
+        "item_67_score",
+        "item_68_score",
+        "item_69_score",
+        "item_6_score",
+        "item_70_score",
+        "item_71_score",
+        "item_72_score",
+        "item_73_score",
+        "item_74_score",
+        "item_75_score",
+        "item_76_score",
+        "item_77_score",
+        "item_78_score",
+        "item_79_score",
+        "item_7_score",
+        "item_80_score",
+        "item_81_score",
+        "item_82_score",
+        "item_83_score",
+        "item_84_score",
+        "item_85_score",
+        "item_86_score",
+        "item_87_score",
+        "item_88_score",
+        "item_89_score",
+        "item_8_score",
+        "item_9_score"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_intro.acknowledged": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_child.show_all": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_y0_1.item_1": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_2": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_3": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_4": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_5": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_6": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_7": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_8": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_9": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_10": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_11": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_12": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_13": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_14": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_15": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_16": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_17": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_18": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_19": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_20": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_21": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_22": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_23": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_24": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_25": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_26": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_27": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_28": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_29": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_30": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_31": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_32": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_33": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_34": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_35": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_36": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_37": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_38": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_39": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_40": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_41": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_42": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_43": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_44": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_45": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_46": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_47": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_48": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_49": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_50": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_51": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_52": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_53": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_54": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_55": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_56": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_57": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_58": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_59": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_60": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_61": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_62": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_63": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_64": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_65": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_66": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_67": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_68": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_69": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_70": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_71": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_72": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_73": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_74": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_75": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_76": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_77": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_78": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_79": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_80": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_81": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_82": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_83": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_84": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_85": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_86": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_87": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_88": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_89": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        }
+      },
+      "score_fields": {
+        "g_y0_1.item_10": "item_10_score",
+        "g_y0_1.item_11": "item_11_score",
+        "g_y0_1.item_12": "item_12_score",
+        "g_y0_1.item_13": "item_13_score",
+        "g_y0_1.item_14": "item_14_score",
+        "g_y0_1.item_15": "item_15_score",
+        "g_y0_1.item_16": "item_16_score",
+        "g_y0_1.item_17": "item_17_score",
+        "g_y1_2.item_18": "item_18_score",
+        "g_y1_2.item_19": "item_19_score",
+        "g_y0_1.item_1": "item_1_score",
+        "g_y1_2.item_20": "item_20_score",
+        "g_y1_2.item_21": "item_21_score",
+        "g_y1_2.item_22": "item_22_score",
+        "g_y1_2.item_23": "item_23_score",
+        "g_y1_2.item_24": "item_24_score",
+        "g_y1_2.item_25": "item_25_score",
+        "g_y1_2.item_26": "item_26_score",
+        "g_y1_2.item_27": "item_27_score",
+        "g_y1_2.item_28": "item_28_score",
+        "g_y1_2.item_29": "item_29_score",
+        "g_y0_1.item_2": "item_2_score",
+        "g_y1_2.item_30": "item_30_score",
+        "g_y1_2.item_31": "item_31_score",
+        "g_y1_2.item_32": "item_32_score",
+        "g_y1_2.item_33": "item_33_score",
+        "g_y1_2.item_34": "item_34_score",
+        "g_y2_3.item_35": "item_35_score",
+        "g_y2_3.item_36": "item_36_score",
+        "g_y2_3.item_37": "item_37_score",
+        "g_y2_3.item_38": "item_38_score",
+        "g_y2_3.item_39": "item_39_score",
+        "g_y0_1.item_3": "item_3_score",
+        "g_y2_3.item_40": "item_40_score",
+        "g_y2_3.item_41": "item_41_score",
+        "g_y2_3.item_42": "item_42_score",
+        "g_y2_3.item_43": "item_43_score",
+        "g_y2_3.item_44": "item_44_score",
+        "g_y3_4.item_45": "item_45_score",
+        "g_y3_4.item_46": "item_46_score",
+        "g_y3_4.item_47": "item_47_score",
+        "g_y3_4.item_48": "item_48_score",
+        "g_y3_4.item_49": "item_49_score",
+        "g_y0_1.item_4": "item_4_score",
+        "g_y3_4.item_50": "item_50_score",
+        "g_y4_5.item_51": "item_51_score",
+        "g_y4_5.item_52": "item_52_score",
+        "g_y4_5.item_53": "item_53_score",
+        "g_y4_5.item_54": "item_54_score",
+        "g_y4_5.item_55": "item_55_score",
+        "g_y4_5.item_56": "item_56_score",
+        "g_y5_6.item_57": "item_57_score",
+        "g_y5_6.item_58": "item_58_score",
+        "g_y5_6.item_59": "item_59_score",
+        "g_y0_1.item_5": "item_5_score",
+        "g_y5_6.item_60": "item_60_score",
+        "g_y5_6.item_61": "item_61_score",
+        "g_y6_7.item_62": "item_62_score",
+        "g_y6_7.item_63": "item_63_score",
+        "g_y6_7.item_64": "item_64_score",
+        "g_y6_7.item_65": "item_65_score",
+        "g_y7_8.item_66": "item_66_score",
+        "g_y7_8.item_67": "item_67_score",
+        "g_y7_8.item_68": "item_68_score",
+        "g_y7_8.item_69": "item_69_score",
+        "g_y0_1.item_6": "item_6_score",
+        "g_y7_8.item_70": "item_70_score",
+        "g_y8_9.item_71": "item_71_score",
+        "g_y8_9.item_72": "item_72_score",
+        "g_y8_9.item_73": "item_73_score",
+        "g_y8_9.item_74": "item_74_score",
+        "g_y9_10.item_75": "item_75_score",
+        "g_y9_10.item_76": "item_76_score",
+        "g_y9_10.item_77": "item_77_score",
+        "g_y10_11.item_78": "item_78_score",
+        "g_y10_11.item_79": "item_79_score",
+        "g_y0_1.item_7": "item_7_score",
+        "g_y10_11.item_80": "item_80_score",
+        "g_y10_11.item_81": "item_81_score",
+        "g_y11_12.item_82": "item_82_score",
+        "g_y11_12.item_83": "item_83_score",
+        "g_y11_12.item_84": "item_84_score",
+        "g_y12_15.item_85": "item_85_score",
+        "g_y12_15.item_86": "item_86_score",
+        "g_y12_15.item_87": "item_87_score",
+        "g_y12_15.item_88": "item_88_score",
+        "g_y12_15.item_89": "item_89_score",
+        "g_y0_1.item_8": "item_8_score",
+        "g_y0_1.item_9": "item_9_score"
+      },
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
+    },
+    "vsms": {
+      "title_key": "report.vsms._title",
+      "hide_fields": [
+        "g_child.dob_warning",
+        "g_meta.dob_warning",
+        "patient_uuid",
+        "result_complete",
+        "result_incomplete",
+        "result_invalid",
+        "scoring_version",
+        "screened_by",
+        "item_10_score",
+        "item_11_score",
+        "item_12_score",
+        "item_13_score",
+        "item_14_score",
+        "item_15_score",
+        "item_16_score",
+        "item_17_score",
+        "item_18_score",
+        "item_19_score",
+        "item_1_score",
+        "item_20_score",
+        "item_21_score",
+        "item_22_score",
+        "item_23_score",
+        "item_24_score",
+        "item_25_score",
+        "item_26_score",
+        "item_27_score",
+        "item_28_score",
+        "item_29_score",
+        "item_2_score",
+        "item_30_score",
+        "item_31_score",
+        "item_32_score",
+        "item_33_score",
+        "item_34_score",
+        "item_35_score",
+        "item_36_score",
+        "item_37_score",
+        "item_38_score",
+        "item_39_score",
+        "item_3_score",
+        "item_40_score",
+        "item_41_score",
+        "item_42_score",
+        "item_43_score",
+        "item_44_score",
+        "item_45_score",
+        "item_46_score",
+        "item_47_score",
+        "item_48_score",
+        "item_49_score",
+        "item_4_score",
+        "item_50_score",
+        "item_51_score",
+        "item_52_score",
+        "item_53_score",
+        "item_54_score",
+        "item_55_score",
+        "item_56_score",
+        "item_57_score",
+        "item_58_score",
+        "item_59_score",
+        "item_5_score",
+        "item_60_score",
+        "item_61_score",
+        "item_62_score",
+        "item_63_score",
+        "item_64_score",
+        "item_65_score",
+        "item_66_score",
+        "item_67_score",
+        "item_68_score",
+        "item_69_score",
+        "item_6_score",
+        "item_70_score",
+        "item_71_score",
+        "item_72_score",
+        "item_73_score",
+        "item_74_score",
+        "item_75_score",
+        "item_76_score",
+        "item_77_score",
+        "item_78_score",
+        "item_79_score",
+        "item_7_score",
+        "item_80_score",
+        "item_81_score",
+        "item_82_score",
+        "item_83_score",
+        "item_84_score",
+        "item_85_score",
+        "item_86_score",
+        "item_87_score",
+        "item_88_score",
+        "item_89_score",
+        "item_8_score",
+        "item_9_score"
+      ],
+      "suppress_empty": true,
+      "keep_empty": [],
+      "choice_map": {
+        "g_intro.acknowledged": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_child.show_all": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "g_y0_1.item_1": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_2": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_3": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_4": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_5": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_6": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_7": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_8": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_9": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_10": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_11": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_12": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_13": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_14": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_15": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_16": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y0_1.item_17": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_18": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_19": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_20": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_21": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_22": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_23": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_24": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_25": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_26": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_27": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_28": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_29": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_30": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_31": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_32": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_33": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y1_2.item_34": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_35": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_36": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_37": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_38": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_39": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_40": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_41": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_42": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_43": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y2_3.item_44": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_45": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_46": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_47": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_48": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_49": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y3_4.item_50": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_51": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_52": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_53": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_54": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_55": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y4_5.item_56": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_57": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_58": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_59": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_60": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y5_6.item_61": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_62": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_63": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_64": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y6_7.item_65": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_66": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_67": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_68": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_69": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y7_8.item_70": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_71": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_72": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_73": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y8_9.item_74": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_75": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_76": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y9_10.item_77": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_78": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_79": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_80": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y10_11.item_81": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_82": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_83": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y11_12.item_84": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_85": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_86": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_87": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_88": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        },
+        "g_y12_15.item_89": {
+          "yes": "Yes",
+          "no": "No",
+          "not_assessed": "Not Assessed"
+        }
+      },
+      "score_fields": {
+        "g_y0_1.item_10": "item_10_score",
+        "g_y0_1.item_11": "item_11_score",
+        "g_y0_1.item_12": "item_12_score",
+        "g_y0_1.item_13": "item_13_score",
+        "g_y0_1.item_14": "item_14_score",
+        "g_y0_1.item_15": "item_15_score",
+        "g_y0_1.item_16": "item_16_score",
+        "g_y0_1.item_17": "item_17_score",
+        "g_y1_2.item_18": "item_18_score",
+        "g_y1_2.item_19": "item_19_score",
+        "g_y0_1.item_1": "item_1_score",
+        "g_y1_2.item_20": "item_20_score",
+        "g_y1_2.item_21": "item_21_score",
+        "g_y1_2.item_22": "item_22_score",
+        "g_y1_2.item_23": "item_23_score",
+        "g_y1_2.item_24": "item_24_score",
+        "g_y1_2.item_25": "item_25_score",
+        "g_y1_2.item_26": "item_26_score",
+        "g_y1_2.item_27": "item_27_score",
+        "g_y1_2.item_28": "item_28_score",
+        "g_y1_2.item_29": "item_29_score",
+        "g_y0_1.item_2": "item_2_score",
+        "g_y1_2.item_30": "item_30_score",
+        "g_y1_2.item_31": "item_31_score",
+        "g_y1_2.item_32": "item_32_score",
+        "g_y1_2.item_33": "item_33_score",
+        "g_y1_2.item_34": "item_34_score",
+        "g_y2_3.item_35": "item_35_score",
+        "g_y2_3.item_36": "item_36_score",
+        "g_y2_3.item_37": "item_37_score",
+        "g_y2_3.item_38": "item_38_score",
+        "g_y2_3.item_39": "item_39_score",
+        "g_y0_1.item_3": "item_3_score",
+        "g_y2_3.item_40": "item_40_score",
+        "g_y2_3.item_41": "item_41_score",
+        "g_y2_3.item_42": "item_42_score",
+        "g_y2_3.item_43": "item_43_score",
+        "g_y2_3.item_44": "item_44_score",
+        "g_y3_4.item_45": "item_45_score",
+        "g_y3_4.item_46": "item_46_score",
+        "g_y3_4.item_47": "item_47_score",
+        "g_y3_4.item_48": "item_48_score",
+        "g_y3_4.item_49": "item_49_score",
+        "g_y0_1.item_4": "item_4_score",
+        "g_y3_4.item_50": "item_50_score",
+        "g_y4_5.item_51": "item_51_score",
+        "g_y4_5.item_52": "item_52_score",
+        "g_y4_5.item_53": "item_53_score",
+        "g_y4_5.item_54": "item_54_score",
+        "g_y4_5.item_55": "item_55_score",
+        "g_y4_5.item_56": "item_56_score",
+        "g_y5_6.item_57": "item_57_score",
+        "g_y5_6.item_58": "item_58_score",
+        "g_y5_6.item_59": "item_59_score",
+        "g_y0_1.item_5": "item_5_score",
+        "g_y5_6.item_60": "item_60_score",
+        "g_y5_6.item_61": "item_61_score",
+        "g_y6_7.item_62": "item_62_score",
+        "g_y6_7.item_63": "item_63_score",
+        "g_y6_7.item_64": "item_64_score",
+        "g_y6_7.item_65": "item_65_score",
+        "g_y7_8.item_66": "item_66_score",
+        "g_y7_8.item_67": "item_67_score",
+        "g_y7_8.item_68": "item_68_score",
+        "g_y7_8.item_69": "item_69_score",
+        "g_y0_1.item_6": "item_6_score",
+        "g_y7_8.item_70": "item_70_score",
+        "g_y8_9.item_71": "item_71_score",
+        "g_y8_9.item_72": "item_72_score",
+        "g_y8_9.item_73": "item_73_score",
+        "g_y8_9.item_74": "item_74_score",
+        "g_y9_10.item_75": "item_75_score",
+        "g_y9_10.item_76": "item_76_score",
+        "g_y9_10.item_77": "item_77_score",
+        "g_y10_11.item_78": "item_78_score",
+        "g_y10_11.item_79": "item_79_score",
+        "g_y0_1.item_7": "item_7_score",
+        "g_y10_11.item_80": "item_80_score",
+        "g_y10_11.item_81": "item_81_score",
+        "g_y11_12.item_82": "item_82_score",
+        "g_y11_12.item_83": "item_83_score",
+        "g_y11_12.item_84": "item_84_score",
+        "g_y12_15.item_85": "item_85_score",
+        "g_y12_15.item_86": "item_86_score",
+        "g_y12_15.item_87": "item_87_score",
+        "g_y12_15.item_88": "item_88_score",
+        "g_y12_15.item_89": "item_89_score",
+        "g_y0_1.item_8": "item_8_score",
+        "g_y0_1.item_9": "item_9_score"
+      },
+      "join_fields": [],
+      "note_values": {},
+      "date_fields": [],
+      "notes_fields": [],
+      "result_fields": []
     }
   },
   "search_exact_match": true,
@@ -3821,9 +6526,9 @@
   },
   "forms": {},
   "schedules": [],
-  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var n=t();for(var a in n)('object'==typeof exports?exports:e)[a]=n[a]}}(ContactSummary,()=>(()=>{var e={97(e){function t(e){return e?Array.isArray(e)?e:[e]:[]}function n(e){return e&&!(e.errors&&e.errors.length)}function a(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function r(e,t,n){if(!a(e.appliesIf,n))return;function r(e,t,a){switch(typeof e[a]){case'undefined':return;case'function':t[a]=e[a](n);break;default:t[a]=e[a]}}var o='function'==typeof e.fields?e.fields(n):e.fields.filter(function(e){return a(e.appliesIf,n)}).map(function(e){var t={};return r(e,t,'label'),r(e,t,'value'),r(e,t,'translate'),r(e,t,'filter'),r(e,t,'width'),r(e,t,'icon'),e.context&&(t.context={},r(e.context,t.context,'count'),r(e.context,t.context,'total')),t});e.modifyContext&&e.modifyContext(t,n);const i={label:e.label,fields:o};return void 0!==e.collapsed&&(i.collapsed=e.collapsed),i}e.exports=function(e,a,o){var i=e.fields||[],s=e.context||{},c=e.cards||[],l=a&&('contact'===a.type?a.contact_type:a.type),u={cards:[],fields:i.filter(function(e){var n=t(e.appliesToType),a=n.filter(function(e){return e&&'!'===e.charAt(0)});if((0===n.length||n.includes(l)||a.length>0&&!a.includes('!'+l))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0})};return c.forEach(function(e){var a,i,c,d=t(e.appliesToType);if(d.includes('report')&&d.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(d.includes('report'))for(a=0;a<o.length;++a)n(i=o[a])&&(c=r(e,s,i))&&u.cards.push(c);else{if(!d.includes(l)&&d.length>0)return;(c=r(e,s))&&u.cards.push(c)}}),u.context=s,u}},92(e,t,n){var a=n(972),r=n(97);e.exports=r(a,contact,reports)},972(e,t,n){const{FORMS:a,CONTACT_TYPES:r,getField:o,num:i,currentAge:s,EXIT_OUTCOMES:c}=n(190),l=r.PARTICIPANT,u=e=>(reports||[]).filter(t=>t.form===e).sort((e,t)=>t.reported_date-e.reported_date),d=u(a.STAGE1),_=u(a.STAGE2),p=u(a.FOLLOW_UP),f=u(a.REFERRAL),g=u(a.REVIEW),m=u(a.ASSESSMENT),h=d[0],v=_[0],y=p[0],b=f[0],T=g[0],w=m[0],A=p.some(e=>-1!==c.indexOf(o(e,'g_fu.outcome')))||!!T&&'no'===o(T,'g_rev.alive'),E=!!h&&'refer'===o(h,'g_outcome.stage1_result')&&'yes'!==o(h,'g_outcome.stage2_same_day')&&(!v||v.reported_date<h.reported_date)&&!A,I=v?[['contact.flag_cognitive',1===i(v,'g_disposition.cognitive_flag')],['contact.flag_depression',1===i(v,'g_phq.phq_flag')],['contact.flag_self_harm',1===i(v,'g_phq.phq9_item9_positive')],['contact.flag_abuse',1===i(v,'g_easi.easi_positive')],['contact.flag_frailty',1===i(v,'g_disposition.physical_flag')],['contact.flag_glucose',i(v,'g_glucose.glucose_flag')>0]].filter(e=>e[1]).map(e=>e[0]):[],S=[{appliesToType:l,label:'contact.cr_no',value:contact.cr_no,width:3},{appliesToType:l,label:'contact.age',value:s(contact),width:3},{appliesToType:l,label:'contact.gender',value:contact.gender,width:3},{appliesToType:l,label:'contact.education',value:contact.education_level,width:6},{appliesToType:l,label:'contact.phone',value:contact.phone,filter:'phone',width:6},{appliesToType:l,label:'contact.informant',value:contact.informant_name,width:6},{appliesToType:l,label:'contact.informant_phone',value:contact.informant_phone,filter:'phone',width:6},{appliesToType:l,label:'contact.consent',value:contact.consent_given,width:6}],D=[{label:'contact.card.status',appliesToType:[l],appliesIf:()=>!!h||p.length>0,fields:()=>{const e=[];let t='status.screened_normal';return A?t='status.exited':v?t='status.stage2_complete':E?t='status.awaiting_stage2':h||(t='status.not_screened'),e.push({label:'contact.workflow_status',value:t,translate:!0,width:6}),e.push({label:'contact.followup_attempts',value:p.length,width:6}),y&&(e.push({label:'contact.last_contact_outcome',value:o(y,'g_fu.outcome'),width:6}),e.push({label:'contact.last_contact_date',value:y.reported_date,filter:'simpleDate',width:6})),e}},{label:'contact.card.stage1',appliesToType:[l],appliesIf:()=>!!h,fields:()=>[{label:'contact.stage1_date',value:h.reported_date,filter:'simpleDate',width:6},{label:'contact.stage1_result',value:o(h,'g_outcome.stage1_result'),width:6},{label:'contact.pmis',value:`${o(h,'g_pmis.pmis_score')} / 8`,width:4},{label:'contact.symbol_match',value:o(h,'g_symbol.symbol_correct'),width:4},{label:'contact.gait_speed',value:`${o(h,'g_mcr.gait_speed_mps')} m/s`,width:4},{label:'contact.mcr',value:1===i(h,'g_mcr.mcr_positive')?'label.positive':'label.negative',translate:!0,width:6},{label:'contact.flags_raised',value:o(h,'g_outcome.stage1_flag_count'),width:6}]},{label:'contact.card.stage2',appliesToType:[l],appliesIf:()=>!!v,fields:()=>[{label:'contact.stage2_date',value:v.reported_date,filter:'simpleDate',width:6},{label:'contact.disposition',value:o(v,'g_disposition.disposition'),width:6},{label:'contact.ad8',value:`${o(v,'g_ad8.ad8_total')} / 8`,width:4},{label:'contact.hmse',value:`${o(v,'g_hmse.hmse_total')} / 31`,width:4},{label:'contact.phq9',value:`${o(v,'g_phq.phq_total')} / 27`,width:4},{label:'contact.sppb',value:`${o(v,'g_sppb.sppb_total')} / 12`,width:4},{label:'contact.grip',value:`${o(v,'g_grip.grip_max')} kg`,width:4},{label:'contact.glucose',value:o(v,'g_glucose.glucose_mgdl'),width:4}]},{label:'contact.card.risk',appliesToType:[l],appliesIf:()=>I.length>0,fields:()=>I.map(e=>({label:e,value:'label.flagged',translate:!0,width:6,icon:'icon-risk'}))},{label:'contact.card.referral',appliesToType:[l],appliesIf:()=>!!b,fields:()=>[{label:'contact.referral_facility',value:o(b,'g_ref.facility'),width:6},{label:'contact.referral_attended',value:o(b,'g_ref.attended'),width:6},{label:'contact.diagnosis',value:o(b,'g_ref.diagnosis'),width:6},{label:'contact.referral_date',value:b.reported_date,filter:'simpleDate',width:6}]},{label:'contact.card.review',appliesToType:[l],appliesIf:()=>!!T,fields:()=>[{label:'contact.review_date',value:T.reported_date,filter:'simpleDate',width:6},{label:'contact.review_result',value:o(T,'g_rev.review_result'),width:6},{label:'contact.review_trend',value:o(T,'g_rev.caregiver_reported_trend'),width:6},{label:'contact.caregiver_strain',value:o(T,'g_rev.caregiver_strain'),width:6}]},{label:'contact.card.assessment',appliesToType:[l],appliesIf:()=>!!w,fields:()=>[{label:'contact.assessment_visit_number',value:m.length,width:4},{label:'contact.assessment_date',value:w.reported_date,filter:'simpleDate',width:4},{label:'contact.assessment_administered_by',value:o(w,'g_assessment.administered_by'),width:4},{label:'contact.assessment_next_visit',value:o(w,'g_followup.next_visit_date'),filter:'simpleDate',width:6},{label:'contact.assessment_impression',value:o(w,'g_clinical.clinical_impression'),width:6}]},{label:'contact.card.history',appliesToType:[l],appliesIf:()=>(reports||[]).length>0,fields:()=>(reports||[]).slice().sort((e,t)=>t.reported_date-e.reported_date).slice(0,12).map(e=>({label:`history.${e.form}`,value:e.reported_date,filter:'simpleDate',width:6}))}],N={is_participant:contact&&('contact'===contact.type?contact.contact_type===l:contact.type===l),has_stage1:!!h,has_stage2:!!v,pending_stage2:E,is_exited:A,follow_up_attempts:p.length,cognitive_flag:v?i(v,'g_disposition.cognitive_flag'):0,cr_no:contact.cr_no,has_assessment:m.length>0,assessment_count:m.length},O='undefined'!=typeof cht&&cht.v1&&(cht.v1.hasPermissions('can_browse_all_participants')||cht.v1.hasPermissions('can_view_participants')),R=contact&&('contact'===contact.type?contact.contact_type===l:contact.type===l),x=Boolean(R&&'undefined'!=typeof cht&&cht.v1&&cht.v1.userContactId&&contact&&contact.created_by_person_uuid===cht.v1.userContactId),C='undefined'!=typeof cht&&cht.v1&&'boolean'==typeof cht.v1.participantAccessAllowed?cht.v1.participantAccessAllowed:void 0,U=void 0!==C?C:O||x;e.exports=R&&!U?{fields:[{appliesToType:l,label:'contact.access_restricted',value:'contact.access_restricted_message',width:12}],cards:[],context:{is_participant:!0,access_restricted:!0}}:{fields:S,cards:D,context:N}},190(e){const t=864e5,n={CAMP:'screening_camp',PARTICIPANT:'participant'},a={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'},r={STAGE2_WINDOW_DAYS:30,FOLLOW_UP_DAYS:[3,10,21],MAX_FOLLOW_UP_ATTEMPTS:3,REFERRAL_CONFIRM_DAYS:21,REVIEW_DAYS_COGNITIVE:180,REVIEW_DAYS_ROUTINE:365,REVIEW_DAYS_RE_REFER:90,URGENT_ESCALATION_DAYS:1,SAFEGUARDING_ESCALATION_DAYS:3,STAGE1_MISSING_DAYS:14,ASSESSMENT_VISIT_DUE_DAYS:30,MOCA_DUE_DAYS:30,VINELAND_DUE_DAYS:30};function o(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function i(e,t){const n=o(e,t);if(null===n||''===n)return null;const a=Number(n);return Number.isFinite(a)?a:null}function s(e,t){return!!e&&e.form===t}function c(e,t){return e&&e.reports?e.reports.filter(e=>e.form===t):[]}function l(e,t){const n=c(e,t);return n.length?n.reduce((e,t)=>e.reported_date>t.reported_date?e:t):null}function u(e,t,n){if(!e||!e.reports)return[];const a=[].concat(t);return e.reports.filter(e=>-1!==a.indexOf(e.form)&&e.reported_date>n)}function d(e,n){return Math.floor((n-e)/t)}function _(e,t){const n=new Date(e);return n.setDate(n.getDate()+t),n}function p(e){const t=e&&(e.contact||e);return t?'contact'===t.type?t.contact_type:t.contact_type||t.type:null}function f(e){const t=e&&(e.contact||e);return!t||'no'!==t.consent_given}const g=['deceased','moved','refused','done_elsewhere'];function m(e){if(c(e,a.FOLLOW_UP).some(e=>-1!==g.indexOf(o(e,'g_fu.outcome'))))return!0;const t=l(e,a.REVIEW);return!!t&&'no'===o(t,'g_rev.alive')}function h(e){return o(e,'g_outcome.stage1_result')}function v(e){return s(e,a.STAGE1)&&'refer'===h(e)}function y(e){return o(e,'g_disposition.disposition')}function b(e){return 1===i(e,'g_disposition.cognitive_flag')}function T(e){return i(e,'moca_total_score')}function w(e){return o(e,'moca_interpretation')}function A(e){return l(e,a.MOCA)}function E(e){return l(e,a.VINELAND)}function I(){const e='undefined'!=typeof user?user:null,t='undefined'!=typeof cht?cht:null;let n=e&&(e.contact_id||e.contact&&e.contact._id||e._id)||t&&t.v1&&t.v1.userContactId||null;n&&'string'==typeof n&&n.startsWith('org.couchdb.user:')&&(n=e&&e.contact_id||n.replace('org.couchdb.user:',''));let a=e&&(e.name||e.username)||null;!a&&e&&'string'==typeof e._id&&e._id.startsWith('org.couchdb.user:')&&(a=e._id.replace('org.couchdb.user:',''));return{userId:n,userName:a,isSupervisor:Boolean(t&&t.v1&&'function'==typeof t.v1.hasPermissions&&(t.v1.hasPermissions('can_browse_all_participants')||t.v1.hasPermissions('can_view_participants'))||e&&e.roles&&(-1!==e.roles.indexOf('supervisor')||-1!==e.roles.indexOf('admin')||-1!==e.roles.indexOf('national_admin')))}}function S(e){if(!e)return!1;const t=I();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!1;if(t.userId){if(e.contact&&e.contact._id===t.userId)return!0;if(o(e,'screened_by')===t.userId)return!0;if(e.fields&&e.fields.screened_by===t.userId)return!0;if(e.created_by_person_uuid===t.userId)return!0}if(t.userName){if(e.reported_by===t.userName)return!0;if(o(e,'screened_by_name')===t.userName)return!0;if(o(e,'g_assessment.administered_by')===t.userName)return!0}return!1}e.exports={MS_IN_DAY:t,CONTACT_TYPES:n,FORMS:a,CONFIG:r,EXIT_OUTCOMES:g,getField:o,num:i,isForm:s,reportsOf:c,latestReport:l,reportsSince:u,daysBetween:d,addDays:_,contactType:p,isParticipant:function(e){return p(e)===n.PARTICIPANT},isCamp:function(e){return p(e)===n.CAMP},isUserContact:function(e){if(!e)return!1;try{const t=e.contact||e;if(!t||'object'!=typeof t)return!1;if('user'===t.contact_type)return!0;if(t.role){const e=String(t.role).toLowerCase();if(['staff','chw','chw_supervisor','supervisor','admin','mm-online','intern_supervisor'].includes(e))return!0;if(e.includes('staff')||e.includes('admin')||e.includes('supervisor')||e.includes('chw'))return!0}if(t.username||t.user_id)return!0;if(!0===t.isUserContact)return!0}catch(e){return!1}return!1},currentAge:function(e,t){if(!e||void 0===e.age||null===e.age)return null;const n=Number(e.age);if(!Number.isFinite(n))return null;if(!e.reported_date)return n;const a=t||Date.now(),r=Math.floor((a-e.reported_date)/315576e5);return n+Math.max(0,r)},hasConsent:f,isExited:m,isActive:function(e){return f(e)&&!m(e)},stage1Result:h,stage1Referred:v,stage1NeedsFollowUp:function(e){return v(e)&&'yes'!==o(e,'g_outcome.stage2_same_day')},stage1FlagCount:function(e){return i(e,'g_outcome.stage1_flag_count')||0},stage2DoneAfter:function(e,t){return u(e,a.STAGE2,t.reported_date).length>0},stage2Disposition:y,stage2NeedsReferral:function(e){return'yes'===o(e,'g_disposition.referral_needed')},isUrgent:function(e){return'urgent_same_day'===y(e)},isSafeguarding:function(e){return 1===i(e,'g_easi.easi_positive')},cognitiveFlag:b,followUpAttemptsSince:function(e,t){return u(e,a.FOLLOW_UP,t).length},appointmentBooked:function(e,t){return u(e,a.FOLLOW_UP,t).some(e=>'scheduled'===o(e,'g_fu.outcome'))},nextReviewDue:function(e){const t=l(e,a.REVIEW),n=l(e,a.STAGE2),i=l(e,a.STAGE1),s=t||n||i;if(!s)return null;let c=r.REVIEW_DAYS_ROUTINE;return s.form===a.STAGE2&&b(s)&&(c=r.REVIEW_DAYS_COGNITIVE),s.form===a.REVIEW&&'re_refer'===o(s,'g_rev.review_result')&&(c=r.REVIEW_DAYS_RE_REFER),_(s.reported_date,c)},convertedInWindow:function(e,t){const n=_(t.reported_date,r.STAGE2_WINDOW_DAYS).getTime();return u(e,a.STAGE2,t.reported_date).some(e=>e.reported_date<=n)},screenedBy:function(e){return o(e,'screened_by')},mocaTotalScore:T,mocaInterpretation:w,mocaImpaired:function(e){return'impaired'===w(e)},mocaSectionScores:function(e){return{visuospatial:i(e,'moca_visuospatial_total')||0,naming:i(e,'moca_naming_total')||0,memory:i(e,'moca_memory_total')||0,attention:i(e,'moca_attention_total')||0,language:i(e,'moca_language_total')||0,abstraction:i(e,'moca_abstraction_total')||0,delayedRecall:i(e,'moca_delayed_total')||0,orientation:i(e,'moca_orientation_total')||0,rawTotal:i(e,'moca_raw_total')||0,educationAdj:i(e,'moca_education_adj')||0,totalScore:T(e),interpretation:w(e)}},hasMocaAssessment:function(e){return c(e,a.MOCA).length>0},latestMocaAssessment:A,mocaDue:function(e){const t=A(e);return!t||d(t.reported_date,Date.now())>=r.MOCA_DUE_DAYS},hasVinelandAssessment:function(e){return c(e,a.VINELAND).length>0},latestVinelandAssessment:E,vinelandDue:function(e){const t=E(e);return!t||d(t.reported_date,Date.now())>=r.VINELAND_DUE_DAYS},getCurrentUserContext:I,isReportDoneByCurrentUser:S,isParticipantDoneByCurrentUser:function(e){if(!e)return!1;const t=I();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!1;const n=e.contact||e,a=e.reports||[];return!(!t.userId||!n||n.created_by_person_uuid!==t.userId)||(!(!t.userName||!n||n.created_by_user!==t.userName)||!!(a&&a.length>0&&a.some(e=>S(e))))}}}};const t={};let n=function n(a){const r=t[a];if(void 0!==r)return r.exports;const o=t[a]={exports:{}};return e[a](o,o.exports,n),o.exports}(92);return n})()); return ContactSummary;",
+  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var n=t();for(var a in n)('object'==typeof exports?exports:e)[a]=n[a]}}(ContactSummary,()=>(()=>{var e={97(e){function t(e){return e?Array.isArray(e)?e:[e]:[]}function n(e){return e&&!(e.errors&&e.errors.length)}function a(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function r(e,t,n){if(!a(e.appliesIf,n))return;function r(e,t,a){switch(typeof e[a]){case'undefined':return;case'function':t[a]=e[a](n);break;default:t[a]=e[a]}}var o='function'==typeof e.fields?e.fields(n):e.fields.filter(function(e){return a(e.appliesIf,n)}).map(function(e){var t={};return r(e,t,'label'),r(e,t,'value'),r(e,t,'translate'),r(e,t,'filter'),r(e,t,'width'),r(e,t,'icon'),e.context&&(t.context={},r(e.context,t.context,'count'),r(e.context,t.context,'total')),t});e.modifyContext&&e.modifyContext(t,n);const s={label:e.label,fields:o};return void 0!==e.collapsed&&(s.collapsed=e.collapsed),s}e.exports=function(e,a,o){var s=e.fields||[],i=e.context||{},c=e.cards||[],l=a&&('contact'===a.type?a.contact_type:a.type),u={cards:[],fields:s.filter(function(e){var n=t(e.appliesToType),a=n.filter(function(e){return e&&'!'===e.charAt(0)});if((0===n.length||n.includes(l)||a.length>0&&!a.includes('!'+l))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0})};return c.forEach(function(e){var a,s,c,d=t(e.appliesToType);if(d.includes('report')&&d.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(d.includes('report'))for(a=0;a<o.length;++a)n(s=o[a])&&(c=r(e,i,s))&&u.cards.push(c);else{if(!d.includes(l)&&d.length>0)return;(c=r(e,i))&&u.cards.push(c)}}),u.context=i,u}},92(e,t,n){var a=n(972),r=n(97);e.exports=r(a,contact,reports)},972(e,t,n){const{FORMS:a,CONTACT_TYPES:r,getField:o,num:s,currentAge:i,EXIT_OUTCOMES:c}=n(190),l=r.PARTICIPANT,u=e=>(reports||[]).filter(t=>t.form===e).sort((e,t)=>t.reported_date-e.reported_date),d=u(a.STAGE1),_=u(a.STAGE2),p=u(a.FOLLOW_UP),f=u(a.REFERRAL),m=u(a.REVIEW),g=u(a.ASSESSMENT),h=d[0],v=_[0],y=p[0],b=f[0],T=m[0],w=g[0],A=p.some(e=>-1!==c.indexOf(o(e,'g_fu.outcome')))||!!T&&'no'===o(T,'g_rev.alive'),E=!!h&&'refer'===o(h,'g_outcome.stage1_result')&&'yes'!==o(h,'g_outcome.stage2_same_day')&&(!v||v.reported_date<h.reported_date)&&!A,I=v?[['contact.flag_cognitive',1===s(v,'g_disposition.cognitive_flag')],['contact.flag_depression',1===s(v,'g_phq.phq_flag')],['contact.flag_self_harm',1===s(v,'g_phq.phq9_item9_positive')],['contact.flag_abuse',1===s(v,'g_easi.easi_positive')],['contact.flag_frailty',1===s(v,'g_disposition.physical_flag')],['contact.flag_glucose',s(v,'g_glucose.glucose_flag')>0]].filter(e=>e[1]).map(e=>e[0]):[],S=[{appliesToType:l,label:'contact.cr_no',value:contact.cr_no,width:3},{appliesToType:l,label:'contact.age',value:i(contact),width:3},{appliesToType:l,label:'contact.gender',value:contact.gender,width:3},{appliesToType:l,label:'contact.education',value:contact.education_level,width:6},{appliesToType:l,label:'contact.phone',value:contact.phone,filter:'phone',width:6},{appliesToType:l,label:'contact.informant',value:contact.informant_name,width:6},{appliesToType:l,label:'contact.informant_phone',value:contact.informant_phone,filter:'phone',width:6},{appliesToType:l,label:'contact.consent',value:contact.consent_given,width:6}],D=[{label:'contact.card.status',appliesToType:[l],appliesIf:()=>!!h||p.length>0,fields:()=>{const e=[];let t='status.screened_normal';return A?t='status.exited':v?t='status.stage2_complete':E?t='status.awaiting_stage2':h||(t='status.not_screened'),e.push({label:'contact.workflow_status',value:t,translate:!0,width:6}),e.push({label:'contact.followup_attempts',value:p.length,width:6}),y&&(e.push({label:'contact.last_contact_outcome',value:o(y,'g_fu.outcome'),width:6}),e.push({label:'contact.last_contact_date',value:y.reported_date,filter:'simpleDate',width:6})),e}},{label:'contact.card.stage1',appliesToType:[l],appliesIf:()=>!!h,fields:()=>[{label:'contact.stage1_date',value:h.reported_date,filter:'simpleDate',width:6},{label:'contact.stage1_result',value:o(h,'g_outcome.stage1_result'),width:6},{label:'contact.pmis',value:`${o(h,'g_pmis.pmis_score')} / 8`,width:4},{label:'contact.symbol_match',value:o(h,'g_symbol.symbol_correct'),width:4},{label:'contact.gait_speed',value:`${o(h,'g_mcr.gait_speed_mps')} m/s`,width:4},{label:'contact.mcr',value:1===s(h,'g_mcr.mcr_positive')?'label.positive':'label.negative',translate:!0,width:6},{label:'contact.flags_raised',value:o(h,'g_outcome.stage1_flag_count'),width:6}]},{label:'contact.card.stage2',appliesToType:[l],appliesIf:()=>!!v,fields:()=>[{label:'contact.stage2_date',value:v.reported_date,filter:'simpleDate',width:6},{label:'contact.disposition',value:o(v,'g_disposition.disposition'),width:6},{label:'contact.ad8',value:`${o(v,'g_ad8.ad8_total')} / 8`,width:4},{label:'contact.hmse',value:`${o(v,'g_hmse.hmse_total')} / 31`,width:4},{label:'contact.phq9',value:`${o(v,'g_phq.phq_total')} / 27`,width:4},{label:'contact.sppb',value:`${o(v,'g_sppb.sppb_total')} / 12`,width:4},{label:'contact.grip',value:`${o(v,'g_grip.grip_max')} kg`,width:4},{label:'contact.glucose',value:o(v,'g_glucose.glucose_mgdl'),width:4}]},{label:'contact.card.risk',appliesToType:[l],appliesIf:()=>I.length>0,fields:()=>I.map(e=>({label:e,value:'label.flagged',translate:!0,width:6,icon:'icon-risk'}))},{label:'contact.card.referral',appliesToType:[l],appliesIf:()=>!!b,fields:()=>[{label:'contact.referral_facility',value:o(b,'g_ref.facility'),width:6},{label:'contact.referral_attended',value:o(b,'g_ref.attended'),width:6},{label:'contact.diagnosis',value:o(b,'g_ref.diagnosis'),width:6},{label:'contact.referral_date',value:b.reported_date,filter:'simpleDate',width:6}]},{label:'contact.card.review',appliesToType:[l],appliesIf:()=>!!T,fields:()=>[{label:'contact.review_date',value:T.reported_date,filter:'simpleDate',width:6},{label:'contact.review_result',value:o(T,'g_rev.review_result'),width:6},{label:'contact.review_trend',value:o(T,'g_rev.caregiver_reported_trend'),width:6},{label:'contact.caregiver_strain',value:o(T,'g_rev.caregiver_strain'),width:6}]},{label:'contact.card.assessment',appliesToType:[l],appliesIf:()=>!!w,fields:()=>[{label:'contact.assessment_visit_number',value:g.length,width:4},{label:'contact.assessment_date',value:w.reported_date,filter:'simpleDate',width:4},{label:'contact.assessment_administered_by',value:o(w,'g_assessment.administered_by'),width:4},{label:'contact.assessment_next_visit',value:o(w,'g_followup.next_visit_date'),filter:'simpleDate',width:6},{label:'contact.assessment_impression',value:o(w,'g_clinical.clinical_impression'),width:6}]},{label:'contact.card.history',appliesToType:[l],appliesIf:()=>(reports||[]).length>0,fields:()=>(reports||[]).slice().sort((e,t)=>t.reported_date-e.reported_date).slice(0,12).map(e=>({label:`history.${e.form}`,value:e.reported_date,filter:'simpleDate',width:6}))}],N={is_participant:contact&&('contact'===contact.type?contact.contact_type===l:contact.type===l),has_stage1:!!h,has_stage2:!!v,pending_stage2:E,is_exited:A,follow_up_attempts:p.length,cognitive_flag:v?s(v,'g_disposition.cognitive_flag'):0,cr_no:contact.cr_no,has_assessment:g.length>0,assessment_count:g.length},R='undefined'!=typeof cht&&cht.v1&&(cht.v1.hasPermissions('can_browse_all_participants')||cht.v1.hasPermissions('can_view_participants')),O=contact&&('contact'===contact.type?contact.contact_type===l:contact.type===l),C=Boolean(O&&'undefined'!=typeof cht&&cht.v1&&cht.v1.userContactId&&contact&&contact.created_by_person_uuid===cht.v1.userContactId),x='undefined'!=typeof cht&&cht.v1&&'boolean'==typeof cht.v1.participantAccessAllowed?cht.v1.participantAccessAllowed:void 0,P=void 0!==x?x:R||C;e.exports=O&&!P?{fields:[{appliesToType:l,label:'contact.access_restricted',value:'contact.access_restricted_message',width:12}],cards:[],context:{is_participant:!0,access_restricted:!0}}:{fields:S,cards:D,context:N}},190(e){const t=864e5,n={CAMP:'screening_camp',PARTICIPANT:'participant'},a={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'},r={STAGE2_WINDOW_DAYS:30,FOLLOW_UP_DAYS:[3,10,21],MAX_FOLLOW_UP_ATTEMPTS:3,REFERRAL_CONFIRM_DAYS:21,REVIEW_DAYS_COGNITIVE:180,REVIEW_DAYS_ROUTINE:365,REVIEW_DAYS_RE_REFER:90,URGENT_ESCALATION_DAYS:1,SAFEGUARDING_ESCALATION_DAYS:3,STAGE1_MISSING_DAYS:14,ASSESSMENT_VISIT_DUE_DAYS:30,MOCA_DUE_DAYS:30,VINELAND_DUE_DAYS:30};function o(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function s(e,t){const n=o(e,t);if(null===n||''===n)return null;const a=Number(n);return Number.isFinite(a)?a:null}function i(e,t){return!!e&&e.form===t}function c(e,t){return e&&e.reports?e.reports.filter(e=>e.form===t):[]}function l(e,t){const n=c(e,t);return n.length?n.reduce((e,t)=>e.reported_date>t.reported_date?e:t):null}function u(e,t,n){if(!e||!e.reports)return[];const a=[].concat(t);return e.reports.filter(e=>-1!==a.indexOf(e.form)&&e.reported_date>n)}function d(e,n){return Math.floor((n-e)/t)}function _(e,t){const n=new Date(e);return n.setDate(n.getDate()+t),n}function p(e){const t=e&&(e.contact||e);return t?'contact'===t.type?t.contact_type:t.contact_type||t.type:null}function f(e){const t=e&&(e.contact||e);return!t||'no'!==t.consent_given}const m=['deceased','moved','refused','done_elsewhere'];function g(e){if(c(e,a.FOLLOW_UP).some(e=>-1!==m.indexOf(o(e,'g_fu.outcome'))))return!0;const t=l(e,a.REVIEW);return!!t&&'no'===o(t,'g_rev.alive')}function h(e){return o(e,'g_outcome.stage1_result')}function v(e){return i(e,a.STAGE1)&&'refer'===h(e)}function y(e){return o(e,'g_disposition.disposition')}function b(e){return 1===s(e,'g_disposition.cognitive_flag')}function T(e){return s(e,'moca_total_score')}function w(e){return o(e,'moca_interpretation')}function A(e){return l(e,a.MOCA)}function E(e){return l(e,a.VINELAND)}function I(){const e='undefined'!=typeof user?user:null,t='undefined'!=typeof cht?cht:null;let n=e&&(e.contact_id||e.contact&&e.contact._id||e._id)||t&&t.v1&&t.v1.userContactId||null;n&&'string'==typeof n&&n.startsWith('org.couchdb.user:')&&(n=e&&e.contact_id||n.replace('org.couchdb.user:',''));let a=e&&(e.name||e.username)||null;!a&&e&&'string'==typeof e._id&&e._id.startsWith('org.couchdb.user:')&&(a=e._id.replace('org.couchdb.user:',''));const r=['_admin','admin','national_admin','supervisor','chw_supervisor','district_admin'];return{userId:n,userName:a,isSupervisor:Boolean(t&&t.v1&&'function'==typeof t.v1.hasPermissions&&(t.v1.hasPermissions('can_browse_all_participants')||t.v1.hasPermissions('can_view_participants')||t.v1.hasPermissions('admin'))||e&&e.roles&&e.roles.some(e=>-1!==r.indexOf(e))||e&&('medic'===e.name||'string'==typeof e._id&&e._id.includes('medic')))}}function S(e,t){if(!e)return!1;const n=I();if(n.isSupervisor)return!0;if(!n.userId&&!n.userName)return!1;if(n.userId){if(e.contact&&e.contact._id===n.userId)return!0;if(o(e,'screened_by')===n.userId)return!0;if(e.fields&&e.fields.screened_by===n.userId)return!0;if(e.created_by_person_uuid===n.userId)return!0;if(o(e,'inputs.user.contact_id')===n.userId)return!0}if(n.userName){if(e.reported_by===n.userName)return!0;if(e.created_by===n.userName)return!0;if(e.created_by_user===n.userName)return!0;if(o(e,'screened_by_name')===n.userName)return!0;if(o(e,'inputs.user.name')===n.userName)return!0;if(o(e,'g_assessment.administered_by')===n.userName)return!0}const a=t&&(t.contact||t)||null;if(a){if(n.userId&&a.created_by_person_uuid===n.userId)return!0;if(n.userName&&(a.created_by_user===n.userName||a.created_by_name===n.userName))return!0}return!1}e.exports={MS_IN_DAY:t,CONTACT_TYPES:n,FORMS:a,CONFIG:r,EXIT_OUTCOMES:m,getField:o,num:s,isForm:i,reportsOf:c,latestReport:l,reportsSince:u,daysBetween:d,addDays:_,contactType:p,isParticipant:function(e){return p(e)===n.PARTICIPANT},isCamp:function(e){return p(e)===n.CAMP},isUserContact:function(e){if(!e)return!1;try{const t=e.contact||e;if(!t||'object'!=typeof t)return!1;if('user'===t.contact_type)return!0;if(t.role){const e=String(t.role).toLowerCase();if(['staff','chw','chw_supervisor','supervisor','admin','mm-online','intern_supervisor'].includes(e))return!0;if(e.includes('staff')||e.includes('admin')||e.includes('supervisor')||e.includes('chw'))return!0}if(t.username||t.user_id)return!0;if(!0===t.isUserContact)return!0}catch(e){return!1}return!1},currentAge:function(e,t){if(!e||void 0===e.age||null===e.age)return null;const n=Number(e.age);if(!Number.isFinite(n))return null;if(!e.reported_date)return n;const a=t||Date.now(),r=Math.floor((a-e.reported_date)/315576e5);return n+Math.max(0,r)},hasConsent:f,isExited:g,isActive:function(e){return f(e)&&!g(e)},stage1Result:h,stage1Referred:v,stage1NeedsFollowUp:function(e){return v(e)&&'yes'!==o(e,'g_outcome.stage2_same_day')},stage1FlagCount:function(e){return s(e,'g_outcome.stage1_flag_count')||0},stage2DoneAfter:function(e,t){return u(e,a.STAGE2,t.reported_date).length>0},stage2Disposition:y,stage2NeedsReferral:function(e){return'yes'===o(e,'g_disposition.referral_needed')},isUrgent:function(e){return'urgent_same_day'===y(e)},isSafeguarding:function(e){return 1===s(e,'g_easi.easi_positive')},cognitiveFlag:b,followUpAttemptsSince:function(e,t){return u(e,a.FOLLOW_UP,t).length},appointmentBooked:function(e,t){return u(e,a.FOLLOW_UP,t).some(e=>'scheduled'===o(e,'g_fu.outcome'))},nextReviewDue:function(e){const t=l(e,a.REVIEW),n=l(e,a.STAGE2),s=l(e,a.STAGE1),i=t||n||s;if(!i)return null;let c=r.REVIEW_DAYS_ROUTINE;return i.form===a.STAGE2&&b(i)&&(c=r.REVIEW_DAYS_COGNITIVE),i.form===a.REVIEW&&'re_refer'===o(i,'g_rev.review_result')&&(c=r.REVIEW_DAYS_RE_REFER),_(i.reported_date,c)},convertedInWindow:function(e,t){const n=_(t.reported_date,r.STAGE2_WINDOW_DAYS).getTime();return u(e,a.STAGE2,t.reported_date).some(e=>e.reported_date<=n)},screenedBy:function(e){return o(e,'screened_by')},mocaTotalScore:T,mocaInterpretation:w,mocaImpaired:function(e){return'impaired'===w(e)},mocaSectionScores:function(e){return{visuospatial:s(e,'moca_visuospatial_total')||0,naming:s(e,'moca_naming_total')||0,memory:s(e,'moca_memory_total')||0,attention:s(e,'moca_attention_total')||0,language:s(e,'moca_language_total')||0,abstraction:s(e,'moca_abstraction_total')||0,delayedRecall:s(e,'moca_delayed_total')||0,orientation:s(e,'moca_orientation_total')||0,rawTotal:s(e,'moca_raw_total')||0,educationAdj:s(e,'moca_education_adj')||0,totalScore:T(e),interpretation:w(e)}},hasMocaAssessment:function(e){return c(e,a.MOCA).length>0},latestMocaAssessment:A,mocaDue:function(e){const t=A(e);return!t||d(t.reported_date,Date.now())>=r.MOCA_DUE_DAYS},hasVinelandAssessment:function(e){return c(e,a.VINELAND).length>0},latestVinelandAssessment:E,vinelandDue:function(e){const t=E(e);return!t||d(t.reported_date,Date.now())>=r.VINELAND_DUE_DAYS},getCurrentUserContext:I,isReportDoneByCurrentUser:S,isParticipantDoneByCurrentUser:function(e){if(!e)return!1;const t=I();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!1;const n=e.contact||e,a=e.reports||[];return!(!t.userId||!n||n.created_by_person_uuid!==t.userId)||(!(!t.userName||!n||n.created_by_user!==t.userName)||!!(a&&a.length>0&&a.some(e=>S(e))))}}}};const t={};let n=function n(a){const r=t[a];if(void 0!==r)return r.exports;const o=t[a]={exports:{}};return e[a](o,o.exports,n),o.exports}(92);return n})()); return ContactSummary;",
   "tasks": {
-    "rules": "(()=>{var e={358(e){function t(e,r){var n=Object.keys(e);for(var a in n){var o=n[a];switch(typeof e[o]){case'object':t(e[o],r);break;case'function':e[o]=e[o].bind(r)}}}function r(e){var t=Object.assign({},e),n=Object.keys(t);for(var a in n){var o=n[a];if(Array.isArray(t[o])){t[o]=t[o].slice(0);for(var i=0;i<t[o].length;++i)'object'==typeof t[o][i]&&(t[o][i]=r(t[o][i]))}else'object'==typeof t[o]&&(t[o]=r(t[o]))}return t}e.exports=function(e){var n={};t(e,n),n.definition=r(e)}},837(e,t,r){var n=r(358);function a(e,t,r,n,a,o){var i=!!o;if(a.contact){var s='contact'===a.contact.type?a.contact.contact_type:a.contact.type,c=i?o.form:s;if(!(e.appliesToType&&e.appliesToType.indexOf(c)<0)&&(!e.appliesIf||e.appliesIf(a,o)))for(var l=i?o:a.contact,p=function(e,t,r){var n;return n='function'==typeof e.idType?e.idType(t,r):'report'===e.idType?r&&r._id:t.contact&&t.contact._id,Array.isArray(n)||(n=[n]),n}(e,a,o),d=!e.passesIf||!!e.passesIf(a,o),u=function(e,t,r,n){if('function'==typeof e.date)return e.date(r,n)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return n?n.reported_date:r.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,r,a,o),_=e.groupBy&&e.groupBy(a,o),f=0;f<p.length;++f){var g=new t({_id:p[f]+'~'+e.id,contact:a.contact,deleted:!!l.deleted,type:e.id,pass:d,groupBy:_,date:u});e.emitCustom?e.emitCustom(m,g,a,o):m(g)}}function m(e){n('target',e)}}e.exports=function(e,t,r,o,i){for(var s=0;s<e.length;++s){var c=e[s];switch(n(c),c.appliesTo){case'contacts':a(c,o,r,i,t);break;case'reports':for(var l=0;l<t.reports.length;++l){a(c,o,r,i,t,t.reports[l])}break;default:throw new Error('Unrecognised target.appliesTo: '+c.appliesTo)}}}},421(e){e.exports={defaultResolvedIf:function(e,t,r,n,a){var o,i;a||(a=Utils);var s=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find(function(e){return!e.type||'report'===e.type}))&&t.form}(this.definition);if(!s)throw new Error('Could not find the default resolving form!');return o=0,o=t?Math.max(a.addDate(n,-r.start).getTime(),t.reported_date+1):a.addDate(n,-r.start).getTime(),i=a.addDate(n,r.end+1).getTime(),a.isFormSubmittedInWindow(e.reports,s,o,i)}}},633(e,t,r){var n=r(358),a=r(421);function o(e,t,r,n,a,o){var i;if(e.appliesToType){var s;if('contacts'===e.appliesTo){if(!a.contact)return;s='contact'===a.contact.type?a.contact.contact_type:a.contact.type}else{if(!o)return;s=o.form}if(-1===e.appliesToType.indexOf(s))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(a,o))if('scheduled_tasks'===e.appliesTo){if(o&&e.appliesIf){if(!o.scheduled_tasks)return;for(i=0;i<o.scheduled_tasks.length;i++)e.appliesIf(a,o,i)&&l(i)}}else l();function c(e,t,r){var n;return(n='function'==typeof e.contactLabel?e.contactLabel(t,r):e.contactLabel)?{name:n}:t.contact}function l(i){var s,l,d,u,_=null;for(s=0;s<e.events.length;s++){if((l=e.events[s]).dueDate)_=l.dueDate(l,a,o,i);else if(o)_=void 0!==i?new Date(t.addDate(new Date(o.scheduled_tasks[i].due),l.days)):new Date(t.addDate(new Date(o.reported_date),l.days));else if(l.dueDate)_=l.dueDate(l,a);else{var f=a.contact&&a.contact.reported_date?new Date(a.contact.reported_date):new Date;_=new Date(t.addDate(f,l.days))}t.isTimely(_,l)&&(u={_id:(o?o._id:a.contact&&a.contact._id)+'~'+(l.id||s)+'~'+e.name,deleted:!(!(a.contact&&a.contact.deleted||o)||!o.deleted),doc:a,contact:c(e,a,o),icon:e.icon,date:_,readyStart:l.start||0,readyEnd:l.end||0,title:e.title,resolved:e.resolvedIf(a,o,l,_,i),actions:p(e.actions,l)},void 0!==i&&(u._id+='-'+i),'function'==typeof(d=e.priority)&&(d=d(a,o,l,_,i)),d&&(u.priority=d.level,u.priorityLabel=d.label),n('task',new r(u)))}}function p(t,r){return e.actions.map(function(e){return function(e,t){var r={source:'task',source_id:o?o._id:a.contact&&a.contact._id,contact:a.contact};e.modifyContent&&e.modifyContent(r,a,o,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:r}}(e,r)})}}e.exports=function(e,t,r,i,s){if(e)for(var c,l,p=0;p<e.length;++p)switch('function'!=typeof(c=Object.assign({},e[p],a)).resolvedIf&&(c.resolvedIf=function(e,t,n,a){return c.defaultResolvedIf(e,t,n,a,r)}),n(c),c.appliesTo){case'reports':case'scheduled_tasks':for(var d=0;d<t.reports.length;++d)l=t.reports[d],o(c,r,i,s,t,l);break;case'contacts':t.contact&&o(c,r,i,s,t);break;default:throw new Error('Unrecognised task.appliesTo: '+c.appliesTo)}}},190(e){const t=864e5,r={CAMP:'screening_camp',PARTICIPANT:'participant'},n={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'},a={STAGE2_WINDOW_DAYS:30,FOLLOW_UP_DAYS:[3,10,21],MAX_FOLLOW_UP_ATTEMPTS:3,REFERRAL_CONFIRM_DAYS:21,REVIEW_DAYS_COGNITIVE:180,REVIEW_DAYS_ROUTINE:365,REVIEW_DAYS_RE_REFER:90,URGENT_ESCALATION_DAYS:1,SAFEGUARDING_ESCALATION_DAYS:3,STAGE1_MISSING_DAYS:14,ASSESSMENT_VISIT_DUE_DAYS:30,MOCA_DUE_DAYS:30,VINELAND_DUE_DAYS:30};function o(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function i(e,t){const r=o(e,t);if(null===r||''===r)return null;const n=Number(r);return Number.isFinite(n)?n:null}function s(e,t){return!!e&&e.form===t}function c(e,t){return e&&e.reports?e.reports.filter(e=>e.form===t):[]}function l(e,t){const r=c(e,t);return r.length?r.reduce((e,t)=>e.reported_date>t.reported_date?e:t):null}function p(e,t,r){if(!e||!e.reports)return[];const n=[].concat(t);return e.reports.filter(e=>-1!==n.indexOf(e.form)&&e.reported_date>r)}function d(e,r){return Math.floor((r-e)/t)}function u(e,t){const r=new Date(e);return r.setDate(r.getDate()+t),r}function _(e){const t=e&&(e.contact||e);return t?'contact'===t.type?t.contact_type:t.contact_type||t.type:null}function f(e){const t=e&&(e.contact||e);return!t||'no'!==t.consent_given}const g=['deceased','moved','refused','done_elsewhere'];function m(e){if(c(e,n.FOLLOW_UP).some(e=>-1!==g.indexOf(o(e,'g_fu.outcome'))))return!0;const t=l(e,n.REVIEW);return!!t&&'no'===o(t,'g_rev.alive')}function T(e){return o(e,'g_outcome.stage1_result')}function y(e){return s(e,n.STAGE1)&&'refer'===T(e)}function A(e){return o(e,'g_disposition.disposition')}function E(e){return 1===i(e,'g_disposition.cognitive_flag')}function v(e){return i(e,'moca_total_score')}function I(e){return o(e,'moca_interpretation')}function S(e){return l(e,n.MOCA)}function h(e){return l(e,n.VINELAND)}function D(){const e='undefined'!=typeof user?user:null,t='undefined'!=typeof cht?cht:null;let r=e&&(e.contact_id||e.contact&&e.contact._id||e._id)||t&&t.v1&&t.v1.userContactId||null;r&&'string'==typeof r&&r.startsWith('org.couchdb.user:')&&(r=e&&e.contact_id||r.replace('org.couchdb.user:',''));let n=e&&(e.name||e.username)||null;!n&&e&&'string'==typeof e._id&&e._id.startsWith('org.couchdb.user:')&&(n=e._id.replace('org.couchdb.user:',''));return{userId:r,userName:n,isSupervisor:Boolean(t&&t.v1&&'function'==typeof t.v1.hasPermissions&&(t.v1.hasPermissions('can_browse_all_participants')||t.v1.hasPermissions('can_view_participants'))||e&&e.roles&&(-1!==e.roles.indexOf('supervisor')||-1!==e.roles.indexOf('admin')||-1!==e.roles.indexOf('national_admin')))}}function b(e){if(!e)return!1;const t=D();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!1;if(t.userId){if(e.contact&&e.contact._id===t.userId)return!0;if(o(e,'screened_by')===t.userId)return!0;if(e.fields&&e.fields.screened_by===t.userId)return!0;if(e.created_by_person_uuid===t.userId)return!0}if(t.userName){if(e.reported_by===t.userName)return!0;if(o(e,'screened_by_name')===t.userName)return!0;if(o(e,'g_assessment.administered_by')===t.userName)return!0}return!1}e.exports={MS_IN_DAY:t,CONTACT_TYPES:r,FORMS:n,CONFIG:a,EXIT_OUTCOMES:g,getField:o,num:i,isForm:s,reportsOf:c,latestReport:l,reportsSince:p,daysBetween:d,addDays:u,contactType:_,isParticipant:function(e){return _(e)===r.PARTICIPANT},isCamp:function(e){return _(e)===r.CAMP},isUserContact:function(e){if(!e)return!1;try{const t=e.contact||e;if(!t||'object'!=typeof t)return!1;if('user'===t.contact_type)return!0;if(t.role){const e=String(t.role).toLowerCase();if(['staff','chw','chw_supervisor','supervisor','admin','mm-online','intern_supervisor'].includes(e))return!0;if(e.includes('staff')||e.includes('admin')||e.includes('supervisor')||e.includes('chw'))return!0}if(t.username||t.user_id)return!0;if(!0===t.isUserContact)return!0}catch(e){return!1}return!1},currentAge:function(e,t){if(!e||void 0===e.age||null===e.age)return null;const r=Number(e.age);if(!Number.isFinite(r))return null;if(!e.reported_date)return r;const n=t||Date.now(),a=Math.floor((n-e.reported_date)/315576e5);return r+Math.max(0,a)},hasConsent:f,isExited:m,isActive:function(e){return f(e)&&!m(e)},stage1Result:T,stage1Referred:y,stage1NeedsFollowUp:function(e){return y(e)&&'yes'!==o(e,'g_outcome.stage2_same_day')},stage1FlagCount:function(e){return i(e,'g_outcome.stage1_flag_count')||0},stage2DoneAfter:function(e,t){return p(e,n.STAGE2,t.reported_date).length>0},stage2Disposition:A,stage2NeedsReferral:function(e){return'yes'===o(e,'g_disposition.referral_needed')},isUrgent:function(e){return'urgent_same_day'===A(e)},isSafeguarding:function(e){return 1===i(e,'g_easi.easi_positive')},cognitiveFlag:E,followUpAttemptsSince:function(e,t){return p(e,n.FOLLOW_UP,t).length},appointmentBooked:function(e,t){return p(e,n.FOLLOW_UP,t).some(e=>'scheduled'===o(e,'g_fu.outcome'))},nextReviewDue:function(e){const t=l(e,n.REVIEW),r=l(e,n.STAGE2),i=l(e,n.STAGE1),s=t||r||i;if(!s)return null;let c=a.REVIEW_DAYS_ROUTINE;return s.form===n.STAGE2&&E(s)&&(c=a.REVIEW_DAYS_COGNITIVE),s.form===n.REVIEW&&'re_refer'===o(s,'g_rev.review_result')&&(c=a.REVIEW_DAYS_RE_REFER),u(s.reported_date,c)},convertedInWindow:function(e,t){const r=u(t.reported_date,a.STAGE2_WINDOW_DAYS).getTime();return p(e,n.STAGE2,t.reported_date).some(e=>e.reported_date<=r)},screenedBy:function(e){return o(e,'screened_by')},mocaTotalScore:v,mocaInterpretation:I,mocaImpaired:function(e){return'impaired'===I(e)},mocaSectionScores:function(e){return{visuospatial:i(e,'moca_visuospatial_total')||0,naming:i(e,'moca_naming_total')||0,memory:i(e,'moca_memory_total')||0,attention:i(e,'moca_attention_total')||0,language:i(e,'moca_language_total')||0,abstraction:i(e,'moca_abstraction_total')||0,delayedRecall:i(e,'moca_delayed_total')||0,orientation:i(e,'moca_orientation_total')||0,rawTotal:i(e,'moca_raw_total')||0,educationAdj:i(e,'moca_education_adj')||0,totalScore:v(e),interpretation:I(e)}},hasMocaAssessment:function(e){return c(e,n.MOCA).length>0},latestMocaAssessment:S,mocaDue:function(e){const t=S(e);return!t||d(t.reported_date,Date.now())>=a.MOCA_DUE_DAYS},hasVinelandAssessment:function(e){return c(e,n.VINELAND).length>0},latestVinelandAssessment:h,vinelandDue:function(e){const t=h(e);return!t||d(t.reported_date,Date.now())>=a.VINELAND_DUE_DAYS},getCurrentUserContext:D,isReportDoneByCurrentUser:b,isParticipantDoneByCurrentUser:function(e){if(!e)return!1;const t=D();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!1;const r=e.contact||e,n=e.reports||[];return!(!t.userId||!r||r.created_by_person_uuid!==t.userId)||(!(!t.userName||!r||r.created_by_user!==t.userName)||!!(n&&n.length>0&&n.some(e=>b(e))))}}},931(e,t,r){const{FORMS:n,CONTACT_TYPES:a,getField:o,num:i,stage1Referred:s,convertedInWindow:c,isReportDoneByCurrentUser:l,isParticipantDoneByCurrentUser:p}=r(190),d=(e,t)=>'yes'===o(t,'g_consent.consent_confirmed');e.exports=[{id:'participants-registered',type:'count',icon:'icon-person',goal:-1,translation_key:'targets.registered.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'contacts',appliesToType:[a.PARTICIPANT],appliesIf:e=>p(e),idType:'contact',date:'reported'},{id:'stage1-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage1.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>l(t)&&d(0,t),date:'reported'},{id:'stage1-referral-rate',type:'percent',icon:'icon-healthcare-referral',goal:-1,translation_key:'targets.referral_rate.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>l(t)&&d(0,t),passesIf:(e,t)=>s(t),date:'reported'},{id:'stage2-conversion',type:'percent',icon:'icon-healthcare-assessment',goal:60,translation_key:'targets.stage2_conversion.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>l(t)&&s(t),passesIf:(e,t)=>c(e,t),date:'reported'},{id:'stage2-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage2.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t),date:'reported'},{id:'cognitive-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.cognitive_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===i(t,'g_disposition.cognitive_flag'),date:'reported'},{id:'depression-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.depression_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===i(t,'g_phq.phq_flag'),date:'reported'},{id:'safeguarding-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.safeguarding_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===i(t,'g_easi.easi_positive'),date:'reported'},{id:'frailty-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.frailty_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===i(t,'g_disposition.physical_flag'),date:'reported'},{id:'referral-loop-closed',type:'percent',icon:'icon-healthcare-referral',goal:70,translation_key:'targets.referral_closed.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&'yes'===o(t,'g_disposition.referral_needed'),passesIf:(e,t)=>(e.reports||[]).some(e=>e.form===n.REFERRAL&&e.reported_date>t.reported_date&&'attended'===o(e,'g_ref.attended')),date:'reported'},{id:'informant-availability',type:'percent',icon:'icon-person',goal:80,translation_key:'targets.informant.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t),passesIf:(e,t)=>'yes'===o(t,'g_ad8.informant_available'),date:'reported'},{id:'follow-up-attempts',type:'count',icon:'icon-followup-general',goal:-1,translation_key:'targets.follow_up.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.FOLLOW_UP],appliesIf:(e,t)=>l(t),date:'reported'}]},991(e,t,r){const{CONFIG:n,FORMS:a,CONTACT_TYPES:o,getField:i,reportsSince:s,reportsOf:c,latestReport:l,addDays:p,isActive:d,isExited:u,isUserContact:_,stage1NeedsFollowUp:f,stage1FlagCount:g,stage2DoneAfter:m,stage2NeedsReferral:T,isUrgent:y,isSafeguarding:A,followUpAttemptsSince:E,appointmentBooked:v,nextReviewDue:I,mocaDue:S,vinelandDue:h,isParticipantDoneByCurrentUser:D}=r(190),b={level:'high',label:'task.priority.high'};e.exports=[{name:'satoru.urgent-escalation',icon:'icon-risk',title:'task.urgent_escalation.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>y(t),resolvedIf:(e,t,r,n)=>s(e,[a.FOLLOW_UP,a.REFERRAL],t.reported_date).some(e=>e.reported_date<=p(n,r.end+1).getTime()),events:[{id:'urgent-24h',start:0,end:n.URGENT_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:b,actions:[{type:'report',form:a.FOLLOW_UP,label:'task.urgent_escalation.action',modifyContent:(e,t,r)=>{e.trigger='urgent_escalation',e.source_report_uuid=r._id}}]},{name:'satoru.safeguarding-escalation',icon:'icon-risk',title:'task.safeguarding.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>A(t),resolvedIf:(e,t,r,n)=>s(e,a.FOLLOW_UP,t.reported_date).some(e=>e.reported_date<=p(n,r.end+1).getTime()),events:[{id:'safeguarding-72h',start:0,end:n.SAFEGUARDING_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:b,actions:[{type:'report',form:a.FOLLOW_UP,label:'task.safeguarding.action',modifyContent:(e,t,r)=>{e.trigger='safeguarding',e.source_report_uuid=r._id}}]},{name:'satoru.stage2-due',icon:'icon-healthcare-assessment',title:'task.stage2_due.title',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t)=>m(e,t),events:[{id:'stage2-window',start:0,end:n.STAGE2_WINDOW_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:(e,t)=>g(t)>=2?b:null,actions:[{type:'report',form:a.STAGE2,label:'task.stage2_due.action',modifyContent:(e,t,r)=>{e.stage1_report_uuid=r._id,e.stage1_flag_count=g(r),e.camp_code=i(r,'g_context.camp_code')}}]},{name:'satoru.lead-pursuit',icon:'icon-followup-general',title:'task.lead_pursuit.title',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t,r)=>{if(m(e,t))return!0;if(v(e,t.reported_date))return!0;const a=n.FOLLOW_UP_DAYS.indexOf(r.days)+1;return E(e,t.reported_date)>=a},events:n.FOLLOW_UP_DAYS.map((e,t)=>({id:`lead-pursuit-${t+1}`,days:e,start:2,end:6})),actions:[{type:'report',form:a.FOLLOW_UP,label:'task.lead_pursuit.action',modifyContent:(e,t,r)=>{e.trigger='stage1_referral',e.source_report_uuid=r._id,e.suggested_attempt_number=E(t,r.reported_date)+1}}]},{name:'satoru.appointment-reminder',icon:'icon-healthcare-assessment',title:'task.appointment.title',appliesTo:'reports',appliesToType:[a.FOLLOW_UP],appliesIf:(e,t)=>'scheduled'===i(t,'g_fu.outcome')&&!!i(t,'g_fu.appointment_date')&&!u(e),resolvedIf:(e,t)=>s(e,a.STAGE2,t.reported_date).length>0,events:[{id:'appointment-day',start:2,end:7,dueDate:(e,t,r)=>new Date(i(r,'g_fu.appointment_date'))}],actions:[{type:'report',form:a.STAGE2,label:'task.appointment.action'}]},{name:'satoru.referral-outcome',icon:'icon-healthcare-referral',title:'task.referral_outcome.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>T(t)&&!u(e),resolvedIf:(e,t)=>s(e,a.REFERRAL,t.reported_date).some(e=>'yes'===i(e,'g_ref.referral_closed')),events:[{id:'referral-confirm',days:14,start:7,end:n.REFERRAL_CONFIRM_DAYS}],actions:[{type:'report',form:a.REFERRAL,label:'task.referral_outcome.action',modifyContent:(e,t,r)=>{e.source_report_uuid=r._id,e.facility=i(r,'g_disposition.referral_facility'),e.disposition=i(r,'g_disposition.disposition')}}]},{name:'satoru.longitudinal-review',icon:'icon-followup-general',title:'task.review.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:e=>d(e)&&D(e)&&!!I(e),resolvedIf:(e,t,r,n)=>{const o=p(n,-r.start).getTime();return s(e,[a.STAGE2,a.REVIEW],o).length>0},events:[{id:'review-due',start:30,end:60,dueDate:(e,t)=>I(t)}],actions:[{type:'report',form:a.REVIEW,label:'task.review.action'}]},{name:'satoru.assessment-visit-due',icon:'icon-healthcare-assessment',title:'task.assessment_visit_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:e=>d(e)&&!_(e)&&D(e)&&0===c(e,a.ASSESSMENT).length&&'staff'!==e.role,resolvedIf:e=>c(e,a.ASSESSMENT).length>0,events:[{id:'assessment-visit-due',start:0,end:n.ASSESSMENT_VISIT_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.ASSESSMENT,label:'task.assessment_visit_due.action',modifyContent:(e,t)=>{const r=t&&(t.contact||t)||{};e.source='task',e.source_id=r._id,e.contact=r,e.patient_id||!r.patient_id&&!r._id||(e.patient_id=r.patient_id||r._id)}}]},{name:'satoru.moca-due',icon:'icon-healthcare-assessment',title:'task.moca_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!S(e),events:[{id:'moca-due',start:0,end:n.MOCA_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.MOCA,label:'task.moca_due.action'}]},{name:'satoru.vineland-due',icon:'icon-healthcare-assessment',title:'task.vineland_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!h(e),events:[{id:'vineland-due',start:0,end:n.VINELAND_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.VINELAND,label:'task.vineland_due.action'}]}]}};const t={};function r(n){const a=t[n];if(void 0!==a)return a.exports;const o=t[n]={exports:{}};return e[n](o,o.exports,r),o.exports}var n=r(991),a=r(931),o=r(633);r(837)(a,c,Utils,Target,emit),o(n,c,Utils,Task,emit),emit('_complete',{_id:!0})})();",
+    "rules": "(()=>{var e={358(e){function t(e,r){var n=Object.keys(e);for(var a in n){var o=n[a];switch(typeof e[o]){case'object':t(e[o],r);break;case'function':e[o]=e[o].bind(r)}}}function r(e){var t=Object.assign({},e),n=Object.keys(t);for(var a in n){var o=n[a];if(Array.isArray(t[o])){t[o]=t[o].slice(0);for(var i=0;i<t[o].length;++i)'object'==typeof t[o][i]&&(t[o][i]=r(t[o][i]))}else'object'==typeof t[o]&&(t[o]=r(t[o]))}return t}e.exports=function(e){var n={};t(e,n),n.definition=r(e)}},837(e,t,r){var n=r(358);function a(e,t,r,n,a,o){var i=!!o;if(a.contact){var s='contact'===a.contact.type?a.contact.contact_type:a.contact.type,c=i?o.form:s;if(!(e.appliesToType&&e.appliesToType.indexOf(c)<0)&&(!e.appliesIf||e.appliesIf(a,o)))for(var p=i?o:a.contact,l=function(e,t,r){var n;return n='function'==typeof e.idType?e.idType(t,r):'report'===e.idType?r&&r._id:t.contact&&t.contact._id,Array.isArray(n)||(n=[n]),n}(e,a,o),d=!e.passesIf||!!e.passesIf(a,o),u=function(e,t,r,n){if('function'==typeof e.date)return e.date(r,n)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return n?n.reported_date:r.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,r,a,o),_=e.groupBy&&e.groupBy(a,o),f=0;f<l.length;++f){var g=new t({_id:l[f]+'~'+e.id,contact:a.contact,deleted:!!p.deleted,type:e.id,pass:d,groupBy:_,date:u});e.emitCustom?e.emitCustom(m,g,a,o):m(g)}}function m(e){n('target',e)}}e.exports=function(e,t,r,o,i){for(var s=0;s<e.length;++s){var c=e[s];switch(n(c),c.appliesTo){case'contacts':a(c,o,r,i,t);break;case'reports':for(var p=0;p<t.reports.length;++p){a(c,o,r,i,t,t.reports[p])}break;default:throw new Error('Unrecognised target.appliesTo: '+c.appliesTo)}}}},421(e){e.exports={defaultResolvedIf:function(e,t,r,n,a){var o,i;a||(a=Utils);var s=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find(function(e){return!e.type||'report'===e.type}))&&t.form}(this.definition);if(!s)throw new Error('Could not find the default resolving form!');return o=0,o=t?Math.max(a.addDate(n,-r.start).getTime(),t.reported_date+1):a.addDate(n,-r.start).getTime(),i=a.addDate(n,r.end+1).getTime(),a.isFormSubmittedInWindow(e.reports,s,o,i)}}},633(e,t,r){var n=r(358),a=r(421);function o(e,t,r,n,a,o){var i;if(e.appliesToType){var s;if('contacts'===e.appliesTo){if(!a.contact)return;s='contact'===a.contact.type?a.contact.contact_type:a.contact.type}else{if(!o)return;s=o.form}if(-1===e.appliesToType.indexOf(s))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(a,o))if('scheduled_tasks'===e.appliesTo){if(o&&e.appliesIf){if(!o.scheduled_tasks)return;for(i=0;i<o.scheduled_tasks.length;i++)e.appliesIf(a,o,i)&&p(i)}}else p();function c(e,t,r){var n;return(n='function'==typeof e.contactLabel?e.contactLabel(t,r):e.contactLabel)?{name:n}:t.contact}function p(i){var s,p,d,u,_=null;for(s=0;s<e.events.length;s++){if((p=e.events[s]).dueDate)_=p.dueDate(p,a,o,i);else if(o)_=void 0!==i?new Date(t.addDate(new Date(o.scheduled_tasks[i].due),p.days)):new Date(t.addDate(new Date(o.reported_date),p.days));else if(p.dueDate)_=p.dueDate(p,a);else{var f=a.contact&&a.contact.reported_date?new Date(a.contact.reported_date):new Date;_=new Date(t.addDate(f,p.days))}t.isTimely(_,p)&&(u={_id:(o?o._id:a.contact&&a.contact._id)+'~'+(p.id||s)+'~'+e.name,deleted:!(!(a.contact&&a.contact.deleted||o)||!o.deleted),doc:a,contact:c(e,a,o),icon:e.icon,date:_,readyStart:p.start||0,readyEnd:p.end||0,title:e.title,resolved:e.resolvedIf(a,o,p,_,i),actions:l(e.actions,p)},void 0!==i&&(u._id+='-'+i),'function'==typeof(d=e.priority)&&(d=d(a,o,p,_,i)),d&&(u.priority=d.level,u.priorityLabel=d.label),n('task',new r(u)))}}function l(t,r){return e.actions.map(function(e){return function(e,t){var r={source:'task',source_id:o?o._id:a.contact&&a.contact._id,contact:a.contact};e.modifyContent&&e.modifyContent(r,a,o,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:r}}(e,r)})}}e.exports=function(e,t,r,i,s){if(e)for(var c,p,l=0;l<e.length;++l)switch('function'!=typeof(c=Object.assign({},e[l],a)).resolvedIf&&(c.resolvedIf=function(e,t,n,a){return c.defaultResolvedIf(e,t,n,a,r)}),n(c),c.appliesTo){case'reports':case'scheduled_tasks':for(var d=0;d<t.reports.length;++d)p=t.reports[d],o(c,r,i,s,t,p);break;case'contacts':t.contact&&o(c,r,i,s,t);break;default:throw new Error('Unrecognised task.appliesTo: '+c.appliesTo)}}},190(e){const t=864e5,r={CAMP:'screening_camp',PARTICIPANT:'participant'},n={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'},a={STAGE2_WINDOW_DAYS:30,FOLLOW_UP_DAYS:[3,10,21],MAX_FOLLOW_UP_ATTEMPTS:3,REFERRAL_CONFIRM_DAYS:21,REVIEW_DAYS_COGNITIVE:180,REVIEW_DAYS_ROUTINE:365,REVIEW_DAYS_RE_REFER:90,URGENT_ESCALATION_DAYS:1,SAFEGUARDING_ESCALATION_DAYS:3,STAGE1_MISSING_DAYS:14,ASSESSMENT_VISIT_DUE_DAYS:30,MOCA_DUE_DAYS:30,VINELAND_DUE_DAYS:30};function o(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function i(e,t){const r=o(e,t);if(null===r||''===r)return null;const n=Number(r);return Number.isFinite(n)?n:null}function s(e,t){return!!e&&e.form===t}function c(e,t){return e&&e.reports?e.reports.filter(e=>e.form===t):[]}function p(e,t){const r=c(e,t);return r.length?r.reduce((e,t)=>e.reported_date>t.reported_date?e:t):null}function l(e,t,r){if(!e||!e.reports)return[];const n=[].concat(t);return e.reports.filter(e=>-1!==n.indexOf(e.form)&&e.reported_date>r)}function d(e,r){return Math.floor((r-e)/t)}function u(e,t){const r=new Date(e);return r.setDate(r.getDate()+t),r}function _(e){const t=e&&(e.contact||e);return t?'contact'===t.type?t.contact_type:t.contact_type||t.type:null}function f(e){const t=e&&(e.contact||e);return!t||'no'!==t.consent_given}const g=['deceased','moved','refused','done_elsewhere'];function m(e){if(c(e,n.FOLLOW_UP).some(e=>-1!==g.indexOf(o(e,'g_fu.outcome'))))return!0;const t=p(e,n.REVIEW);return!!t&&'no'===o(t,'g_rev.alive')}function y(e){return o(e,'g_outcome.stage1_result')}function T(e){return s(e,n.STAGE1)&&'refer'===y(e)}function A(e){return o(e,'g_disposition.disposition')}function E(e){return 1===i(e,'g_disposition.cognitive_flag')}function v(e){return i(e,'moca_total_score')}function I(e){return o(e,'moca_interpretation')}function S(e){return p(e,n.MOCA)}function h(e){return p(e,n.VINELAND)}function D(){const e='undefined'!=typeof user?user:null,t='undefined'!=typeof cht?cht:null;let r=e&&(e.contact_id||e.contact&&e.contact._id||e._id)||t&&t.v1&&t.v1.userContactId||null;r&&'string'==typeof r&&r.startsWith('org.couchdb.user:')&&(r=e&&e.contact_id||r.replace('org.couchdb.user:',''));let n=e&&(e.name||e.username)||null;!n&&e&&'string'==typeof e._id&&e._id.startsWith('org.couchdb.user:')&&(n=e._id.replace('org.couchdb.user:',''));const a=['_admin','admin','national_admin','supervisor','chw_supervisor','district_admin'];return{userId:r,userName:n,isSupervisor:Boolean(t&&t.v1&&'function'==typeof t.v1.hasPermissions&&(t.v1.hasPermissions('can_browse_all_participants')||t.v1.hasPermissions('can_view_participants')||t.v1.hasPermissions('admin'))||e&&e.roles&&e.roles.some(e=>-1!==a.indexOf(e))||e&&('medic'===e.name||'string'==typeof e._id&&e._id.includes('medic')))}}function b(e,t){if(!e)return!1;const r=D();if(r.isSupervisor)return!0;if(!r.userId&&!r.userName)return!1;if(r.userId){if(e.contact&&e.contact._id===r.userId)return!0;if(o(e,'screened_by')===r.userId)return!0;if(e.fields&&e.fields.screened_by===r.userId)return!0;if(e.created_by_person_uuid===r.userId)return!0;if(o(e,'inputs.user.contact_id')===r.userId)return!0}if(r.userName){if(e.reported_by===r.userName)return!0;if(e.created_by===r.userName)return!0;if(e.created_by_user===r.userName)return!0;if(o(e,'screened_by_name')===r.userName)return!0;if(o(e,'inputs.user.name')===r.userName)return!0;if(o(e,'g_assessment.administered_by')===r.userName)return!0}const n=t&&(t.contact||t)||null;if(n){if(r.userId&&n.created_by_person_uuid===r.userId)return!0;if(r.userName&&(n.created_by_user===r.userName||n.created_by_name===r.userName))return!0}return!1}e.exports={MS_IN_DAY:t,CONTACT_TYPES:r,FORMS:n,CONFIG:a,EXIT_OUTCOMES:g,getField:o,num:i,isForm:s,reportsOf:c,latestReport:p,reportsSince:l,daysBetween:d,addDays:u,contactType:_,isParticipant:function(e){return _(e)===r.PARTICIPANT},isCamp:function(e){return _(e)===r.CAMP},isUserContact:function(e){if(!e)return!1;try{const t=e.contact||e;if(!t||'object'!=typeof t)return!1;if('user'===t.contact_type)return!0;if(t.role){const e=String(t.role).toLowerCase();if(['staff','chw','chw_supervisor','supervisor','admin','mm-online','intern_supervisor'].includes(e))return!0;if(e.includes('staff')||e.includes('admin')||e.includes('supervisor')||e.includes('chw'))return!0}if(t.username||t.user_id)return!0;if(!0===t.isUserContact)return!0}catch(e){return!1}return!1},currentAge:function(e,t){if(!e||void 0===e.age||null===e.age)return null;const r=Number(e.age);if(!Number.isFinite(r))return null;if(!e.reported_date)return r;const n=t||Date.now(),a=Math.floor((n-e.reported_date)/315576e5);return r+Math.max(0,a)},hasConsent:f,isExited:m,isActive:function(e){return f(e)&&!m(e)},stage1Result:y,stage1Referred:T,stage1NeedsFollowUp:function(e){return T(e)&&'yes'!==o(e,'g_outcome.stage2_same_day')},stage1FlagCount:function(e){return i(e,'g_outcome.stage1_flag_count')||0},stage2DoneAfter:function(e,t){return l(e,n.STAGE2,t.reported_date).length>0},stage2Disposition:A,stage2NeedsReferral:function(e){return'yes'===o(e,'g_disposition.referral_needed')},isUrgent:function(e){return'urgent_same_day'===A(e)},isSafeguarding:function(e){return 1===i(e,'g_easi.easi_positive')},cognitiveFlag:E,followUpAttemptsSince:function(e,t){return l(e,n.FOLLOW_UP,t).length},appointmentBooked:function(e,t){return l(e,n.FOLLOW_UP,t).some(e=>'scheduled'===o(e,'g_fu.outcome'))},nextReviewDue:function(e){const t=p(e,n.REVIEW),r=p(e,n.STAGE2),i=p(e,n.STAGE1),s=t||r||i;if(!s)return null;let c=a.REVIEW_DAYS_ROUTINE;return s.form===n.STAGE2&&E(s)&&(c=a.REVIEW_DAYS_COGNITIVE),s.form===n.REVIEW&&'re_refer'===o(s,'g_rev.review_result')&&(c=a.REVIEW_DAYS_RE_REFER),u(s.reported_date,c)},convertedInWindow:function(e,t){const r=u(t.reported_date,a.STAGE2_WINDOW_DAYS).getTime();return l(e,n.STAGE2,t.reported_date).some(e=>e.reported_date<=r)},screenedBy:function(e){return o(e,'screened_by')},mocaTotalScore:v,mocaInterpretation:I,mocaImpaired:function(e){return'impaired'===I(e)},mocaSectionScores:function(e){return{visuospatial:i(e,'moca_visuospatial_total')||0,naming:i(e,'moca_naming_total')||0,memory:i(e,'moca_memory_total')||0,attention:i(e,'moca_attention_total')||0,language:i(e,'moca_language_total')||0,abstraction:i(e,'moca_abstraction_total')||0,delayedRecall:i(e,'moca_delayed_total')||0,orientation:i(e,'moca_orientation_total')||0,rawTotal:i(e,'moca_raw_total')||0,educationAdj:i(e,'moca_education_adj')||0,totalScore:v(e),interpretation:I(e)}},hasMocaAssessment:function(e){return c(e,n.MOCA).length>0},latestMocaAssessment:S,mocaDue:function(e){const t=S(e);return!t||d(t.reported_date,Date.now())>=a.MOCA_DUE_DAYS},hasVinelandAssessment:function(e){return c(e,n.VINELAND).length>0},latestVinelandAssessment:h,vinelandDue:function(e){const t=h(e);return!t||d(t.reported_date,Date.now())>=a.VINELAND_DUE_DAYS},getCurrentUserContext:D,isReportDoneByCurrentUser:b,isParticipantDoneByCurrentUser:function(e){if(!e)return!1;const t=D();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!1;const r=e.contact||e,n=e.reports||[];return!(!t.userId||!r||r.created_by_person_uuid!==t.userId)||(!(!t.userName||!r||r.created_by_user!==t.userName)||!!(n&&n.length>0&&n.some(e=>b(e))))}}},931(e,t,r){const{FORMS:n,CONTACT_TYPES:a,getField:o,num:i,stage1Referred:s,convertedInWindow:c,isReportDoneByCurrentUser:p,isParticipantDoneByCurrentUser:l}=r(190),d=(e,t)=>'yes'===o(t,'g_consent.consent_confirmed');e.exports=[{id:'participants-registered',type:'count',icon:'icon-person',goal:-1,translation_key:'targets.registered.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'contacts',appliesToType:[a.PARTICIPANT],appliesIf:e=>l(e),idType:'contact',date:'reported'},{id:'stage1-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage1.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>p(t,e)&&d(0,t),date:'reported'},{id:'stage1-referral-rate',type:'percent',icon:'icon-healthcare-referral',goal:-1,translation_key:'targets.referral_rate.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>p(t,e)&&d(0,t),passesIf:(e,t)=>s(t),date:'reported'},{id:'stage2-conversion',type:'percent',icon:'icon-healthcare-assessment',goal:60,translation_key:'targets.stage2_conversion.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>p(t,e)&&s(t),passesIf:(e,t)=>c(e,t),date:'reported'},{id:'stage2-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage2.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2,n.ASSESSMENT],appliesIf:(e,t)=>p(t,e),date:'reported'},{id:'cognitive-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.cognitive_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>p(t,e)&&1===i(t,'g_disposition.cognitive_flag'),date:'reported'},{id:'depression-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.depression_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>p(t,e)&&1===i(t,'g_phq.phq_flag'),date:'reported'},{id:'safeguarding-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.safeguarding_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>p(t,e)&&1===i(t,'g_easi.easi_positive'),date:'reported'},{id:'frailty-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.frailty_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>p(t,e)&&1===i(t,'g_disposition.physical_flag'),date:'reported'},{id:'referral-loop-closed',type:'percent',icon:'icon-healthcare-referral',goal:70,translation_key:'targets.referral_closed.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>p(t,e)&&'yes'===o(t,'g_disposition.referral_needed'),passesIf:(e,t)=>(e.reports||[]).some(e=>e.form===n.REFERRAL&&e.reported_date>t.reported_date&&'attended'===o(e,'g_ref.attended')),date:'reported'},{id:'informant-availability',type:'percent',icon:'icon-person',goal:80,translation_key:'targets.informant.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>p(t,e),passesIf:(e,t)=>'yes'===o(t,'g_ad8.informant_available'),date:'reported'},{id:'follow-up-attempts',type:'count',icon:'icon-followup-general',goal:-1,translation_key:'targets.follow_up.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.FOLLOW_UP],appliesIf:(e,t)=>p(t,e),date:'reported'}]},991(e,t,r){const{CONFIG:n,FORMS:a,CONTACT_TYPES:o,getField:i,reportsSince:s,reportsOf:c,latestReport:p,addDays:l,isActive:d,isExited:u,isUserContact:_,stage1NeedsFollowUp:f,stage1FlagCount:g,stage2DoneAfter:m,stage2NeedsReferral:y,isUrgent:T,isSafeguarding:A,followUpAttemptsSince:E,appointmentBooked:v,nextReviewDue:I,mocaDue:S,vinelandDue:h,isParticipantDoneByCurrentUser:D}=r(190),b={level:'high',label:'task.priority.high'};e.exports=[{name:'satoru.urgent-escalation',icon:'icon-risk',title:'task.urgent_escalation.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>T(t),resolvedIf:(e,t,r,n)=>s(e,[a.FOLLOW_UP,a.REFERRAL],t.reported_date).some(e=>e.reported_date<=l(n,r.end+1).getTime()),events:[{id:'urgent-24h',start:0,end:n.URGENT_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:b,actions:[{type:'report',form:a.FOLLOW_UP,label:'task.urgent_escalation.action',modifyContent:(e,t,r)=>{e.trigger='urgent_escalation',e.source_report_uuid=r._id}}]},{name:'satoru.safeguarding-escalation',icon:'icon-risk',title:'task.safeguarding.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>A(t),resolvedIf:(e,t,r,n)=>s(e,a.FOLLOW_UP,t.reported_date).some(e=>e.reported_date<=l(n,r.end+1).getTime()),events:[{id:'safeguarding-72h',start:0,end:n.SAFEGUARDING_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:b,actions:[{type:'report',form:a.FOLLOW_UP,label:'task.safeguarding.action',modifyContent:(e,t,r)=>{e.trigger='safeguarding',e.source_report_uuid=r._id}}]},{name:'satoru.stage2-due',icon:'icon-healthcare-assessment',title:'task.stage2_due.title',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t)=>m(e,t),events:[{id:'stage2-window',start:0,end:n.STAGE2_WINDOW_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:(e,t)=>g(t)>=2?b:null,actions:[{type:'report',form:a.STAGE2,label:'task.stage2_due.action',modifyContent:(e,t,r)=>{e.stage1_report_uuid=r._id,e.stage1_flag_count=g(r),e.camp_code=i(r,'g_context.camp_code')}}]},{name:'satoru.lead-pursuit',icon:'icon-followup-general',title:'task.lead_pursuit.title',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t,r)=>{if(m(e,t))return!0;if(v(e,t.reported_date))return!0;const a=n.FOLLOW_UP_DAYS.indexOf(r.days)+1;return E(e,t.reported_date)>=a},events:n.FOLLOW_UP_DAYS.map((e,t)=>({id:`lead-pursuit-${t+1}`,days:e,start:2,end:6})),actions:[{type:'report',form:a.FOLLOW_UP,label:'task.lead_pursuit.action',modifyContent:(e,t,r)=>{e.trigger='stage1_referral',e.source_report_uuid=r._id,e.suggested_attempt_number=E(t,r.reported_date)+1}}]},{name:'satoru.appointment-reminder',icon:'icon-healthcare-assessment',title:'task.appointment.title',appliesTo:'reports',appliesToType:[a.FOLLOW_UP],appliesIf:(e,t)=>'scheduled'===i(t,'g_fu.outcome')&&!!i(t,'g_fu.appointment_date')&&!u(e),resolvedIf:(e,t)=>s(e,a.STAGE2,t.reported_date).length>0,events:[{id:'appointment-day',start:2,end:7,dueDate:(e,t,r)=>new Date(i(r,'g_fu.appointment_date'))}],actions:[{type:'report',form:a.STAGE2,label:'task.appointment.action'}]},{name:'satoru.referral-outcome',icon:'icon-healthcare-referral',title:'task.referral_outcome.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>y(t)&&!u(e),resolvedIf:(e,t)=>s(e,a.REFERRAL,t.reported_date).some(e=>'yes'===i(e,'g_ref.referral_closed')),events:[{id:'referral-confirm',days:14,start:7,end:n.REFERRAL_CONFIRM_DAYS}],actions:[{type:'report',form:a.REFERRAL,label:'task.referral_outcome.action',modifyContent:(e,t,r)=>{e.source_report_uuid=r._id,e.facility=i(r,'g_disposition.referral_facility'),e.disposition=i(r,'g_disposition.disposition')}}]},{name:'satoru.longitudinal-review',icon:'icon-followup-general',title:'task.review.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:e=>d(e)&&D(e)&&!!I(e),resolvedIf:(e,t,r,n)=>{const o=l(n,-r.start).getTime();return s(e,[a.STAGE2,a.REVIEW],o).length>0},events:[{id:'review-due',start:30,end:60,dueDate:(e,t)=>I(t)}],actions:[{type:'report',form:a.REVIEW,label:'task.review.action'}]},{name:'satoru.assessment-visit-due',icon:'icon-healthcare-assessment',title:'task.assessment_visit_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:e=>d(e)&&!_(e)&&D(e)&&0===c(e,a.ASSESSMENT).length&&'staff'!==e.role,resolvedIf:e=>c(e,a.ASSESSMENT).length>0,events:[{id:'assessment-visit-due',start:0,end:n.ASSESSMENT_VISIT_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.ASSESSMENT,label:'task.assessment_visit_due.action',modifyContent:(e,t)=>{const r=t&&(t.contact||t)||{};e.source='task',e.source_id=r._id,e.contact=r,e.patient_id||!r.patient_id&&!r._id||(e.patient_id=r.patient_id||r._id)}}]},{name:'satoru.moca-due',icon:'icon-healthcare-assessment',title:'task.moca_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!S(e),events:[{id:'moca-due',start:0,end:n.MOCA_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.MOCA,label:'task.moca_due.action'}]},{name:'satoru.vineland-due',icon:'icon-healthcare-assessment',title:'task.vineland_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!h(e),events:[{id:'vineland-due',start:0,end:n.VINELAND_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.VINELAND,label:'task.vineland_due.action'}]}]}};const t={};function r(n){const a=t[n];if(void 0!==a)return a.exports;const o=t[n]={exports:{}};return e[n](o,o.exports,r),o.exports}var n=r(991),a=r(931),o=r(633);r(837)(a,c,Utils,Target,emit),o(n,c,Utils,Task,emit),emit('_complete',{_id:!0})})();",
     "isDeclarative": true,
     "targets": {
       "enabled": true,

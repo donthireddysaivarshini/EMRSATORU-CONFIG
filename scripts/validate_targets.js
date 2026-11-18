@@ -55,6 +55,7 @@ const intern1 = { _id: 'intern-1', name: 'Intern One' };
 const intern2 = { _id: 'intern-2', name: 'Intern Two' };
 const supervisor = { _id: 'sup-1', roles: ['supervisor'] };
 const supervisorCht = { v1: { hasPermissions: (p) => p === 'can_browse_all_participants' || p === 'can_view_participants' } };
+const medicAdmin = { _id: 'org.couchdb.user:medic', name: 'medic', roles: ['_admin'] };
 
 const pOwn = { _id: 'p1', type: 'contact', contact_type: 'participant', reported_date: Date.now(), created_by_person_uuid: 'intern-1' };
 const pOther = { _id: 'p2', type: 'contact', contact_type: 'participant', reported_date: Date.now(), created_by_person_uuid: 'intern-2' };
@@ -87,6 +88,12 @@ check('supervisor sees any registered participant', res5.some(t => t.type === 'p
 // 6. Supervisor sees all reports
 const res6 = runTargets(pOther, [r1Other], supervisor, supervisorCht);
 check('supervisor sees reports done by any intern', res6.some(t => t.type === 'stage1-completed'));
+
+// 6b. Medic administrator (_admin) sees all participants and reports
+const resMedicP = runTargets(pOther, [], medicAdmin, {});
+check('medic _admin sees any registered participant', resMedicP.some(t => t.type === 'participants-registered'));
+const resMedicR = runTargets(pOther, [r1Other], medicAdmin, {});
+check('medic _admin sees reports done by any intern', resMedicR.some(t => t.type === 'stage1-completed'));
 
 // 7. Tasks: Intern sees assessment task only for their own participant
 const tOwn = runTasks(pOwn, [], intern1, {});

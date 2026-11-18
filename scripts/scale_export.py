@@ -18,7 +18,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from scale_meta import (SCALES, get_scale_meta, JOIN_FIELDS, NOTE_LABELS,
-                        NOTE_VALUES, DOB_WARNING)
+                        NOTE_VALUES, DOB_WARNING, clean_human_label)
 
 # Extra metadata fields shown in the "Assessment information" block of the
 # per-participant report (and kept out of the question columns/rows).
@@ -113,9 +113,9 @@ def scale_full_title(form):
 def label_for(form, path, fallback=None):
     key = f'report.{form}.{path}'
     label = load_messages().get(key)
-    if label:
-        return label
-    return fallback if fallback is not None else path
+    if label and not label.startswith('report.'):
+        return clean_human_label(label)
+    return clean_human_label(fallback if fallback is not None else path)
 
 
 def _lookup(values, path):
@@ -261,11 +261,11 @@ class _Walker:
         path = item['path']
         # note-value fields show a short label (their value is the full text)
         if path in NOTE_LABELS.get(self.form, {}):
-            return NOTE_LABELS[self.form][path]
+            return clean_human_label(NOTE_LABELS[self.form][path])
         label = label_for(self.form, path, item.get('label') or None)
         if label is None or label.startswith('report.'):
             label = item.get('label') or item['path']
-        return label
+        return clean_human_label(label)
 
     def value(self, item, fields):
         path = item['path']
