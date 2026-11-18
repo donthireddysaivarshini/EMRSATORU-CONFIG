@@ -30,6 +30,8 @@ KNOWN_TITLES = {
     'dst': 'Developmental Screening Test (DST)',
     'moca': 'MOCA (Integrated)',
     'moca_assessment': 'Montreal Cognitive Assessment (MoCA)',
+    'moca_b': 'MoCA-Basic (MoCA-B)',
+    'moca_telugu': 'ICMR-NCTB Telugu MoCA (v7.1)',
     'vineland': 'Vineland-style Social Maturity Scale (VSMS)',
     'cog5': 'CoG5 - Memory Screening Battery',
     'mse': 'Mental State Examination (MSE)',
@@ -77,16 +79,24 @@ class ScalesRegistry(dict):
 
     def __contains__(self, key):
         self._refresh()
-        return dict.__contains__(self, key)
+        return dict.__contains__(self, key) or key in KNOWN_TITLES
 
     def __getitem__(self, key):
         self._refresh()
         if not dict.__contains__(self, key):
             path = os.path.join(FORMS_DIR, f'{key}.xml')
+            title = None
             if os.path.isfile(path):
-                title = _extract_xml_title(path) or KNOWN_TITLES.get(key) or key.replace('_', ' ').title()
-                dict.__setitem__(self, key, {'file': f'{key}.xml', 'title': title})
+                title = _extract_xml_title(path)
+            title = title or KNOWN_TITLES.get(key) or key.replace('_', ' ').title()
+            dict.__setitem__(self, key, {'file': f'{key}.xml', 'title': title})
         return dict.__getitem__(self, key)
+
+    def get(self, key, default=None):
+        try:
+            return self[key]
+        except Exception:
+            return default
 
     def __iter__(self):
         self._refresh()
@@ -705,7 +715,22 @@ def get_scale_meta(form):
     meta = _cache.get(form)
     if meta is not None:
         return meta
-    path = os.path.join(FORMS_DIR, SCALES[form]['file'])
+    info = SCALES.get(form) or {'file': f'{form}.xml', 'title': form.replace('_', ' ').title()}
+    path = os.path.join(FORMS_DIR, info['file'])
+    if not os.path.isfile(path):
+        title = info.get('title') or KNOWN_TITLES.get(form) or form.replace('_', ' ').title()
+        meta = _cache[form] = {
+            'form': form,
+            'title': title,
+            'xml_title': title,
+            'flat': [],
+            'labels': {},
+            'choice_maps': {},
+            'report_display': {'hide_fields': [], 'score_fields': {}, 'result_fields': [], 'notes_fields': []},
+            'result_fields': [],
+            'notes_fields': [],
+        }
+        return meta
     parsed = parse_form_xml(path)
     flat = flatten_fields(parsed)
     choice_maps = build_choice_maps(parsed, flat)

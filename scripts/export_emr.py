@@ -197,28 +197,75 @@ def scale_reports_by_participant(reports, participant_ids):
     return by_form
 
 
+def write_generic_scale_sheet(ws, form, reports, participants, camps=None):
+    """Fallback sheet writer for forms without XML definitions on disk."""
+    keys = []
+    for doc in reports:
+        for k in flatten(doc.get('fields') or {}).keys():
+            if k not in keys and not k.startswith('inputs.') and not k.startswith('meta.'):
+                keys.append(k)
+    keys.sort()
+
+    headers = ['Participant ID', 'Participant Name']
+    if camps is not None:
+        headers.append('Camp')
+    headers.extend(['Report Date', 'Submitted By'])
+    headers.extend(keys)
+    ws.append(headers)
+
+    for doc in reports:
+        participant = participants.get(subject_id_of(doc)) or {}
+        camp_name = ''
+        if camps is not None:
+            camp = camps.get((participant.get('parent') or {}).get('_id'))
+            camp_name = (camp or {}).get('name') or ''
+        flat_fields = flatten(doc.get('fields') or {})
+        row = [
+            participant.get('cr_no') or participant.get('patient_id') or '',
+            participant.get('name') or '',
+        ]
+        if camps is not None:
+            row.append(camp_name)
+        row.extend([
+            iso_datetime(doc.get('reported_date')),
+            submitter_label(doc),
+        ])
+        for k in keys:
+            v = flat_fields.get(k)
+            row.append(json.dumps(v, ensure_ascii=False) if isinstance(v, (dict, list)) else v)
+        ws.append(row)
+    ws.freeze_panes = 'C2'
+
+
 def write_scale_sheet(wb, form, reports, participants, camps=None):
     """One row per completed assessment of `form`, human-readable columns.
 
     Passing `camps` adds a 'Camp' column (used by the all-camps workbook).
     """
     ws = wb.create_sheet(scale_export.sheet_title(form))
-    ws.append(scale_export.scale_headers(form, include_camp=camps is not None))
-    for doc in reports:
-        participant = participants.get(subject_id_of(doc)) or {}
-        camp_name = None
-        if camps is not None:
-            camp = camps.get((participant.get('parent') or {}).get('_id'))
-            camp_name = (camp or {}).get('name') or ''
-        ws.append(scale_export.scale_row(
-            form,
-            doc.get('fields') or {},
-            participant,
-            submitter_label(doc),
-            attachment_names(doc),
-            camp_name=camp_name,
-        ))
-    ws.freeze_panes = 'F2'  # keep ID + name + dates visible while scrolling
+    meta = scale_meta.get_scale_meta(form)
+    if meta.get('flat'):
+        try:
+            ws.append(scale_export.scale_headers(form, include_camp=camps is not None))
+            for doc in reports:
+                participant = participants.get(subject_id_of(doc)) or {}
+                camp_name = None
+                if camps is not None:
+                    camp = camps.get((participant.get('parent') or {}).get('_id'))
+                    camp_name = (camp or {}).get('name') or ''
+                ws.append(scale_export.scale_row(
+                    form,
+                    doc.get('fields') or {},
+                    participant,
+                    submitter_label(doc),
+                    attachment_names(doc),
+                    camp_name=camp_name,
+                ))
+            ws.freeze_panes = 'F2'  # keep ID + name + dates visible while scrolling
+            return ws
+        except Exception:
+            pass
+    write_generic_scale_sheet(ws, form, reports, participants, camps=camps)
     return ws
 
 
@@ -477,19 +524,30 @@ def write_participant_scale_sheet(wb, form, doc, participant):
     if reported:
         ws.append([f'Report submitted: {reported}'])
     ws.append([])
-    sections = scale_export.scale_sections(
-        form,
-        doc.get('fields') or {},
-        participant,
-        submitter_label(doc),
-        attachment_names(doc),
-    )
-    for section, rows in sections:
-        ws.append([section])
-        ws.append(['Question / Field', 'Answer / Value', 'Score'])
-        for label, value, score in rows:
-            ws.append([label, value, score if score is not None else ''])
-        ws.append([])
+    sections = None
+    try:
+        sections = scale_export.scale_sections(
+            form,
+            doc.get('fields') or {},
+            participant,
+            submitter_label(doc),
+            attachment_names(doc),
+        )
+    except Exception:
+        pass
+    if sections:
+        for section, rows in sections:
+            ws.append([section])
+            ws.append(['Question / Field', 'Answer / Value', 'Score'])
+            for label, value, score in rows:
+                ws.append([label, value, score if score is not None else ''])
+            ws.append([])
+    else:
+        ws.append(['Field', 'Value'])
+        flat_fields = flatten(doc.get('fields') or {})
+        for k, v in sorted(flat_fields.items()):
+            if not k.startswith('inputs.') and not k.startswith('meta.'):
+                ws.append([k, json.dumps(v, ensure_ascii=False) if isinstance(v, (dict, list)) else v])
     return ws
 
 
