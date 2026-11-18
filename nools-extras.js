@@ -433,8 +433,7 @@ function isReportDoneByCurrentUser(report) {
   if (!report) { return false; }
   const ctx = getCurrentUserContext();
   if (ctx.isSupervisor) { return true; }
-  // If no user context is available (e.g. testing), do not block
-  if (!ctx.userId && !ctx.userName) { return true; }
+  if (!ctx.userId && !ctx.userName) { return false; }
 
   if (ctx.userId) {
     if (report.contact && report.contact._id === ctx.userId) { return true; }
@@ -457,8 +456,7 @@ function isParticipantDoneByCurrentUser(contactOrContainer) {
   if (!contactOrContainer) { return false; }
   const ctx = getCurrentUserContext();
   if (ctx.isSupervisor) { return true; }
-  // If no user context is available (e.g. testing), do not block
-  if (!ctx.userId && !ctx.userName) { return true; }
+  if (!ctx.userId && !ctx.userName) { return false; }
 
   const contactDoc = contactOrContainer.contact || contactOrContainer;
   const reports = contactOrContainer.reports || [];

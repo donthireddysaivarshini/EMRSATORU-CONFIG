@@ -4,7 +4,7 @@
     <h:title>Assessment Visit</h:title>
     <model odk:xforms-version="1.0.0">
       <instance>
-        <data id="assessment_visit" version="2026-11-05 18-15" prefix="J1!assessment_visit!" delimiter="#">
+        <data id="assessment_visit" version="2026-11-18 16-40" prefix="J1!assessment_visit!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -129,11 +129,11 @@
           </item>
         </root>
       </instance>
-      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
       <bind nodeset="/data/inputs/source" type="string"/>
       <bind nodeset="/data/inputs/source_id" type="string"/>
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/inputs/contact" relevant="../source = 'user'"/>
       <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
       <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
       <bind nodeset="/data/inputs/contact/name" type="string"/>
@@ -142,9 +142,9 @@
       <bind nodeset="/data/inputs/contact/phone" type="string"/>
       <bind nodeset="/data/inputs/contact/education_level" type="string"/>
       <bind nodeset="/data/inputs/contact/cr_no" type="string"/>
-      <bind nodeset="/data/patient_id" type="string" calculate="coalesce(../inputs/contact/patient_id, ../inputs/contact/_id)"/>
-      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_id" type="string" calculate="coalesce(../inputs/contact/patient_id, ../inputs/contact/_id, ../inputs/source_id)"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="coalesce(../inputs/contact/_id, ../inputs/source_id)"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="coalesce(../inputs/contact/name, '')"/>
       <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/gender"/>
       <bind nodeset="/data/patient_age" type="string" calculate="../inputs/contact/age"/>
       <bind nodeset="/data/patient_phone" type="string" calculate="../inputs/contact/phone"/>

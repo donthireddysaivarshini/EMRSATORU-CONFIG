@@ -37,6 +37,7 @@ const {
   nextReviewDue,
   mocaDue,
   vinelandDue,
+  isParticipantDoneByCurrentUser,
 } = require('./nools-extras');
 
 const PRIORITY_HIGH = { level: 'high', label: 'task.priority.high' };
@@ -262,7 +263,10 @@ module.exports = [
     title: 'task.review.title',
     appliesTo: 'contacts',
     appliesToType: [CONTACT_TYPES.PARTICIPANT],
-    appliesIf: (contact) => isActive(contact) && !!nextReviewDue(contact),
+    appliesIf: (contact) =>
+      isActive(contact) &&
+      isParticipantDoneByCurrentUser(contact) &&
+      !!nextReviewDue(contact),
     resolvedIf: (contact, report, event, dueDate) => {
       const since = addDays(dueDate, -event.start).getTime();
       return reportsSince(contact, [FORMS.STAGE2, FORMS.REVIEW], since)
@@ -295,6 +299,7 @@ module.exports = [
     appliesIf: (contact) =>
       isActive(contact) &&
       !isUserContact(contact) &&
+      isParticipantDoneByCurrentUser(contact) &&
       reportsOf(contact, FORMS.ASSESSMENT).length === 0 &&
       contact.role !== 'staff',
     resolvedIf: (contact) => reportsOf(contact, FORMS.ASSESSMENT).length > 0,
@@ -310,6 +315,15 @@ module.exports = [
       type: 'report',
       form: FORMS.ASSESSMENT,
       label: 'task.assessment_visit_due.action',
+      modifyContent: (content, contact) => {
+        const c = (contact && (contact.contact || contact)) || {};
+        content.source = 'task';
+        content.source_id = c._id;
+        content.contact = c;
+        if (!content.patient_id && (c.patient_id || c._id)) {
+          content.patient_id = c.patient_id || c._id;
+        }
+      },
     }],
   },
 

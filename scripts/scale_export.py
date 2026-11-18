@@ -43,7 +43,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MESSAGES_PATH = os.path.join(REPO_ROOT, 'translations', 'messages-en.properties')
 
 CA_KEY = 'report.scale.chronological_age'
-FIXED_INFO = ['Participant ID', 'Participant', 'DOB', 'Assessment date',
+FIXED_INFO = ['CHT ID', 'Participant ID', 'Participant', 'DOB', 'Assessment date',
               'Submitted by']
 
 # DOB / assessment-date fields are already covered by the fixed info columns
@@ -328,7 +328,7 @@ def scale_headers(form, include_camp=False):
 
 
 def scale_row(form, fields, participant, submitter, attachments,
-              camp_name=None):
+              camp_name=None, report_id=None):
     """Values aligned 1:1 with scale_headers(form, camp_name is not None).
 
     Pass camp_name to emit the extra 'Camp' column (all-camps workbook).
@@ -336,6 +336,7 @@ def scale_row(form, fields, participant, submitter, attachments,
     w = _Walker(form)
     cfg = w.cfg
     row = {
+        'CHT ID': participant.get('_id') or '',
         'Participant ID': participant.get('cr_no') or participant.get('patient_id')
         or _lookup(fields, 'patient_id') or '',
         'Participant': participant.get('name') or _lookup(fields, 'patient_name') or '',
@@ -384,11 +385,14 @@ def scale_row(form, fields, participant, submitter, attachments,
     for path in sorted(cfg['notes_fields']):
         raw = _lookup(fields, path)
         values.append('' if raw in (None, '') else raw)
-    values.append(', '.join(attachments) if attachments else '')
+    if attachments and report_id:
+        values.append(f'=HYPERLINK("https://cht.kobosatorufoundation.org/#/reports/{report_id}", "View in CHT")')
+    else:
+        values.append(', '.join(attachments) if attachments else '')
     return values
 
 
-def scale_sections(form, fields, participant, submitter, attachments):
+def scale_sections(form, fields, participant, submitter, attachments, report_id=None):
     """Individual-report layout: ordered [(section, rows)], rows are
     (label, value, score_or_None). Mirrors the report patch."""
     w = _Walker(form)
@@ -398,6 +402,7 @@ def scale_sections(form, fields, participant, submitter, attachments):
     # ---- assessment information ----
     info_rows = []
     meta_info = {
+        'CHT ID': participant.get('_id') or '',
         'Participant ID': participant.get('cr_no')
         or _lookup(fields, 'patient_id') or '',
         'Participant': participant.get('name')
@@ -486,7 +491,8 @@ def scale_sections(form, fields, participant, submitter, attachments):
         support_rows.append((label_for(form, f'g_supporting_docs.{key}', key),
                              value, None))
     if attachments:
-        support_rows.append(('Attachments', ', '.join(attachments), None))
+        att_val = f'=HYPERLINK("https://cht.kobosatorufoundation.org/#/reports/{report_id}", "View in CHT")' if report_id else ', '.join(attachments)
+        support_rows.append(('Attachments', att_val, None))
     if support_rows:
         sections.append(('Supporting documents', support_rows))
 

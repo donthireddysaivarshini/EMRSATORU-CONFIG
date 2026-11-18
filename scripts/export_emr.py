@@ -260,6 +260,7 @@ def write_scale_sheet(wb, form, reports, participants, camps=None):
                     submitter_label(doc),
                     attachment_names(doc),
                     camp_name=camp_name,
+                    report_id=doc.get('_id'),
                 ))
             ws.freeze_panes = 'F2'  # keep ID + name + dates visible while scrolling
             return ws
@@ -281,30 +282,34 @@ def report_submitter_ids(reports):
     return ids
 
 
+REPORT_BASE_URL = 'https://cht.kobosatorufoundation.org/#/reports/'
+
+
 def extract_participant_columns(p, camp_doc=None, all_camps=False, scales_done=None):
     row = {
         'CHT ID': p.get('_id'),
-        'Participant ID': p.get('cr_no'),
-        'Name': p.get('name'),
+        'Date registered (CHT)': iso_datetime(p.get('reported_date')),
+        'Date': iso_datetime(p.get('registration_date')),
+        'Ward / Dept No': p.get('ward_dept_no'),
+        'Hospital Name': p.get('hospital_name'),
+        'Patient Name': p.get('name'),
+        'CR (Case Record) No.': p.get('cr_no'),
+        'Aadhaar (last 4 digits)': p.get('aadhaar_last4'),
+        'Age': p.get('age'),
+        'Sex': GENDER_LABELS.get(p.get('gender'), p.get('gender')),
+        'Education': p.get('education_level'),
+        'Occupation': p.get('occupation'),
+        'Phone (patient / caregiver / attendant)': p.get('phone'),
+        'Address / Locality - City / Town / Village / District': p.get('address'),
+        'Department (referral)': p.get('referral_department'),
+        'Referred by (doctor name)': p.get('referred_by'),
+        'Health complaint & reason for referral': p.get('referral_complaint'),
+        'Notes': p.get('notes'),
     }
-    if all_camps:
+    if all_camps or camp_doc:
         row['Camp'] = (camp_doc or {}).get('name') or ''
     row.update({
-        'Age': p.get('age'),
-        'Gender': GENDER_LABELS.get(p.get('gender'), p.get('gender')),
-        'Phone': p.get('phone'),
-        'Aadhaar (Last 4)': p.get('aadhaar_last4'),
-        'Education Level': p.get('education_level'),
-        'Occupation': p.get('occupation'),
-        'Hospital': p.get('hospital_name'),
-        'Ward/Dept No': p.get('ward_dept_no'),
-        'Address': p.get('address'),
-        'Registration date': iso_datetime(p.get('registration_date')),
-        'Referral Department': p.get('referral_department'),
-        'Referred By': p.get('referred_by'),
-        'Referral Complaint': p.get('referral_complaint'),
-        'Registration Notes': p.get('notes'),
-        'Registered By': p.get('created_by_name') or p.get('created_by_user'),
+        'Registered by': p.get('created_by_name') or p.get('created_by_user'),
         'Scales completed': ', '.join(scales_done or []),
     })
     return row
@@ -314,29 +319,27 @@ def extract_assessment_visit_columns(r=None, visit_idx=None):
     if not r:
         return {
             'Visit #': None,
-            'Assessment Date': None,
-            'Assessment Administered By': None,
-            'Assessment Uploaded By': None,
+            'Date & time of assessment': None,
+            'Administered by (staff name/s)': None,
+            'Uploaded by': None,
             'Patient Name (Confirmed)': None,
-            'CR No (Confirmed)': None,
-            'Consent Mode': None,
-            'Consent Given': None,
-            'Consent Recorded At': None,
-            'Consent Version': None,
-            'Informant Name': None,
-            'Informant Phone': None,
-            'Assessment Scale Used': None,
-            'Scale Score / Result': None,
-            'Scale Interpretation': None,
-            'Clinical Impression': None,
-            'Next Visit Date': None,
-            'Follow-up Notes': None,
-            'Assessed By': None,
-            'Reviewed By': None,
-            'Entered in CHT': None,
-            'QC Checked By': None,
-            'QC Check Date': None,
-            'Participant Record ID': None,
+            'CR (Case Record) No. (Confirmed)': None,
+            'Type of consent obtained': None,
+            'Consent given for screening': None,
+            'Respondent name & relation': None,
+            'Informant phone number': None,
+            'Assessment scale used': None,
+            'Score / result': None,
+            'Interpretation': None,
+            'Provisional diagnosis (post-assessment) / Clinical impression': None,
+            'Follow-up / next visit date': None,
+            'Notes (Assessment)': None,
+            'Assessed by (staff - name & signature)': None,
+            'Reviewed by (staff - name & signature)': None,
+            'Entered in Kobo / CHT': None,
+            'Quality control - checked by (name)': None,
+            'Participant kobo / Record ID': None,
+            'Quality control checking date': None,
             'Supporting Docs Caption': None,
             'Assessment Attachments': None,
             'Assessment Report ID': None,
@@ -345,34 +348,34 @@ def extract_assessment_visit_columns(r=None, visit_idx=None):
     consent_mode = fields.get('g_consent.consent_mode')
     consent_given = fields.get('g_consent.consent_given')
     att = attachment_names(r)
+    rep_id = r.get('_id')
+    att_cell = f'=HYPERLINK("{REPORT_BASE_URL}{rep_id}", "View in CHT")' if (att and rep_id) else (', '.join(att) if att else None)
     return {
         'Visit #': visit_idx or 1,
-        'Assessment Date': iso_datetime(fields.get('g_assessment.assessment_datetime') or r.get('reported_date')),
-        'Assessment Administered By': fields.get('g_assessment.administered_by'),
-        'Assessment Uploaded By': fields.get('g_assessment.uploaded_by'),
+        'Date & time of assessment': iso_datetime(fields.get('g_assessment.assessment_datetime') or r.get('reported_date')),
+        'Administered by (staff name/s)': fields.get('g_assessment.administered_by'),
+        'Uploaded by': fields.get('g_assessment.uploaded_by'),
         'Patient Name (Confirmed)': fields.get('g_patient.patient_name_confirm'),
-        'CR No (Confirmed)': fields.get('g_patient.patient_cr_confirm'),
-        'Consent Mode': {'written': 'Written', 'verbal': 'Verbal'}.get(consent_mode, consent_mode),
-        'Consent Given': {'yes': 'Yes', 'no': 'No'}.get(consent_given, consent_given),
-        'Consent Recorded At': iso_datetime(fields.get('g_consent.consent_recorded_at')),
-        'Consent Version': fields.get('g_consent.consent_version'),
-        'Informant Name': fields.get('g_informant.informant_name'),
-        'Informant Phone': fields.get('g_informant.informant_phone'),
-        'Assessment Scale Used': fields.get('g_assessment.g_scale.scale_name'),
-        'Scale Score / Result': fields.get('g_assessment.g_scale.score'),
-        'Scale Interpretation': fields.get('g_assessment.g_scale.interpretation'),
-        'Clinical Impression': fields.get('g_clinical.clinical_impression'),
-        'Next Visit Date': iso_datetime(fields.get('g_followup.next_visit_date')),
-        'Follow-up Notes': fields.get('g_followup.notes'),
-        'Assessed By': fields.get('g_followup.assessed_by'),
-        'Reviewed By': fields.get('g_followup.reviewed_by'),
-        'Entered in CHT': fields.get('g_office.entered_in_cht'),
-        'QC Checked By': fields.get('g_office.qc_checked_by'),
-        'QC Check Date': iso_datetime(fields.get('g_office.qc_check_date')),
-        'Participant Record ID': fields.get('g_office.record_id'),
+        'CR (Case Record) No. (Confirmed)': fields.get('g_patient.patient_cr_confirm'),
+        'Type of consent obtained': {'written': 'Written', 'verbal': 'Verbal'}.get(consent_mode, consent_mode),
+        'Consent given for screening': {'yes': 'Yes', 'no': 'No'}.get(consent_given, consent_given),
+        'Respondent name & relation': fields.get('g_informant.informant_name'),
+        'Informant phone number': fields.get('g_informant.informant_phone'),
+        'Assessment scale used': fields.get('g_assessment.g_scale.scale_name'),
+        'Score / result': fields.get('g_assessment.g_scale.score'),
+        'Interpretation': fields.get('g_assessment.g_scale.interpretation'),
+        'Provisional diagnosis (post-assessment) / Clinical impression': fields.get('g_clinical.clinical_impression'),
+        'Follow-up / next visit date': iso_datetime(fields.get('g_followup.next_visit_date')),
+        'Notes (Assessment)': fields.get('g_followup.notes'),
+        'Assessed by (staff - name & signature)': fields.get('g_followup.assessed_by'),
+        'Reviewed by (staff - name & signature)': fields.get('g_followup.reviewed_by'),
+        'Entered in Kobo / CHT': fields.get('g_office.entered_in_cht'),
+        'Quality control - checked by (name)': fields.get('g_office.qc_checked_by'),
+        'Participant kobo / Record ID': fields.get('g_office.record_id'),
+        'Quality control checking date': iso_datetime(fields.get('g_office.qc_check_date')),
         'Supporting Docs Caption': fields.get('g_supporting_docs.upload_caption'),
-        'Assessment Attachments': ', '.join(att) if att else None,
-        'Assessment Report ID': r.get('_id'),
+        'Assessment Attachments': att_cell,
+        'Assessment Report ID': rep_id,
     }
 
 
@@ -422,12 +425,12 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
 
     if all_camps:
         rows.sort(key=lambda r: (r.get('Camp') or '',
-                                 r.get('Participant ID') or '',
-                                 r.get('Name') or '',
+                                 r.get('CR (Case Record) No.') or r.get('Participant ID') or '',
+                                 r.get('Patient Name') or r.get('Name') or '',
                                  r.get('Visit #') or 0))
     else:
-        rows.sort(key=lambda r: (r.get('Participant ID') or '',
-                                 r.get('Name') or '',
+        rows.sort(key=lambda r: (r.get('CR (Case Record) No.') or r.get('Participant ID') or '',
+                                 r.get('Patient Name') or r.get('Name') or '',
                                  r.get('Visit #') or 0))
     write_sheet(wb, 'Participants', rows)
 
@@ -442,27 +445,25 @@ def write_participant_sheet(wb, participant, camp, scales_done, assessment_visit
     """Field | Value summary sheet for one participant."""
     rows = [
         {'Field': 'CHT ID', 'Value': participant.get('_id')},
-        {'Field': 'Participant ID', 'Value': participant.get('cr_no')},
-        {'Field': 'Name', 'Value': participant.get('name')},
+        {'Field': 'Date registered (CHT)', 'Value': iso_datetime(participant.get('reported_date'))},
+        {'Field': 'Date', 'Value': iso_datetime(participant.get('registration_date'))},
+        {'Field': 'Ward / Dept No', 'Value': participant.get('ward_dept_no')},
+        {'Field': 'Hospital Name', 'Value': participant.get('hospital_name')},
+        {'Field': 'Patient Name', 'Value': participant.get('name')},
+        {'Field': 'CR (Case Record) No.', 'Value': participant.get('cr_no')},
+        {'Field': 'Aadhaar (last 4 digits)', 'Value': participant.get('aadhaar_last4')},
         {'Field': 'Age', 'Value': participant.get('age')},
-        {'Field': 'Gender', 'Value': GENDER_LABELS.get(participant.get('gender'),
-                                                       participant.get('gender'))},
-        {'Field': 'Phone', 'Value': participant.get('phone')},
-        {'Field': 'Aadhaar (Last 4)', 'Value': participant.get('aadhaar_last4')},
+        {'Field': 'Sex', 'Value': GENDER_LABELS.get(participant.get('gender'),
+                                                    participant.get('gender'))},
         {'Field': 'Education', 'Value': participant.get('education_level')},
         {'Field': 'Occupation', 'Value': participant.get('occupation')},
-        {'Field': 'Hospital', 'Value': participant.get('hospital_name')},
-        {'Field': 'Ward/Dept No', 'Value': participant.get('ward_dept_no')},
-        {'Field': 'Address', 'Value': participant.get('address')},
-        {'Field': 'Camp', 'Value': camp.get('name') if camp else None},
-        {'Field': 'Registration date',
-         'Value': iso_datetime(participant.get('registration_date'))},
-        {'Field': 'Referral department',
-         'Value': participant.get('referral_department')},
-        {'Field': 'Referred by', 'Value': participant.get('referred_by')},
-        {'Field': 'Referral complaint',
-         'Value': participant.get('referral_complaint')},
+        {'Field': 'Phone (patient / caregiver / attendant)', 'Value': participant.get('phone')},
+        {'Field': 'Address / Locality - City / Town / Village / District', 'Value': participant.get('address')},
+        {'Field': 'Department (referral)', 'Value': participant.get('referral_department')},
+        {'Field': 'Referred by (doctor name)', 'Value': participant.get('referred_by')},
+        {'Field': 'Health complaint & reason for referral', 'Value': participant.get('referral_complaint')},
         {'Field': 'Notes', 'Value': participant.get('notes')},
+        {'Field': 'Camp', 'Value': camp.get('name') if camp else None},
         {'Field': 'Registered by',
          'Value': participant.get('created_by_name') or participant.get('created_by_user')},
         {'Field': 'Scales completed', 'Value': ', '.join(scales_done)},
@@ -471,47 +472,58 @@ def write_participant_sheet(wb, participant, camp, scales_done, assessment_visit
         for idx, r in enumerate(assessment_visits, 1):
             fields = flatten(r.get('fields') or {})
             rows.append({'Field': f'--- Assessment Visit #{idx} ---', 'Value': ''})
-            rows.append({'Field': 'Assessment Date',
+            rows.append({'Field': 'Date & time of assessment',
                          'Value': iso_datetime(fields.get('g_assessment.assessment_datetime') or r.get('reported_date'))})
             if fields.get('g_assessment.administered_by'):
-                rows.append({'Field': 'Administered by', 'Value': fields.get('g_assessment.administered_by')})
+                rows.append({'Field': 'Administered by (staff name/s)', 'Value': fields.get('g_assessment.administered_by')})
             if fields.get('g_assessment.uploaded_by'):
                 rows.append({'Field': 'Uploaded by', 'Value': fields.get('g_assessment.uploaded_by')})
+            if fields.get('g_patient.patient_name_confirm'):
+                rows.append({'Field': 'Patient Name (Confirmed)', 'Value': fields.get('g_patient.patient_name_confirm')})
+            if fields.get('g_patient.patient_cr_confirm'):
+                rows.append({'Field': 'CR (Case Record) No. (Confirmed)', 'Value': fields.get('g_patient.patient_cr_confirm')})
             if fields.get('g_consent.consent_mode'):
-                rows.append({'Field': 'Consent mode',
+                rows.append({'Field': 'Type of consent obtained',
                              'Value': {'written': 'Written', 'verbal': 'Verbal'}.get(fields.get('g_consent.consent_mode'), fields.get('g_consent.consent_mode'))})
             if fields.get('g_consent.consent_given'):
-                rows.append({'Field': 'Consent given',
+                rows.append({'Field': 'Consent given for screening',
                              'Value': {'yes': 'Yes', 'no': 'No'}.get(fields.get('g_consent.consent_given'), fields.get('g_consent.consent_given'))})
             if fields.get('g_informant.informant_name'):
-                rows.append({'Field': 'Informant name', 'Value': fields.get('g_informant.informant_name')})
+                rows.append({'Field': 'Respondent name & relation', 'Value': fields.get('g_informant.informant_name')})
             if fields.get('g_informant.informant_phone'):
-                rows.append({'Field': 'Informant phone', 'Value': fields.get('g_informant.informant_phone')})
+                rows.append({'Field': 'Informant phone number', 'Value': fields.get('g_informant.informant_phone')})
             if fields.get('g_assessment.g_scale.scale_name'):
-                rows.append({'Field': 'Scale used', 'Value': fields.get('g_assessment.g_scale.scale_name')})
+                rows.append({'Field': 'Assessment scale used', 'Value': fields.get('g_assessment.g_scale.scale_name')})
             if fields.get('g_assessment.g_scale.score'):
-                rows.append({'Field': 'Scale score', 'Value': fields.get('g_assessment.g_scale.score')})
+                rows.append({'Field': 'Score / result', 'Value': fields.get('g_assessment.g_scale.score')})
             if fields.get('g_assessment.g_scale.interpretation'):
-                rows.append({'Field': 'Scale interpretation', 'Value': fields.get('g_assessment.g_scale.interpretation')})
+                rows.append({'Field': 'Interpretation', 'Value': fields.get('g_assessment.g_scale.interpretation')})
             if fields.get('g_clinical.clinical_impression'):
-                rows.append({'Field': 'Clinical impression', 'Value': fields.get('g_clinical.clinical_impression')})
+                rows.append({'Field': 'Provisional diagnosis (post-assessment) / Clinical impression', 'Value': fields.get('g_clinical.clinical_impression')})
             if fields.get('g_followup.next_visit_date'):
-                rows.append({'Field': 'Next visit date', 'Value': iso_datetime(fields.get('g_followup.next_visit_date'))})
+                rows.append({'Field': 'Follow-up / next visit date', 'Value': iso_datetime(fields.get('g_followup.next_visit_date'))})
             if fields.get('g_followup.notes'):
-                rows.append({'Field': 'Follow-up notes', 'Value': fields.get('g_followup.notes')})
+                rows.append({'Field': 'Notes (Assessment)', 'Value': fields.get('g_followup.notes')})
             if fields.get('g_followup.assessed_by'):
-                rows.append({'Field': 'Assessed by', 'Value': fields.get('g_followup.assessed_by')})
+                rows.append({'Field': 'Assessed by (staff - name & signature)', 'Value': fields.get('g_followup.assessed_by')})
             if fields.get('g_followup.reviewed_by'):
-                rows.append({'Field': 'Reviewed by', 'Value': fields.get('g_followup.reviewed_by')})
+                rows.append({'Field': 'Reviewed by (staff - name & signature)', 'Value': fields.get('g_followup.reviewed_by')})
             if fields.get('g_office.entered_in_cht'):
-                rows.append({'Field': 'Entered in CHT', 'Value': fields.get('g_office.entered_in_cht')})
+                rows.append({'Field': 'Entered in Kobo / CHT', 'Value': fields.get('g_office.entered_in_cht')})
             if fields.get('g_office.qc_checked_by'):
-                rows.append({'Field': 'QC checked by', 'Value': fields.get('g_office.qc_checked_by')})
+                rows.append({'Field': 'Quality control - checked by (name)', 'Value': fields.get('g_office.qc_checked_by')})
             if fields.get('g_office.record_id'):
-                rows.append({'Field': 'Record ID', 'Value': fields.get('g_office.record_id')})
+                rows.append({'Field': 'Participant kobo / Record ID', 'Value': fields.get('g_office.record_id')})
+            if fields.get('g_office.qc_check_date'):
+                rows.append({'Field': 'Quality control checking date', 'Value': iso_datetime(fields.get('g_office.qc_check_date'))})
+            if fields.get('g_supporting_docs.upload_caption'):
+                rows.append({'Field': 'Supporting Docs Caption', 'Value': fields.get('g_supporting_docs.upload_caption')})
             att = attachment_names(r)
             if att:
-                rows.append({'Field': 'Attachments', 'Value': ', '.join(att)})
+                rep_id = r.get('_id')
+                rows.append({'Field': 'Assessment Attachments', 'Value': f'=HYPERLINK("{REPORT_BASE_URL}{rep_id}", "View in CHT")' if rep_id else ', '.join(att)})
+            if r.get('_id'):
+                rows.append({'Field': 'Assessment Report ID', 'Value': r.get('_id')})
     rows = [r for r in rows if r['Value'] not in (None, '') or r['Field'].startswith('---')]
     return write_sheet(wb, 'Participant', rows)
 
@@ -532,6 +544,7 @@ def write_participant_scale_sheet(wb, form, doc, participant):
             participant,
             submitter_label(doc),
             attachment_names(doc),
+            report_id=doc.get('_id'),
         )
     except Exception:
         pass

@@ -140,14 +140,14 @@ def test_camp_workbook():
     hdr, rows = read_only_ws(wb, 'Participants')
     check('Participants: 2 rows (only camp-1 members)', len(rows) == 2, len(rows))
     idx = {h: i for i, h in enumerate(hdr)}
-    row_a = next(r for r in rows if r[idx['Name']] == 'Kamala')
-    row_b = next(r for r in rows if r[idx['Name']] == 'Ravi')
+    row_a = next(r for r in rows if r[idx['Patient Name']] == 'Kamala')
+    row_b = next(r for r in rows if r[idx['Patient Name']] == 'Ravi')
     check('Participants: scales completed listed',
           row_a[idx['Scales completed']] == 'DDST-II, VSMS'
           and row_b[idx['Scales completed']] == 'DDST-II',
           (row_a[idx['Scales completed']], row_b[idx['Scales completed']]))
     check('Participants: gender human-readable',
-          row_a[idx['Gender']] == 'Female', row_a[idx['Gender']])
+          row_a[idx['Sex']] == 'Female', row_a[idx['Sex']])
     check('Participants: no internal _id column',
           '_id' not in idx and 'Patient ID' not in hdr)
 
@@ -220,7 +220,7 @@ def test_all_workbook():
     check('all-workbook: both camp names present',
           camps_seen == {'NIMS', 'OtherCamp'}, camps_seen)
     check('all-workbook: submitter not listed as participant',
-          all(r[idx['Name']] != 'Varshini' for r in rows))
+          all(r[idx['Patient Name']] != 'Varshini' for r in rows))
 
     hdr, rows = read_only_ws(wb, 'DDST-II')
     idx = {h: i for i, h in enumerate(hdr)}
@@ -256,8 +256,9 @@ def test_participant_report():
     check('Participant: key/value layout with Field header',
           hdr[0] == 'Field' and hdr[1] == 'Value')
     check('Participant: human fields present',
-          kv.get('Participant ID') == 'CR001' and kv.get('Name') == 'Kamala'
-          and kv.get('Camp') == 'NIMS', kv.get('Participant ID'))
+          (kv.get('CR (Case Record) No.') or kv.get('Participant ID')) == 'CR001'
+          and (kv.get('Patient Name') or kv.get('Name')) == 'Kamala'
+          and kv.get('Camp') == 'NIMS', kv.get('CR (Case Record) No.'))
     check('Participant: scales completed listed',
           kv.get('Scales completed') == 'DDST-II, VSMS', kv.get('Scales completed'))
     check('Participant: empty fields omitted',
@@ -447,6 +448,7 @@ def test_assessment_visit_integration():
     }
     v1 = {
         '_id': 'v-001', 'type': 'data_record', 'form': 'assessment_visit', 'reported_date': 1780000000000,
+        '_attachments': {'consent_form.jpg': {'content_type': 'image/jpeg'}},
         'fields': {
             'patient_uuid': 'p-multi',
             'g_assessment': {
@@ -480,23 +482,26 @@ def test_assessment_visit_integration():
 
     check('multi-visit: 2 visits for Aarav + 1 for Bhavani -> 3 rows', len(rows) == 3, len(rows))
     check('multi-visit: CHT ID column present', 'CHT ID' in idx)
-    check('multi-visit: Aadhaar (Last 4) column present', 'Aadhaar (Last 4)' in idx)
+    check('multi-visit: Aadhaar (last 4 digits) column present', 'Aadhaar (last 4 digits)' in idx)
     check('multi-visit: Visit # column present', 'Visit #' in idx)
-    check('multi-visit: Clinical Impression column present', 'Clinical Impression' in idx)
+    check('multi-visit: Clinical Impression column present', 'Provisional diagnosis (post-assessment) / Clinical impression' in idx)
 
-    aarav_rows = [r for r in rows if r[idx['Name']] == 'Aarav Sharma']
+    aarav_rows = [r for r in rows if r[idx['Patient Name']] == 'Aarav Sharma']
     check('multi-visit: Aarav has exactly 2 rows', len(aarav_rows) == 2, len(aarav_rows))
     check('multi-visit: Aarav rows have visit #1 and #2',
           aarav_rows[0][idx['Visit #']] == 1 and aarav_rows[1][idx['Visit #']] == 2)
     check('multi-visit: Aarav visit 1 consent mode resolved to Written',
-          aarav_rows[0][idx['Consent Mode']] == 'Written')
+          aarav_rows[0][idx['Type of consent obtained']] == 'Written')
     check('multi-visit: Aarav visit 2 consent mode resolved to Verbal',
-          aarav_rows[1][idx['Consent Mode']] == 'Verbal')
+          aarav_rows[1][idx['Type of consent obtained']] == 'Verbal')
+    check('multi-visit: Aarav visit 1 attachment has Excel HYPERLINK formula',
+          '=HYPERLINK(' in str(aarav_rows[0][idx['Assessment Attachments']]) and
+          'https://cht.kobosatorufoundation.org/#/reports/' in str(aarav_rows[0][idx['Assessment Attachments']]))
     check('multi-visit: Aarav visit dates distinct',
-          '2026-06-15' in str(aarav_rows[0][idx['Assessment Date']]) and
-          '2026-07-20' in str(aarav_rows[1][idx['Assessment Date']]))
+          '2026-06-15' in str(aarav_rows[0][idx['Date & time of assessment']]) and
+          '2026-07-20' in str(aarav_rows[1][idx['Date & time of assessment']]))
 
-    bhavani_rows = [r for r in rows if r[idx['Name']] == 'Bhavani Devi']
+    bhavani_rows = [r for r in rows if r[idx['Patient Name']] == 'Bhavani Devi']
     check('multi-visit: Bhavani has 1 row with empty visit',
           len(bhavani_rows) == 1 and bhavani_rows[0][idx['Visit #']] is None)
 

@@ -34,6 +34,15 @@ function runTargets(contactDoc, reports, userObj, chtObj) {
   return emissions;
 }
 
+function runTasks(contactDoc, reports, userObj, chtObj) {
+  const tasks = [];
+  const emit = (type, obj) => { if (type === 'task') tasks.push(obj); };
+  function Target(data) { Object.assign(this, data); }
+  function Task(data) { Object.assign(this, data); }
+  fn({ contact: contactDoc, reports: reports || [] }, Task, Target, nootils, userObj, chtObj, emit);
+  return tasks;
+}
+
 let failures = 0;
 const check = (name, cond) => {
   console.log(`  ${cond ? 'ok  ' : 'FAIL'} ${name}`);
@@ -78,6 +87,23 @@ check('supervisor sees any registered participant', res5.some(t => t.type === 'p
 // 6. Supervisor sees all reports
 const res6 = runTargets(pOther, [r1Other], supervisor, supervisorCht);
 check('supervisor sees reports done by any intern', res6.some(t => t.type === 'stage1-completed'));
+
+// 7. Tasks: Intern sees assessment task only for their own participant
+const tOwn = runTasks(pOwn, [], intern1, {});
+check('intern sees assessment visit task for their own participant',
+      tOwn.some(t => t._id.includes('assessment-visit-due')));
+
+// Verify modifyContent on the task
+const taskDoc = tOwn.find(t => t._id.includes('assessment-visit-due'));
+check('assessment visit task action passes source=task and contact',
+      taskDoc && taskDoc.actions && taskDoc.actions[0] &&
+      taskDoc.actions[0].content && taskDoc.actions[0].content.source === 'task' &&
+      taskDoc.actions[0].content.source_id === 'p1');
+
+// 8. Tasks: Intern does NOT see assessment task for other intern participant
+const tOther = runTasks(pOther, [], intern1, {});
+check('intern does NOT see assessment visit task for other intern participant',
+      !tOther.some(t => t._id.includes('assessment-visit-due')));
 
 console.log(failures ? `\n${failures} FAILED` : '\nALL TARGET CHECKS PASSED');
 process.exit(failures ? 1 : 0);
