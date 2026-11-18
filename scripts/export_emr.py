@@ -59,8 +59,42 @@ from emr_common import (EmrDb, attachment_names, classify_contacts, flatten,
                         iso_datetime, is_emr_report, sanitize_filename,
                         timestamp_stamp)
 import scale_export
+import scale_meta
 
-SCALE_ORDER = ['ddst', 'dst', 'moca', 'moca_assessment', 'vineland']
+PREFERRED_SCALE_ORDER = [
+    'assessment_visit',
+    'ddst',
+    'dst',
+    'moca',
+    'moca_assessment',
+    'vineland',
+    'cog5',
+    'mse',
+    'phq9',
+    'ad8',
+    'easi',
+    'gds15',
+    'follow_up_contact',
+    'longitudinal_review',
+    'referral_outcome',
+]
+
+
+def get_scale_order(extra_forms=None):
+    """Dynamic list of all known forms in stable order.
+    Starts with PREFERRED_SCALE_ORDER, then appends any other forms discovered
+    in database reports or on disk (excluding contacts and training)."""
+    known = list(PREFERRED_SCALE_ORDER)
+    discovered = set(scale_meta.SCALES.keys())
+    if extra_forms:
+        discovered.update(extra_forms)
+    for form in sorted(discovered):
+        if form and form not in known and not form.startswith('contact:') and not form.startswith('training:'):
+            known.append(form)
+    return known
+
+
+SCALE_ORDER = get_scale_order()
 GENDER_LABELS = {'male': 'Male', 'female': 'Female'}
 
 
@@ -140,15 +174,23 @@ def submitter_label(doc):
 
 
 def scale_reports_by_participant(reports, participant_ids):
-    """form -> list of (doc, participant) for reports whose SUBJECT is one of
-    participant_ids, ordered by reported_date (then _id for stability)."""
-    by_form = {form: [] for form in SCALE_ORDER}
+    """form -> list of doc for reports whose SUBJECT is one of
+    participant_ids, ordered by reported_date (then _id for stability).
+    Dynamically includes ALL forms present in the reports."""
+    forms_in_reports = {
+        doc.get('form') for doc in reports
+        if doc.get('form') and subject_id_of(doc) in participant_ids
+    }
+    order = get_scale_order(forms_in_reports)
+    by_form = {form: [] for form in order}
     for doc in reports:
         sid = subject_id_of(doc)
         if sid not in participant_ids:
             continue
         form = doc.get('form')
-        if form in by_form:
+        if form:
+            if form not in by_form:
+                by_form[form] = []
             by_form[form].append(doc)
     for docs in by_form.values():
         docs.sort(key=lambda d: (d.get('reported_date') or 0, d.get('_id') or ''))
@@ -205,11 +247,13 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
                and (all_camps
                     or (p.get('parent') or {}).get('_id') == camp_id)}
     by_form = scale_reports_by_participant(reports, set(members))
+    active_forms = [f for f, docs in by_form.items() if docs]
+    order = get_scale_order(active_forms)
 
     rows = []
     for pid, p in members.items():
-        scales_done = [scale_export.sheet_title(f) for f in SCALE_ORDER
-                       if any(subject_id_of(d) == pid for d in by_form[f])]
+        scales_done = [scale_export.sheet_title(f) for f in order
+                       if any(subject_id_of(d) == pid for d in by_form.get(f, []))]
         row = {
             'Participant ID': p.get('cr_no'),
             'Name': p.get('name'),
@@ -237,8 +281,8 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
                                  r.get('Name') or ''))
     write_sheet(wb, 'Participants', rows)
 
-    for form in SCALE_ORDER:
-        if by_form[form]:
+    for form in order:
+        if by_form.get(form):
             write_scale_sheet(wb, form, by_form[form], participants,
                               camps=camps if all_camps else None)
     return by_form
@@ -304,11 +348,13 @@ def build_participant_report_workbook(wb, participant_id, participants, camps, r
         raise SystemExit(f'participant not found: {participant_id}')
     camp = camps.get((participant.get('parent') or {}).get('_id'))
     by_form = scale_reports_by_participant(reports, {participant_id})
-    scales_done = [scale_export.sheet_title(f) for f in SCALE_ORDER if by_form[f]]
+    active_forms = [f for f, docs in by_form.items() if docs]
+    order = get_scale_order(active_forms)
+    scales_done = [scale_export.sheet_title(f) for f in order if by_form.get(f)]
 
     write_participant_sheet(wb, participant, camp, scales_done)
-    for form in SCALE_ORDER:
-        for doc in by_form[form]:  # a re-completed scale gets its own sheet copy
+    for form in order:
+        for doc in by_form.get(form, []):  # a re-completed scale gets its own sheet copy
             write_participant_scale_sheet(wb, form, doc, participant)
     return by_form
 
@@ -337,6 +383,22 @@ def build_workbook(scope, db):
     docs = db.fetch_all_docs()
     camps, participants = classify_contacts(docs)
     reports = [d for d in docs if is_emr_report(d)]
+
+    # Ensure form XMLs exist locally for any form present in reports
+    if hasattr(db, 'fetch_attachment'):
+        for doc in reports:
+            f = doc.get('form')
+            if f and f not in scale_meta.SCALES:
+                xml_path = os.path.join(scale_meta.FORMS_DIR, f'{f}.xml')
+                if not os.path.isfile(xml_path):
+                    xml_bytes = db.fetch_attachment(f'form:{f}', 'xml')
+                    if xml_bytes:
+                        try:
+                            os.makedirs(scale_meta.FORMS_DIR, exist_ok=True)
+                            with open(xml_path, 'wb') as fp:
+                                fp.write(xml_bytes)
+                        except Exception:
+                            pass
 
     wb = openpyxl.Workbook()
     wb.remove(wb.active)

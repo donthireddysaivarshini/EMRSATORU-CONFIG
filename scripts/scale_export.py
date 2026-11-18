@@ -58,11 +58,21 @@ INFO_FIELD_PATHS = {
 
 # Short sheet names for the camp workbook
 SHEET_TITLES = {
+    'assessment_visit': 'Assessment Visit',
     'ddst': 'DDST-II',
     'dst': 'DST',
     'moca': 'MoCA-Int',
     'moca_assessment': 'MoCA',
     'vineland': 'VSMS',
+    'cog5': 'CoG5',
+    'mse': 'MSE',
+    'phq9': 'PHQ-9',
+    'ad8': 'AD8',
+    'easi': 'EASI',
+    'gds15': 'GDS-15',
+    'follow_up_contact': 'Follow-Up',
+    'longitudinal_review': 'Longitudinal Review',
+    'referral_outcome': 'Referral Outcome',
 }
 
 _messages_cache = None
@@ -83,7 +93,16 @@ def load_messages():
 
 
 def sheet_title(form):
-    return SHEET_TITLES[form]
+    if form in SHEET_TITLES:
+        return SHEET_TITLES[form]
+    try:
+        title = get_scale_meta(form).get('title') or form
+    except Exception:
+        title = form
+    for ch in r'\/?*[]:':
+        title = title.replace(ch, '')
+    title = title.strip()
+    return title[:31] if title else form[:31]
 
 
 def scale_full_title(form):

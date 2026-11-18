@@ -78,6 +78,13 @@ class EmrDb:
     def fetch_doc(self, doc_id):
         return self._request(f'/{urllib.parse.quote(doc_id, safe="")}')
 
+    def fetch_attachment(self, doc_id, attachment_name):
+        path = f'/{urllib.parse.quote(str(doc_id), safe="")}/{urllib.parse.quote(str(attachment_name), safe="")}'
+        resp = self.session.get(f'{self.base}{path}', verify=self.verify, timeout=60)
+        if resp.status_code == 200:
+            return resp.content
+        return None
+
 
 def is_emr_report(doc):
     """True for a submission we treat as an EMR clinical report.

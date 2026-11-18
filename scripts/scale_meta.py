@@ -25,52 +25,91 @@ import xml.etree.ElementTree as ET
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FORMS_DIR = os.path.join(REPO_ROOT, 'forms', 'app')
 
-SCALES = {
-    'ddst': {
-        'file': 'ddst.xml',
-        'title': 'Denver Developmental Screening Test II (DDST-II)',
-    },
-    'dst': {
-        'file': 'dst.xml',
-        'title': 'Developmental Screening Test (DST)',
-    },
-    'moca': {
-        'file': 'moca.xml',
-        'title': 'MOCA (Integrated)',
-    },
-    'moca_assessment': {
-        'file': 'moca_assessment.xml',
-        'title': 'Montreal Cognitive Assessment (MoCA)',
-    },
-    'vineland': {
-        'file': 'vineland.xml',
-        'title': 'Vineland-style Social Maturity Scale (VSMS)',
-    },
-    'cog5': {
-        'file': 'cog5.xml',
-        'title': 'CoG5 - Memory Screening Battery',
-    },
-    'mse': {
-        'file': 'mse.xml',
-        'title': 'Mental State Examination (MSE)',
-    },
-    'phq9': {
-        'file': 'phq9.xml',
-        'title': 'PHQ-9 Depression Screening',
-    },
-    'ad8': {
-        'file': 'ad8.xml',
-        'title': 'AD8 Dementia Screening Interview',
-    },
-    'easi': {
-        'file': 'easi.xml',
-        'title': 'Everyday Abilities Scale for India (EASI)',
-    },
-    'gds15': {
-        'file': 'gds15.xml',
-        'title': 'Geriatric Depression Scale (GDS-15)',
-    },
+KNOWN_TITLES = {
+    'ddst': 'Denver Developmental Screening Test II (DDST-II)',
+    'dst': 'Developmental Screening Test (DST)',
+    'moca': 'MOCA (Integrated)',
+    'moca_assessment': 'Montreal Cognitive Assessment (MoCA)',
+    'vineland': 'Vineland-style Social Maturity Scale (VSMS)',
+    'cog5': 'CoG5 - Memory Screening Battery',
+    'mse': 'Mental State Examination (MSE)',
+    'phq9': 'PHQ-9 Depression Screening',
+    'ad8': 'AD8 Dementia Screening Interview',
+    'easi': 'Everyday Abilities Scale for India (EASI)',
+    'gds15': 'Geriatric Depression Scale (GDS-15)',
+    'assessment_visit': 'Assessment Visit',
 }
+
+
+def _extract_xml_title(path):
+    try:
+        tree = ET.parse(path)
+        root = tree.getroot()
+        for head in root:
+            if head.tag.endswith('head'):
+                for child in head:
+                    if child.tag.endswith('title') and child.text:
+                        return child.text.strip()
+    except Exception:
+        pass
+    return None
+
+
+class ScalesRegistry(dict):
+    """Dynamic scale registry that auto-discovers all app forms in FORMS_DIR
+    while preserving human titles for known scales."""
+
+    def __init__(self):
+        super().__init__()
+        for k, v in KNOWN_TITLES.items():
+            self[k] = {'file': f'{k}.xml', 'title': v}
+
+    def _refresh(self):
+        if not os.path.isdir(FORMS_DIR):
+            return
+        for fname in os.listdir(FORMS_DIR):
+            if fname.endswith('.xml') and not fname.startswith('.'):
+                form_id = fname[:-4]
+                if not dict.__contains__(self, form_id):
+                    path = os.path.join(FORMS_DIR, fname)
+                    title = _extract_xml_title(path) or KNOWN_TITLES.get(form_id) or form_id.replace('_', ' ').title()
+                    dict.__setitem__(self, form_id, {'file': fname, 'title': title})
+
+    def __contains__(self, key):
+        self._refresh()
+        return dict.__contains__(self, key)
+
+    def __getitem__(self, key):
+        self._refresh()
+        if not dict.__contains__(self, key):
+            path = os.path.join(FORMS_DIR, f'{key}.xml')
+            if os.path.isfile(path):
+                title = _extract_xml_title(path) or KNOWN_TITLES.get(key) or key.replace('_', ' ').title()
+                dict.__setitem__(self, key, {'file': f'{key}.xml', 'title': title})
+        return dict.__getitem__(self, key)
+
+    def __iter__(self):
+        self._refresh()
+        return dict.__iter__(self)
+
+    def keys(self):
+        self._refresh()
+        return dict.keys(self)
+
+    def values(self):
+        self._refresh()
+        return dict.values(self)
+
+    def items(self):
+        self._refresh()
+        return dict.items(self)
+
+    def get(self, key, default=None):
+        self._refresh()
+        return dict.get(self, key, default)
+
+
+SCALES = ScalesRegistry()
 
 # ---------------------------------------------------------------------------
 # XML helpers

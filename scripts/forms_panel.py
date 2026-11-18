@@ -620,6 +620,20 @@ def publish(couch, token, user):
             except Exception as exc:                          # noqa: BLE001
                 notes = [f'FORM IS LIVE but report layout/labels were not updated: {exc}']
 
+            # Automatically persist published form XML and XLSX to the repository's forms/app
+            repo_app_dir = os.path.join(REPO, 'forms', 'app')
+            if os.path.isdir(repo_app_dir):
+                try:
+                    dest_xml = os.path.join(repo_app_dir, f'{form_id}.xml')
+                    with open(dest_xml, 'wb') as f_out:
+                        f_out.write(new_xml)
+                    src_xlsx = os.path.join(app_dir, f'{form_id}.xlsx')
+                    dest_xlsx = os.path.join(repo_app_dir, f'{form_id}.xlsx')
+                    if os.path.isfile(src_xlsx):
+                        shutil.copyfile(src_xlsx, dest_xlsx)
+                except Exception:
+                    pass
+
         entry = couch.get_doc(entry_id, db=history_url)
         entry.update({'status': 'published' if live_ok else 'uploaded_but_not_verified',
                       'finished_at': now_iso(), 'notes': notes})
