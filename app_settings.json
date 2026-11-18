@@ -3100,81 +3100,81 @@
         "grp_mse_scale.q1": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q2": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q3": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q4": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q5": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q6": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q7": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q8": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q9": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q10": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q11": {
           "0": "0 Correct",
           "1": "1 Correct",
           "2": "2 Correct",
           "3": "3 Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q12_a_b": {
           "0": "0 Correct",
@@ -3183,71 +3183,71 @@
           "3": "3 Correct",
           "4": "4 Correct",
           "5": "5 Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q13": {
           "0": "0 Correct",
           "1": "1 Correct",
           "2": "2 Correct",
           "3": "3 Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q15": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q16": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q17": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q18": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q19": {
           "0": "0 Correct",
           "1": "1 Correct",
           "2": "2 Correct",
           "3": "3 Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q20": {
           "0": "Wrong",
           "1": "Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.q21": {
           "0": "0 Correct",
           "1": "1 Correct",
           "2": "2 Correct",
           "3": "3 Correct",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_mse_scale.Survey_Status_mse": {
           "completed": "Completed",
@@ -3288,90 +3288,90 @@
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q2": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q3": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q4": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q5": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q6": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q7": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q8": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_q9": {
           "0": "Not at all",
           "1": "Several days",
           "2": "More than half the days",
           "3": "Nearly every day",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.phq9_difficulty": {
           "0": "Not difficult at all",
           "1": "Somewhat difficult",
           "2": "Very difficult",
           "3": "Extremely difficult",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_phq9_scale.Survey_Status_phq9": {
           "completed": "Completed",
@@ -3408,60 +3408,60 @@
           "nc_dropout": "Not completed - Dropout (left early / discontinued)"
         },
         "grp_ad8_scale.ad8_q1": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.ad8_q2": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.ad8_q3": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.ad8_q4": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.ad8_q5": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.ad8_q6": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.ad8_q7": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.ad8_q8": {
-          "1": "Yes, a change",
           "0": "No, no change",
-          "99": "Don't Know/ NA",
+          "1": "Yes, a change",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Don't Know/ NA"
         },
         "grp_ad8_scale.Survey_Status_ad8": {
           "completed": "Completed",
@@ -3498,88 +3498,88 @@
           "nc_dropout": "Not completed - Dropout (left early / discontinued)"
         },
         "grp_easi_scale.easi_raw1": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw2": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw3": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw4": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw5": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw6": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw7": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw8": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw9": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw10": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw11": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.easi_raw12": {
-          "1": "Yes",
           "0": "No",
-          "99": "Not completed - Unable to understand / answer (comprehension barrier)",
+          "1": "Yes",
+          "97": "Not completed - Dropout (left early / discontinued)",
           "98": "Not completed - Unable to follow instructions (could not complete tasks as instructed)",
-          "97": "Not completed - Dropout (left early / discontinued)"
+          "99": "Not completed - Unable to understand / answer (comprehension barrier)"
         },
         "grp_easi_scale.Survey_Status_easi": {
           "completed": "Completed",
@@ -3821,9 +3821,9 @@
   },
   "forms": {},
   "schedules": [],
-  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var a=t();for(var l in a)('object'==typeof exports?exports:e)[l]=a[l]}}(ContactSummary,()=>(()=>{var e={846(e){function t(e){return e?Array.isArray(e)?e:[e]:[]}function a(e){return e&&!(e.errors&&e.errors.length)}function l(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function c(e,t,a){if(!l(e.appliesIf,a))return;function c(e,t,l){switch(typeof e[l]){case'undefined':return;case'function':t[l]=e[l](a);break;default:t[l]=e[l]}}var o='function'==typeof e.fields?e.fields(a):e.fields.filter(function(e){return l(e.appliesIf,a)}).map(function(e){var t={};return c(e,t,'label'),c(e,t,'value'),c(e,t,'translate'),c(e,t,'filter'),c(e,t,'width'),c(e,t,'icon'),e.context&&(t.context={},c(e.context,t.context,'count'),c(e.context,t.context,'total')),t});e.modifyContext&&e.modifyContext(t,a);const n={label:e.label,fields:o};return void 0!==e.collapsed&&(n.collapsed=e.collapsed),n}e.exports=function(e,l,o){var n=e.fields||[],s=e.context||{},i=e.cards||[],r=l&&('contact'===l.type?l.contact_type:l.type),p={cards:[],fields:n.filter(function(e){var a=t(e.appliesToType),l=a.filter(function(e){return e&&'!'===e.charAt(0)});if((0===a.length||a.includes(r)||l.length>0&&!l.includes('!'+r))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0})};return i.forEach(function(e){var l,n,i,d=t(e.appliesToType);if(d.includes('report')&&d.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(d.includes('report'))for(l=0;l<o.length;++l)a(n=o[l])&&(i=c(e,s,n))&&p.cards.push(i);else{if(!d.includes(r)&&d.length>0)return;(i=c(e,s))&&p.cards.push(i)}}),p.context=s,p}},207(e,t,a){var l=a(972),c=a(846);e.exports=c(l,contact,reports)},972(e,t,a){const{FORMS:l,CONTACT_TYPES:c,getField:o,num:n,currentAge:s,EXIT_OUTCOMES:i}=a(190),r=c.PARTICIPANT,p=e=>(reports||[]).filter(t=>t.form===e).sort((e,t)=>t.reported_date-e.reported_date),d=p(l.STAGE1),u=p(l.STAGE2),_=p(l.FOLLOW_UP),f=p(l.REFERRAL),g=p(l.REVIEW),h=p(l.ASSESSMENT),v=d[0],m=u[0],b=_[0],w=f[0],y=g[0],T=h[0],x=_.some(e=>-1!==i.indexOf(o(e,'g_fu.outcome')))||!!y&&'no'===o(y,'g_rev.alive'),A=!!v&&'refer'===o(v,'g_outcome.stage1_result')&&'yes'!==o(v,'g_outcome.stage2_same_day')&&(!m||m.reported_date<v.reported_date)&&!x,E=m?[['contact.flag_cognitive',1===n(m,'g_disposition.cognitive_flag')],['contact.flag_depression',1===n(m,'g_phq.phq_flag')],['contact.flag_self_harm',1===n(m,'g_phq.phq9_item9_positive')],['contact.flag_abuse',1===n(m,'g_easi.easi_positive')],['contact.flag_frailty',1===n(m,'g_disposition.physical_flag')],['contact.flag_glucose',n(m,'g_glucose.glucose_flag')>0]].filter(e=>e[1]).map(e=>e[0]):[],I=[{appliesToType:r,label:'contact.cr_no',value:contact.cr_no,width:3},{appliesToType:r,label:'contact.age',value:s(contact),width:3},{appliesToType:r,label:'contact.gender',value:contact.gender,width:3},{appliesToType:r,label:'contact.education',value:contact.education_level,width:6},{appliesToType:r,label:'contact.phone',value:contact.phone,filter:'phone',width:6},{appliesToType:r,label:'contact.informant',value:contact.informant_name,width:6},{appliesToType:r,label:'contact.informant_phone',value:contact.informant_phone,filter:'phone',width:6},{appliesToType:r,label:'contact.consent',value:contact.consent_given,width:6}],S=[{label:'contact.card.status',appliesToType:[r],appliesIf:()=>!!v||_.length>0,fields:()=>{const e=[];let t='status.screened_normal';return x?t='status.exited':m?t='status.stage2_complete':A?t='status.awaiting_stage2':v||(t='status.not_screened'),e.push({label:'contact.workflow_status',value:t,translate:!0,width:6}),e.push({label:'contact.followup_attempts',value:_.length,width:6}),b&&(e.push({label:'contact.last_contact_outcome',value:o(b,'g_fu.outcome'),width:6}),e.push({label:'contact.last_contact_date',value:b.reported_date,filter:'simpleDate',width:6})),e}},{label:'contact.card.stage1',appliesToType:[r],appliesIf:()=>!!v,fields:()=>[{label:'contact.stage1_date',value:v.reported_date,filter:'simpleDate',width:6},{label:'contact.stage1_result',value:o(v,'g_outcome.stage1_result'),width:6},{label:'contact.pmis',value:`${o(v,'g_pmis.pmis_score')} / 8`,width:4},{label:'contact.symbol_match',value:o(v,'g_symbol.symbol_correct'),width:4},{label:'contact.gait_speed',value:`${o(v,'g_mcr.gait_speed_mps')} m/s`,width:4},{label:'contact.mcr',value:1===n(v,'g_mcr.mcr_positive')?'label.positive':'label.negative',translate:!0,width:6},{label:'contact.flags_raised',value:o(v,'g_outcome.stage1_flag_count'),width:6}]},{label:'contact.card.stage2',appliesToType:[r],appliesIf:()=>!!m,fields:()=>[{label:'contact.stage2_date',value:m.reported_date,filter:'simpleDate',width:6},{label:'contact.disposition',value:o(m,'g_disposition.disposition'),width:6},{label:'contact.ad8',value:`${o(m,'g_ad8.ad8_total')} / 8`,width:4},{label:'contact.hmse',value:`${o(m,'g_hmse.hmse_total')} / 31`,width:4},{label:'contact.phq9',value:`${o(m,'g_phq.phq_total')} / 27`,width:4},{label:'contact.sppb',value:`${o(m,'g_sppb.sppb_total')} / 12`,width:4},{label:'contact.grip',value:`${o(m,'g_grip.grip_max')} kg`,width:4},{label:'contact.glucose',value:o(m,'g_glucose.glucose_mgdl'),width:4}]},{label:'contact.card.risk',appliesToType:[r],appliesIf:()=>E.length>0,fields:()=>E.map(e=>({label:e,value:'label.flagged',translate:!0,width:6,icon:'icon-risk'}))},{label:'contact.card.referral',appliesToType:[r],appliesIf:()=>!!w,fields:()=>[{label:'contact.referral_facility',value:o(w,'g_ref.facility'),width:6},{label:'contact.referral_attended',value:o(w,'g_ref.attended'),width:6},{label:'contact.diagnosis',value:o(w,'g_ref.diagnosis'),width:6},{label:'contact.referral_date',value:w.reported_date,filter:'simpleDate',width:6}]},{label:'contact.card.review',appliesToType:[r],appliesIf:()=>!!y,fields:()=>[{label:'contact.review_date',value:y.reported_date,filter:'simpleDate',width:6},{label:'contact.review_result',value:o(y,'g_rev.review_result'),width:6},{label:'contact.review_trend',value:o(y,'g_rev.caregiver_reported_trend'),width:6},{label:'contact.caregiver_strain',value:o(y,'g_rev.caregiver_strain'),width:6}]},{label:'contact.card.assessment',appliesToType:[r],appliesIf:()=>!!T,fields:()=>[{label:'contact.assessment_visit_number',value:h.length,width:4},{label:'contact.assessment_date',value:T.reported_date,filter:'simpleDate',width:4},{label:'contact.assessment_administered_by',value:o(T,'g_assessment.administered_by'),width:4},{label:'contact.assessment_next_visit',value:o(T,'g_followup.next_visit_date'),filter:'simpleDate',width:6},{label:'contact.assessment_impression',value:o(T,'g_clinical.clinical_impression'),width:6}]},{label:'contact.card.history',appliesToType:[r],appliesIf:()=>(reports||[]).length>0,fields:()=>(reports||[]).slice().sort((e,t)=>t.reported_date-e.reported_date).slice(0,12).map(e=>({label:`history.${e.form}`,value:e.reported_date,filter:'simpleDate',width:6}))}],C={is_participant:contact&&('contact'===contact.type?contact.contact_type===r:contact.type===r),has_stage1:!!v,has_stage2:!!m,pending_stage2:A,is_exited:x,follow_up_attempts:_.length,cognitive_flag:m?n(m,'g_disposition.cognitive_flag'):0,cr_no:contact.cr_no,has_assessment:h.length>0,assessment_count:h.length},O='undefined'!=typeof cht&&cht.v1&&(cht.v1.hasPermissions('can_browse_all_participants')||cht.v1.hasPermissions('can_view_participants')),N=contact&&('contact'===contact.type?contact.contact_type===r:contact.type===r),R=Boolean(N&&'undefined'!=typeof cht&&cht.v1&&cht.v1.userContactId&&contact&&contact.created_by_person_uuid===cht.v1.userContactId),P='undefined'!=typeof cht&&cht.v1&&'boolean'==typeof cht.v1.participantAccessAllowed?cht.v1.participantAccessAllowed:void 0,D=void 0!==P?P:O||R;e.exports=N&&!D?{fields:[{appliesToType:r,label:'contact.access_restricted',value:'contact.access_restricted_message',width:12}],cards:[],context:{is_participant:!0,access_restricted:!0}}:{fields:I,cards:S,context:C}},190(e){const t={CAMP:'screening_camp',PARTICIPANT:'participant'},a={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'};function l(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function c(e,t){const a=l(e,t);if(null===a||''===a)return null;const c=Number(a);return Number.isFinite(c)?c:null}const o=['deceased','moved','refused','done_elsewhere'];e.exports={CONTACT_TYPES:t,FORMS:a,EXIT_OUTCOMES:o,getField:l,num:c,currentAge:function(e,t){if(!e||void 0===e.age||null===e.age)return null;const a=Number(e.age);if(!Number.isFinite(a))return null;if(!e.reported_date)return a;const l=t||Date.now(),c=Math.floor((l-e.reported_date)/315576e5);return a+Math.max(0,c)}}}};const t={};let a=function a(l){const c=t[l];if(void 0!==c)return c.exports;const o=t[l]={exports:{}};return e[l](o,o.exports,a),o.exports}(207);return a})()); return ContactSummary;",
+  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var n=t();for(var a in n)('object'==typeof exports?exports:e)[a]=n[a]}}(ContactSummary,()=>(()=>{var e={97(e){function t(e){return e?Array.isArray(e)?e:[e]:[]}function n(e){return e&&!(e.errors&&e.errors.length)}function a(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function r(e,t,n){if(!a(e.appliesIf,n))return;function r(e,t,a){switch(typeof e[a]){case'undefined':return;case'function':t[a]=e[a](n);break;default:t[a]=e[a]}}var o='function'==typeof e.fields?e.fields(n):e.fields.filter(function(e){return a(e.appliesIf,n)}).map(function(e){var t={};return r(e,t,'label'),r(e,t,'value'),r(e,t,'translate'),r(e,t,'filter'),r(e,t,'width'),r(e,t,'icon'),e.context&&(t.context={},r(e.context,t.context,'count'),r(e.context,t.context,'total')),t});e.modifyContext&&e.modifyContext(t,n);const i={label:e.label,fields:o};return void 0!==e.collapsed&&(i.collapsed=e.collapsed),i}e.exports=function(e,a,o){var i=e.fields||[],s=e.context||{},c=e.cards||[],l=a&&('contact'===a.type?a.contact_type:a.type),u={cards:[],fields:i.filter(function(e){var n=t(e.appliesToType),a=n.filter(function(e){return e&&'!'===e.charAt(0)});if((0===n.length||n.includes(l)||a.length>0&&!a.includes('!'+l))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0})};return c.forEach(function(e){var a,i,c,d=t(e.appliesToType);if(d.includes('report')&&d.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(d.includes('report'))for(a=0;a<o.length;++a)n(i=o[a])&&(c=r(e,s,i))&&u.cards.push(c);else{if(!d.includes(l)&&d.length>0)return;(c=r(e,s))&&u.cards.push(c)}}),u.context=s,u}},92(e,t,n){var a=n(972),r=n(97);e.exports=r(a,contact,reports)},972(e,t,n){const{FORMS:a,CONTACT_TYPES:r,getField:o,num:i,currentAge:s,EXIT_OUTCOMES:c}=n(190),l=r.PARTICIPANT,u=e=>(reports||[]).filter(t=>t.form===e).sort((e,t)=>t.reported_date-e.reported_date),d=u(a.STAGE1),_=u(a.STAGE2),p=u(a.FOLLOW_UP),f=u(a.REFERRAL),g=u(a.REVIEW),m=u(a.ASSESSMENT),h=d[0],v=_[0],y=p[0],b=f[0],T=g[0],w=m[0],A=p.some(e=>-1!==c.indexOf(o(e,'g_fu.outcome')))||!!T&&'no'===o(T,'g_rev.alive'),E=!!h&&'refer'===o(h,'g_outcome.stage1_result')&&'yes'!==o(h,'g_outcome.stage2_same_day')&&(!v||v.reported_date<h.reported_date)&&!A,I=v?[['contact.flag_cognitive',1===i(v,'g_disposition.cognitive_flag')],['contact.flag_depression',1===i(v,'g_phq.phq_flag')],['contact.flag_self_harm',1===i(v,'g_phq.phq9_item9_positive')],['contact.flag_abuse',1===i(v,'g_easi.easi_positive')],['contact.flag_frailty',1===i(v,'g_disposition.physical_flag')],['contact.flag_glucose',i(v,'g_glucose.glucose_flag')>0]].filter(e=>e[1]).map(e=>e[0]):[],S=[{appliesToType:l,label:'contact.cr_no',value:contact.cr_no,width:3},{appliesToType:l,label:'contact.age',value:s(contact),width:3},{appliesToType:l,label:'contact.gender',value:contact.gender,width:3},{appliesToType:l,label:'contact.education',value:contact.education_level,width:6},{appliesToType:l,label:'contact.phone',value:contact.phone,filter:'phone',width:6},{appliesToType:l,label:'contact.informant',value:contact.informant_name,width:6},{appliesToType:l,label:'contact.informant_phone',value:contact.informant_phone,filter:'phone',width:6},{appliesToType:l,label:'contact.consent',value:contact.consent_given,width:6}],D=[{label:'contact.card.status',appliesToType:[l],appliesIf:()=>!!h||p.length>0,fields:()=>{const e=[];let t='status.screened_normal';return A?t='status.exited':v?t='status.stage2_complete':E?t='status.awaiting_stage2':h||(t='status.not_screened'),e.push({label:'contact.workflow_status',value:t,translate:!0,width:6}),e.push({label:'contact.followup_attempts',value:p.length,width:6}),y&&(e.push({label:'contact.last_contact_outcome',value:o(y,'g_fu.outcome'),width:6}),e.push({label:'contact.last_contact_date',value:y.reported_date,filter:'simpleDate',width:6})),e}},{label:'contact.card.stage1',appliesToType:[l],appliesIf:()=>!!h,fields:()=>[{label:'contact.stage1_date',value:h.reported_date,filter:'simpleDate',width:6},{label:'contact.stage1_result',value:o(h,'g_outcome.stage1_result'),width:6},{label:'contact.pmis',value:`${o(h,'g_pmis.pmis_score')} / 8`,width:4},{label:'contact.symbol_match',value:o(h,'g_symbol.symbol_correct'),width:4},{label:'contact.gait_speed',value:`${o(h,'g_mcr.gait_speed_mps')} m/s`,width:4},{label:'contact.mcr',value:1===i(h,'g_mcr.mcr_positive')?'label.positive':'label.negative',translate:!0,width:6},{label:'contact.flags_raised',value:o(h,'g_outcome.stage1_flag_count'),width:6}]},{label:'contact.card.stage2',appliesToType:[l],appliesIf:()=>!!v,fields:()=>[{label:'contact.stage2_date',value:v.reported_date,filter:'simpleDate',width:6},{label:'contact.disposition',value:o(v,'g_disposition.disposition'),width:6},{label:'contact.ad8',value:`${o(v,'g_ad8.ad8_total')} / 8`,width:4},{label:'contact.hmse',value:`${o(v,'g_hmse.hmse_total')} / 31`,width:4},{label:'contact.phq9',value:`${o(v,'g_phq.phq_total')} / 27`,width:4},{label:'contact.sppb',value:`${o(v,'g_sppb.sppb_total')} / 12`,width:4},{label:'contact.grip',value:`${o(v,'g_grip.grip_max')} kg`,width:4},{label:'contact.glucose',value:o(v,'g_glucose.glucose_mgdl'),width:4}]},{label:'contact.card.risk',appliesToType:[l],appliesIf:()=>I.length>0,fields:()=>I.map(e=>({label:e,value:'label.flagged',translate:!0,width:6,icon:'icon-risk'}))},{label:'contact.card.referral',appliesToType:[l],appliesIf:()=>!!b,fields:()=>[{label:'contact.referral_facility',value:o(b,'g_ref.facility'),width:6},{label:'contact.referral_attended',value:o(b,'g_ref.attended'),width:6},{label:'contact.diagnosis',value:o(b,'g_ref.diagnosis'),width:6},{label:'contact.referral_date',value:b.reported_date,filter:'simpleDate',width:6}]},{label:'contact.card.review',appliesToType:[l],appliesIf:()=>!!T,fields:()=>[{label:'contact.review_date',value:T.reported_date,filter:'simpleDate',width:6},{label:'contact.review_result',value:o(T,'g_rev.review_result'),width:6},{label:'contact.review_trend',value:o(T,'g_rev.caregiver_reported_trend'),width:6},{label:'contact.caregiver_strain',value:o(T,'g_rev.caregiver_strain'),width:6}]},{label:'contact.card.assessment',appliesToType:[l],appliesIf:()=>!!w,fields:()=>[{label:'contact.assessment_visit_number',value:m.length,width:4},{label:'contact.assessment_date',value:w.reported_date,filter:'simpleDate',width:4},{label:'contact.assessment_administered_by',value:o(w,'g_assessment.administered_by'),width:4},{label:'contact.assessment_next_visit',value:o(w,'g_followup.next_visit_date'),filter:'simpleDate',width:6},{label:'contact.assessment_impression',value:o(w,'g_clinical.clinical_impression'),width:6}]},{label:'contact.card.history',appliesToType:[l],appliesIf:()=>(reports||[]).length>0,fields:()=>(reports||[]).slice().sort((e,t)=>t.reported_date-e.reported_date).slice(0,12).map(e=>({label:`history.${e.form}`,value:e.reported_date,filter:'simpleDate',width:6}))}],N={is_participant:contact&&('contact'===contact.type?contact.contact_type===l:contact.type===l),has_stage1:!!h,has_stage2:!!v,pending_stage2:E,is_exited:A,follow_up_attempts:p.length,cognitive_flag:v?i(v,'g_disposition.cognitive_flag'):0,cr_no:contact.cr_no,has_assessment:m.length>0,assessment_count:m.length},O='undefined'!=typeof cht&&cht.v1&&(cht.v1.hasPermissions('can_browse_all_participants')||cht.v1.hasPermissions('can_view_participants')),R=contact&&('contact'===contact.type?contact.contact_type===l:contact.type===l),x=Boolean(R&&'undefined'!=typeof cht&&cht.v1&&cht.v1.userContactId&&contact&&contact.created_by_person_uuid===cht.v1.userContactId),C='undefined'!=typeof cht&&cht.v1&&'boolean'==typeof cht.v1.participantAccessAllowed?cht.v1.participantAccessAllowed:void 0,U=void 0!==C?C:O||x;e.exports=R&&!U?{fields:[{appliesToType:l,label:'contact.access_restricted',value:'contact.access_restricted_message',width:12}],cards:[],context:{is_participant:!0,access_restricted:!0}}:{fields:S,cards:D,context:N}},190(e){const t=864e5,n={CAMP:'screening_camp',PARTICIPANT:'participant'},a={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'},r={STAGE2_WINDOW_DAYS:30,FOLLOW_UP_DAYS:[3,10,21],MAX_FOLLOW_UP_ATTEMPTS:3,REFERRAL_CONFIRM_DAYS:21,REVIEW_DAYS_COGNITIVE:180,REVIEW_DAYS_ROUTINE:365,REVIEW_DAYS_RE_REFER:90,URGENT_ESCALATION_DAYS:1,SAFEGUARDING_ESCALATION_DAYS:3,STAGE1_MISSING_DAYS:14,ASSESSMENT_VISIT_DUE_DAYS:30,MOCA_DUE_DAYS:30,VINELAND_DUE_DAYS:30};function o(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function i(e,t){const n=o(e,t);if(null===n||''===n)return null;const a=Number(n);return Number.isFinite(a)?a:null}function s(e,t){return!!e&&e.form===t}function c(e,t){return e&&e.reports?e.reports.filter(e=>e.form===t):[]}function l(e,t){const n=c(e,t);return n.length?n.reduce((e,t)=>e.reported_date>t.reported_date?e:t):null}function u(e,t,n){if(!e||!e.reports)return[];const a=[].concat(t);return e.reports.filter(e=>-1!==a.indexOf(e.form)&&e.reported_date>n)}function d(e,n){return Math.floor((n-e)/t)}function _(e,t){const n=new Date(e);return n.setDate(n.getDate()+t),n}function p(e){const t=e&&(e.contact||e);return t?'contact'===t.type?t.contact_type:t.contact_type||t.type:null}function f(e){const t=e&&(e.contact||e);return!t||'no'!==t.consent_given}const g=['deceased','moved','refused','done_elsewhere'];function m(e){if(c(e,a.FOLLOW_UP).some(e=>-1!==g.indexOf(o(e,'g_fu.outcome'))))return!0;const t=l(e,a.REVIEW);return!!t&&'no'===o(t,'g_rev.alive')}function h(e){return o(e,'g_outcome.stage1_result')}function v(e){return s(e,a.STAGE1)&&'refer'===h(e)}function y(e){return o(e,'g_disposition.disposition')}function b(e){return 1===i(e,'g_disposition.cognitive_flag')}function T(e){return i(e,'moca_total_score')}function w(e){return o(e,'moca_interpretation')}function A(e){return l(e,a.MOCA)}function E(e){return l(e,a.VINELAND)}function I(){const e='undefined'!=typeof user?user:null,t='undefined'!=typeof cht?cht:null;let n=e&&(e.contact_id||e.contact&&e.contact._id||e._id)||t&&t.v1&&t.v1.userContactId||null;n&&'string'==typeof n&&n.startsWith('org.couchdb.user:')&&(n=e&&e.contact_id||n.replace('org.couchdb.user:',''));let a=e&&(e.name||e.username)||null;!a&&e&&'string'==typeof e._id&&e._id.startsWith('org.couchdb.user:')&&(a=e._id.replace('org.couchdb.user:',''));return{userId:n,userName:a,isSupervisor:Boolean(t&&t.v1&&'function'==typeof t.v1.hasPermissions&&(t.v1.hasPermissions('can_browse_all_participants')||t.v1.hasPermissions('can_view_participants'))||e&&e.roles&&(-1!==e.roles.indexOf('supervisor')||-1!==e.roles.indexOf('admin')||-1!==e.roles.indexOf('national_admin')))}}function S(e){if(!e)return!1;const t=I();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!0;if(t.userId){if(e.contact&&e.contact._id===t.userId)return!0;if(o(e,'screened_by')===t.userId)return!0;if(e.fields&&e.fields.screened_by===t.userId)return!0;if(e.created_by_person_uuid===t.userId)return!0}if(t.userName){if(e.reported_by===t.userName)return!0;if(o(e,'screened_by_name')===t.userName)return!0;if(o(e,'g_assessment.administered_by')===t.userName)return!0}return!1}e.exports={MS_IN_DAY:t,CONTACT_TYPES:n,FORMS:a,CONFIG:r,EXIT_OUTCOMES:g,getField:o,num:i,isForm:s,reportsOf:c,latestReport:l,reportsSince:u,daysBetween:d,addDays:_,contactType:p,isParticipant:function(e){return p(e)===n.PARTICIPANT},isCamp:function(e){return p(e)===n.CAMP},isUserContact:function(e){if(!e)return!1;try{const t=e.contact||e;if(!t||'object'!=typeof t)return!1;if('user'===t.contact_type)return!0;if(t.role){const e=String(t.role).toLowerCase();if(['staff','chw','chw_supervisor','supervisor','admin','mm-online','intern_supervisor'].includes(e))return!0;if(e.includes('staff')||e.includes('admin')||e.includes('supervisor')||e.includes('chw'))return!0}if(t.username||t.user_id)return!0;if(!0===t.isUserContact)return!0}catch(e){return!1}return!1},currentAge:function(e,t){if(!e||void 0===e.age||null===e.age)return null;const n=Number(e.age);if(!Number.isFinite(n))return null;if(!e.reported_date)return n;const a=t||Date.now(),r=Math.floor((a-e.reported_date)/315576e5);return n+Math.max(0,r)},hasConsent:f,isExited:m,isActive:function(e){return f(e)&&!m(e)},stage1Result:h,stage1Referred:v,stage1NeedsFollowUp:function(e){return v(e)&&'yes'!==o(e,'g_outcome.stage2_same_day')},stage1FlagCount:function(e){return i(e,'g_outcome.stage1_flag_count')||0},stage2DoneAfter:function(e,t){return u(e,a.STAGE2,t.reported_date).length>0},stage2Disposition:y,stage2NeedsReferral:function(e){return'yes'===o(e,'g_disposition.referral_needed')},isUrgent:function(e){return'urgent_same_day'===y(e)},isSafeguarding:function(e){return 1===i(e,'g_easi.easi_positive')},cognitiveFlag:b,followUpAttemptsSince:function(e,t){return u(e,a.FOLLOW_UP,t).length},appointmentBooked:function(e,t){return u(e,a.FOLLOW_UP,t).some(e=>'scheduled'===o(e,'g_fu.outcome'))},nextReviewDue:function(e){const t=l(e,a.REVIEW),n=l(e,a.STAGE2),i=l(e,a.STAGE1),s=t||n||i;if(!s)return null;let c=r.REVIEW_DAYS_ROUTINE;return s.form===a.STAGE2&&b(s)&&(c=r.REVIEW_DAYS_COGNITIVE),s.form===a.REVIEW&&'re_refer'===o(s,'g_rev.review_result')&&(c=r.REVIEW_DAYS_RE_REFER),_(s.reported_date,c)},convertedInWindow:function(e,t){const n=_(t.reported_date,r.STAGE2_WINDOW_DAYS).getTime();return u(e,a.STAGE2,t.reported_date).some(e=>e.reported_date<=n)},screenedBy:function(e){return o(e,'screened_by')},mocaTotalScore:T,mocaInterpretation:w,mocaImpaired:function(e){return'impaired'===w(e)},mocaSectionScores:function(e){return{visuospatial:i(e,'moca_visuospatial_total')||0,naming:i(e,'moca_naming_total')||0,memory:i(e,'moca_memory_total')||0,attention:i(e,'moca_attention_total')||0,language:i(e,'moca_language_total')||0,abstraction:i(e,'moca_abstraction_total')||0,delayedRecall:i(e,'moca_delayed_total')||0,orientation:i(e,'moca_orientation_total')||0,rawTotal:i(e,'moca_raw_total')||0,educationAdj:i(e,'moca_education_adj')||0,totalScore:T(e),interpretation:w(e)}},hasMocaAssessment:function(e){return c(e,a.MOCA).length>0},latestMocaAssessment:A,mocaDue:function(e){const t=A(e);return!t||d(t.reported_date,Date.now())>=r.MOCA_DUE_DAYS},hasVinelandAssessment:function(e){return c(e,a.VINELAND).length>0},latestVinelandAssessment:E,vinelandDue:function(e){const t=E(e);return!t||d(t.reported_date,Date.now())>=r.VINELAND_DUE_DAYS},getCurrentUserContext:I,isReportDoneByCurrentUser:S,isParticipantDoneByCurrentUser:function(e){if(!e)return!1;const t=I();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!0;const n=e.contact||e,a=e.reports||[];return!(!t.userId||!n||n.created_by_person_uuid!==t.userId)||(!(!t.userName||!n||n.created_by_user!==t.userName)||!!(a&&a.length>0&&a.some(e=>S(e))))}}}};const t={};let n=function n(a){const r=t[a];if(void 0!==r)return r.exports;const o=t[a]={exports:{}};return e[a](o,o.exports,n),o.exports}(92);return n})()); return ContactSummary;",
   "tasks": {
-    "rules": "(()=>{var e={603(e){function t(e,r){var a=Object.keys(e);for(var o in a){var n=a[o];switch(typeof e[n]){case'object':t(e[n],r);break;case'function':e[n]=e[n].bind(r)}}}function r(e){var t=Object.assign({},e),a=Object.keys(t);for(var o in a){var n=a[o];if(Array.isArray(t[n])){t[n]=t[n].slice(0);for(var i=0;i<t[n].length;++i)'object'==typeof t[n][i]&&(t[n][i]=r(t[n][i]))}else'object'==typeof t[n]&&(t[n]=r(t[n]))}return t}e.exports=function(e){var a={};t(e,a),a.definition=r(e)}},688(e,t,r){var a=r(603);function o(e,t,r,a,o,n){var i=!!n;if(o.contact){var s='contact'===o.contact.type?o.contact.contact_type:o.contact.type,p=i?n.form:s;if(!(e.appliesToType&&e.appliesToType.indexOf(p)<0)&&(!e.appliesIf||e.appliesIf(o,n)))for(var l=i?n:o.contact,c=function(e,t,r){var a;return a='function'==typeof e.idType?e.idType(t,r):'report'===e.idType?r&&r._id:t.contact&&t.contact._id,Array.isArray(a)||(a=[a]),a}(e,o,n),d=!e.passesIf||!!e.passesIf(o,n),u=function(e,t,r,a){if('function'==typeof e.date)return e.date(r,a)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return a?a.reported_date:r.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,r,o,n),_=e.groupBy&&e.groupBy(o,n),f=0;f<c.length;++f){var g=new t({_id:c[f]+'~'+e.id,contact:o.contact,deleted:!!l.deleted,type:e.id,pass:d,groupBy:_,date:u});e.emitCustom?e.emitCustom(T,g,o,n):T(g)}}function T(e){a('target',e)}}e.exports=function(e,t,r,n,i){for(var s=0;s<e.length;++s){var p=e[s];switch(a(p),p.appliesTo){case'contacts':o(p,n,r,i,t);break;case'reports':for(var l=0;l<t.reports.length;++l){o(p,n,r,i,t,t.reports[l])}break;default:throw new Error('Unrecognised target.appliesTo: '+p.appliesTo)}}}},682(e){e.exports={defaultResolvedIf:function(e,t,r,a,o){var n,i;o||(o=Utils);var s=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find(function(e){return!e.type||'report'===e.type}))&&t.form}(this.definition);if(!s)throw new Error('Could not find the default resolving form!');return n=0,n=t?Math.max(o.addDate(a,-r.start).getTime(),t.reported_date+1):o.addDate(a,-r.start).getTime(),i=o.addDate(a,r.end+1).getTime(),o.isFormSubmittedInWindow(e.reports,s,n,i)}}},916(e,t,r){var a=r(603),o=r(682);function n(e,t,r,a,o,n){var i;if(e.appliesToType){var s;if('contacts'===e.appliesTo){if(!o.contact)return;s='contact'===o.contact.type?o.contact.contact_type:o.contact.type}else{if(!n)return;s=n.form}if(-1===e.appliesToType.indexOf(s))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(o,n))if('scheduled_tasks'===e.appliesTo){if(n&&e.appliesIf){if(!n.scheduled_tasks)return;for(i=0;i<n.scheduled_tasks.length;i++)e.appliesIf(o,n,i)&&l(i)}}else l();function p(e,t,r){var a;return(a='function'==typeof e.contactLabel?e.contactLabel(t,r):e.contactLabel)?{name:a}:t.contact}function l(i){var s,l,d,u,_=null;for(s=0;s<e.events.length;s++){if((l=e.events[s]).dueDate)_=l.dueDate(l,o,n,i);else if(n)_=void 0!==i?new Date(t.addDate(new Date(n.scheduled_tasks[i].due),l.days)):new Date(t.addDate(new Date(n.reported_date),l.days));else if(l.dueDate)_=l.dueDate(l,o);else{var f=o.contact&&o.contact.reported_date?new Date(o.contact.reported_date):new Date;_=new Date(t.addDate(f,l.days))}t.isTimely(_,l)&&(u={_id:(n?n._id:o.contact&&o.contact._id)+'~'+(l.id||s)+'~'+e.name,deleted:!(!(o.contact&&o.contact.deleted||n)||!n.deleted),doc:o,contact:p(e,o,n),icon:e.icon,date:_,readyStart:l.start||0,readyEnd:l.end||0,title:e.title,resolved:e.resolvedIf(o,n,l,_,i),actions:c(e.actions,l)},void 0!==i&&(u._id+='-'+i),'function'==typeof(d=e.priority)&&(d=d(o,n,l,_,i)),d&&(u.priority=d.level,u.priorityLabel=d.label),a('task',new r(u)))}}function c(t,r){return e.actions.map(function(e){return function(e,t){var r={source:'task',source_id:n?n._id:o.contact&&o.contact._id,contact:o.contact};e.modifyContent&&e.modifyContent(r,o,n,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:r}}(e,r)})}}e.exports=function(e,t,r,i,s){if(e)for(var p,l,c=0;c<e.length;++c)switch('function'!=typeof(p=Object.assign({},e[c],o)).resolvedIf&&(p.resolvedIf=function(e,t,a,o){return p.defaultResolvedIf(e,t,a,o,r)}),a(p),p.appliesTo){case'reports':case'scheduled_tasks':for(var d=0;d<t.reports.length;++d)l=t.reports[d],n(p,r,i,s,t,l);break;case'contacts':t.contact&&n(p,r,i,s,t);break;default:throw new Error('Unrecognised task.appliesTo: '+p.appliesTo)}}},190(e){const t=864e5,r={CAMP:'screening_camp',PARTICIPANT:'participant'},a={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'},o={STAGE2_WINDOW_DAYS:30,FOLLOW_UP_DAYS:[3,10,21],MAX_FOLLOW_UP_ATTEMPTS:3,REFERRAL_CONFIRM_DAYS:21,REVIEW_DAYS_COGNITIVE:180,REVIEW_DAYS_ROUTINE:365,REVIEW_DAYS_RE_REFER:90,URGENT_ESCALATION_DAYS:1,SAFEGUARDING_ESCALATION_DAYS:3,STAGE1_MISSING_DAYS:14,ASSESSMENT_VISIT_DUE_DAYS:30,MOCA_DUE_DAYS:30,VINELAND_DUE_DAYS:30};function n(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function i(e,t){const r=n(e,t);if(null===r||''===r)return null;const a=Number(r);return Number.isFinite(a)?a:null}function s(e,t){return!!e&&e.form===t}function p(e,t){return e&&e.reports?e.reports.filter(e=>e.form===t):[]}function l(e,t){const r=p(e,t);return r.length?r.reduce((e,t)=>e.reported_date>t.reported_date?e:t):null}function c(e,t,r){if(!e||!e.reports)return[];const a=[].concat(t);return e.reports.filter(e=>-1!==a.indexOf(e.form)&&e.reported_date>r)}function d(e,r){return Math.floor((r-e)/t)}function u(e,t){const r=new Date(e);return r.setDate(r.getDate()+t),r}function _(e){const t=e&&(e.contact||e);return!t||'no'!==t.consent_given}const f=['deceased','moved','refused','done_elsewhere'];function g(e){if(p(e,a.FOLLOW_UP).some(e=>-1!==f.indexOf(n(e,'g_fu.outcome'))))return!0;const t=l(e,a.REVIEW);return!!t&&'no'===n(t,'g_rev.alive')}function T(e){return n(e,'g_outcome.stage1_result')}function m(e){return s(e,a.STAGE1)&&'refer'===T(e)}function y(e){return n(e,'g_disposition.disposition')}function E(e){return 1===i(e,'g_disposition.cognitive_flag')}function A(e){return l(e,a.MOCA)}function v(e){return l(e,a.VINELAND)}e.exports={CONTACT_TYPES:r,FORMS:a,CONFIG:o,getField:n,num:i,reportsOf:p,latestReport:l,reportsSince:c,addDays:u,isUserContact:function(e){if(!e)return!1;try{const t=e.contact||e;if(!t||'object'!=typeof t)return!1;if('user'===t.contact_type)return!0;if(t.role){const e=String(t.role).toLowerCase();if(['staff','chw','chw_supervisor','supervisor','admin','mm-online','intern_supervisor'].includes(e))return!0;if(e.includes('staff')||e.includes('admin')||e.includes('supervisor')||e.includes('chw'))return!0}if(t.username||t.user_id)return!0;if(!0===t.isUserContact)return!0}catch(e){return!1}return!1},isExited:g,isActive:function(e){return _(e)&&!g(e)},stage1Referred:m,stage1NeedsFollowUp:function(e){return m(e)&&'yes'!==n(e,'g_outcome.stage2_same_day')},stage1FlagCount:function(e){return i(e,'g_outcome.stage1_flag_count')||0},stage2DoneAfter:function(e,t){return c(e,a.STAGE2,t.reported_date).length>0},stage2NeedsReferral:function(e){return'yes'===n(e,'g_disposition.referral_needed')},isUrgent:function(e){return'urgent_same_day'===y(e)},isSafeguarding:function(e){return 1===i(e,'g_easi.easi_positive')},followUpAttemptsSince:function(e,t){return c(e,a.FOLLOW_UP,t).length},appointmentBooked:function(e,t){return c(e,a.FOLLOW_UP,t).some(e=>'scheduled'===n(e,'g_fu.outcome'))},nextReviewDue:function(e){const t=l(e,a.REVIEW),r=l(e,a.STAGE2),i=l(e,a.STAGE1),s=t||r||i;if(!s)return null;let p=o.REVIEW_DAYS_ROUTINE;return s.form===a.STAGE2&&E(s)&&(p=o.REVIEW_DAYS_COGNITIVE),s.form===a.REVIEW&&'re_refer'===n(s,'g_rev.review_result')&&(p=o.REVIEW_DAYS_RE_REFER),u(s.reported_date,p)},convertedInWindow:function(e,t){const r=u(t.reported_date,o.STAGE2_WINDOW_DAYS).getTime();return c(e,a.STAGE2,t.reported_date).some(e=>e.reported_date<=r)},mocaDue:function(e){const t=A(e);return!t||d(t.reported_date,Date.now())>=o.MOCA_DUE_DAYS},vinelandDue:function(e){const t=v(e);return!t||d(t.reported_date,Date.now())>=o.VINELAND_DUE_DAYS}}},931(e,t,r){const{FORMS:a,CONTACT_TYPES:o,getField:n,num:i,stage1Referred:s,convertedInWindow:p}=r(190),l=(e,t)=>'yes'===n(t,'g_consent.consent_confirmed');e.exports=[{id:'participants-registered',type:'count',icon:'icon-person',goal:-1,translation_key:'targets.registered.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],idType:'contact',date:'reported'},{id:'stage1-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage1.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:l,date:'reported'},{id:'stage1-referral-rate',type:'percent',icon:'icon-healthcare-referral',goal:-1,translation_key:'targets.referral_rate.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:l,passesIf:(e,t)=>s(t),date:'reported'},{id:'stage2-conversion',type:'percent',icon:'icon-healthcare-assessment',goal:60,translation_key:'targets.stage2_conversion.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:(e,t)=>s(t),passesIf:(e,t)=>p(e,t),date:'reported'},{id:'stage2-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage2.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE2],date:'reported'},{id:'cognitive-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.cognitive_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>1===i(t,'g_disposition.cognitive_flag'),date:'reported'},{id:'depression-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.depression_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>1===i(t,'g_phq.phq_flag'),date:'reported'},{id:'safeguarding-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.safeguarding_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>1===i(t,'g_easi.easi_positive'),date:'reported'},{id:'frailty-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.frailty_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>1===i(t,'g_disposition.physical_flag'),date:'reported'},{id:'referral-loop-closed',type:'percent',icon:'icon-healthcare-referral',goal:70,translation_key:'targets.referral_closed.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>'yes'===n(t,'g_disposition.referral_needed'),passesIf:(e,t)=>(e.reports||[]).some(e=>e.form===a.REFERRAL&&e.reported_date>t.reported_date&&'attended'===n(e,'g_ref.attended')),date:'reported'},{id:'informant-availability',type:'percent',icon:'icon-person',goal:80,translation_key:'targets.informant.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.STAGE2],passesIf:(e,t)=>'yes'===n(t,'g_ad8.informant_available'),date:'reported'},{id:'follow-up-attempts',type:'count',icon:'icon-followup-general',goal:-1,translation_key:'targets.follow_up.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[a.FOLLOW_UP],date:'reported'}]},991(e,t,r){const{CONFIG:a,FORMS:o,CONTACT_TYPES:n,getField:i,reportsSince:s,reportsOf:p,latestReport:l,addDays:c,isActive:d,isExited:u,isUserContact:_,stage1NeedsFollowUp:f,stage1FlagCount:g,stage2DoneAfter:T,stage2NeedsReferral:m,isUrgent:y,isSafeguarding:E,followUpAttemptsSince:A,appointmentBooked:v,nextReviewDue:S,mocaDue:I,vinelandDue:h}=r(190),D={level:'high',label:'task.priority.high'};e.exports=[{name:'satoru.urgent-escalation',icon:'icon-risk',title:'task.urgent_escalation.title',appliesTo:'reports',appliesToType:[o.STAGE2],appliesIf:(e,t)=>y(t),resolvedIf:(e,t,r,a)=>s(e,[o.FOLLOW_UP,o.REFERRAL],t.reported_date).some(e=>e.reported_date<=c(a,r.end+1).getTime()),events:[{id:'urgent-24h',start:0,end:a.URGENT_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:D,actions:[{type:'report',form:o.FOLLOW_UP,label:'task.urgent_escalation.action',modifyContent:(e,t,r)=>{e.trigger='urgent_escalation',e.source_report_uuid=r._id}}]},{name:'satoru.safeguarding-escalation',icon:'icon-risk',title:'task.safeguarding.title',appliesTo:'reports',appliesToType:[o.STAGE2],appliesIf:(e,t)=>E(t),resolvedIf:(e,t,r,a)=>s(e,o.FOLLOW_UP,t.reported_date).some(e=>e.reported_date<=c(a,r.end+1).getTime()),events:[{id:'safeguarding-72h',start:0,end:a.SAFEGUARDING_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:D,actions:[{type:'report',form:o.FOLLOW_UP,label:'task.safeguarding.action',modifyContent:(e,t,r)=>{e.trigger='safeguarding',e.source_report_uuid=r._id}}]},{name:'satoru.stage2-due',icon:'icon-healthcare-assessment',title:'task.stage2_due.title',appliesTo:'reports',appliesToType:[o.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t)=>T(e,t),events:[{id:'stage2-window',start:0,end:a.STAGE2_WINDOW_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:(e,t)=>g(t)>=2?D:null,actions:[{type:'report',form:o.STAGE2,label:'task.stage2_due.action',modifyContent:(e,t,r)=>{e.stage1_report_uuid=r._id,e.stage1_flag_count=g(r),e.camp_code=i(r,'g_context.camp_code')}}]},{name:'satoru.lead-pursuit',icon:'icon-followup-general',title:'task.lead_pursuit.title',appliesTo:'reports',appliesToType:[o.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t,r)=>{if(T(e,t))return!0;if(v(e,t.reported_date))return!0;const o=a.FOLLOW_UP_DAYS.indexOf(r.days)+1;return A(e,t.reported_date)>=o},events:a.FOLLOW_UP_DAYS.map((e,t)=>({id:`lead-pursuit-${t+1}`,days:e,start:2,end:6})),actions:[{type:'report',form:o.FOLLOW_UP,label:'task.lead_pursuit.action',modifyContent:(e,t,r)=>{e.trigger='stage1_referral',e.source_report_uuid=r._id,e.suggested_attempt_number=A(t,r.reported_date)+1}}]},{name:'satoru.appointment-reminder',icon:'icon-healthcare-assessment',title:'task.appointment.title',appliesTo:'reports',appliesToType:[o.FOLLOW_UP],appliesIf:(e,t)=>'scheduled'===i(t,'g_fu.outcome')&&!!i(t,'g_fu.appointment_date')&&!u(e),resolvedIf:(e,t)=>s(e,o.STAGE2,t.reported_date).length>0,events:[{id:'appointment-day',start:2,end:7,dueDate:(e,t,r)=>new Date(i(r,'g_fu.appointment_date'))}],actions:[{type:'report',form:o.STAGE2,label:'task.appointment.action'}]},{name:'satoru.referral-outcome',icon:'icon-healthcare-referral',title:'task.referral_outcome.title',appliesTo:'reports',appliesToType:[o.STAGE2],appliesIf:(e,t)=>m(t)&&!u(e),resolvedIf:(e,t)=>s(e,o.REFERRAL,t.reported_date).some(e=>'yes'===i(e,'g_ref.referral_closed')),events:[{id:'referral-confirm',days:14,start:7,end:a.REFERRAL_CONFIRM_DAYS}],actions:[{type:'report',form:o.REFERRAL,label:'task.referral_outcome.action',modifyContent:(e,t,r)=>{e.source_report_uuid=r._id,e.facility=i(r,'g_disposition.referral_facility'),e.disposition=i(r,'g_disposition.disposition')}}]},{name:'satoru.longitudinal-review',icon:'icon-followup-general',title:'task.review.title',appliesTo:'contacts',appliesToType:[n.PARTICIPANT],appliesIf:e=>d(e)&&!!S(e),resolvedIf:(e,t,r,a)=>{const n=c(a,-r.start).getTime();return s(e,[o.STAGE2,o.REVIEW],n).length>0},events:[{id:'review-due',start:30,end:60,dueDate:(e,t)=>S(t)}],actions:[{type:'report',form:o.REVIEW,label:'task.review.action'}]},{name:'satoru.assessment-visit-due',icon:'icon-healthcare-assessment',title:'task.assessment_visit_due.title',appliesTo:'contacts',appliesToType:[n.PARTICIPANT],appliesIf:e=>d(e)&&!_(e)&&0===p(e,o.ASSESSMENT).length&&'staff'!==e.role,resolvedIf:e=>p(e,o.ASSESSMENT).length>0,events:[{id:'assessment-visit-due',start:0,end:a.ASSESSMENT_VISIT_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:o.ASSESSMENT,label:'task.assessment_visit_due.action'}]},{name:'satoru.moca-due',icon:'icon-healthcare-assessment',title:'task.moca_due.title',appliesTo:'contacts',appliesToType:[n.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!I(e),events:[{id:'moca-due',start:0,end:a.MOCA_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:o.MOCA,label:'task.moca_due.action'}]},{name:'satoru.vineland-due',icon:'icon-healthcare-assessment',title:'task.vineland_due.title',appliesTo:'contacts',appliesToType:[n.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!h(e),events:[{id:'vineland-due',start:0,end:a.VINELAND_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:o.VINELAND,label:'task.vineland_due.action'}]}]}};const t={};function r(a){const o=t[a];if(void 0!==o)return o.exports;const n=t[a]={exports:{}};return e[a](n,n.exports,r),n.exports}var a=r(991),o=r(931),n=r(916);r(688)(o,c,Utils,Target,emit),n(a,c,Utils,Task,emit),emit('_complete',{_id:!0})})();",
+    "rules": "(()=>{var e={358(e){function t(e,r){var n=Object.keys(e);for(var a in n){var o=n[a];switch(typeof e[o]){case'object':t(e[o],r);break;case'function':e[o]=e[o].bind(r)}}}function r(e){var t=Object.assign({},e),n=Object.keys(t);for(var a in n){var o=n[a];if(Array.isArray(t[o])){t[o]=t[o].slice(0);for(var s=0;s<t[o].length;++s)'object'==typeof t[o][s]&&(t[o][s]=r(t[o][s]))}else'object'==typeof t[o]&&(t[o]=r(t[o]))}return t}e.exports=function(e){var n={};t(e,n),n.definition=r(e)}},837(e,t,r){var n=r(358);function a(e,t,r,n,a,o){var s=!!o;if(a.contact){var i='contact'===a.contact.type?a.contact.contact_type:a.contact.type,c=s?o.form:i;if(!(e.appliesToType&&e.appliesToType.indexOf(c)<0)&&(!e.appliesIf||e.appliesIf(a,o)))for(var l=s?o:a.contact,p=function(e,t,r){var n;return n='function'==typeof e.idType?e.idType(t,r):'report'===e.idType?r&&r._id:t.contact&&t.contact._id,Array.isArray(n)||(n=[n]),n}(e,a,o),d=!e.passesIf||!!e.passesIf(a,o),u=function(e,t,r,n){if('function'==typeof e.date)return e.date(r,n)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return n?n.reported_date:r.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,r,a,o),_=e.groupBy&&e.groupBy(a,o),f=0;f<p.length;++f){var g=new t({_id:p[f]+'~'+e.id,contact:a.contact,deleted:!!l.deleted,type:e.id,pass:d,groupBy:_,date:u});e.emitCustom?e.emitCustom(m,g,a,o):m(g)}}function m(e){n('target',e)}}e.exports=function(e,t,r,o,s){for(var i=0;i<e.length;++i){var c=e[i];switch(n(c),c.appliesTo){case'contacts':a(c,o,r,s,t);break;case'reports':for(var l=0;l<t.reports.length;++l){a(c,o,r,s,t,t.reports[l])}break;default:throw new Error('Unrecognised target.appliesTo: '+c.appliesTo)}}}},421(e){e.exports={defaultResolvedIf:function(e,t,r,n,a){var o,s;a||(a=Utils);var i=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find(function(e){return!e.type||'report'===e.type}))&&t.form}(this.definition);if(!i)throw new Error('Could not find the default resolving form!');return o=0,o=t?Math.max(a.addDate(n,-r.start).getTime(),t.reported_date+1):a.addDate(n,-r.start).getTime(),s=a.addDate(n,r.end+1).getTime(),a.isFormSubmittedInWindow(e.reports,i,o,s)}}},633(e,t,r){var n=r(358),a=r(421);function o(e,t,r,n,a,o){var s;if(e.appliesToType){var i;if('contacts'===e.appliesTo){if(!a.contact)return;i='contact'===a.contact.type?a.contact.contact_type:a.contact.type}else{if(!o)return;i=o.form}if(-1===e.appliesToType.indexOf(i))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(a,o))if('scheduled_tasks'===e.appliesTo){if(o&&e.appliesIf){if(!o.scheduled_tasks)return;for(s=0;s<o.scheduled_tasks.length;s++)e.appliesIf(a,o,s)&&l(s)}}else l();function c(e,t,r){var n;return(n='function'==typeof e.contactLabel?e.contactLabel(t,r):e.contactLabel)?{name:n}:t.contact}function l(s){var i,l,d,u,_=null;for(i=0;i<e.events.length;i++){if((l=e.events[i]).dueDate)_=l.dueDate(l,a,o,s);else if(o)_=void 0!==s?new Date(t.addDate(new Date(o.scheduled_tasks[s].due),l.days)):new Date(t.addDate(new Date(o.reported_date),l.days));else if(l.dueDate)_=l.dueDate(l,a);else{var f=a.contact&&a.contact.reported_date?new Date(a.contact.reported_date):new Date;_=new Date(t.addDate(f,l.days))}t.isTimely(_,l)&&(u={_id:(o?o._id:a.contact&&a.contact._id)+'~'+(l.id||i)+'~'+e.name,deleted:!(!(a.contact&&a.contact.deleted||o)||!o.deleted),doc:a,contact:c(e,a,o),icon:e.icon,date:_,readyStart:l.start||0,readyEnd:l.end||0,title:e.title,resolved:e.resolvedIf(a,o,l,_,s),actions:p(e.actions,l)},void 0!==s&&(u._id+='-'+s),'function'==typeof(d=e.priority)&&(d=d(a,o,l,_,s)),d&&(u.priority=d.level,u.priorityLabel=d.label),n('task',new r(u)))}}function p(t,r){return e.actions.map(function(e){return function(e,t){var r={source:'task',source_id:o?o._id:a.contact&&a.contact._id,contact:a.contact};e.modifyContent&&e.modifyContent(r,a,o,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:r}}(e,r)})}}e.exports=function(e,t,r,s,i){if(e)for(var c,l,p=0;p<e.length;++p)switch('function'!=typeof(c=Object.assign({},e[p],a)).resolvedIf&&(c.resolvedIf=function(e,t,n,a){return c.defaultResolvedIf(e,t,n,a,r)}),n(c),c.appliesTo){case'reports':case'scheduled_tasks':for(var d=0;d<t.reports.length;++d)l=t.reports[d],o(c,r,s,i,t,l);break;case'contacts':t.contact&&o(c,r,s,i,t);break;default:throw new Error('Unrecognised task.appliesTo: '+c.appliesTo)}}},190(e){const t=864e5,r={CAMP:'screening_camp',PARTICIPANT:'participant'},n={STAGE1:'stage1_screening',STAGE2:'stage2_assessment',FOLLOW_UP:'follow_up_contact',REFERRAL:'referral_outcome',REVIEW:'longitudinal_review',ASSESSMENT:'assessment_visit',MOCA:'moca_assessment',VINELAND:'vineland'},a={STAGE2_WINDOW_DAYS:30,FOLLOW_UP_DAYS:[3,10,21],MAX_FOLLOW_UP_ATTEMPTS:3,REFERRAL_CONFIRM_DAYS:21,REVIEW_DAYS_COGNITIVE:180,REVIEW_DAYS_ROUTINE:365,REVIEW_DAYS_RE_REFER:90,URGENT_ESCALATION_DAYS:1,SAFEGUARDING_ESCALATION_DAYS:3,STAGE1_MISSING_DAYS:14,ASSESSMENT_VISIT_DUE_DAYS:30,MOCA_DUE_DAYS:30,VINELAND_DUE_DAYS:30};function o(e,t){return e&&t?String(t).split('.').reduce((e,t)=>e&&void 0!==e[t]?e[t]:null,e.fields):null}function s(e,t){const r=o(e,t);if(null===r||''===r)return null;const n=Number(r);return Number.isFinite(n)?n:null}function i(e,t){return!!e&&e.form===t}function c(e,t){return e&&e.reports?e.reports.filter(e=>e.form===t):[]}function l(e,t){const r=c(e,t);return r.length?r.reduce((e,t)=>e.reported_date>t.reported_date?e:t):null}function p(e,t,r){if(!e||!e.reports)return[];const n=[].concat(t);return e.reports.filter(e=>-1!==n.indexOf(e.form)&&e.reported_date>r)}function d(e,r){return Math.floor((r-e)/t)}function u(e,t){const r=new Date(e);return r.setDate(r.getDate()+t),r}function _(e){const t=e&&(e.contact||e);return t?'contact'===t.type?t.contact_type:t.contact_type||t.type:null}function f(e){const t=e&&(e.contact||e);return!t||'no'!==t.consent_given}const g=['deceased','moved','refused','done_elsewhere'];function m(e){if(c(e,n.FOLLOW_UP).some(e=>-1!==g.indexOf(o(e,'g_fu.outcome'))))return!0;const t=l(e,n.REVIEW);return!!t&&'no'===o(t,'g_rev.alive')}function T(e){return o(e,'g_outcome.stage1_result')}function y(e){return i(e,n.STAGE1)&&'refer'===T(e)}function A(e){return o(e,'g_disposition.disposition')}function E(e){return 1===s(e,'g_disposition.cognitive_flag')}function v(e){return s(e,'moca_total_score')}function I(e){return o(e,'moca_interpretation')}function S(e){return l(e,n.MOCA)}function h(e){return l(e,n.VINELAND)}function D(){const e='undefined'!=typeof user?user:null,t='undefined'!=typeof cht?cht:null;let r=e&&(e.contact_id||e.contact&&e.contact._id||e._id)||t&&t.v1&&t.v1.userContactId||null;r&&'string'==typeof r&&r.startsWith('org.couchdb.user:')&&(r=e&&e.contact_id||r.replace('org.couchdb.user:',''));let n=e&&(e.name||e.username)||null;!n&&e&&'string'==typeof e._id&&e._id.startsWith('org.couchdb.user:')&&(n=e._id.replace('org.couchdb.user:',''));return{userId:r,userName:n,isSupervisor:Boolean(t&&t.v1&&'function'==typeof t.v1.hasPermissions&&(t.v1.hasPermissions('can_browse_all_participants')||t.v1.hasPermissions('can_view_participants'))||e&&e.roles&&(-1!==e.roles.indexOf('supervisor')||-1!==e.roles.indexOf('admin')||-1!==e.roles.indexOf('national_admin')))}}function b(e){if(!e)return!1;const t=D();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!0;if(t.userId){if(e.contact&&e.contact._id===t.userId)return!0;if(o(e,'screened_by')===t.userId)return!0;if(e.fields&&e.fields.screened_by===t.userId)return!0;if(e.created_by_person_uuid===t.userId)return!0}if(t.userName){if(e.reported_by===t.userName)return!0;if(o(e,'screened_by_name')===t.userName)return!0;if(o(e,'g_assessment.administered_by')===t.userName)return!0}return!1}e.exports={MS_IN_DAY:t,CONTACT_TYPES:r,FORMS:n,CONFIG:a,EXIT_OUTCOMES:g,getField:o,num:s,isForm:i,reportsOf:c,latestReport:l,reportsSince:p,daysBetween:d,addDays:u,contactType:_,isParticipant:function(e){return _(e)===r.PARTICIPANT},isCamp:function(e){return _(e)===r.CAMP},isUserContact:function(e){if(!e)return!1;try{const t=e.contact||e;if(!t||'object'!=typeof t)return!1;if('user'===t.contact_type)return!0;if(t.role){const e=String(t.role).toLowerCase();if(['staff','chw','chw_supervisor','supervisor','admin','mm-online','intern_supervisor'].includes(e))return!0;if(e.includes('staff')||e.includes('admin')||e.includes('supervisor')||e.includes('chw'))return!0}if(t.username||t.user_id)return!0;if(!0===t.isUserContact)return!0}catch(e){return!1}return!1},currentAge:function(e,t){if(!e||void 0===e.age||null===e.age)return null;const r=Number(e.age);if(!Number.isFinite(r))return null;if(!e.reported_date)return r;const n=t||Date.now(),a=Math.floor((n-e.reported_date)/315576e5);return r+Math.max(0,a)},hasConsent:f,isExited:m,isActive:function(e){return f(e)&&!m(e)},stage1Result:T,stage1Referred:y,stage1NeedsFollowUp:function(e){return y(e)&&'yes'!==o(e,'g_outcome.stage2_same_day')},stage1FlagCount:function(e){return s(e,'g_outcome.stage1_flag_count')||0},stage2DoneAfter:function(e,t){return p(e,n.STAGE2,t.reported_date).length>0},stage2Disposition:A,stage2NeedsReferral:function(e){return'yes'===o(e,'g_disposition.referral_needed')},isUrgent:function(e){return'urgent_same_day'===A(e)},isSafeguarding:function(e){return 1===s(e,'g_easi.easi_positive')},cognitiveFlag:E,followUpAttemptsSince:function(e,t){return p(e,n.FOLLOW_UP,t).length},appointmentBooked:function(e,t){return p(e,n.FOLLOW_UP,t).some(e=>'scheduled'===o(e,'g_fu.outcome'))},nextReviewDue:function(e){const t=l(e,n.REVIEW),r=l(e,n.STAGE2),s=l(e,n.STAGE1),i=t||r||s;if(!i)return null;let c=a.REVIEW_DAYS_ROUTINE;return i.form===n.STAGE2&&E(i)&&(c=a.REVIEW_DAYS_COGNITIVE),i.form===n.REVIEW&&'re_refer'===o(i,'g_rev.review_result')&&(c=a.REVIEW_DAYS_RE_REFER),u(i.reported_date,c)},convertedInWindow:function(e,t){const r=u(t.reported_date,a.STAGE2_WINDOW_DAYS).getTime();return p(e,n.STAGE2,t.reported_date).some(e=>e.reported_date<=r)},screenedBy:function(e){return o(e,'screened_by')},mocaTotalScore:v,mocaInterpretation:I,mocaImpaired:function(e){return'impaired'===I(e)},mocaSectionScores:function(e){return{visuospatial:s(e,'moca_visuospatial_total')||0,naming:s(e,'moca_naming_total')||0,memory:s(e,'moca_memory_total')||0,attention:s(e,'moca_attention_total')||0,language:s(e,'moca_language_total')||0,abstraction:s(e,'moca_abstraction_total')||0,delayedRecall:s(e,'moca_delayed_total')||0,orientation:s(e,'moca_orientation_total')||0,rawTotal:s(e,'moca_raw_total')||0,educationAdj:s(e,'moca_education_adj')||0,totalScore:v(e),interpretation:I(e)}},hasMocaAssessment:function(e){return c(e,n.MOCA).length>0},latestMocaAssessment:S,mocaDue:function(e){const t=S(e);return!t||d(t.reported_date,Date.now())>=a.MOCA_DUE_DAYS},hasVinelandAssessment:function(e){return c(e,n.VINELAND).length>0},latestVinelandAssessment:h,vinelandDue:function(e){const t=h(e);return!t||d(t.reported_date,Date.now())>=a.VINELAND_DUE_DAYS},getCurrentUserContext:D,isReportDoneByCurrentUser:b,isParticipantDoneByCurrentUser:function(e){if(!e)return!1;const t=D();if(t.isSupervisor)return!0;if(!t.userId&&!t.userName)return!0;const r=e.contact||e,n=e.reports||[];return!(!t.userId||!r||r.created_by_person_uuid!==t.userId)||(!(!t.userName||!r||r.created_by_user!==t.userName)||!!(n&&n.length>0&&n.some(e=>b(e))))}}},931(e,t,r){const{FORMS:n,CONTACT_TYPES:a,getField:o,num:s,stage1Referred:i,convertedInWindow:c,isReportDoneByCurrentUser:l,isParticipantDoneByCurrentUser:p}=r(190),d=(e,t)=>'yes'===o(t,'g_consent.consent_confirmed');e.exports=[{id:'participants-registered',type:'count',icon:'icon-person',goal:-1,translation_key:'targets.registered.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'contacts',appliesToType:[a.PARTICIPANT],appliesIf:e=>p(e),idType:'contact',date:'reported'},{id:'stage1-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage1.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>l(t)&&d(0,t),date:'reported'},{id:'stage1-referral-rate',type:'percent',icon:'icon-healthcare-referral',goal:-1,translation_key:'targets.referral_rate.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>l(t)&&d(0,t),passesIf:(e,t)=>i(t),date:'reported'},{id:'stage2-conversion',type:'percent',icon:'icon-healthcare-assessment',goal:60,translation_key:'targets.stage2_conversion.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE1],appliesIf:(e,t)=>l(t)&&i(t),passesIf:(e,t)=>c(e,t),date:'reported'},{id:'stage2-completed',type:'count',icon:'icon-healthcare-assessment',goal:-1,translation_key:'targets.stage2.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t),date:'reported'},{id:'cognitive-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.cognitive_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===s(t,'g_disposition.cognitive_flag'),date:'reported'},{id:'depression-flag-count',type:'count',icon:'icon-healthcare-diagnosis',goal:-1,translation_key:'targets.depression_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===s(t,'g_phq.phq_flag'),date:'reported'},{id:'safeguarding-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.safeguarding_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===s(t,'g_easi.easi_positive'),date:'reported'},{id:'frailty-flag-count',type:'count',icon:'icon-risk',goal:-1,translation_key:'targets.frailty_flag.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&1===s(t,'g_disposition.physical_flag'),date:'reported'},{id:'referral-loop-closed',type:'percent',icon:'icon-healthcare-referral',goal:70,translation_key:'targets.referral_closed.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t)&&'yes'===o(t,'g_disposition.referral_needed'),passesIf:(e,t)=>(e.reports||[]).some(e=>e.form===n.REFERRAL&&e.reported_date>t.reported_date&&'attended'===o(e,'g_ref.attended')),date:'reported'},{id:'informant-availability',type:'percent',icon:'icon-person',goal:80,translation_key:'targets.informant.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.STAGE2],appliesIf:(e,t)=>l(t),passesIf:(e,t)=>'yes'===o(t,'g_ad8.informant_available'),date:'reported'},{id:'follow-up-attempts',type:'count',icon:'icon-followup-general',goal:-1,translation_key:'targets.follow_up.title',subtitle_translation_key:'targets.this_month.subtitle',appliesTo:'reports',appliesToType:[n.FOLLOW_UP],appliesIf:(e,t)=>l(t),date:'reported'}]},991(e,t,r){const{CONFIG:n,FORMS:a,CONTACT_TYPES:o,getField:s,reportsSince:i,reportsOf:c,latestReport:l,addDays:p,isActive:d,isExited:u,isUserContact:_,stage1NeedsFollowUp:f,stage1FlagCount:g,stage2DoneAfter:m,stage2NeedsReferral:T,isUrgent:y,isSafeguarding:A,followUpAttemptsSince:E,appointmentBooked:v,nextReviewDue:I,mocaDue:S,vinelandDue:h}=r(190),D={level:'high',label:'task.priority.high'};e.exports=[{name:'satoru.urgent-escalation',icon:'icon-risk',title:'task.urgent_escalation.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>y(t),resolvedIf:(e,t,r,n)=>i(e,[a.FOLLOW_UP,a.REFERRAL],t.reported_date).some(e=>e.reported_date<=p(n,r.end+1).getTime()),events:[{id:'urgent-24h',start:0,end:n.URGENT_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:D,actions:[{type:'report',form:a.FOLLOW_UP,label:'task.urgent_escalation.action',modifyContent:(e,t,r)=>{e.trigger='urgent_escalation',e.source_report_uuid=r._id}}]},{name:'satoru.safeguarding-escalation',icon:'icon-risk',title:'task.safeguarding.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>A(t),resolvedIf:(e,t,r,n)=>i(e,a.FOLLOW_UP,t.reported_date).some(e=>e.reported_date<=p(n,r.end+1).getTime()),events:[{id:'safeguarding-72h',start:0,end:n.SAFEGUARDING_ESCALATION_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:D,actions:[{type:'report',form:a.FOLLOW_UP,label:'task.safeguarding.action',modifyContent:(e,t,r)=>{e.trigger='safeguarding',e.source_report_uuid=r._id}}]},{name:'satoru.stage2-due',icon:'icon-healthcare-assessment',title:'task.stage2_due.title',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t)=>m(e,t),events:[{id:'stage2-window',start:0,end:n.STAGE2_WINDOW_DAYS,dueDate:(e,t,r)=>new Date(r.reported_date)}],priority:(e,t)=>g(t)>=2?D:null,actions:[{type:'report',form:a.STAGE2,label:'task.stage2_due.action',modifyContent:(e,t,r)=>{e.stage1_report_uuid=r._id,e.stage1_flag_count=g(r),e.camp_code=s(r,'g_context.camp_code')}}]},{name:'satoru.lead-pursuit',icon:'icon-followup-general',title:'task.lead_pursuit.title',appliesTo:'reports',appliesToType:[a.STAGE1],appliesIf:(e,t)=>f(t)&&!u(e),resolvedIf:(e,t,r)=>{if(m(e,t))return!0;if(v(e,t.reported_date))return!0;const a=n.FOLLOW_UP_DAYS.indexOf(r.days)+1;return E(e,t.reported_date)>=a},events:n.FOLLOW_UP_DAYS.map((e,t)=>({id:`lead-pursuit-${t+1}`,days:e,start:2,end:6})),actions:[{type:'report',form:a.FOLLOW_UP,label:'task.lead_pursuit.action',modifyContent:(e,t,r)=>{e.trigger='stage1_referral',e.source_report_uuid=r._id,e.suggested_attempt_number=E(t,r.reported_date)+1}}]},{name:'satoru.appointment-reminder',icon:'icon-healthcare-assessment',title:'task.appointment.title',appliesTo:'reports',appliesToType:[a.FOLLOW_UP],appliesIf:(e,t)=>'scheduled'===s(t,'g_fu.outcome')&&!!s(t,'g_fu.appointment_date')&&!u(e),resolvedIf:(e,t)=>i(e,a.STAGE2,t.reported_date).length>0,events:[{id:'appointment-day',start:2,end:7,dueDate:(e,t,r)=>new Date(s(r,'g_fu.appointment_date'))}],actions:[{type:'report',form:a.STAGE2,label:'task.appointment.action'}]},{name:'satoru.referral-outcome',icon:'icon-healthcare-referral',title:'task.referral_outcome.title',appliesTo:'reports',appliesToType:[a.STAGE2],appliesIf:(e,t)=>T(t)&&!u(e),resolvedIf:(e,t)=>i(e,a.REFERRAL,t.reported_date).some(e=>'yes'===s(e,'g_ref.referral_closed')),events:[{id:'referral-confirm',days:14,start:7,end:n.REFERRAL_CONFIRM_DAYS}],actions:[{type:'report',form:a.REFERRAL,label:'task.referral_outcome.action',modifyContent:(e,t,r)=>{e.source_report_uuid=r._id,e.facility=s(r,'g_disposition.referral_facility'),e.disposition=s(r,'g_disposition.disposition')}}]},{name:'satoru.longitudinal-review',icon:'icon-followup-general',title:'task.review.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:e=>d(e)&&!!I(e),resolvedIf:(e,t,r,n)=>{const o=p(n,-r.start).getTime();return i(e,[a.STAGE2,a.REVIEW],o).length>0},events:[{id:'review-due',start:30,end:60,dueDate:(e,t)=>I(t)}],actions:[{type:'report',form:a.REVIEW,label:'task.review.action'}]},{name:'satoru.assessment-visit-due',icon:'icon-healthcare-assessment',title:'task.assessment_visit_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:e=>d(e)&&!_(e)&&0===c(e,a.ASSESSMENT).length&&'staff'!==e.role,resolvedIf:e=>c(e,a.ASSESSMENT).length>0,events:[{id:'assessment-visit-due',start:0,end:n.ASSESSMENT_VISIT_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.ASSESSMENT,label:'task.assessment_visit_due.action'}]},{name:'satoru.moca-due',icon:'icon-healthcare-assessment',title:'task.moca_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!S(e),events:[{id:'moca-due',start:0,end:n.MOCA_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.MOCA,label:'task.moca_due.action'}]},{name:'satoru.vineland-due',icon:'icon-healthcare-assessment',title:'task.vineland_due.title',appliesTo:'contacts',appliesToType:[o.PARTICIPANT],appliesIf:()=>!1,resolvedIf:e=>!h(e),events:[{id:'vineland-due',start:0,end:n.VINELAND_DUE_DAYS,dueDate:(e,t)=>new Date(t.contact&&t.contact.reported_date||Utils.now())}],actions:[{type:'report',form:a.VINELAND,label:'task.vineland_due.action'}]}]}};const t={};function r(n){const a=t[n];if(void 0!==a)return a.exports;const o=t[n]={exports:{}};return e[n](o,o.exports,r),o.exports}var n=r(991),a=r(931),o=r(633);r(837)(a,c,Utils,Target,emit),o(n,c,Utils,Task,emit),emit('_complete',{_id:!0})})();",
     "isDeclarative": true,
     "targets": {
       "enabled": true,

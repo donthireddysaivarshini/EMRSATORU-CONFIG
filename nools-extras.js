@@ -395,6 +395,90 @@ function vinelandDue(contact) {
   return daysSince >= CONFIG.VINELAND_DUE_DAYS;
 }
 
+// ---------------------------------------------------------------------------
+// Intern & Supervisor User Context & Target Ownership
+// ---------------------------------------------------------------------------
+
+/** Resolve authenticated user context in both Nools rules and Contact Summary */
+function getCurrentUserContext() {
+  /* eslint-disable no-undef */
+  const u = typeof user !== 'undefined' ? user : null;
+  /* eslint-enable no-undef */
+  const c = typeof cht !== 'undefined' ? cht : null;
+  let userId = (u && (u.contact_id || (u.contact && u.contact._id) || u._id)) ||
+               (c && c.v1 && c.v1.userContactId) || null;
+  if (userId && typeof userId === 'string' && userId.startsWith('org.couchdb.user:')) {
+    userId = (u && u.contact_id) || userId.replace('org.couchdb.user:', '');
+  }
+  let userName = (u && (u.name || u.username)) || null;
+  if (!userName && u && typeof u._id === 'string' && u._id.startsWith('org.couchdb.user:')) {
+    userName = u._id.replace('org.couchdb.user:', '');
+  }
+  const isSupervisor = Boolean(
+    (c && c.v1 && typeof c.v1.hasPermissions === 'function' && (
+      c.v1.hasPermissions('can_browse_all_participants') ||
+      c.v1.hasPermissions('can_view_participants')
+    )) ||
+    (u && u.roles && (
+      u.roles.indexOf('supervisor') !== -1 ||
+      u.roles.indexOf('admin') !== -1 ||
+      u.roles.indexOf('national_admin') !== -1
+    ))
+  );
+  return { userId, userName, isSupervisor };
+}
+
+/** Check if a report was submitted/done by the current user (or user is supervisor) */
+function isReportDoneByCurrentUser(report) {
+  if (!report) { return false; }
+  const ctx = getCurrentUserContext();
+  if (ctx.isSupervisor) { return true; }
+  // If no user context is available (e.g. testing), do not block
+  if (!ctx.userId && !ctx.userName) { return true; }
+
+  if (ctx.userId) {
+    if (report.contact && report.contact._id === ctx.userId) { return true; }
+    if (getField(report, 'screened_by') === ctx.userId) { return true; }
+    if (report.fields && report.fields.screened_by === ctx.userId) { return true; }
+    if (report.created_by_person_uuid === ctx.userId) { return true; }
+  }
+
+  if (ctx.userName) {
+    if (report.reported_by === ctx.userName) { return true; }
+    if (getField(report, 'screened_by_name') === ctx.userName) { return true; }
+    if (getField(report, 'g_assessment.administered_by') === ctx.userName) { return true; }
+  }
+
+  return false;
+}
+
+/** Check if a participant contact was registered or assessed by the current user (or user is supervisor) */
+function isParticipantDoneByCurrentUser(contactOrContainer) {
+  if (!contactOrContainer) { return false; }
+  const ctx = getCurrentUserContext();
+  if (ctx.isSupervisor) { return true; }
+  // If no user context is available (e.g. testing), do not block
+  if (!ctx.userId && !ctx.userName) { return true; }
+
+  const contactDoc = contactOrContainer.contact || contactOrContainer;
+  const reports = contactOrContainer.reports || [];
+
+  if (ctx.userId && contactDoc) {
+    if (contactDoc.created_by_person_uuid === ctx.userId) { return true; }
+  }
+  if (ctx.userName && contactDoc) {
+    if (contactDoc.created_by_user === ctx.userName) { return true; }
+  }
+
+  if (reports && reports.length > 0) {
+    if (reports.some((r) => isReportDoneByCurrentUser(r))) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 module.exports = {
   MS_IN_DAY,
   CONTACT_TYPES,
@@ -442,4 +526,7 @@ module.exports = {
   hasVinelandAssessment,
   latestVinelandAssessment,
   vinelandDue,
+  getCurrentUserContext,
+  isReportDoneByCurrentUser,
+  isParticipantDoneByCurrentUser,
 };

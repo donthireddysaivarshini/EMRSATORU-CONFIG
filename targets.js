@@ -17,6 +17,8 @@ const {
   num,
   stage1Referred,
   convertedInWindow,
+  isReportDoneByCurrentUser,
+  isParticipantDoneByCurrentUser,
 } = require('./nools-extras');
 
 const consented = (contact, report) =>
@@ -34,6 +36,7 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'contacts',
     appliesToType: [CONTACT_TYPES.PARTICIPANT],
+    appliesIf: (contact) => isParticipantDoneByCurrentUser(contact),
     idType: 'contact',
     date: 'reported',
   },
@@ -46,7 +49,7 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE1],
-    appliesIf: consented,
+    appliesIf: (contact, report) => isReportDoneByCurrentUser(report) && consented(contact, report),
     date: 'reported',
   },
   {
@@ -58,7 +61,7 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE1],
-    appliesIf: consented,
+    appliesIf: (contact, report) => isReportDoneByCurrentUser(report) && consented(contact, report),
     passesIf: (contact, report) => stage1Referred(report),
     date: 'reported',
   },
@@ -74,7 +77,7 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE1],
-    appliesIf: (contact, report) => stage1Referred(report),
+    appliesIf: (contact, report) => isReportDoneByCurrentUser(report) && stage1Referred(report),
     passesIf: (contact, report) => convertedInWindow(contact, report),
     date: 'reported',
   },
@@ -87,6 +90,7 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE2],
+    appliesIf: (contact, report) => isReportDoneByCurrentUser(report),
     date: 'reported',
   },
 
@@ -101,6 +105,7 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE2],
     appliesIf: (contact, report) =>
+      isReportDoneByCurrentUser(report) &&
       num(report, 'g_disposition.cognitive_flag') === 1,
     date: 'reported',
   },
@@ -113,7 +118,9 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) => num(report, 'g_phq.phq_flag') === 1,
+    appliesIf: (contact, report) =>
+      isReportDoneByCurrentUser(report) &&
+      num(report, 'g_phq.phq_flag') === 1,
     date: 'reported',
   },
   {
@@ -125,7 +132,9 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) => num(report, 'g_easi.easi_positive') === 1,
+    appliesIf: (contact, report) =>
+      isReportDoneByCurrentUser(report) &&
+      num(report, 'g_easi.easi_positive') === 1,
     date: 'reported',
   },
   {
@@ -138,6 +147,7 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE2],
     appliesIf: (contact, report) =>
+      isReportDoneByCurrentUser(report) &&
       num(report, 'g_disposition.physical_flag') === 1,
     date: 'reported',
   },
@@ -153,6 +163,7 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE2],
     appliesIf: (contact, report) =>
+      isReportDoneByCurrentUser(report) &&
       getField(report, 'g_disposition.referral_needed') === 'yes',
     passesIf: (contact, report) =>
       (contact.reports || []).some(
@@ -173,6 +184,7 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.STAGE2],
+    appliesIf: (contact, report) => isReportDoneByCurrentUser(report),
     passesIf: (contact, report) =>
       getField(report, 'g_ad8.informant_available') === 'yes',
     date: 'reported',
@@ -186,6 +198,7 @@ module.exports = [
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
     appliesToType: [FORMS.FOLLOW_UP],
+    appliesIf: (contact, report) => isReportDoneByCurrentUser(report),
     date: 'reported',
   },
 ];
