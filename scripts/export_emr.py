@@ -738,10 +738,35 @@ def write_sheet(wb, name, rows):
     return ws
 
 
-def build_workbook(scope, db):
+def get_participant_reg_date(p):
+    """Participant registration date from registration form, not CHT system timestamp."""
+    rd = p.get('registration_date') or p.get('date_of_registration') or p.get('date')
+    if rd:
+        return str(rd).strip()[:10]
+    rep = p.get('reported_date')
+    if rep:
+        return iso_datetime(rep)[:10]
+    return ''
+
+
+def build_workbook(scope, db, from_date=None, to_date=None):
     docs = db.fetch_all_docs()
     camps, participants = classify_contacts(docs)
     reports = [d for d in docs if is_emr_report(d)]
+
+    # Filter participants by registration date (from participant form)
+    if from_date or to_date:
+        filtered_participants = {}
+        for pid, pdoc in participants.items():
+            reg_date = get_participant_reg_date(pdoc)
+            if from_date and reg_date and reg_date < from_date:
+                continue
+            if to_date and reg_date and reg_date > to_date:
+                continue
+            if (from_date or to_date) and not reg_date:
+                continue
+            filtered_participants[pid] = pdoc
+        participants = filtered_participants
 
     # Ensure form XMLs exist locally for any form present in reports
     if hasattr(db, 'fetch_attachment'):
@@ -847,17 +872,18 @@ def autosize_columns(ws, min_width=10, max_width=70):
             max(min_width, min(max_width, width + 2))
 
 
-def default_output_name(scope, wb, db=None):
+def default_output_name(scope, wb, db=None, from_date=None, to_date=None):
     stamp = timestamp_stamp()
+    date_tag = f'-{from_date}_to_{to_date}' if (from_date and to_date) else (f'-from_{from_date}' if from_date else (f'-to_{to_date}' if to_date else ''))
     if scope == 'all':
-        return f'satoru-emr-all-data-{stamp}.xlsx'
+        return f'satoru-emr-all-data{date_tag}-{stamp}.xlsx'
     if scope.startswith('camp='):
         camp_sheet = wb['Camp']
         name = None
         header = [c.value for c in camp_sheet[1]]
         if 'name' in header:
             name = camp_sheet[2][header.index('name')].value
-        return f'satoru-emr-camp-{sanitize_filename(name, "camp")}-{stamp}.xlsx'
+        return f'satoru-emr-camp-{sanitize_filename(name, "camp")}{date_tag}-{stamp}.xlsx'
     if scope.startswith('participants_in_camp='):
         camp_id = scope.split('=', 1)[1]
         camp_name = None
@@ -865,16 +891,16 @@ def default_output_name(scope, wb, db=None):
             camp_doc = db.fetch_doc(camp_id)
             camp_name = camp_doc.get('name') if camp_doc else None
         return (f'satoru-emr-camp-{sanitize_filename(camp_name or camp_id, "camp")}'
-                f'-participants-{stamp}.xlsx')
+                f'-participants{date_tag}-{stamp}.xlsx')
     if scope.startswith('participant='):
         part_sheet = wb['Participant']
         header = [c.value for c in part_sheet[1]]
         cr = part_sheet[2][header.index('cr_no')].value if 'cr_no' in header else None
         name = part_sheet[2][header.index('name')].value if 'name' in header else None
         label = cr or name or scope.split('=', 1)[1]
-        return f'satoru-emr-participant-{sanitize_filename(label, "participant")}-{stamp}.xlsx'
+        return f'satoru-emr-participant-{sanitize_filename(label, "participant")}{date_tag}-{stamp}.xlsx'
     if scope == 'all-workbook':
-        return f'satoru-emr-all-participants-scales-{stamp}.xlsx'
+        return f'satoru-emr-all-participants-scales{date_tag}-{stamp}.xlsx'
     if scope.startswith('camp-workbook='):
         camp_id = scope.split('=', 1)[1]
         camp_name = None
@@ -882,7 +908,7 @@ def default_output_name(scope, wb, db=None):
             camp_doc = db.fetch_doc(camp_id)
             camp_name = camp_doc.get('name') if camp_doc else None
         return (f'satoru-emr-camp-{sanitize_filename(camp_name or camp_id, "camp")}'
-                f'-scales-{stamp}.xlsx')
+                f'-scales{date_tag}-{stamp}.xlsx')
     if scope.startswith('participant-report='):
         part_id = scope.split('=', 1)[1]
         label = part_id
@@ -903,13 +929,15 @@ def main():
                              'participants_in_camp=<campId> | '
                              'participant=<participantId> | camp-workbook=<campId> | '
                              'participant-report=<participantId>')
+    parser.add_argument('--from-date', default=None, help='Filter by participant registration date >= YYYY-MM-DD')
+    parser.add_argument('--to-date', default=None, help='Filter by participant registration date <= YYYY-MM-DD')
     parser.add_argument('--out', default='.', help='output directory (default: current directory)')
     parser.add_argument('--verify', action='store_true', help='verify TLS certificates (default: off for self-signed)')
     args = parser.parse_args()
 
     db = EmrDb(args.url, verify=args.verify)
-    wb = build_workbook(args.scope, db)
-    filename = default_output_name(args.scope, wb, db)
+    wb = build_workbook(args.scope, db, from_date=args.from_date, to_date=args.to_date)
+    filename = default_output_name(args.scope, wb, db, from_date=args.from_date, to_date=args.to_date)
     os.makedirs(args.out, exist_ok=True)
     path = os.path.join(args.out, filename)
     wb.save(path)

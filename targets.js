@@ -15,8 +15,6 @@ const {
   CONTACT_TYPES,
   getField,
   num,
-  stage1Referred,
-  convertedInWindow,
   isReportDoneByCurrentUser,
   isParticipantDoneByCurrentUser,
 } = require('./nools-extras');

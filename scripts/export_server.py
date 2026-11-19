@@ -63,6 +63,8 @@ PAGE = """<!doctype html>
  button{{font:inherit;padding:9px 16px;border:0;border-radius:5px;background:#0a5ca8;color:#fff;cursor:pointer}}
  button:hover{{background:#08498a}}
  .row{{display:flex;gap:10px;align-items:center;flex-wrap:wrap}}
+ .date-group{{display:flex;gap:12px;align-items:center;margin:10px 0 14px;font-size:13px;color:#333;flex-wrap:wrap}}
+ .date-group input[type=date]{{font:inherit;padding:5px 8px;border:1px solid #ccc;border-radius:4px;background:#fff}}
  .empty{{color:#999;font-style:italic}}
  code{{background:#eee;padding:1px 5px;border-radius:3px;font-size:12px}}
 </style></head><body><div class="wrap">
@@ -72,15 +74,27 @@ PAGE = """<!doctype html>
 <div class="card">
   <h2>Everyone</h2>
   <p>All participants across every camp. One sheet per scale, plus a Camp column.</p>
-  <form action="export" method="get"><input type="hidden" name="scope" value="all-workbook">
-  <button type="submit">Download all participants</button></form>
+  <form action="export" method="get">
+    <input type="hidden" name="scope" value="all-workbook">
+    <div class="date-group">
+      <label>Registration Date From: <input type="date" name="from_date"></label>
+      <label>To: <input type="date" name="to_date"></label>
+    </div>
+    <button type="submit">Download all participants</button>
+  </form>
 </div>
 
 <div class="card">
   <h2>One camp</h2>
   <p>Participants sheet plus one sheet per scale completed in that camp.</p>
-  <form action="export" method="get" class="row">
-    <select name="scope">{camp_options}</select>
+  <form action="export" method="get">
+    <div class="row" style="margin-bottom:8px">
+      <select name="scope">{camp_options}</select>
+    </div>
+    <div class="date-group">
+      <label>Registration Date From: <input type="date" name="from_date"></label>
+      <label>To: <input type="date" name="to_date"></label>
+    </div>
     <button type="submit">Download camp workbook</button>
   </form>
 </div>
@@ -371,7 +385,14 @@ def make_handler(url, base_path='', require_login=True, check=None, live_forms=T
                 return self._page()
             if path == '/export':
                 qs = urllib.parse.parse_qs(parsed.query)
-                return self._export((qs.get('scope') or [''])[0])
+                scope = (qs.get('scope') or [''])[0]
+                from_date = (qs.get('from_date') or [None])[0]
+                to_date = (qs.get('to_date') or [None])[0]
+                if from_date:
+                    from_date = from_date.strip() or None
+                if to_date:
+                    to_date = to_date.strip() or None
+                return self._export(scope, from_date=from_date, to_date=to_date)
             self.send_error(404)
 
         def _page(self):
@@ -396,17 +417,17 @@ def make_handler(url, base_path='', require_login=True, check=None, live_forms=T
             self.end_headers()
             self.wfile.write(body)
 
-        def _export(self, scope):
+        def _export(self, scope, from_date=None, to_date=None):
             if not scope:
                 return self._fail('No export selected.')
-            sys.stderr.write(f'  EXPORT user={self.user} scope={scope}\n')
+            sys.stderr.write(f'  EXPORT user={self.user} scope={scope} from={from_date} to={to_date}\n')
             try:
                 with scale_meta.LOCK:
                     if live_forms:
                         sync_live_forms(panel.couch)
                     db = self._db()
-                    wb = export_emr.build_workbook(scope, db)
-                    name = export_emr.default_output_name(scope, wb, db)
+                    wb = export_emr.build_workbook(scope, db, from_date=from_date, to_date=to_date)
+                    name = export_emr.default_output_name(scope, wb, db, from_date=from_date, to_date=to_date)
                 buf = io.BytesIO()
                 wb.save(buf)
             except SystemExit as exc:                     # build_workbook's own errors
