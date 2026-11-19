@@ -497,6 +497,7 @@ def test_assessment_visit_integration():
     check('multi-visit: Aarav visit 1 attachment has Excel HYPERLINK formula',
           '=HYPERLINK(' in str(aarav_rows[0][idx['Assessment Attachments']]) and
           ('https://cht.kobosatorufoundation.org/medic/' in str(aarav_rows[0][idx['Assessment Attachments']]) or
+           'https://cht.kobosatorufoundation.org/exports/attachment/' in str(aarav_rows[0][idx['Assessment Attachments']]) or
            'https://cht.kobosatorufoundation.org/#/reports/' in str(aarav_rows[0][idx['Assessment Attachments']])))
     check('multi-visit: Aarav visit dates distinct',
           '2026-06-15' in str(aarav_rows[0][idx['Date & time of assessment']]) and

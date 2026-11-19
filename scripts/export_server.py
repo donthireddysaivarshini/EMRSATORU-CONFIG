@@ -393,7 +393,41 @@ def make_handler(url, base_path='', require_login=True, check=None, live_forms=T
                 if to_date:
                     to_date = to_date.strip() or None
                 return self._export(scope, from_date=from_date, to_date=to_date)
+            if path.startswith('/attachment/'):
+                parts = path[len('/attachment/'):].split('/', 1)
+                if len(parts) == 2:
+                    doc_id, filename = parts
+                    filename = urllib.parse.unquote(filename)
+                    return self._attachment(doc_id, filename)
             self.send_error(404)
+
+        def _attachment(self, doc_id, filename):
+            try:
+                db = self._db()
+                ext = os.path.splitext(filename)[1].lower()
+                ct_map = {
+                    '.pdf': 'application/pdf',
+                    '.jpg': 'image/jpeg',
+                    '.jpeg': 'image/jpeg',
+                    '.png': 'image/png',
+                    '.gif': 'image/gif',
+                    '.txt': 'text/plain',
+                }
+                content_type = ct_map.get(ext, 'application/octet-stream')
+                data = db.fetch_attachment(doc_id, filename)
+                if not data:
+                    self.send_error(404, "Attachment not found")
+                    return
+                self.send_response(200)
+                self.send_header('Content-Type', content_type)
+                self.send_header('Content-Disposition', f'inline; filename="{os.path.basename(filename)}"')
+                self.send_header('Content-Length', str(len(data)))
+                self.send_header('Cache-Control', 'public, max-age=86400')
+                self.end_headers()
+                self.wfile.write(data)
+            except Exception as exc:
+                sys.stderr.write(f'  ATTACHMENT FAILED doc={doc_id} file={filename}: {exc}\n')
+                self.send_error(500, f"Error retrieving attachment: {exc}")
 
         def _page(self):
             try:

@@ -411,7 +411,7 @@ def report_submitter_ids(reports, participants=None):
 
 
 REPORT_BASE_URL = 'https://cht.kobosatorufoundation.org/#/reports/'
-ATTACHMENT_BASE_URL = 'https://cht.kobosatorufoundation.org/medic/'
+ATTACHMENT_BASE_URL = 'https://cht.kobosatorufoundation.org/exports/attachment/'
 
 
 def extract_participant_columns(p, camp_doc=None, all_camps=False, scales_done=None):
