@@ -129,11 +129,12 @@
           </item>
         </root>
       </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
       <bind nodeset="/data/inputs/source" type="string"/>
       <bind nodeset="/data/inputs/source_id" type="string"/>
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/inputs/contact"/>
+      <bind nodeset="/data/inputs/contact" relevant="../source = 'user'"/>
       <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
       <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
       <bind nodeset="/data/inputs/contact/name" type="string"/>
@@ -188,9 +189,9 @@
   </h:head>
   <h:body>
     <group appearance="field-list" ref="/data/inputs">
-      <label>NO_LABEL</label>
+      <label>Participant</label>
       <group appearance="field-list" ref="/data/inputs/user">
-        <label>NO_LABEL</label>
+        <label>User</label>
       </group>
       <group appearance="field-list" ref="/data/inputs/contact">
         <label>Participant</label>
