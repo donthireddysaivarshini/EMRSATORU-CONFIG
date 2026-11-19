@@ -53,6 +53,7 @@ def desired_keys_for(form):
                    for j in JOIN_FIELDS.get(form, [])}
     prefix = f'report.{form}.'
     entries = [(f'{prefix}_title', meta['title'])]
+    seen = {f'{prefix}_title'}
     for item in meta['flat']:
         path = item['path']
         if not path:
@@ -61,8 +62,20 @@ def desired_keys_for(form):
             label = join_labels[path]
         else:
             label = clean_label(item['label']) or clean_human_label(path)
-        if label:
-            entries.append((prefix + path, label))
+        if label and label != 'NO_LABEL':
+            k = prefix + path
+            if k not in seen:
+                entries.append((k, label))
+                seen.add(k)
+            # Also add repeat aliases (.0., .1., .2.)
+            parts = path.split('.')
+            if len(parts) >= 2:
+                for idx in range(3):
+                    idx_path = '.'.join(parts[:-1] + [str(idx), parts[-1]])
+                    k_idx = prefix + idx_path
+                    if k_idx not in seen:
+                        entries.append((k_idx, label))
+                        seen.add(k_idx)
     return entries
 
 

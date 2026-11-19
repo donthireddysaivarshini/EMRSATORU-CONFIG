@@ -275,18 +275,18 @@ def parse_form_xml(path):
         }
 
     def parse_group(group_elem, depth=0):
-        ref = group_elem.get('ref') or ''
+        ref = group_elem.get('ref') or group_elem.get('nodeset') or ''
         parts = [p for p in ref.split('/') if p and p != 'data']
         gpath = '.'.join(parts)
         glabel = _resolve_label(group_elem)
         children = []
         for sub in group_elem:
             stag = _local(sub.tag)
-            if stag in ('select1', 'select', 'input', 'upload', 'repeat', 'trigger'):
-                children.append(parse_field(sub))
-            elif stag == 'group':
+            if stag in ('group', 'repeat'):
                 sub_g = parse_group(sub, depth + 1)
                 children.append({'__group__': sub_g})
+            elif stag in ('select1', 'select', 'input', 'upload', 'trigger'):
+                children.append(parse_field(sub))
         return {
             'ref': ref,
             'path': gpath,
@@ -295,7 +295,7 @@ def parse_form_xml(path):
             'fields': children,
         }
 
-    all_groups = [parse_group(elem, 0) for elem in body if _local(elem.tag) == 'group']
+    all_groups = [parse_group(elem, 0) for elem in body if _local(elem.tag) in ('group', 'repeat')]
 
     # fields that sit directly in <h:body> outside any group
     direct_children = []
@@ -899,6 +899,124 @@ KNOWN_FIELD_LABELS = {
     'g_assessment_sheets': 'Assessment Sheets',
     'assessment_sheets': 'Assessment Sheet',
 
+    # Common participant & submitter fields
+    'patient_uuid': 'Participant UUID',
+    'patient_id': 'Participant ID',
+    'patient_name': 'Patient Name',
+    'patient_sex': 'Gender',
+    'patient_age': 'Age',
+    'patient_phone': 'Phone Number',
+    'patient_education': 'Education Level',
+    'patient_cr_no': 'CR (Case Record) No.',
+    'screened_by': 'Screened By (ID)',
+    'screened_by_name': 'Screened By',
+    'selected_instrument': 'Selected Instrument',
+    'education_confounded': 'Education Confounded',
+    'education_band': 'Education Band',
+    'education_band_note': 'Education Band Interpretation',
+    'consent_reconfirmed': 'Consent Re-confirmed',
+    'years_schooling': 'Years of Formal Schooling',
+    'can_read_write': 'Can Read / Write in Own Language',
+    'languages_spoken': 'Languages Spoken',
+    'other_language_spoken': 'Other Language Spoken',
+    'luq_proficiency': 'Language Usage Questionnaire (LUQ) Daily Proficiency',
+    'is_strongest_language': "Is this the Patient's Strongest Language?",
+    'test_language': 'Test Language Used',
+    'informant_present': 'Informant / Attendant Present Today?',
+    'glasses_needed_worn': 'Glasses Needed & Worn Today?',
+    'hearing_aid_working': 'Hearing Aid Needed, Worn & Working?',
+    'whisper_test_passed': 'Whisper Test at Arm’s Length Passed?',
+    'near_vision_passed': 'Near-Vision Card Passed?',
+    'room_conditions_ok': 'Room Quiet, Door Closed & Distraction-Free?',
+    'factor_poor_sleep': 'Poor Sleep',
+    'factor_fasting': 'Fasting',
+    'factor_long_travel': 'Long Travel Before Test',
+    'factor_bereavement': 'Recent Bereavement / Grief',
+    'factor_sedating_meds': 'Sedating / Psychiatric Medication Taken Today',
+    'factor_other': 'Any Other Confounding Factor Today',
+    'factor_other_specify': 'Other Confounding Factor Details',
+
+    # MoCA Subscores, Adjustments and Totals
+    'te_visuospatial_total': 'Telugu MoCA Visuospatial / Executive Score',
+    'te_naming_total': 'Telugu MoCA Naming Score',
+    'te_attention_total': 'Telugu MoCA Attention Score',
+    'te_language_total': 'Telugu MoCA Language Score',
+    'te_abstraction_total': 'Telugu MoCA Abstraction Score',
+    'te_memory_total': 'Telugu MoCA Delayed Recall Score',
+    'te_orientation_total': 'Telugu MoCA Orientation Score',
+    'te_raw_total': 'Telugu MoCA Raw Total Score',
+    'te_education_adj': 'Telugu MoCA Education Adjustment Points',
+    'te_total_score': 'Telugu MoCA Total Score',
+    'mb_executive_total': 'MoCA-B Executive Score',
+    'mb_fluency_total': 'MoCA-B Fluency Score',
+    'mb_orientation_total': 'MoCA-B Orientation Score',
+    'mb_calculation_total': 'MoCA-B Calculation Score',
+    'mb_abstraction_total': 'MoCA-B Abstraction Score',
+    'mb_memory_total': 'MoCA-B Memory Score',
+    'mb_visuoperception_count': 'MoCA-B Visuoperception Count',
+    'mb_visuoperception_total': 'MoCA-B Visuoperception Score',
+    'mb_naming_total': 'MoCA-B Naming Score',
+    'mb_attention_white_score': 'MoCA-B Attention (White)',
+    'mb_attention_black_score': 'MoCA-B Attention (Black)',
+    'mb_attention_total': 'MoCA-B Attention Score',
+    'mb_raw_total': 'MoCA-B Raw Total',
+    'mb_education_adj': 'MoCA-B Education Adjustment',
+    'mb_literacy_adj': 'MoCA-B Literacy Adjustment',
+    'mb_total_score': 'MoCA-B Total Score',
+    'm8_visuospatial_total': 'MoCA-8 Visuospatial Score',
+    'm8_naming_total': 'MoCA-8 Naming Score',
+    'm8_attention_total': 'MoCA-8 Attention Score',
+    'm8_language_total': 'MoCA-8 Language Score',
+    'm8_abstraction_total': 'MoCA-8 Abstraction Score',
+    'm8_memory_total': 'MoCA-8 Memory Score',
+    'm8_mis_score': 'MoCA-8 Memory Index Score (MIS)',
+    'm8_orientation_total': 'MoCA-8 Orientation Score',
+    'm8_raw_total': 'MoCA-8 Raw Total',
+    'm8_education_adj': 'MoCA-8 Education Adjustment',
+    'm8_total_score': 'MoCA-8 Total Score',
+    'moca_total_score': 'MoCA Total Score',
+    'moca_mis_score': 'MoCA Memory Index Score (MIS)',
+    'moca_interpretation': 'MoCA Interpretation',
+
+    # Assessment visit & Documents
+    'consent_mode': 'Type of Consent Obtained',
+    'consent_given': 'Consent Given',
+    'consent_recorded_at': 'Consent Recorded At',
+    'consent_version': 'Consent Form Version',
+    'consent_image': 'Upload Consent Form (Image)',
+    'consent_pdf': 'Upload Consent Form (PDF)',
+    'notes_image': 'Upload Notes (Image)',
+    'notes_pdf': 'Upload Notes Document (PDF)',
+    'upload_scale_image': 'Upload Completed Scale / Assessment Sheet (Image)',
+    'upload_scale_pdf': 'Upload Completed Scale / Assessment Sheet (PDF)',
+    'upload_caption': 'Attachment Caption / Description',
+    'moca_image': 'Upload MoCA Sheet (Image)',
+    'moca_pdf': 'Upload MoCA Sheet (PDF)',
+    'moca_b_image': 'Upload MoCA-B Sheet (Image)',
+    'moca_b_pdf': 'Upload MoCA-B Sheet (PDF)',
+    'moca_telugu_image': 'Upload Telugu MoCA Sheet (Image)',
+    'moca_telugu_pdf': 'Upload Telugu MoCA Sheet (PDF)',
+    'clinical_notes': 'Clinical Notes',
+    'clinical_impression': 'Clinical Impression / Provisional Diagnosis',
+    'entered_in_cht': 'Entered in Kobo / CHT',
+    'qc_checked_by': 'Quality Control - Checked By (Name)',
+    'record_id': 'Participant Kobo / Record ID',
+    'qc_check_date': 'Quality Control Checking Date',
+    'next_visit_date': 'Follow-up / Next Visit Date',
+    'notes': 'Clinical Notes / Summary',
+    'assessed_by': 'Assessed By (Staff - Name & Signature)',
+    'reviewed_by': 'Reviewed By (Staff - Name & Signature)',
+    'assessment_datetime': 'Assessment Date & Time',
+    'administered_by': 'Administered By',
+    'uploaded_by': 'Uploaded By',
+    'scale_name': 'Assessment Scale Used',
+    'score': 'Score / Result',
+    'interpretation': 'Interpretation',
+    'informant_name': 'Informant Name',
+    'informant_phone': 'Informant Phone Number',
+    'patient_name_confirm': 'Patient Name (Confirmation)',
+    'patient_cr_confirm': 'CR (Case Record) No. (Confirmation)',
+
     # CoG-5 results & triage
     'PMIS_FINAL_RESULT': 'PMIS Memory Result',
     'PBST_FINAL_RESULT': 'PBST Symbol Pattern Result',
@@ -926,15 +1044,31 @@ def clean_human_label(path, fallback=None):
         return fallback or ''
     # Strip any markdown bold/italics and trailing colons
     cleaned = re.sub(r'\*\*|__', '', str(path)).strip().rstrip(':').strip()
+    if cleaned.startswith('report.'):
+        parts = cleaned.split('.')
+        cleaned = '.'.join(parts[2:]) if len(parts) >= 3 else parts[1]
     if cleaned in KNOWN_FIELD_LABELS:
         return KNOWN_FIELD_LABELS[cleaned]
-    # Check last dotted path segment if it's a technical path
-    last_seg = cleaned.split('.')[-1]
+    # Check last non-numeric dotted path segment
+    segs = [s for s in cleaned.split('.') if not s.isdigit()]
+    last_seg = segs[-1] if segs else cleaned
     if last_seg in KNOWN_FIELD_LABELS:
         return KNOWN_FIELD_LABELS[last_seg]
     # If cleaned is already a human phrase with spaces and words (e.g. "Q10. Timed Walk (2.5m)" or "1. Cries, laughs"), return it directly!
     if ' ' in cleaned and not cleaned.startswith('g_') and not cleaned.startswith('grp_'):
         return cleaned
+
+    # Specific prefixes
+    if last_seg.startswith('te_'):
+        clean = last_seg[3:].replace('_', ' ').title()
+        return f'Telugu MoCA {clean}'
+    if last_seg.startswith('mb_'):
+        clean = last_seg[3:].replace('_', ' ').title()
+        return f'MoCA-B {clean}'
+    if last_seg.startswith('m8_'):
+        clean = last_seg[3:].replace('_', ' ').title()
+        return f'MoCA-8 {clean}'
+
     # If the string contains underscores or technical prefixes or looks like a variable name:
     if '.' in cleaned or '_' in cleaned or cleaned.startswith('g_') or cleaned.startswith('grp_') or cleaned.islower():
         s = cleaned
@@ -943,12 +1077,12 @@ def clean_human_label(path, fallback=None):
             if s.startswith(pfx):
                 s = s[len(pfx):]
         if '.' in s and ' ' not in s:
-            s = s.split('.')[-1]
+            s = [seg for seg in s.split('.') if not seg.isdigit()][-1]
         for pfx in ('g_', 'calc_', 'grp_'):
             if s.startswith(pfx):
                 s = s[len(pfx):]
         words = s.replace('_', ' ').split()
-        return ' '.join(w.capitalize() for w in words)
+        return ' '.join(w.upper() if w.lower() in ('id', 'cr', 'uuid', 'moca', 'ddst', 'vsms', 'dst', 'easi', 'gds', 'mse', 'phq', 'pdf', 'dob', 'ca', 'sq', 'iq', 'luq') else w.capitalize() for w in words)
     return cleaned
 
 # Supporting-document fields (attachment leaves; suppressed when empty).
@@ -1059,10 +1193,19 @@ def get_scale_meta(form):
     choice_maps = build_choice_maps(parsed, flat)
     labels = {}
     for item in flat:
-        if item['type'] == 'group':
-            labels[item['path']] = item['label']
-        else:
-            labels[item['path']] = item['label']
+        lbl = item['label']
+        if not lbl or lbl == 'NO_LABEL':
+            lbl = clean_human_label(item['path'])
+        labels[item['path']] = lbl
+
+    # Include all model leaves (calculated, preload, repeat leaves)
+    for kind, path in parsed.get('field_order', []):
+        if path and path not in labels:
+            lbl = clean_human_label(path)
+            labels[path] = lbl
+            flat.append({'type': kind if kind in ('group', 'field') else 'field',
+                         'path': path, 'label': lbl, 'hint': '', 'itemset': None})
+
     meta = _cache[form] = {
         'form': form,
         'title': SCALES[form]['title'],
@@ -1090,8 +1233,14 @@ def build_message_keys(form):
     prefix = f'report.{form}.'
     out = {f'{prefix}_title': meta['title']}
     for path, label in meta['labels'].items():
-        if label:
+        if label and label != 'NO_LABEL':
             out[prefix + path] = label
+            # Also generate aliases with .0., .1., .2. for repeat fields so older stock webapps translate them immediately
+            parts = path.split('.')
+            if len(parts) >= 2:
+                for idx in range(3):
+                    idx_path = '.'.join(parts[:-1] + [str(idx), parts[-1]])
+                    out[prefix + idx_path] = label
     # note-value fields get short display labels (value keeps the full text)
     for path, short in NOTE_LABELS.get(form, {}).items():
         if prefix + path in out or short:
