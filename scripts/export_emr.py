@@ -411,6 +411,7 @@ def report_submitter_ids(reports, participants=None):
 
 
 REPORT_BASE_URL = 'https://cht.kobosatorufoundation.org/#/reports/'
+ATTACHMENT_BASE_URL = 'https://cht.kobosatorufoundation.org/medic/'
 
 
 def extract_participant_columns(p, camp_doc=None, all_camps=False, scales_done=None):
@@ -477,7 +478,7 @@ def extract_assessment_visit_columns(r=None, visit_idx=None):
     consent_given = fields.get('g_consent.consent_given')
     att = attachment_names(r)
     rep_id = r.get('_id')
-    att_cell = f'=HYPERLINK("{REPORT_BASE_URL}{rep_id}", "View in CHT")' if (att and rep_id) else (', '.join(att) if att else None)
+    att_cell = f'=HYPERLINK("{ATTACHMENT_BASE_URL}{rep_id}/{att[0]}", "View Attachment")' if (att and rep_id) else (', '.join(att) if att else None)
     return {
         'Visit #': visit_idx or 1,
         'Date & time of assessment': iso_datetime(fields.get('g_assessment.assessment_datetime') or r.get('reported_date')),
@@ -650,7 +651,7 @@ def write_participant_sheet(wb, participant, camp, scales_done, assessment_visit
             att = attachment_names(r)
             if att:
                 rep_id = r.get('_id')
-                rows.append({'Field': 'Assessment Attachments', 'Value': f'=HYPERLINK("{REPORT_BASE_URL}{rep_id}", "View in CHT")' if rep_id else ', '.join(att)})
+                rows.append({'Field': 'Assessment Attachments', 'Value': f'=HYPERLINK("{ATTACHMENT_BASE_URL}{rep_id}/{att[0]}", "View Attachment")' if (rep_id and att) else ', '.join(att)})
             if r.get('_id'):
                 rows.append({'Field': 'Assessment Report ID', 'Value': r.get('_id')})
     rows = [r for r in rows if r['Value'] not in (None, '') or r['Field'].startswith('---')]

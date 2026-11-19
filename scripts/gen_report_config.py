@@ -30,7 +30,8 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from scale_meta import SCALES, get_scale_meta, JOIN_FIELDS, build_report_display_config
+from scale_meta import (SCALES, get_scale_meta, JOIN_FIELDS,
+                        build_report_display_config, clean_human_label)
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MESSAGES_PATH = os.path.join(REPO_ROOT, 'translations', 'messages-en.properties')
@@ -59,7 +60,7 @@ def desired_keys_for(form):
         if path in join_labels:
             label = join_labels[path]
         else:
-            label = clean_label(item['label'])
+            label = clean_label(item['label']) or clean_human_label(path)
         if label:
             entries.append((prefix + path, label))
     return entries

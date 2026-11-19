@@ -26,7 +26,14 @@ const FORMS = {
   REVIEW: 'longitudinal_review',
   ASSESSMENT: 'assessment_visit',
   MOCA: 'moca_assessment',
+  MOCA_INTEGRATED: 'moca',
+  MOCA_B: 'moca_b',
+  MOCA_TELUGU: 'moca_telugu',
   VINELAND: 'vineland',
+  VSMS: 'vsms',
+  COG5: 'cog5',
+  DDST: 'ddst',
+  DST: 'dst',
 };
 
 /**

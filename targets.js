@@ -26,7 +26,7 @@ const consented = (contact, report) =>
 
 module.exports = [
 
-  // ---------------- The funnel ----------------
+  // 1. Registered Participants (Intern / Admin Scoped)
   {
     id: 'participants-registered',
     type: 'count',
@@ -40,47 +40,8 @@ module.exports = [
     idType: 'contact',
     date: 'reported',
   },
-  {
-    id: 'stage1-completed',
-    type: 'count',
-    icon: 'icon-healthcare-assessment',
-    goal: -1,
-    translation_key: 'targets.stage1.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE1],
-    appliesIf: (contact, report) => isReportDoneByCurrentUser(report, contact) && consented(contact, report),
-    date: 'reported',
-  },
-  {
-    id: 'stage1-referral-rate',
-    type: 'percent',
-    icon: 'icon-healthcare-referral',
-    goal: -1,
-    translation_key: 'targets.referral_rate.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE1],
-    appliesIf: (contact, report) => isReportDoneByCurrentUser(report, contact) && consented(contact, report),
-    passesIf: (contact, report) => stage1Referred(report),
-    date: 'reported',
-  },
-  {
-    // The number that matters. Current programme performance is 141 of 357.
-    // The goal is set above that on purpose: a target you already meet does
-    // not change behaviour.
-    id: 'stage2-conversion',
-    type: 'percent',
-    icon: 'icon-healthcare-assessment',
-    goal: 60,
-    translation_key: 'targets.stage2_conversion.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE1],
-    appliesIf: (contact, report) => isReportDoneByCurrentUser(report, contact) && stage1Referred(report),
-    passesIf: (contact, report) => convertedInWindow(contact, report),
-    date: 'reported',
-  },
+
+  // 2. Assessment Visits Completed (Form: assessment_visit / stage2_assessment)
   {
     id: 'stage2-completed',
     type: 'count',
@@ -89,12 +50,51 @@ module.exports = [
     translation_key: 'targets.stage2.title',
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE2, FORMS.ASSESSMENT],
+    appliesToType: [FORMS.ASSESSMENT, FORMS.STAGE2],
     appliesIf: (contact, report) => isReportDoneByCurrentUser(report, contact),
     date: 'reported',
   },
 
-  // ---------------- Clinical yield ----------------
+  // 3. Memory Screenings Completed (Form: cog5 / stage1_screening)
+  {
+    id: 'stage1-completed',
+    type: 'count',
+    icon: 'icon-healthcare-assessment',
+    goal: -1,
+    translation_key: 'targets.stage1.title',
+    subtitle_translation_key: 'targets.this_month.subtitle',
+    appliesTo: 'reports',
+    appliesToType: [FORMS.COG5, FORMS.STAGE1],
+    appliesIf: (contact, report) =>
+      isReportDoneByCurrentUser(report, contact) &&
+      (report.form === FORMS.COG5 || consented(contact, report)),
+    date: 'reported',
+  },
+
+  // 4. Clinical Scale Assessments Completed (MoCA, DDST-II, DST, VSMS)
+  {
+    id: 'clinical-scales-completed',
+    type: 'count',
+    icon: 'icon-healthcare-assessment',
+    goal: -1,
+    translation_key: 'targets.scales.title',
+    subtitle_translation_key: 'targets.this_month.subtitle',
+    appliesTo: 'reports',
+    appliesToType: [
+      FORMS.MOCA,
+      FORMS.MOCA_INTEGRATED,
+      FORMS.MOCA_B,
+      FORMS.MOCA_TELUGU,
+      FORMS.DDST,
+      FORMS.DST,
+      FORMS.VINELAND,
+      FORMS.VSMS,
+    ],
+    appliesIf: (contact, report) => isReportDoneByCurrentUser(report, contact),
+    date: 'reported',
+  },
+
+  // 5. Positive / Clinical Concern Identified (CoG5 Triage Flag / MoCA Below Normal / Clinical Concern)
   {
     id: 'cognitive-flag-count',
     type: 'count',
@@ -103,102 +103,21 @@ module.exports = [
     translation_key: 'targets.cognitive_flag.title',
     subtitle_translation_key: 'targets.this_month.subtitle',
     appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) =>
-      isReportDoneByCurrentUser(report, contact) &&
-      num(report, 'g_disposition.cognitive_flag') === 1,
-    date: 'reported',
-  },
-  {
-    id: 'depression-flag-count',
-    type: 'count',
-    icon: 'icon-healthcare-diagnosis',
-    goal: -1,
-    translation_key: 'targets.depression_flag.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) =>
-      isReportDoneByCurrentUser(report, contact) &&
-      num(report, 'g_phq.phq_flag') === 1,
-    date: 'reported',
-  },
-  {
-    id: 'safeguarding-flag-count',
-    type: 'count',
-    icon: 'icon-risk',
-    goal: -1,
-    translation_key: 'targets.safeguarding_flag.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) =>
-      isReportDoneByCurrentUser(report, contact) &&
-      num(report, 'g_easi.easi_positive') === 1,
-    date: 'reported',
-  },
-  {
-    id: 'frailty-flag-count',
-    type: 'count',
-    icon: 'icon-risk',
-    goal: -1,
-    translation_key: 'targets.frailty_flag.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) =>
-      isReportDoneByCurrentUser(report, contact) &&
-      num(report, 'g_disposition.physical_flag') === 1,
-    date: 'reported',
-  },
-
-  // ---------------- Process quality ----------------
-  {
-    id: 'referral-loop-closed',
-    type: 'percent',
-    icon: 'icon-healthcare-referral',
-    goal: 70,
-    translation_key: 'targets.referral_closed.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) =>
-      isReportDoneByCurrentUser(report, contact) &&
-      getField(report, 'g_disposition.referral_needed') === 'yes',
-    passesIf: (contact, report) =>
-      (contact.reports || []).some(
-        (r) => r.form === FORMS.REFERRAL
-          && r.reported_date > report.reported_date
-          && getField(r, 'g_ref.attended') === 'attended'),
-    date: 'reported',
-  },
-  {
-    // AD8 is an informant instrument. Administering it to the participant
-    // alone is a protocol deviation that quietly degrades the dataset, so it
-    // is worth watching from day one.
-    id: 'informant-availability',
-    type: 'percent',
-    icon: 'icon-person',
-    goal: 80,
-    translation_key: 'targets.informant.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.STAGE2],
-    appliesIf: (contact, report) => isReportDoneByCurrentUser(report, contact),
-    passesIf: (contact, report) =>
-      getField(report, 'g_ad8.informant_available') === 'yes',
-    date: 'reported',
-  },
-  {
-    id: 'follow-up-attempts',
-    type: 'count',
-    icon: 'icon-followup-general',
-    goal: -1,
-    translation_key: 'targets.follow_up.title',
-    subtitle_translation_key: 'targets.this_month.subtitle',
-    appliesTo: 'reports',
-    appliesToType: [FORMS.FOLLOW_UP],
-    appliesIf: (contact, report) => isReportDoneByCurrentUser(report, contact),
+    appliesToType: [FORMS.COG5, FORMS.MOCA, FORMS.MOCA_INTEGRATED, FORMS.STAGE2],
+    appliesIf: (contact, report) => {
+      if (!isReportDoneByCurrentUser(report, contact)) {
+        return false;
+      }
+      if (report.form === FORMS.COG5) {
+        const triage = getField(report, 'grp_cog5_scale.FINAL_TRIAGE');
+        return Boolean(triage && String(triage).includes('FLAG'));
+      }
+      if (report.form === FORMS.MOCA || report.form === FORMS.MOCA_INTEGRATED) {
+        const interp = getField(report, 'interpretation') || getField(report, 'g_results.interpretation');
+        return Boolean(interp && String(interp).toLowerCase().includes('below'));
+      }
+      return num(report, 'g_disposition.cognitive_flag') === 1;
+    },
     date: 'reported',
   },
 ];

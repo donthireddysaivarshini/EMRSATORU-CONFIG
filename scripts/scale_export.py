@@ -304,7 +304,10 @@ def scale_headers(form, include_camp=False):
     cols = []
 
     def add(col):
-        if col not in cols:
+        if col in cols:
+            count = sum(1 for c in cols if c == col or c.startswith(f'{col} ('))
+            cols.append(f'{col} ({count + 1})')
+        else:
             cols.append(col)
 
     for f in FIXED_INFO:
@@ -386,7 +389,7 @@ def scale_row(form, fields, participant, submitter, attachments,
         raw = _lookup(fields, path)
         values.append('' if raw in (None, '') else raw)
     if attachments and report_id:
-        values.append(f'=HYPERLINK("https://cht.kobosatorufoundation.org/#/reports/{report_id}", "View in CHT")')
+        values.append(f'=HYPERLINK("https://cht.kobosatorufoundation.org/medic/{report_id}/{attachments[0]}", "View Attachment")')
     else:
         values.append(', '.join(attachments) if attachments else '')
     return values
@@ -491,7 +494,7 @@ def scale_sections(form, fields, participant, submitter, attachments, report_id=
         support_rows.append((label_for(form, f'g_supporting_docs.{key}', key),
                              value, None))
     if attachments:
-        att_val = f'=HYPERLINK("https://cht.kobosatorufoundation.org/#/reports/{report_id}", "View in CHT")' if report_id else ', '.join(attachments)
+        att_val = f'=HYPERLINK("https://cht.kobosatorufoundation.org/medic/{report_id}/{attachments[0]}", "View Attachment")' if (report_id and attachments) else ', '.join(attachments)
         support_rows.append(('Attachments', att_val, None))
     if support_rows:
         sections.append(('Supporting documents', support_rows))
