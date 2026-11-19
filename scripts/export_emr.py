@@ -47,6 +47,7 @@ Usage:
 import argparse
 import json
 import os
+import re
 import sys
 
 try:
@@ -114,10 +115,9 @@ def collect_report_rows(reports, participants, camps):
     """
     rows = []
     for doc in reports:
-        participant_id = subject_id_of(doc)
+        participant_id = subject_id_of(doc, participants)
         participant = participants.get(participant_id) if participant_id else None
-        camp_id = ((participant.get('parent') or {}).get('_id')
-                   if participant else None)
+        camp_id = _parent_id(participant) if participant else None
         camp = camps.get(camp_id) if camp_id else None
 
         fields = flatten(doc.get('fields') or {})
@@ -155,9 +155,118 @@ def flatten_contact_columns(doc, link_cols):
     return row
 
 
-def subject_id_of(doc):
+class ParticipantResolver:
+    """Robust resolver that maps any report to its participant contact _id.
+    Matches exact CouchDB UUIDs, patient_ids, CR numbers, or confirmed names,
+    mirroring CHT webapp's getSubjectIds resolution so no encounter goes missing."""
+
+    def __init__(self, participants):
+        self.participants = participants or {}
+        self.by_id = set(self.participants.keys())
+        self.by_cr = {}
+        self.by_patient_id = {}
+        self.by_name = {}
+
+        for pid, p in self.participants.items():
+            cr = self._clean(p.get('cr_no'))
+            if cr:
+                self.by_cr[cr] = pid
+            pat_id = self._clean(p.get('patient_id'))
+            if pat_id:
+                self.by_patient_id[pat_id] = pid
+            name = self._clean_name(p.get('name'))
+            if name:
+                if name not in self.by_name:
+                    self.by_name[name] = pid
+                else:
+                    self.by_name[name] = None  # non-unique name, skip name match
+
+    @staticmethod
+    def _clean(val):
+        if not val:
+            return None
+        return re.sub(r'[\s\-_/]', '', str(val).upper())
+
+    @staticmethod
+    def _clean_name(val):
+        if not val or not isinstance(val, str):
+            return None
+        return re.sub(r'[\s.\-_,\'"`]', '', val.lower())
+
+    def resolve(self, doc):
+        if not isinstance(doc, dict):
+            return None
+        fields = doc.get('fields') or {}
+        inputs = fields.get('inputs') or {}
+        input_contact = inputs.get('contact') if isinstance(inputs.get('contact'), dict) else {}
+        g_patient = fields.get('g_patient') if isinstance(fields.get('g_patient'), dict) else {}
+
+        # 1. Direct CouchDB UUID matches
+        candidates_uuid = [
+            fields.get('patient_uuid'),
+            doc.get('patient_uuid'),
+            input_contact.get('_id'),
+            inputs.get('source_id'),
+            fields.get('source_id'),
+            doc.get('patient_id'),
+            fields.get('patient_id'),
+        ]
+        for cand in candidates_uuid:
+            if isinstance(cand, str) and cand in self.by_id:
+                return cand
+
+        # 2. Check doc.contact if it is the participant
+        doc_contact = doc.get('contact')
+        if isinstance(doc_contact, dict):
+            cid = doc_contact.get('_id')
+            if cid and cid in self.by_id:
+                return cid
+
+        # 3. Match by CR number (normalized)
+        candidates_cr = [
+            self._clean(fields.get('patient_cr_no')),
+            self._clean(g_patient.get('patient_cr_confirm')),
+            self._clean(fields.get('patient_id')),
+            self._clean(fields.get('patient_uuid')),
+            self._clean(doc.get('patient_id')),
+            self._clean(doc.get('patient_uuid')),
+            self._clean(input_contact.get('cr_no')),
+            self._clean(input_contact.get('patient_id')),
+        ]
+        for cand in candidates_cr:
+            if cand and cand in self.by_cr:
+                return self.by_cr[cand]
+
+        # 4. Match by patient_id (normalized)
+        for cand in candidates_cr:
+            if cand and cand in self.by_patient_id:
+                return self.by_patient_id[cand]
+
+        # 5. Match by confirmed patient name (if unique)
+        candidates_name = [
+            self._clean_name(g_patient.get('patient_name_confirm')),
+            self._clean_name(fields.get('patient_name')),
+            self._clean_name(input_contact.get('name')),
+        ]
+        for cand in candidates_name:
+            if cand and self.by_name.get(cand):
+                return self.by_name[cand]
+
+        return None
+
+
+def subject_id_of(doc, participants=None):
     """The assessed participant's contact _id (NOT the submitter)."""
-    sid = (doc.get('fields') or {}).get('patient_uuid')
+    if participants:
+        res = ParticipantResolver(participants).resolve(doc)
+        if res:
+            return res
+    fields = (doc.get('fields') or {}) if isinstance(doc, dict) else {}
+    inputs = fields.get('inputs') or {}
+    input_contact = inputs.get('contact') if isinstance(inputs.get('contact'), dict) else {}
+    sid = (fields.get('patient_uuid') or doc.get('patient_uuid') or
+           input_contact.get('_id') or inputs.get('source_id') or
+           fields.get('patient_id') or doc.get('patient_id'))
     return sid if isinstance(sid, str) and sid else None
 
 
@@ -173,18 +282,19 @@ def submitter_label(doc):
     return name
 
 
-def scale_reports_by_participant(reports, participant_ids):
+def scale_reports_by_participant(reports, participant_ids, participants=None):
     """form -> list of doc for reports whose SUBJECT is one of
     participant_ids, ordered by reported_date (then _id for stability).
     Dynamically includes ALL forms present in the reports."""
+    resolver = ParticipantResolver(participants) if participants else None
     forms_in_reports = {
         doc.get('form') for doc in reports
-        if doc.get('form') and subject_id_of(doc) in participant_ids
+        if doc.get('form') and ((resolver.resolve(doc) if resolver else None) or subject_id_of(doc)) in participant_ids
     }
     order = get_scale_order(forms_in_reports)
     by_form = {form: [] for form in order}
     for doc in reports:
-        sid = subject_id_of(doc)
+        sid = (resolver.resolve(doc) if resolver else None) or subject_id_of(doc)
         if sid not in participant_ids:
             continue
         form = doc.get('form')
@@ -247,11 +357,13 @@ def write_scale_sheet(wb, form, reports, participants, camps=None):
     if meta.get('flat'):
         try:
             ws.append(scale_export.scale_headers(form, include_camp=camps is not None))
+            resolver = ParticipantResolver(participants)
             for doc in reports:
-                participant = participants.get(subject_id_of(doc)) or {}
+                pid = resolver.resolve(doc) or subject_id_of(doc, participants)
+                participant = participants.get(pid) or {}
                 camp_name = None
                 if camps is not None:
-                    camp = camps.get((participant.get('parent') or {}).get('_id'))
+                    camp = camps.get(_parent_id(participant))
                     camp_name = (camp or {}).get('name') or ''
                 ws.append(scale_export.scale_row(
                     form,
@@ -270,7 +382,18 @@ def write_scale_sheet(wb, form, reports, participants, camps=None):
     return ws
 
 
-def report_submitter_ids(reports):
+def _parent_id(doc):
+    if not isinstance(doc, dict):
+        return None
+    parent = doc.get('parent')
+    if isinstance(parent, dict):
+        return parent.get('_id')
+    if isinstance(parent, str):
+        return parent
+    return None
+
+
+def report_submitter_ids(reports, participants=None):
     """Contact _ids that appear as a report submitter (screeners/staff) -
     these are never screening subjects, so they are kept out of participant
     listings even if their contact sits under the camp."""
@@ -278,7 +401,12 @@ def report_submitter_ids(reports):
     for doc in reports:
         contact = doc.get('contact')
         if isinstance(contact, dict) and contact.get('_id'):
-            ids.add(contact['_id'])
+            cid = contact['_id']
+            if participants and cid in participants:
+                p = participants[cid]
+                if p.get('cr_no') or (p.get('contact_type') == 'participant' and p.get('role') != 'staff'):
+                    continue
+            ids.add(cid)
     return ids
 
 
@@ -386,12 +514,13 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
     scope) and adds a 'Camp' column so rows stay attributable.
     """
     all_camps = camp_id is None
-    staff = report_submitter_ids(reports)
+    staff = report_submitter_ids(reports, participants)
     members = {pid: p for pid, p in participants.items()
                if pid not in staff
                and (all_camps
-                    or (p.get('parent') or {}).get('_id') == camp_id)}
-    by_form = scale_reports_by_participant(reports, set(members))
+                    or _parent_id(p) == camp_id)}
+    resolver = ParticipantResolver(participants)
+    by_form = scale_reports_by_participant(reports, set(members), participants)
     active_forms = [f for f, docs in by_form.items() if docs]
     order = get_scale_order(active_forms)
 
@@ -399,7 +528,7 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
     assessment_visits_by_pid = {}
     for r in reports:
         if r.get('form') == 'assessment_visit':
-            pid = subject_id_of(r)
+            pid = resolver.resolve(r) or subject_id_of(r, participants)
             if pid and pid in members:
                 assessment_visits_by_pid.setdefault(pid, []).append(r)
     for visits in assessment_visits_by_pid.values():
@@ -408,8 +537,8 @@ def build_camp_workbook(wb, camp_id, camp, participants, reports, camps=None):
     rows = []
     for pid, p in members.items():
         scales_done = [scale_export.sheet_title(f) for f in order
-                       if any(subject_id_of(d) == pid for d in by_form.get(f, []))]
-        camp_doc = (camps or {}).get((p.get('parent') or {}).get('_id')) if all_camps else None
+                       if any((resolver.resolve(d) or subject_id_of(d, participants)) == pid for d in by_form.get(f, []))]
+        camp_doc = (camps or {}).get(_parent_id(p)) if all_camps else None
         base_part = extract_participant_columns(p, camp_doc=camp_doc, all_camps=all_camps, scales_done=scales_done)
 
         p_visits = assessment_visits_by_pid.get(pid, [])
@@ -569,14 +698,16 @@ def build_participant_report_workbook(wb, participant_id, participants, camps, r
     participant = participants.get(participant_id)
     if not participant:
         raise SystemExit(f'participant not found: {participant_id}')
-    camp = camps.get((participant.get('parent') or {}).get('_id'))
-    by_form = scale_reports_by_participant(reports, {participant_id})
+    camp = camps.get(_parent_id(participant))
+    resolver = ParticipantResolver(participants)
+    by_form = scale_reports_by_participant(reports, {participant_id}, participants)
     active_forms = [f for f, docs in by_form.items() if docs]
     order = get_scale_order(active_forms)
     scales_done = [scale_export.sheet_title(f) for f in order if by_form.get(f)]
 
     p_assessment_visits = [d for d in reports
-                           if d.get('form') == 'assessment_visit' and subject_id_of(d) == participant_id]
+                           if d.get('form') == 'assessment_visit' and
+                           ((resolver.resolve(d) if resolver else None) or subject_id_of(d, participants)) == participant_id]
     p_assessment_visits.sort(key=lambda d: (d.get('reported_date') or 0, d.get('_id') or ''))
 
     write_participant_sheet(wb, participant, camp, scales_done, assessment_visits=p_assessment_visits)
